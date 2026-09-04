@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  pull_request:
+    paths:
+      - 'site/**'
+      - '.github/workflows/ci.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+
+      - name: Lint
+        working-directory: site
+        run: npm run lint
+
+      # `next build` roda o typecheck e busca o conteúdo do Sanity, então
+      # também prova que as 200+ páginas estáticas continuam sendo geradas.
+      - name: Build
+        working-directory: site
+        run: npm run build
