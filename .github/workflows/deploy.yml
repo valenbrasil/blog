@@ -36,11 +36,11 @@ jobs:
       - name: Build
         working-directory: site
         env:
-          # Endereço público do site. Num GitHub Pages de projeto ele é servido
-          # sob o nome do repositório; com domínio próprio, trocar para
-          # NEXT_PUBLIC_BASE_PATH: '' e a URL do domínio.
-          NEXT_PUBLIC_BASE_PATH: /blog
-          NEXT_PUBLIC_SITE_URL: https://valenbrasil.github.io/blog
+          # Endereço público deste deploy. Cada repositório aponta para o seu:
+          # aqui é o GitHub Pages de projeto deste repo. Com domínio próprio,
+          # trocar para NEXT_PUBLIC_BASE_PATH: '' e a URL do domínio.
+          NEXT_PUBLIC_BASE_PATH: /valen-blog
+          NEXT_PUBLIC_SITE_URL: https://bettinacesario.github.io/valen-blog
         run: npm run build
 
       - uses: actions/configure-pages@v5
