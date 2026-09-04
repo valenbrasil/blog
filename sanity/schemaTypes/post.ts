@@ -8,7 +8,15 @@ export const post = defineType({
     defineField({ name: 'title', type: 'string' }),
     defineField({ name: 'slug', type: 'slug', options: { source: 'title' } }),
     defineField({ name: 'excerpt', type: 'text' }),
-    defineField({ name: 'mainImage', type: 'image', options: { hotspot: true } }),
+    defineField({
+      name: 'mainImage',
+      type: 'image',
+      options: { hotspot: true },
+      fields: [
+        { name: 'alt', type: 'string' },
+        { name: 'caption', type: 'string' },
+      ],
+    }),
     defineField({ name: 'publishedAt', type: 'datetime' }),
     defineField({ name: 'author', type: 'reference', to: [{ type: 'author' }] }),
     defineField({
@@ -24,6 +32,15 @@ export const post = defineType({
         { type: 'image', fields: [{ name: 'caption', type: 'string' }] },
         { type: 'codeBlock' },
         { type: 'embed' },
+      ],
+    }),
+    defineField({
+      name: 'seo',
+      title: 'SEO',
+      type: 'object',
+      fields: [
+        defineField({ name: 'metaTitle', type: 'string', validation: (Rule) => Rule.max(65) }),
+        defineField({ name: 'metaDescription', type: 'text', validation: (Rule) => Rule.max(155) }),
       ],
     }),
     // metadados legados — auditoria, redirects e reexecução
