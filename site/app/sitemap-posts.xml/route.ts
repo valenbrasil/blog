@@ -1,6 +1,5 @@
 import { getAllPosts } from '@/lib/queries'
-
-const SITE_URL = 'https://bettinacesario.github.io/valen-blog'
+import { SITE_URL } from '@/lib/site-config'
 
 export const dynamic = 'force-static'
 
