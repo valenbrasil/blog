@@ -81,7 +81,18 @@ export function getCachedAsset(url: string): string | null {
   return null
 }
 
-/** Extrai todas as URLs de imagem de um HTML. */
+/**
+ * Variante redimensionada gerada pelo Ghost para o `srcset` responsivo
+ * (`/content/images/size/w600/...`). O `src` do `<img>` aponta sempre para
+ * o arquivo original — é o único que interessa aqui: subir as variantes
+ * seria desperdiçar upload com versões cortadas/reduzidas que o corpo do
+ * post nunca referencia.
+ */
+function isResizedVariant(url: string): boolean {
+  return /\/content\/images\/size\/w\d+\//.test(url)
+}
+
+/** Extrai as URLs de imagem originais (não redimensionadas) de um HTML. */
 export function extractImageUrls(html: string): string[] {
   const urls: string[] = []
   for (const m of html.matchAll(/<img[^>]+src="([^"]+)"/g)) urls.push(m[1])
@@ -91,5 +102,5 @@ export function extractImageUrls(html: string): string[] {
       if (u) urls.push(u)
     }
   }
-  return urls
+  return urls.filter((u) => !isResizedVariant(u))
 }
