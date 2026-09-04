@@ -4,7 +4,38 @@ import { JSDOM } from 'jsdom'
 import { getCachedAsset } from './images'
 import { schemaTypes } from '../sanity/schemaTypes'
 
-const compiled = Schema.compile({ name: 'default', types: schemaTypes })
+/**
+ * `Schema.compile` (o compilador "legacy" usado por @portabletext/block-tools)
+ * não registra sozinho os tipos de sistema que o `image` builtin referencia
+ * internamente (asset/hotspot/crop) — normalmente vêm do bootstrap do Studio,
+ * que este script não roda. Sem eles, compilar qualquer tipo `image` falha
+ * com "Unknown type: sanity.imageHotspot".
+ */
+const systemTypes = [
+  { name: 'sanity.imageAsset', type: 'document', fields: [{ name: 'altText', type: 'string' }] },
+  {
+    name: 'sanity.imageHotspot',
+    type: 'object',
+    fields: [
+      { name: 'x', type: 'number' },
+      { name: 'y', type: 'number' },
+      { name: 'height', type: 'number' },
+      { name: 'width', type: 'number' },
+    ],
+  },
+  {
+    name: 'sanity.imageCrop',
+    type: 'object',
+    fields: [
+      { name: 'top', type: 'number' },
+      { name: 'bottom', type: 'number' },
+      { name: 'left', type: 'number' },
+      { name: 'right', type: 'number' },
+    ],
+  },
+]
+
+const compiled = Schema.compile({ name: 'default', types: [...schemaTypes, ...systemTypes] })
 const blockContentType = compiled
   .get('post')
   .fields.find((f: any) => f.name === 'body').type
