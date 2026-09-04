@@ -1,4 +1,4 @@
-import { getPosts } from './ghost'
+import { getPosts } from './ghostExport'
 import fs from 'node:fs'
 
 const posts = await getPosts()

@@ -1,4 +1,4 @@
-import { getTags } from './ghost'
+import { getTags } from './ghostExport'
 import { client } from './sanityClient'
 import { categoryId } from './ids'
 

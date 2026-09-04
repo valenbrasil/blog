@@ -9,6 +9,12 @@ const cache: Record<string, string> = fs.existsSync(CACHE_FILE)
   ? JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'))
   : {}
 
+// OBRIGATÓRIO (MIGRACAOGHOSTSANITY.md §1.3): --dry-run nunca grava. Em modo
+// dry-run o upload real é pulado; só se confirma que a URL responde e se
+// devolve um _ref sintético (nunca persistido no cache real).
+const DRY_RUN = process.argv.includes('--dry-run')
+const dryRunCache = new Map<string, string | null>()
+
 const limit = pLimit(3) // acima de ~4 o Sanity começa a retornar 429
 
 function persist() {
@@ -17,9 +23,25 @@ function persist() {
 
 export async function uploadAsset(url: string): Promise<string | null> {
   if (cache[url]) return cache[url]
+  if (DRY_RUN && dryRunCache.has(url)) return dryRunCache.get(url)!
 
   return limit(async () => {
     if (cache[url]) return cache[url] // recheca dentro da fila
+
+    if (DRY_RUN) {
+      if (dryRunCache.has(url)) return dryRunCache.get(url)!
+      try {
+        const res = await fetch(url, { method: 'HEAD' })
+        const id = res.ok ? `image-DRYRUN-${Buffer.from(url).toString('base64url').slice(0, 24)}` : null
+        if (!res.ok) console.warn(`⚠ imagem indisponível (${res.status}): ${url}`)
+        dryRunCache.set(url, id)
+        return id
+      } catch (err) {
+        console.warn(`⚠ falha ao checar imagem: ${url}`, err)
+        dryRunCache.set(url, null)
+        return null
+      }
+    }
 
     try {
       const res = await fetch(url)
@@ -54,7 +76,9 @@ export async function uploadImage(url: string) {
 
 /** Consulta síncrona do cache — usada dentro das regras de conversão. */
 export function getCachedAsset(url: string): string | null {
-  return cache[url] ?? null
+  if (cache[url]) return cache[url]
+  if (DRY_RUN) return dryRunCache.get(url) ?? null
+  return null
 }
 
 /** Extrai todas as URLs de imagem de um HTML. */

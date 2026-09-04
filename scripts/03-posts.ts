@@ -1,4 +1,4 @@
-import { getPosts } from './ghost'
+import { getPosts } from './ghostExport'
 import { client } from './sanityClient'
 import { uploadAsset, uploadImage, extractImageUrls } from './images'
 import { convert } from './htmlToPT'

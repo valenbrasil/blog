@@ -1,4 +1,4 @@
-import { getAuthors } from './ghost'
+import { getAuthors } from './ghostExport'
 import { client } from './sanityClient'
 import { uploadImage } from './images'
 import { authorId } from './ids'
