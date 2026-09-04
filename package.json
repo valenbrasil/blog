@@ -1,0 +1,29 @@
+{
+  "name": "valen-blog",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "migrate:authors": "tsx scripts/01-authors.ts",
+    "migrate:tags": "tsx scripts/02-tags.ts",
+    "migrate:posts:dry": "tsx scripts/03-posts.ts --dry-run",
+    "migrate:posts": "tsx scripts/03-posts.ts",
+    "migrate:redirects": "tsx scripts/gen-redirects.ts",
+    "migrate:all": "npm run migrate:authors && npm run migrate:tags && npm run migrate:posts"
+  },
+  "dependencies": {
+    "@portabletext/block-tools": "^5.2.0",
+    "@sanity/client": "^6.29.1",
+    "@sanity/schema": "^3.68.3",
+    "jsdom": "^25.0.1",
+    "p-limit": "^6.2.0",
+    "sanity": "^3.68.3"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.10.2",
+    "dotenv": "^16.4.7",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
