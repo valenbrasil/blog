@@ -37,7 +37,12 @@ jobs:
         working-directory: site
         run: npm run build
 
+      # enablement liga o GitHub Pages (build_type: workflow) pela API na
+      # primeira execução, em vez de exigir que alguém configure
+      # Settings → Pages → Source à mão.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
