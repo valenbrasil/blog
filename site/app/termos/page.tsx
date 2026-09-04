@@ -1,0 +1,17 @@
+import fs from 'node:fs'
+import path from 'node:path'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Termos de Uso',
+}
+
+const html = fs.readFileSync(path.join(process.cwd(), 'content', 'termos.html'), 'utf8')
+
+export default function TermosPage() {
+  return (
+    <div className="mx-auto max-w-3xl px-4 py-12">
+      <div className="prose prose-stone max-w-none" dangerouslySetInnerHTML={{ __html: html }} />
+    </div>
+  )
+}
