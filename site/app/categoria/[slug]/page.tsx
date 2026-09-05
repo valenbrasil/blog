@@ -55,15 +55,12 @@ export default async function CategoryPage({ params }: PageProps<'/categoria/[sl
             Abaixo do título, e não ao lado — a descrição pertence ao bloco de
             identificação da categoria e lê-se na sequência dele.
 
-            A medida cresce pelo corpo da fonte, não pelo número de `ch`: a
-            unidade `ch` mede o glifo "0", mais estreito que a média das letras
-            desta fonte, então 76ch renderizavam cerca de 90 caracteres por
-            linha — largo demais para o olho achar o começo da linha seguinte.
-            Com `text-xl` e 66ch a linha fica em 68 caracteres, dentro da faixa
-            legível, e o parágrafo ocupa 805 de 1032 px (78% do container,
-            contra 68% da versão anterior).
+            Sem limite de medida: o parágrafo ocupa a largura inteira do
+            container, como o resto do cabeçalho. Isso põe a linha acima dos 80
+            caracteres que a tipografia costuma recomendar; a decisão é de
+            ocupar o espaço, e vale para as cinco categorias.
           */
-          <p className="mt-4 max-w-[66ch] text-xl leading-relaxed text-neutral-500">
+          <p className="mt-4 text-xl leading-relaxed text-neutral-500">
             {category.description}
           </p>
         ) : null}
