@@ -13,17 +13,33 @@ import { Avatar } from '@/components/ui/Avatar'
 import { Button } from '@/components/ui/Button'
 import { Breadcrumb, type Crumb } from '@/components/ui/Breadcrumb'
 import { Separator } from '@/components/ui/Separator'
-import { SITE_URL } from '@/lib/site-config'
+import { BASE_PATH, SITE_URL } from '@/lib/site-config'
+import { LEGACY_REDIRECTS } from '@/lib/redirects'
 
 export const dynamicParams = false
 
 export async function generateStaticParams() {
   const slugs = await getAllPostSlugs()
-  return slugs.map((slug) => ({ slug }))
+  // Os slugs antigos entram como rota de verdade: é o que impede a URL
+  // renomeada de virar 404 num site sem servidor para responder 301.
+  return [...slugs, ...Object.keys(LEGACY_REDIRECTS)].map((slug) => ({ slug }))
 }
 
 export async function generateMetadata({ params }: PageProps<'/[slug]'>): Promise<Metadata> {
   const { slug } = await params
+
+  // Página-ponte: o canonical aponta para o destino, nunca para si mesma — é
+  // esse sinal que faz o Google transferir a indexação para o endereço novo.
+  const destino = LEGACY_REDIRECTS[slug]
+  if (destino) {
+    const post = await getPostBySlug(destino)
+    return {
+      title: post?.seo?.metaTitle || post?.title,
+      description: post?.seo?.metaDescription || post?.excerpt,
+      alternates: { canonical: `/${destino}/` },
+    }
+  }
+
   const post = await getPostBySlug(slug)
   if (!post) return {}
 
@@ -75,6 +91,10 @@ export async function generateMetadata({ params }: PageProps<'/[slug]'>): Promis
 
 export default async function PostPage({ params }: PageProps<'/[slug]'>) {
   const { slug } = await params
+
+  const destino = LEGACY_REDIRECTS[slug]
+  if (destino) return <PaginaDeRedirecionamento destino={destino} />
+
   const post = await getPostBySlug(slug)
   if (!post) notFound()
 
@@ -211,6 +231,38 @@ export default async function PostPage({ params }: PageProps<'/[slug]'>) {
           </div>
         </div>
       ) : null}
+    </>
+  )
+}
+
+/**
+ * O que um site estático consegue fazer no lugar de um 301.
+ *
+ * O `<meta http-equiv="refresh">` com zero segundo leva o visitante adiante; o
+ * React 19 iça a tag para o `<head>`, que é onde o navegador a lê. O link
+ * visível é para quem chega com o refresh bloqueado — por extensão, leitor de
+ * tela ou navegador antigo — e para não deixar a página sem conteúdo algum.
+ *
+ * O canonical, que é o sinal que o buscador realmente segue, vem do
+ * generateMetadata acima.
+ */
+function PaginaDeRedirecionamento({ destino }: { destino: string }) {
+  const href = `${BASE_PATH}/${destino}/`
+  return (
+    <>
+      <meta httpEquiv="refresh" content={`0; url=${href}`} />
+      <div className="mx-auto max-w-[760px] px-6 py-24 text-center">
+        <h1 className="font-display text-2xl leading-snug tracking-tight text-neutral-900">
+          Este artigo mudou de endereço
+        </h1>
+        <p className="mt-4 text-neutral-500">
+          Você está sendo levado para a nova página. Se nada acontecer,{' '}
+          <a href={href} className="text-sage-700 underline">
+            abra o artigo aqui
+          </a>
+          .
+        </p>
+      </div>
     </>
   )
 }

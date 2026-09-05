@@ -213,24 +213,19 @@ A coluna `_rev anterior` é preenchida no momento do patch — é o que permite 
 | 205 | `post-686aef2a90342d000185eb40` | metodo-valenbrasil-o-arquiteto-digital | pendente | — | — | — |
 | 206 | `post-686aef2a90342d000185eb37` | o-que-e-um-arquiteto | pendente | — | — | — |
 
-### Canibalização — pares críticos
+### Renomeação de slug — `direito-imobiliario-2` → `advocacia-imobiliaria`
 
-Sete artigos diferenciados e ligados dois a dois, em 7 patches. A
-diferenciação mexe em `title`, `metaTitle` e `metaDescription`; o link cruzado
-entra como anotação nova em `markDefs`, com a âncora recortada de um span já
-existente — o texto do parágrafo não muda um caractere, e isso é conferido por
-asserção antes de gravar.
+Autorizada explicitamente pelo autor, com o custo declarado antes: o endereço
+antigo estava publicado desde out/2025 e constava do sitemap do Ghost.
 
-| Par | Ação | Como ficaram distintos |
-|---|---|---|
-| `reajuste-de-aluguel` / `indices-reajuste-aluguel` | diferenciar + ligar | regras da Lei do Inquilinato e negociação · escolha do índice e cálculo |
-| `imposto-sobre-venda-imoveis` / `imposto-de-renda-sobre-venda-de-imovel` | hierarquizar + ligar | pilar com ITBI e IR · artigo específico de ganho de capital |
-| `milan-design-week` / `milan-design-week-fuorisalone` | diferenciar + ligar | o Salone del Mobile e sua história · o circuito off de 2024 |
-| `valores-mobiliarios` / `comissao-valores-mobiliarios-cvm` | diferenciar + ligar | o instrumento financeiro · o órgão regulador |
-| `direito-imobiliario` / `direito-imobiliario-2` | **pendente** | duplicata real — exige decisão sobre qual URL sobrevive |
+Como o site é `output: 'export'` e não emite 301, a URL antiga continua sendo uma
+rota gerada — uma página-ponte com `<link rel="canonical">` para o endereço novo
+e `<meta http-equiv="refresh">` de zero segundo. Fica fora do sitemap de
+propósito: é ponte, não conteúdo. O mapa vive em `site/lib/redirects.ts` e serve
+para qualquer renomeação futura.
 
-Uma direção de link ficou faltando: `imposto-de-renda-sobre-venda-de-imovel` não
-tem parágrafo que cite ITBI ou os demais tributos, então não há âncora natural
-de volta para o artigo pilar. Pelo próprio critério do plano, âncora ausente é
-sinal de lacuna de conteúdo — cabe uma frase nova, não um link forçado.
+O artigo também foi diferenciado do irmão, que era a origem do problema: H1,
+metaTitle e metaDescription passaram a falar de advocacia imobiliária, e um link
+âncora leva de volta a `direito-imobiliario`. Backup em
+`_seo/backups/pre-slug/`, com o `_rev` anterior registrado.
 
