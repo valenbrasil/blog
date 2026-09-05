@@ -153,6 +153,15 @@ def aplicar(plano, seco=False):
 
     sanity.mutate([{'patch': {'id': doc['_id'], 'ifRevisionID': doc['_rev'],
                               'set': {'body': body}}}])
+    # registra a gravacao. Inferir "aplicado" pela contagem de links mente sobre
+    # o artigo que foi densificado e ficou abaixo de 10 por honestidade.
+    reg = '/tmp/dens/aplicados.json'
+    try:
+        feitos = set(json.load(open(reg, encoding='utf-8')))
+    except Exception:
+        feitos = set()
+    feitos.add(slug)
+    json.dump(sorted(feitos), open(reg, 'w', encoding='utf-8'), ensure_ascii=False)
     return {'slug': slug, 'novos_links': novos_links,
             'palavras_antes': len(antes.split()), 'palavras_depois': len(depois.split())}
 

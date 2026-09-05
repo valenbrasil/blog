@@ -47,14 +47,21 @@ def varrer():
 
 def main():
     planos, vereditos, lotes = varrer()
+    # o que o aplica.py realmente gravou, anotado por ele a cada gravacao
+    try:
+        gravados = set(json.load(open('/tmp/dens/aplicados.json', encoding='utf-8')))
+    except Exception:
+        gravados = set()
     inv = {r['slug']: r for r in json.load(open(INV, encoding='utf-8'))}
 
     estado = {}
     for slug, r in inv.items():
-        # a contagem do inventario e a verdade: se o artigo ja esta na faixa,
-        # o plano dele foi gravado, e o estado e 'aplicado' -- nao 'aprovado'.
-        # Roda dump.py antes daqui para o inventario estar atualizado.
-        if r['ext'] >= 10:
+        # 'aplicado' vem do registro do que o aplica.py gravou, nao da contagem
+        # de links: um artigo densificado que ficou abaixo de 10 por honestidade
+        # -- porque o assunto nao comportava dez fontes de verdade -- continua
+        # aplicado, e inferir pelo numero o mostrava como pendente.
+        # A contagem entra so para os que ja estavam na faixa antes disto tudo.
+        if slug in gravados or r['ext'] >= 10:
             e = 'aplicado'
         elif slug in planos and slug in vereditos:
             e = 'aprovado'
