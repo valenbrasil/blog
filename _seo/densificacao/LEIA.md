@@ -13,6 +13,7 @@ sobrevive à reciclagem do container. Sem isto, retomar significaria refazer.
 | `verificar.py` | confere uma URL antes de ela virar link: status, e se o **texto** da página contém o que a frase vai afirmar. Manda User-Agent de navegador porque o Planalto recusa o do curl e devolve conexão vazia |
 | `aplica.py` | grava no Sanity. Só operação aditiva; assere antes de escrever que todo parágrafo do autor continua presente na mesma ordem |
 | `estado.py` | fotografa onde tudo parou. Só lê arquivo, não gasta agente |
+| `cirurgia.py` | tira link morto: `destroca` (tira o link, mantém o texto), `troca_href` e `remove` (apaga bloco cujo conteúdo *é* o endereço morto). Separado do `aplica.py` de propósito — aquele é aditivo e se recusa a perder texto |
 | `vigia.sh` | vigia de uso: sai ao primeiro sinal de limite numa saída nova, ao passar do teto de tokens, ou quando os lotes silenciam |
 
 Antes de usar, recrie a base:

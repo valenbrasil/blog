@@ -46,6 +46,32 @@ const LinkMark: PortableTextMarkComponent<LinkAnnotation> = ({ value, children }
   )
 }
 
+/*
+  Troca o domínio do player do YouTube pelo domínio sem cookie.
+
+  `www.youtube.com/embed/...` grava cookies no navegador de quem só rolou a
+  página até o vídeo — o `loading="lazy"` adia a requisição, não a condiciona a
+  clique. `www.youtube-nocookie.com` serve o mesmo player sem gravar
+  identificador antes de o visitante dar play. A política de privacidade
+  descreve o que este domínio faz; mudar um sem o outro deixaria os dois em
+  desacordo.
+
+  A troca fica aqui e não no dado do Sanity para valer também para vídeo que
+  a redação publicar depois, sem depender de ninguém lembrar da regra.
+*/
+function semCookie(url: string) {
+  try {
+    const u = new URL(url)
+    if (u.hostname === 'www.youtube.com' || u.hostname === 'youtube.com') {
+      u.hostname = 'www.youtube-nocookie.com'
+      return u.toString()
+    }
+  } catch {
+    // URL inválida no CMS: devolve como veio, para o vídeo não sumir da página
+  }
+  return url
+}
+
 const components: PortableTextComponents = {
   marks: {
     link: LinkMark,
@@ -86,10 +112,12 @@ const components: PortableTextComponents = {
     embed: ({ value }) => (
       <div className="my-8 aspect-video">
         <iframe
-          src={value.url}
+          src={semCookie(value.url)}
+          title="Vídeo"
           className="h-full w-full rounded-card"
           allowFullScreen
           loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
         />
       </div>
     ),

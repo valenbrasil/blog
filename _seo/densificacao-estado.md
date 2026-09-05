@@ -33,3 +33,24 @@ Workflow({scriptPath: ".../densificar-links-externos-wf_a0b9fc3c-37f.js",
 Ordem: menos links primeiro, artigo maior primeiro dentro de cada faixa.
 
 152 artigos. Slugs em `/tmp/dens/estado.json`.
+
+## Links mortos — o que era e o que não era
+
+A varredura das 605 URLs externas do HTML gerado devolveu 50 com problema.
+Nenhuma delas veio da densificação: todas são de passadas anteriores. Mas a
+maioria **não estava morta** — era o ambiente desta sessão que não as alcança.
+
+| URL | Veredito | O que foi feito |
+|---|---|---|
+| `avaliador.caicba.com.br` | **morta**: o host não resolve em DNS, e o domínio `caicba.com.br` também não | bloco removido — o conteúdo dele *era* o endereço |
+| `portalibre.fgv.br/igp` | **viva**: responde 200 no curl com User-Agent de navegador | nada. Eram 10 das 16 ocorrências, e removê-las teria sido o estrago |
+| `adobe.com/pt/products/fresco.html#` | inalcançável daqui, mas a Adobe está no ar | `#` solto retirado e caminho corrigido para `/br/` |
+| `ufrgs.br`, `ufsj.edu.br`, `siccau.caubr.org.br`, `jardindelturia.com`, `ricardobofill.com` | **não verificáveis daqui** | nada |
+
+Os cinco últimos resolvem DNS e falham na conexão. O log do proxy registra
+`connect_rejected` e `ws_closed_mid_exchange` para eles — falha do relay, não
+prova de site fora do ar. `adobe.com`, que certamente está no ar, falha do mesmo
+jeito. Remover link com base nisso apagaria destino vivo.
+
+**Para fechar isto:** abra os cinco num navegador. O que estiver morto entra num
+plano do `cirurgia.py`, que já sabe removê-lo.
