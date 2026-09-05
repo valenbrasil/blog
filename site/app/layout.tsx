@@ -68,11 +68,18 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       lang="pt-BR"
       className={`${jost.variable} ${manrope.variable} ${jetbrainsMono.variable}`}
     >
+      {/*
+        O GA fica num <head> explícito porque o Search Console verifica a
+        propriedade lendo o HTML CRU da página inicial: ele não executa
+        JavaScript. Ver o comentário de Analytics() para o que isso quebrava.
+      */}
+      <head>
+        <Analytics />
+      </head>
       <body className="flex min-h-screen flex-col">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        <Analytics />
         <AhrefsAnalytics />
       </body>
     </html>
@@ -115,18 +122,35 @@ function AhrefsAnalytics() {
 function Analytics() {
   if (process.env.NODE_ENV !== 'production') return null
 
+  /*
+    Tag <script> literal, e não `next/script`, de propósito.
+
+    Com `strategy="afterInteractive"` o Next não emite a tag no HTML: ele emite
+    apenas um <link rel="preload"> e injeta o <script> de verdade na hidratação.
+    Medido no HTML servido antes da troca:
+
+        <head>   preload=1  <script src=gtag>=0  gtag()=0
+        <body>   preload=0  <script src=gtag>=0  gtag()=3
+
+    Para o navegador dá no mesmo — o GA carrega e mede. Mas o Search Console
+    verifica a propriedade lendo o HTML cru da home, sem executar JavaScript, e
+    por isso recusava com "o código de acompanhamento está no local incorreto da
+    página; verifique com o snippet na seção <head>".
+
+    `async` preserva o motivo pelo qual `afterInteractive` estava ali: a tag
+    está no <head>, mas não bloqueia a renderização do artigo.
+  */
   return (
     <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        strategy="afterInteractive"
-      />
-      <Script id="ga-init" strategy="afterInteractive">
-        {`window.dataLayer = window.dataLayer || [];
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '${GA_MEASUREMENT_ID}');`}
-      </Script>
+gtag('config', '${GA_MEASUREMENT_ID}');`,
+        }}
+      />
     </>
   )
 }
