@@ -49,3 +49,21 @@ O que continua permitido, e já está no acervo: citar a norma pelo número, diz
 que ela é a referência técnica da avaliação no Brasil, e linkar a
 [página da ABNT](https://www.abnt.org.br/) onde ela é vendida. O que não entra é
 o conteúdo dela.
+
+## Art. 33 — pendência fechada
+
+A seção 8 da política dizia que a verificação de qual hipótese do art. 33 ampara
+cada transferência "depende dos contratos firmados e ainda não foi concluída".
+Isso pressupunha contratos negociados que existiriam e não teriam sido lidos.
+
+O autor informou que **todas as contas são gratuitas e não há contrato negociado
+com nenhum fornecedor**. O texto passou a dizer isso: as contas foram abertas
+sob os termos padrão que cada empresa publica — os mesmos que valem para
+qualquer cliente —, e são esses termos, linkados no próprio parágrafo, que regem
+o que cada um pode fazer com os dados e que garantias oferece na transferência.
+
+Mais honesto e mais informativo que a redação anterior, que deixava o leitor
+imaginando um contrato que ninguém assinou. A política não afirma qual inciso do
+art. 33 se aplica: isso é conclusão jurídica, e continua fora do que este
+trabalho pode declarar.
+

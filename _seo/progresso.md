@@ -409,6 +409,10 @@ o que continua em aberto.
    - ~~Data errada em `direito-e-patrimonio-lei-do-inquilinato`~~ — **corrigida**.
      O texto atribuía a 2023 uma reforma que é da Lei 12.112/2009, e dava como
      exemplo o art. 17, que é de 1991. Ver o relatório do artigo.
+   - ~~Base do art. 33 para a transferência internacional~~ — **fechada**. Não
+     há contrato negociado: todas as contas são gratuitas, abertas sob os termos
+     padrão que cada fornecedor publica. A seção 8 diz isso e aponta os termos
+     de Google, GitHub, Ahrefs e Sanity, todos conferidos vivos.
    - ~~NBR 14653, graus de fundamentação e de precisão~~ — **decidido: não vai
      ser publicado.** O texto da norma é conteúdo pago da ABNT, protegido por
      direito autoral, e reproduzir as tabelas de grau seria pirataria. Continua
