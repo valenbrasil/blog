@@ -45,7 +45,7 @@ blog montadas com eles.
 | `/pagina/[n]/` | páginas 2 em diante, 12 cards cada (`noindex`) |
 | `/[slug]/` | artigo — mesmo padrão de URL do Ghost antigo, sem prefixo |
 | `/categoria/[slug]/` | todos os artigos da categoria |
-| `/privacidade/`, `/termos/` | HTML fixo de `content/` |
+| `/politica-de-privacidade/`, `/termos-de-uso/` | HTML fixo de `content/` — slugs herdados do Ghost |
 | `sitemap.xml`, `sitemap-posts.xml`, `robots.txt` | gerados no build |
 
 ## Endereço público

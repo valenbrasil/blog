@@ -7,10 +7,10 @@ export function Footer() {
       <div className="mx-auto flex max-w-[1080px] flex-col items-center gap-4 px-6 text-sm text-neutral-500 sm:flex-row sm:justify-between">
         <span>{year} @ valenbrasil.com | Todos os Direitos Reservados.</span>
         <nav className="flex gap-5">
-          <Link href="/privacidade" className="text-neutral-500 hover:text-sage-700">
+          <Link href="/politica-de-privacidade" className="text-neutral-500 hover:text-sage-700">
             Política de Privacidade
           </Link>
-          <Link href="/termos" className="text-neutral-500 hover:text-sage-700">
+          <Link href="/termos-de-uso" className="text-neutral-500 hover:text-sage-700">
             Termos de Uso
           </Link>
         </nav>

@@ -14,7 +14,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: post.publishedAt,
     })),
     ...categories.map((category) => ({ url: `${SITE_URL}/categoria/${category.slug}/` })),
-    { url: `${SITE_URL}/privacidade/` },
-    { url: `${SITE_URL}/termos/` },
+    { url: `${SITE_URL}/politica-de-privacidade/` },
+    { url: `${SITE_URL}/termos-de-uso/` },
   ]
 }
