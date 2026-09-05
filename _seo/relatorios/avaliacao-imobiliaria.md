@@ -64,14 +64,7 @@ do Planalto antes de entrar no artigo.
 
 ## Recomendações que exigem decisão do autor
 
-- **Contradição entre corpo e FAQ**: o corpo lista os métodos como comparativo,
-  evolutivo, involutivo e capitalização da renda; a FAQ diz "Comparativo Direto
-  de Dados de Mercado, Capitalização da Renda e método do Custo". São
-  nomenclaturas diferentes para conjuntos diferentes, na mesma página.
-
-- **Resíduo de edição visível ao leitor**: na seção "Estado de Conservação" há
-  dois parágrafos que começam literalmente com "Antes:" e "Depois:" — sobra de
-  um rascunho de reescrita que foi publicado.
+(As duas primeiras foram corrigidas depois, a pedido do autor — ver abaixo.)
 
 - **A NBR 14653 nunca é citada**, embora o artigo descreva exatamente os quatro
   métodos que ela normatiza e fale em "normas técnicas" de forma genérica. É a
@@ -84,3 +77,33 @@ do Planalto antes de entrar no artigo.
 - **Abertura com padrão proibido**: "Neste guia completo, você vai entender...".
 
 - **H2 genérico**: "Resumo".
+
+## Correções aplicadas depois, a pedido do autor
+
+**Resíduo de rascunho na seção "Estado de Conservação".** Dois parágrafos
+começavam com "Antes:" e "Depois:" — um par A/B de reescrita que foi publicado
+por engano. O bloco "Antes:" foi removido e o prefixo "Depois: " retirado do
+outro.
+
+Esta é a única remoção de conteúdo de toda a auditoria, e o plano só a permite
+para duplicação literal. Ela se justifica: os dois blocos compartilham a mesma
+frase de abertura, palavra por palavra, e tudo o que o "Antes:" dizia a mais
+("a documentação dessas falhas é crucial"; "problemas estruturais podem
+desvalorizar significativamente a propriedade e tornar a venda desvantajosa")
+aparece na versão mantida — nos marcadores "Documentação das falhas" e
+"Impacto na desvalorização da propriedade", e no fecho, que repete a frase quase
+literalmente. Antes de remover, o script verificou a presença do núcleo comum nos
+dois blocos e do fecho no corpo; sem isso, abortaria.
+
+Custo: −40 palavras, de 2.844 para 2.804. Nenhuma informação perdida.
+
+**Contradição entre corpo e FAQ.** O corpo lista quatro métodos — comparativo,
+evolutivo, involutivo e capitalização da renda; a FAQ listava três, com
+nomenclatura de outra família: "Comparativo Direto de Dados de Mercado,
+Capitalização da Renda e método do Custo".
+
+A FAQ estava errada, não só divergente. Método do custo pertence ao conjunto de
+métodos para identificar **custo**, não valor — não é alternativa ao comparativo
+nem ao involutivo. A resposta foi reescrita para espelhar os quatro do corpo e
+acrescentar o critério de escolha, que a versão antiga não dava.
+
