@@ -1,5 +1,7 @@
 node_modules/
-.env.local
+# qualquer variante: .env.local, .env.local.bak, .env.producao...
+# o repositorio e publico, entao a rede tem de ser mais larga que um nome exato
+.env*
 .cache/
 dist/
 *.log
