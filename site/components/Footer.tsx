@@ -3,14 +3,14 @@ import Link from 'next/link'
 export function Footer() {
   const year = new Date().getFullYear()
   return (
-    <footer className="border-t border-stone-200">
-      <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 px-4 py-8 text-sm text-stone-500 sm:flex-row sm:justify-between">
-        <p>&copy; {year} Valen Brasil</p>
-        <nav className="flex gap-4">
-          <Link href="/privacidade" className="hover:text-stone-900">
+    <footer className="mt-24 border-t border-neutral-200 bg-neutral-50 py-8">
+      <div className="mx-auto flex max-w-[1080px] flex-col items-center gap-4 px-6 text-sm text-neutral-500 sm:flex-row sm:justify-between">
+        <span>{year} @ valenbrasil.com | Todos os Direitos Reservados.</span>
+        <nav className="flex gap-5">
+          <Link href="/privacidade" className="text-neutral-500 hover:text-sage-700">
             Política de Privacidade
           </Link>
-          <Link href="/termos" className="hover:text-stone-900">
+          <Link href="/termos" className="text-neutral-500 hover:text-sage-700">
             Termos de Uso
           </Link>
         </nav>

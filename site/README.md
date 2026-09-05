@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Site do blog
 
-## Getting Started
-
-First, run the development server:
+Next.js App Router com `output: 'export'` — o build gera HTML estático, sem
+servidor. O conteúdo vem do Sanity (projeto `jk3z4mls`, dataset `production`,
+público) em tempo de build, então uma publicação nova no Studio só aparece
+depois de rodar o workflow de deploy.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # http://localhost:3000/blog
+npm run build   # gera out/
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Design system
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O visual segue o guia da Valen Brasil: <https://valenbrasil.github.io/design/>
+— especificamente o kit de blog em `ui_kits/blog/`.
 
-## Learn More
+O guia é a fonte da verdade dos tokens. `app/globals.css` traz uma cópia deles
+(cores, tipografia, espaçamento, raios, sombras, movimento) e a ponte para as
+utilitárias do Tailwind; mudança de token começa no guia e desce para cá, nunca
+o contrário.
 
-To learn more about Next.js, take a look at the following resources:
+Três coisas que o guia impõe e que é fácil desfazer sem perceber:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **O sistema é exclusivamente claro.** Não existe tema escuro, nem bloco
+  `.dark`, nem seção de fundo escuro. É a regra número 1 do guia.
+- **Verde é acento, não fundo.** Botão primário, ícones, links, badges e estado
+  ativo de navegação. Texto verde usa sempre o `sage-700`: o `sage-500` sobre
+  branco não atinge AA em texto pequeno.
+- **A marca nunca é redesenhada.** O logo são os dois PNGs em `public/`
+  (`valen-logo.png`, `valen-icone.png`), usados como imagem — nunca recriados
+  em texto, SVG ou CSS.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`components/ui/` são os componentes do design system (Logo, Badge, Button,
+Card, Separator, Breadcrumb, Pagination, Avatar); `components/` são as peças do
+blog montadas com eles.
 
-## Deploy on Vercel
+## Rotas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Rota | Origem |
+|---|---|
+| `/` | primeira página do feed: destaque + 12 cards |
+| `/pagina/[n]/` | páginas 2 em diante, 12 cards cada (`noindex`) |
+| `/[slug]/` | artigo — mesmo padrão de URL do Ghost antigo, sem prefixo |
+| `/categoria/[slug]/` | todos os artigos da categoria |
+| `/privacidade/`, `/termos/` | HTML fixo de `content/` |
+| `sitemap.xml`, `sitemap-posts.xml`, `robots.txt` | gerados no build |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Endereço público
+
+`NEXT_PUBLIC_BASE_PATH` e `NEXT_PUBLIC_SITE_URL`, lidos por `lib/site-config.ts`
+e definidos no workflow de deploy. Num GitHub Pages de projeto o site é servido
+sob o nome do repositório (`/blog`); com domínio próprio, basta
+`NEXT_PUBLIC_BASE_PATH=''` e a URL do domínio.

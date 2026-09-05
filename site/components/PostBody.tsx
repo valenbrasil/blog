@@ -14,10 +14,10 @@ const components: PortableTextComponents = {
             alt={value.alt || ''}
             width={1200}
             height={800}
-            className="rounded-lg w-full h-auto"
+            className="h-auto w-full rounded-card"
           />
           {value.caption ? (
-            <figcaption className="mt-2 text-sm text-stone-500 text-center">
+            <figcaption className="mt-2 text-center text-sm text-neutral-500">
               {value.caption}
             </figcaption>
           ) : null}
@@ -25,7 +25,7 @@ const components: PortableTextComponents = {
       )
     },
     codeBlock: ({ value }) => (
-      <pre className="my-6 overflow-x-auto rounded-lg bg-stone-900 p-4 text-sm text-stone-100">
+      <pre className="my-6 overflow-x-auto rounded-card bg-neutral-900 p-4 font-mono text-sm text-neutral-100">
         <code>{value.code}</code>
       </pre>
     ),
@@ -33,7 +33,7 @@ const components: PortableTextComponents = {
       <div className="my-8 aspect-video">
         <iframe
           src={value.url}
-          className="h-full w-full rounded-lg"
+          className="h-full w-full rounded-card"
           allowFullScreen
           loading="lazy"
         />
@@ -45,7 +45,7 @@ const components: PortableTextComponents = {
 export function PostBody({ body }: { body: BodyBlock[] }) {
   if (!body || body.length === 0) return null
   return (
-    <div className="prose prose-stone max-w-none">
+    <div className="prose prose-valen max-w-none">
       <PortableText value={body} components={components} />
     </div>
   )
