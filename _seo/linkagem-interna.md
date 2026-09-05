@@ -144,9 +144,23 @@ href repetido no mesmo artigo ...............   62  →  42
 links internos sem barra final ..............  202  →   0
 ```
 
-Os 42 hrefs repetidos que sobraram são todos `https://valenbrasil.com/`, o
-caminho de conversão do site. Repetir o link institucional dentro de um artigo é
-decisão comercial do autor, não defeito, então ficaram intocados.
+As repetições do link institucional também saíram, por decisão do autor: 43
+artigos apontavam mais de uma vez para `https://valenbrasil.com/`, num total de
+**56 links excedentes**. Ficou um por artigo, e a escolha de qual manter não foi
+"o primeiro": o Google usa a âncora do primeiro link, e em vários casos uma das
+ocorrências tinha âncora descritiva ("avaliação de imóveis", "laudo técnico")
+enquanto a outra era o domínio cru "valenbrasil.com". Manteve-se a primeira com
+âncora descritiva, caindo para a primeira quando todas eram o domínio.
+
+Depois disso, o acervo tem **zero hrefs repetidos** em qualquer artigo e **zero
+markDefs órfãos**.
+
+Sobra um caso que não é duplicata e não foi tocado: em
+`avaliacao-imovel-comercial`, a âncora "imóveis comerciais" atravessa uma
+fronteira de negrito. É **um único markDef**, mas o renderizador emite um `<a>`
+por span, então o HTML sai com dois `<a>` adjacentes para o mesmo endereço.
+Consertar no dado exigiria mudar o negrito do autor ou encurtar a âncora — os
+dois piores que o defeito.
 
 As duas imagens sem `alt` foram descritas depois de abertas — nada afirmado além
 do que se vê. No campus da biografia do Norman Foster, por exemplo, o texto não
