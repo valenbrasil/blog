@@ -302,10 +302,20 @@
   line-height: var(--leading-relaxed);
 }
 
-.prose-valen :is(h2, h3, h4) {
+.prose-valen :is(h1, h2, h3, h4) {
   font-family: var(--font-display);
   font-weight: var(--weight-regular);
   letter-spacing: var(--tracking-tight);
+}
+
+/*
+  As duas paginas legais entregam o titulo do documento dentro do prose, e o
+  titulo delas e o h1 da pagina. Mesmo corpo dos h1 de artigo e de categoria.
+*/
+.prose-valen h1 {
+  font-size: var(--text-4xl);
+  line-height: var(--leading-tight);
+  font-weight: var(--weight-light);
 }
 
 .prose-valen h2 {
