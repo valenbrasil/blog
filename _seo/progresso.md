@@ -403,8 +403,9 @@ o que continua em aberto.
    - Valores sem fonte: "a Caixa paga entre R$ 1.000 e R$ 3.000 por laudo"; e em
      `perito-imobiliario`, mercado de R$ 200 bi, honorários de R$ 3.000 a 25.000
      e formação de R$ 8.000 a 15.000.
-   - Data errada em `direito-e-patrimonio-lei-do-inquilinato`: o texto atribui a
-     2023 a mudança no processo de despejo, que é da Lei 12.112/2009.
+   - ~~Data errada em `direito-e-patrimonio-lei-do-inquilinato`~~ — **corrigida**.
+     O texto atribuía a 2023 uma reforma que é da Lei 12.112/2009, e dava como
+     exemplo o art. 17, que é de 1991. Ver o relatório do artigo.
    - NBR 14653, graus de fundamentação e de precisão — a maior expansão ainda
      disponível, em três artigos, mas exige o texto da norma, que é pago.
    - Estrutura: um H2 genérico "Resumo"; em `perito-imobiliario` um H2

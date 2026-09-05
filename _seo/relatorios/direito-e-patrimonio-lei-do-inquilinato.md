@@ -48,13 +48,8 @@ documentos distintos, não repetição da mesma fonte.
 
 ## Pendências de verificação
 
-- `[VERIFICAR: "Recentemente, em 2023, ocorreram mudanças significativas na
-  legislação que impactaram diretamente o processo de despejo"]` — não encontrei
-  alteração de 2023 na Lei do Inquilinato com esse efeito. A reforma que mudou o
-  rito do despejo é a **Lei 12.112/2009**. A proibição de aluguel em moeda
-  estrangeira, citada logo em seguida como novidade, está no **art. 17 desde
-  1991**. Não linkei nada nessa frase justamente porque a fonte contradiria o
-  texto: corrigir a data é decisão do autor.
+- ~~Data de 2023~~ — **corrigido**, com autorização do autor. Ver a seção
+  seguinte.
 
 - Duas fontes do **STJ** são diretamente pertinentes — jurisprudência sobre
   denúncia vazia e sobre ação renovatória — mas `stj.jus.br` responde 403 a
@@ -79,3 +74,32 @@ documentos distintos, não repetição da mesma fonte.
 - **Seção fora do escopo do artigo.** "Estratégia Essencial no Mercado
   Imobiliário" fala de avaliação por peritos numa página sobre locação. Serve à
   conversão, mas dilui a relevância semântica para a palavra-chave.
+
+## Correção da data da reforma
+
+O parágrafo de abertura afirmava que "recentemente, em 2023, ocorreram mudanças
+significativas na legislação que impactaram diretamente o processo de despejo", e
+dava como exemplo a proibição de aluguel em moeda estrangeira. Duas afirmações,
+as duas erradas.
+
+O texto compilado da Lei 8.245/91 no Planalto lista **três** leis alteradoras —
+9.256/1996, 11.196/2005 e 12.112/2009 — e **nenhuma menção a 2023**. E a vedação
+de estipular o aluguel em moeda estrangeira é o **art. 17, do texto original de
+1991**, não novidade recente.
+
+A reforma que de fato mexeu no processo de despejo é a **Lei 12.112/2009**. Ela:
+
+- acrescentou hipóteses de liminar para desocupação em quinze dias no art. 59,
+  § 1º, entre elas a locação desprovida de garantia e as reparações urgentes
+  determinadas pelo poder público;
+- deu nova redação ao **art. 62**, que rege a ação de despejo por falta de
+  pagamento;
+- deu nova redação ao **art. 63**, que passou a determinar a expedição do
+  mandado de despejo com prazo de trinta dias para desocupação voluntária.
+
+O parágrafo foi reescrito com esses dados, todos lidos no texto oficial. Nenhum
+link novo foi acrescentado: a Lei 12.112/2009 já era citada no bloco 45, e
+repetir o mesmo endereço no artigo é o defeito que a varredura de duplicatas
+corrige.
+
+Backup em `_seo/backups/pre-data-inquilinato/`.
