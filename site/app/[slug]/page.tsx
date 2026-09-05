@@ -99,7 +99,7 @@ export default async function PostPage({ params }: PageProps<'/[slug]'>) {
   if (!post) notFound()
 
   const category = post.categories?.[0]
-  const related = await getRelatedPosts(slug, category?.slug)
+  const related = await getRelatedPosts(slug)
   const imageUrl = post.mainImage
     ? urlFor(post.mainImage).width(1600).height(900).fit('crop').auto('format').url()
     : null
