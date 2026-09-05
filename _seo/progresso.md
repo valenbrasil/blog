@@ -387,8 +387,9 @@ o que continua em aberto.
    e 537 delas foram restauradas com a legenda em `caption`. Detalhado em
    `_seo/imagens-restauradas.md`.
 
-3. **59 fórmulas de escrita proibidas, em 54 artigos.** Reescrita frase a frase
-   na voz do autor. Trocar uma muleta por outra não resolve o que o plano evita.
+3. ~~59 fórmulas de escrita proibidas~~ — **resolvido**. Eram 160 em 104
+   artigos, não 59 em 54. Restam 3 superlativos que a própria frase sustenta.
+   Detalhado em `_seo/formulas-proibidas.md`.
 
 4. **Canibalização: 255 pares sinalizados, 5 resolvidos.** O grosso é ruído do
    índice — todo slug com "direito" pareia com `oab-sc`. Os pares reais ainda

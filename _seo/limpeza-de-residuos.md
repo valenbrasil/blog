@@ -10,7 +10,7 @@ Rodada sobre os 206 artigos, procurando os dois padrões encontrados em
 | 1 | Resíduo de edição publicado | 4 | **1** (falso positivo, ver abaixo) |
 | 2 | Duplicação literal no mesmo artigo | 7 pares | **0** |
 | 3 | Legenda de imagem como parágrafo | 794 em 82 artigos | **0** — ver abaixo |
-| 4 | Padrões de escrita proibidos pelo plano | 59 em 54 artigos | 59 — não tratado |
+| 4 | Padrões de escrita proibidos pelo plano | 59 em 54 artigos | **3** — ver abaixo |
 | 5 | FAQ citando termo ausente do corpo | 0 | 0 |
 
 ## 1. Resíduo de edição — corrigido em 2 artigos
@@ -78,7 +78,8 @@ trouxe o texto da legenda como parágrafo e deixou a imagem para trás. As
 Corrigir a legenda de verdade era trazer a imagem de volta. Detalhado em
 `_seo/imagens-restauradas.md`.
 
-**Item 4 — 59 fórmulas proibidas em 54 artigos.** Cada uma exige reescrever a
-frase preservando a voz do autor. É trabalho de redação, artigo a artigo, não
-substituição mecânica: trocar "é importante destacar" por outra muleta não
-resolve o que o plano quer evitar.
+**Item 4 — resolvido, e o número era maior.** Refeita a detecção com todos os
+padrões do plano, eram **160 ocorrências em 104 artigos**, não 59 em 54. Restam
+3, e são superlativos que a própria frase sustenta — o plano proíbe superlativo
+*sem sustentação*, e essa condição faz diferença. Detalhado em
+`_seo/formulas-proibidas.md`.
