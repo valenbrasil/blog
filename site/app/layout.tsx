@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 import { Jost, Manrope, JetBrains_Mono } from 'next/font/google'
+import Script from 'next/script'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { GA_MEASUREMENT_ID } from '@/lib/site-config'
 import { SITE_URL } from '@/lib/site-config'
 import './globals.css'
 
@@ -70,7 +72,37 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
+  )
+}
+
+/**
+ * Google Analytics 4.
+ *
+ * `afterInteractive` porque medir audiência não pode competir com a renderização
+ * do artigo: o script sobe depois que a página está utilizável.
+ *
+ * Só em produção. O valor é decidido no build, então `next dev` sai sem o
+ * script — sem isso, cada sessão de desenvolvimento entraria no relatório como
+ * visita real e sujaria justamente a métrica que o GA existe para dar.
+ */
+function Analytics() {
+  if (process.env.NODE_ENV !== 'production') return null
+
+  return (
+    <>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="ga-init" strategy="afterInteractive">
+        {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_MEASUREMENT_ID}');`}
+      </Script>
+    </>
   )
 }
