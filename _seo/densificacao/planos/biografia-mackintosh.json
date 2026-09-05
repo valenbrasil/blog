@@ -1,0 +1,248 @@
+{
+ "plano": {
+  "slug": "biografia-mackintosh",
+  "ancoras": [
+   {
+    "chave": "8bd37ee2a432",
+    "ancora": "Escola de Arte de Glasgow",
+    "href": "https://www.gsa.ac.uk/",
+    "sustentacao": "Site institucional da instituição, título da página \"The Glasgow School of Art\"; verificador: viva true, termo \"Glasgow School of Art\" presente."
+   },
+   {
+    "chave": "01c4512e93e0",
+    "ancora": "igreja Queen's Cross",
+    "href": "https://www.crmsociety.com/crm-society/mackintosh-queens-cross/",
+    "sustentacao": "A página diz: \"The only church designed by Mackintosh to be built and now the Society's International headquarters\"; verificador: viva true, termo \"only church\" presente."
+   },
+   {
+    "chave": "01c4512e93e0",
+    "ancora": "Margaret Macdonald",
+    "href": "https://www.crmsociety.com/mackintosh/margaret-macdonald/",
+    "sustentacao": "Página da CRM Society sobre Margaret Macdonald: estudou na Glasgow School of Art, casou-se com Mackintosh em 1900 e colaborou nos painéis das salas de chá e da Hill House; verificador: viva true."
+   },
+   {
+    "chave": "3e08812a35eb",
+    "ancora": "Willow Tea Rooms",
+    "href": "https://www.nts.org.uk/stories/mackintosh-at-the-willow-joins-trust",
+    "sustentacao": "National Trust for Scotland: \"Mackintosh at the Willow dates to 1903 and is the last remaining original of the several tea rooms designed by Charles Rennie Mackintosh and his wife Margaret Macdonald for Glasgow entrepreneur Miss Catherine (Kate) Cranston\"; verificador: viva true, termos \"Catherine\", \"1903\" e \"The Mackintosh Tearooms\" presentes."
+   },
+   {
+    "chave": "467c4151c831",
+    "ancora": "Kelvingrove Art Gallery and Museum",
+    "href": "https://www.glasgowlife.org.uk/museums/venues/kelvingrove-art-gallery-and-museum",
+    "sustentacao": "Página da Glasgow Life sobre o museu: aberto em 1901, 22 galerias, acervo que vai de arte a Charles Rennie Mackintosh; verificador: viva true, termos \"Charles Rennie Mackintosh\" e \"1901\" presentes."
+   },
+   {
+    "chave": "0ea8f5133165",
+    "ancora": "House for an Art Lover",
+    "href": "https://www.houseforanartlover.co.uk/",
+    "sustentacao": "Site oficial da instituição, em Bellahouston Park, Glasgow, projeto de Charles Rennie Mackintosh; verificador: viva true, termo \"Bellahouston\" presente."
+   }
+  ],
+  "emendas": [
+   {
+    "chave": "1d615da346f8",
+    "segmentos": [
+     {
+      "t": " Nasceu em Glasgow em 7 de junho de 1868, foi aprendiz do arquiteto John Hutchison e entrou em 1889 no escritório Honeyman e Keppie, onde trabalhava enquanto fazia aulas noturnas na escola de arte da cidade; a "
+     },
+     {
+      "t": "biografia de Mackintosh na Charles Rennie Mackintosh Society",
+      "href": "https://www.crmsociety.com/mackintosh/charles-rennie-mackintosh/"
+     },
+     {
+      "t": " registra sua morte em Londres em 10 de dezembro de 1928."
+     }
+    ],
+    "sustentacao": "CRM Society: \"Born in Glasgow on 7 June 1868, Mackintosh was apprenticed to a local architect John Hutchison, but in 1889 he transferred to the larger, more established city practice of Honeyman and Keppie\" e \"He died in London on 10 December 1928\"; verificador: viva true, termos \"7 June 1868\" e \"10 December 1928\" presentes."
+   },
+   {
+    "chave": "3e08812a35eb",
+    "segmentos": [
+     {
+      "t": " O salão foi encomendado pela empresária Catherine Cranston, abriu em 1903 na Sauchiehall Street e foi restaurado entre 2014 e 2018 pelo Willow Tea Rooms Trust, com apoio do National Lottery Heritage Fund. Em 2024 passou para o National Trust for Scotland e, em fevereiro de 2026, foi rebatizado The Mackintosh Tearooms."
+     }
+    ],
+    "sustentacao": "National Trust for Scotland (mesma página linkada na âncora do bloco): data de 1903, encomenda de Miss Catherine (Kate) Cranston, restauro entre 2014 e 2018 por Celia Sinclair Thornqvist e o Willow Tea Rooms Trust com apoio do National Lottery Heritage Fund, entrada no portfólio do Trust e renomeação para The Mackintosh Tearooms em fevereiro de 2026."
+   },
+   {
+    "chave": "baae35f4316a",
+    "segmentos": [
+     {
+      "t": " O fogo de 15 de junho de 2018 pegou o edifício perto do fim de uma restauração de 35 milhões de libras, ela própria motivada por um incêndio anterior, em 2014. O laudo do Scottish Fire and Rescue Service saiu em janeiro de 2022 e registrou a origem e a causa como indeterminadas, como mostra a "
+     },
+     {
+      "t": "página da CRM Society sobre os incêndios na Escola de Arte de Glasgow",
+      "href": "https://www.crmsociety.com/fire-at-the-glasgow-school-of-art/"
+     },
+     {
+      "t": "."
+     }
+    ],
+    "sustentacao": "CRM Society: \"extensively damaged by a major fire in 2018. At the time, it was nearing the end of a £35 million restoration following a previous fire in 2014\" e \"the origin and cause of the fire incident at the Mackintosh Building on the 15 June 2018 has been recorded as 'undetermined'\", com o relatório publicado em janeiro de 2022; verificador: viva true."
+   },
+   {
+    "chave": "dc0eecad3c3a",
+    "segmentos": [
+     {
+      "t": " A escola assumiu em 2021 o compromisso de reconstrução fiel no Strategic Outline Business Case, retirou mais de 5.500 toneladas de entulho até 2022, desmontou a torre da biblioteca em 2023 e abriu arbitragem com as seguradoras em 2024. Em 2026 publicou um adendo ao plano com custos atualizados, segundo o "
+     },
+     {
+      "t": "site do Mackintosh Building, da Glasgow School of Art",
+      "href": "https://themackintoshbuilding.co.uk/"
+     },
+     {
+      "t": "."
+     }
+    ],
+    "sustentacao": "Linha do tempo oficial do Mackintosh Building: 2021 SOBC comprometendo-se com a \"Faithful Reinstatement\"; 2022 \"Clearance of over 5500 tonnes of debris marks the end of Phase 1\"; 2023 \"Phase 2 completed with the dismantling of the Library Tower\"; 2024 \"The GSA initiates arbitration with insurers for 2018 fire\"; 2026 \"The GSA publishes its Strategic Outline Business Case Addendum... including updated costs\"; verificador: viva true."
+   },
+   {
+    "chave": "0ea8f5133165",
+    "segmentos": [
+     {
+      "t": " O desenho nasceu de um "
+     },
+     {
+      "t": "concurso da revista alemã Zeitschrift für Innendekoration",
+      "href": "https://www.houseforanartlover.co.uk/discover/history-of-the-house/"
+     },
+     {
+      "t": ", ao qual Mackintosh e Margaret Macdonald se apresentaram em 1901: a dupla foi desclassificada por entregar as perspectivas de interiores fora do prazo e nenhum primeiro lugar foi concedido. A construção só começou em 1990, o exterior ficou pronto em 1996 e o edifício abriu ao público em 1999."
+     }
+    ],
+    "sustentacao": "Cronologia do House for an Art Lover: concurso da Zeitschrift für Innendekoration para uma \"Haus Eines Kunstfreundes\"; 1901 submissão conjunta de Charles e Margaret; \"the entry is disqualified on the grounds of a technical breach due to the late entry of interior perspectives\" e \"no first place is given\"; 1990 início da construção, 1996 exterior concluído, 1999 edifício completo e aberto ao público; verificador: viva true, termos \"Zeitschrift\", \"1901\" e \"1996\" presentes."
+   },
+   {
+    "chave": "650d680d8772",
+    "segmentos": [
+     {
+      "t": " Deixou a sociedade Honeyman, Keppie & Mackintosh em 1913 e mudou-se para a Inglaterra no ano seguinte. Sua última encomenda de porte foi a reforma da casa "
+     },
+     {
+      "t": "78 Derngate, em Northampton",
+      "href": "https://78derngate.org.uk/"
+     },
+     {
+      "t": ", feita em 1916 para o engenheiro W. J. Bassett-Lowke, hoje o único lugar fora da Escócia onde seus interiores maduros sobrevivem no ambiente original."
+     }
+    ],
+    "sustentacao": "78 Derngate: \"Designed and remodelled by Charles Rennie Mackintosh in 1916\", \"78 Derngate was the architect's final major commission; his visionary patron, Northampton model engineer, W.J Bassett-Lowke\" e \"It is the only place outside Scotland in which Mackintosh's mature architectural and interior style can be seen in their original setting\"; verificador: viva true. A saída da sociedade em 1913 e a mudança em julho de 1914 constam da biografia da CRM Society."
+   }
+  ],
+  "acrescimos": [
+   {
+    "depois_de": "95e21f119afe",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "A Hill House dentro de uma caixa de aço"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "A casa de Helensburgh foi encomendada pelo editor Walter Blackie, e Mackintosh e Margaret Macdonald desenharam quase tudo o que se vê ali, do edifício aos móveis e tecidos. O revestimento externo nunca se mostrou estanque: as paredes saturaram com a chuva do oeste da Escócia, começaram a esfarelar e a água passou a ameaçar os interiores. O "
+       },
+       {
+        "t": "National Trust for Scotland",
+        "href": "https://www.nts.org.uk/visit/places/the-hill-house"
+       },
+       {
+        "t": " montou sobre a casa uma estrutura de aço coberta por malha de anéis, a Hill House Box, aberta a visitantes em junho de 2019, com passarelas que contornam e cruzam o telhado enquanto um programa de conservação de dez anos seca o edifício."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "NTS: \"Commissioned by Glasgow book publisher Walter Blackie... Mackintosh and artist Margaret Macdonald worked collaboratively to create almost everything you see here, from the building itself to the furniture and textiles\"; \"The external render of the property has not proved watertight and the walls have gradually become saturated and are crumbling, with water now threatening the interiors\"; \"We've embarked on a 10-year conservation programme... Stage one opened to visitors in early June 2019, with a protective steel frame structure covered in chainmail mesh, featuring walkways around and over the top of the house\"; verificador: viva true, termos \"Walter Blackie\" e \"Hill House Box\" presentes."
+   },
+   {
+    "depois_de": "467c4151c831",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "A casa do casal, remontada no Hunterian"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Os cômodos principais da casa onde Charles Rennie Mackintosh e Margaret Macdonald viveram em Glasgow foram remontados peça por peça na "
+       },
+       {
+        "t": "Mackintosh House, no Hunterian da Universidade de Glasgow",
+        "href": "https://www.gla.ac.uk/hunterian/visit/our-venues/mackintosh-house/"
+       },
+       {
+        "t": ". É o único interior doméstico do arquiteto que sobrevive na cidade natal, e o que chama atenção de quem entra é a austeridade disciplinada do mobiliário e da decoração, decidida pelos dois em conjunto."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "Hunterian: \"The Mackintosh House is Charles Rennie Mackintosh's only surviving domestic interior in his native Glasgow\" e \"a careful reassemblage of the main rooms from the Glasgow home of Charles Rennie Mackintosh and Margaret Macdonald Mackintosh... remarkable then, and now, for the disciplined austerity of the furnishings and decoration\"; verificador: viva true, termos \"only surviving domestic interior\" e \"Margaret Macdonald\" presentes."
+   },
+   {
+    "depois_de": "2241022c6893",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Scotland Street, a última encomenda pública"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "A escola da Scotland Street, de 1906, encerrou a série de trabalhos públicos de Mackintosh em Glasgow. O prédio virou o "
+       },
+       {
+        "t": "Scotland Street School Museum",
+        "href": "https://www.glasgowlife.org.uk/museums/venues/scotland-street-school-museum"
+       },
+       {
+        "t": ", hoje fechado para uma reforma que soma ao museu uma creche de primeira infância e um centro de aprendizagem digital, dentro do plano do conselho municipal para as 1.140 horas anuais de educação infantil financiada."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "Glasgow Life: \"Scotland Street School Museum is closed for a major refurbishment... the building, originally designed as a school by Charles Rennie Mackintosh, take on a new, wider purpose, including the creation of an early years nursery and a digital learning hub... part of Glasgow City Council's ambitious expansion plans to offer the national commitment of 1140 hours of fully funded early [years education]\"; verificador: viva true. A data de 1906 e a condição de última encomenda pública constam da biografia da CRM Society: \"his design for Scotland Street School (1906) in Glasgow was to be his last public commission\"."
+   }
+  ],
+  "links_finais": 14,
+  "urls_usadas": [
+   "https://www.gsa.ac.uk/",
+   "https://www.crmsociety.com/crm-society/mackintosh-queens-cross/",
+   "https://www.crmsociety.com/mackintosh/margaret-macdonald/",
+   "https://www.nts.org.uk/stories/mackintosh-at-the-willow-joins-trust",
+   "https://www.glasgowlife.org.uk/museums/venues/kelvingrove-art-gallery-and-museum",
+   "https://www.houseforanartlover.co.uk/",
+   "https://www.crmsociety.com/mackintosh/charles-rennie-mackintosh/",
+   "https://www.crmsociety.com/fire-at-the-glasgow-school-of-art/",
+   "https://themackintoshbuilding.co.uk/",
+   "https://www.houseforanartlover.co.uk/discover/history-of-the-house/",
+   "https://78derngate.org.uk/",
+   "https://www.nts.org.uk/visit/places/the-hill-house",
+   "https://www.gla.ac.uk/hunterian/visit/our-venues/mackintosh-house/",
+   "https://www.glasgowlife.org.uk/museums/venues/scotland-street-school-museum"
+  ],
+  "nao_alcancou": ""
+ },
+ "veredito": null
+}

@@ -1,0 +1,286 @@
+{
+ "plano": {
+  "slug": "brava-home-resort",
+  "ancoras": [
+   {
+    "chave": "092721f00dfb",
+    "ancora": "Índice FipeZap",
+    "href": "https://www.fipe.org.br/pt-br/indices/fipezap/",
+    "sustentacao": "Página da Fipe intitulada \"Índice Fipezap\", que apresenta o índice de preços de imóveis citado pelo artigo (verificada: status 200, termo \"FipeZap\" presente)."
+   }
+  ],
+  "emendas": [
+   {
+    "chave": "2e93ceea313a",
+    "segmentos": [
+     {
+      "t": " Ao valor da unidade somam-se os custos da transferência: o ITBI, imposto municipal cujo fato gerador está definido no art. 35 do "
+     },
+     {
+      "t": "Código Tributário Nacional",
+      "href": "https://www.planalto.gov.br/ccivil_03/leis/l5172compilado.htm"
+     },
+     {
+      "t": ", e os emolumentos de escritura e registro."
+     }
+    ],
+    "sustentacao": "Lei 5.172/1966, art. 35: \"O Imposto sobre a Transmissão Inter vivos, por Ato Oneroso, de Bens Imóveis e de Direitos a Eles Relativos, de competência dos Municípios e do Distrito Federal, tem como fato gerador: I - a transmissão inter vivos, a qualquer título, por ato oneroso, da propriedade ou do domínio útil de bens imóveis...\" (verificada: status 200)."
+   },
+   {
+    "chave": "5afcb71cc35c",
+    "segmentos": [
+     {
+      "t": " As áreas comuns e as vagas de garagem seguem o regime do condomínio edilício: o art. 1.331, § 1º, do "
+     },
+     {
+      "t": "Código Civil",
+      "href": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm"
+     },
+     {
+      "t": " veda que os abrigos para veículos sejam alienados ou alugados a pessoas estranhas ao condomínio, salvo autorização expressa na convenção."
+     }
+    ],
+    "sustentacao": "Lei 10.406/2002, art. 1.331, § 1º: as partes de utilização independente \"podem ser alienadas e gravadas livremente por seus proprietários, exceto os abrigos para veículos, que não poderão ser alienados ou alugados a pessoas estranhas ao condomínio, salvo autorização expressa na convenção de condomínio\" (redação da Lei 12.607/2012). Verificada: status 200."
+   },
+   {
+    "chave": "a459ad67a460",
+    "segmentos": [
+     {
+      "t": " Parte dessa movimentação vem do "
+     },
+     {
+      "t": "Porto de Itajaí",
+      "href": "https://www.portoitajai.com.br/"
+     },
+     {
+      "t": ", que mantém terminal de cruzeiros e publica diariamente a programação de navios do complexo portuário."
+     }
+    ],
+    "sustentacao": "Site oficial do Porto de Itajaí (status 200, título \"Porto de Itajaí\"): o portal traz as seções \"Terminal de Cruzeiros\" e \"Programação de Navios\", além do painel diário de navios atracados, ao largo e esperados."
+   },
+   {
+    "chave": "13424eb73fff",
+    "segmentos": [
+     {
+      "t": " A intermediação da compra e venda é atribuição do corretor de imóveis, nos termos do art. 3º da "
+     },
+     {
+      "t": "Lei 6.530/1978",
+      "href": "https://www.planalto.gov.br/ccivil_03/leis/l6530.htm"
+     },
+     {
+      "t": ", e a inscrição do profissional pode ser conferida junto ao "
+     },
+     {
+      "t": "CRECI-SC",
+      "href": "https://www.creci-sc.gov.br/"
+     },
+     {
+      "t": "."
+     }
+    ],
+    "sustentacao": "Lei 6.530/1978, art. 3º: \"Compete ao Corretor de Imóveis exercer a intermediação na compra, venda, permuta e locação de imóveis...\"; art. 5º institui os Conselhos Regionais como órgãos de disciplina e fiscalização da profissão. Site do CRECI-SC verificado (status 200, título \"CRECI-SC\")."
+   }
+  ],
+  "acrescimos": [
+   {
+    "depois_de": "a691d33a5201",
+    "sustentacao": "Lei 4.591/1964, art. 32: \"O incorporador somente poderá alienar ou onerar as frações ideais de terrenos e acessões que corresponderão às futuras unidades autônomas após o registro, no registro de imóveis competente, do memorial de incorporação\", cuja composição o próprio artigo lista (projeto aprovado, cálculo das frações ideais, minuta da convenção, discriminação das unidades). Portal Registro de Imóveis do Brasil verificado (status 200).",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Memorial de incorporação: o documento que antecede a venda"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Antes de negociar as unidades de um empreendimento, o incorporador precisa registrar o memorial de incorporação no registro de imóveis competente — é o que determina o art. 32 da "
+       },
+       {
+        "t": "Lei 4.591/1964",
+        "href": "https://www.planalto.gov.br/ccivil_03/leis/l4591.htm"
+       },
+       {
+        "t": ". O memorial reúne o projeto aprovado, o cálculo das frações ideais de terreno, a minuta da futura convenção de condomínio e a discriminação das unidades autônomas."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Esses documentos são públicos. Qualquer interessado pode pedir a certidão da matrícula no cartório de "
+       },
+       {
+        "t": "Registro de Imóveis",
+        "href": "https://www.registrodeimoveis.org.br/"
+       },
+       {
+        "t": " e conferir o que está registrado e averbado sobre o terreno e sobre a unidade antes de assinar o contrato."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "depois_de": "2e93ceea313a",
+    "sustentacao": "Lei 13.786/2018, art. 43-A: \"A entrega do imóvel em até 180 (cento e oitenta) dias corridos da data estipulada contratualmente como data prevista para conclusão do empreendimento, desde que expressamente pactuado, de forma clara e destacada, não dará causa à resolução do contrato por parte do adquirente\". Art. 67-A, II: pena convencional \"que não poderá exceder a 25% (vinte e cinco por cento) da quantia paga\"; § 5º: sob patrimônio de afetação, restituição no prazo máximo de 30 dias após o habite-se, admitida pena \"até o limite de 50% (cinquenta por cento) da quantia paga\". O regime do patrimônio de afetação (arts. 31-A a 31-F da Lei 4.591) foi introduzido pela Lei 10.931/2004, verificada (status 200).",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Prazo de entrega e desistência do contrato"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Na compra de unidade em incorporação, o atraso e a rescisão têm regra própria desde a "
+       },
+       {
+        "t": "Lei 13.786/2018",
+        "href": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13786.htm"
+       },
+       {
+        "t": ". O art. 43-A admite tolerância de até 180 dias corridos sobre a data de conclusão prevista em contrato, desde que a cláusula esteja pactuada de forma clara e destacada; ultrapassado esse prazo, o comprador pode pedir a resolução do contrato."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Quando a desistência parte do comprador, a pena convencional fica limitada a 25% do valor pago. O teto sobe para 50%, com devolução em até 30 dias após o habite-se, se a incorporação estiver submetida ao regime de "
+       },
+       {
+        "t": "patrimônio de afetação",
+        "href": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.931.htm"
+       },
+       {
+        "t": ", que separa o patrimônio da obra do restante dos bens da incorporadora."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "depois_de": "12a426891d66",
+    "sustentacao": "O IBAPE — Instituto Brasileiro de Avaliações e Perícias de Engenharia — é a entidade nacional dos engenheiros e arquitetos avaliadores; site verificado (status 200, título \"IBAPE Nacional - Instituto Brasileiro de Avaliações e Perícias de Engenharia\", termo \"avaliação\" presente). O parágrafo não introduz número algum além dos que o próprio artigo já traz.",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Do índice ao laudo: como se mede o valor de uma unidade"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Índices de mercado descrevem o comportamento médio de uma cidade, não o preço de um apartamento determinado. A avaliação individual passa por vistoria, pesquisa de dados de mercado e tratamento das amostras, trabalho dos engenheiros e arquitetos avaliadores reunidos no "
+       },
+       {
+        "t": "IBAPE",
+        "href": "https://www.ibape-nacional.com.br/"
+       },
+       {
+        "t": ". Em unidades de alto padrão, com metragens e acabamentos fora da média, a amostra comparável é pequena, e o laudo diz mais sobre o imóvel do que o preço médio do metro quadrado da cidade."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "depois_de": "583037b45c49",
+    "sustentacao": "Lei 11.196/2005, art. 39: \"Fica isento do imposto de renda o ganho auferido por pessoa física residente no País na venda de imóveis residenciais, desde que o alienante, no prazo de 180 (cento e oitenta) dias contado da celebração do contrato, aplique o produto da venda na aquisição de imóveis residenciais localizados no País\"; § 2º: \"A aplicação parcial do produto da venda implicará tributação do ganho proporcionalmente ao valor da parcela não aplicada\". Lei 8.245/1991, art. 48: locação para temporada é a \"contratada por prazo não superior a noventa dias, esteja ou não mobiliado o imóvel\", e o parágrafo único exige a descrição dos móveis e utensílios e do estado em que se encontram. Página do IRPF na Receita Federal verificada (status 200).",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Tributos na revenda e locação por temporada"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "O lucro na revenda é ganho de capital e entra na apuração do "
+       },
+       {
+        "t": "imposto de renda da pessoa física",
+        "href": "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/tributos/irpf-imposto-de-renda-pessoa-fisica"
+       },
+       {
+        "t": ". O art. 39 da "
+       },
+       {
+        "t": "Lei 11.196/2005",
+        "href": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11196.htm"
+       },
+       {
+        "t": " isenta esse ganho quando o vendedor, pessoa física residente no país, aplica o produto da venda na aquisição de outros imóveis residenciais no Brasil em até 180 dias; a aplicação parcial faz a tributação incidir na proporção do valor não reaplicado."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Para quem pretende alugar a unidade nos meses de veraneio, o contrato cabível é o de locação por temporada. A "
+       },
+       {
+        "t": "Lei 8.245/1991",
+        "href": "https://www.planalto.gov.br/ccivil_03/leis/l8245.htm"
+       },
+       {
+        "t": " define, no art. 48, o prazo não superior a noventa dias e exige, quando o imóvel é entregue mobiliado, a descrição dos móveis e utensílios e do estado em que se encontram."
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "links_finais": 14,
+  "urls_usadas": [
+   "https://www.fipe.org.br/pt-br/indices/fipezap/",
+   "https://www.planalto.gov.br/ccivil_03/leis/l5172compilado.htm",
+   "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+   "https://www.portoitajai.com.br/",
+   "https://www.planalto.gov.br/ccivil_03/leis/l6530.htm",
+   "https://www.creci-sc.gov.br/",
+   "https://www.planalto.gov.br/ccivil_03/leis/l4591.htm",
+   "https://www.registrodeimoveis.org.br/",
+   "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13786.htm",
+   "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.931.htm",
+   "https://www.ibape-nacional.com.br/",
+   "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/tributos/irpf-imposto-de-renda-pessoa-fisica",
+   "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11196.htm",
+   "https://www.planalto.gov.br/ccivil_03/leis/l8245.htm"
+  ],
+  "nao_alcancou": ""
+ },
+ "veredito": null
+}

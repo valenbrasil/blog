@@ -1,0 +1,212 @@
+{
+ "plano": {
+  "acrescimos": [
+   {
+    "depois_de": "7fac76e5d0bc",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "O déco fora de Paris e de Nova York"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "O "
+       },
+       {
+        "t": "levantamento do V&A sobre o Art Déco pelo mundo",
+        "href": "https://www.vam.ac.uk/articles/art-deco-around-the-world"
+       },
+       {
+        "t": " mostra o alcance do vocabulário: Xangai, nos anos 1930 a cidade mais moderna e mais avançada tecnologicamente da China; os cartazes ferroviários franceses e japoneses; o vidro gravado do sueco Edward Hald, em que a arte local aparece com nitidez. Na Feira Mundial de Nova York de 1939, a vertente americana do estilo já tinha corpo próprio, formada no vaivém entre designers europeus emigrados e americanos que viajavam à Europa."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "A página \"Art Deco around the world\" do V&A cita Edward Hald e o vidro gravado sueco, o cartaz \"Marseille Porte de l'Afrique du Nord\" da companhia ferroviária francesa, os cartazes de viagem japoneses, Xangai nos anos 1930 como \"the most fashionable city in China – and also the most technologically advanced\", a emigração de europeus para os EUA e a New York World Fair de 1939."
+   },
+   {
+    "depois_de": "7c9cb09b0c40",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Do jardim da Red House para o papel de parede"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "O "
+       },
+       {
+        "t": "primeiro papel de parede desenhado por Morris",
+        "href": "https://www.vam.ac.uk/articles/william-morris-and-wallpaper-design"
+       },
+       {
+        "t": ", Trellis, de 1862, veio da treliça de rosas do jardim da Red House; Daisy saiu em 1864. A impressão era feita com blocos de madeira entalhados à mão e tintas naturais de base mineral, e o padrão St. James's chegou a exigir 68 blocos separados para fechar uma repetição em duas larguras de papel."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "O artigo do V&A afirma que Morris começou a desenhar papel de parede no início dos anos 1860, que Trellis (1862) foi o primeiro, \"a pattern suggested by the rose trellis in the garden of Red House\", que Daisy veio em 1864, que a impressão usava \"hand-cut woodblocks loaded with natural, mineral-based dyes\" e que St. James's exigiu \"68 separate printing blocks to create a repeat over two wallpaper widths\"."
+   }
+  ],
+  "ancoras": [
+   {
+    "chave": "9984ddd023ff",
+    "ancora": "Exposição Internacional de Artes Decorativas e Industriais Modernas",
+    "href": "https://www.vam.ac.uk/articles/an-introduction-to-art-deco",
+    "sustentacao": "O V&A afirma: \"One of the most pivotal moments for Art Deco (known then as 'Style Moderne') was the Exposition Internationale des Arts Decoratifs et Industriels Modernes held in Paris in 1925.\""
+   },
+   {
+    "chave": "9984ddd023ff",
+    "ancora": "Empire State Building",
+    "href": "https://www.esbnyc.com/about/history",
+    "sustentacao": "A página oficial de história do Empire State Building registra a construção entre 17 de março de 1930 e 1º de maio de 1931, o projeto de Shreve, Lamb & Harmon Associates e os 102 andares."
+   },
+   {
+    "chave": "885d28db7052",
+    "ancora": "cubismo",
+    "href": "https://www.tate.org.uk/art/art-terms/c/cubism",
+    "sustentacao": "A Tate define: \"Cubism was a revolutionary new approach to representing reality invented in around 1907–08 by artists Pablo Picasso and Georges Braque.\""
+   },
+   {
+    "chave": "885d28db7052",
+    "ancora": "Metrópolis",
+    "href": "https://www.unesco.org/en/memory-world/metropolis-sicherungsstuck-nr-1-negative-restored-and-reconstructed-version-2001",
+    "sustentacao": "O registro da UNESCO Memory of the World descreve \"Fritz Lang's motion picture Metropolis (1927)\" e sua estreia em Berlim em janeiro de 1927."
+   },
+   {
+    "chave": "efe2b4d091b8",
+    "ancora": "Art Nouveau",
+    "href": "https://www.tate.org.uk/art/art-terms/a/art-nouveau",
+    "sustentacao": "A Tate define: \"Art nouveau is an international style in architecture and design that emerged in the 1890s and is characterised by sinuous lines and flowing organic shapes based on plant forms.\""
+   },
+   {
+    "chave": "961df71db7d5",
+    "ancora": "Victor Horta",
+    "href": "https://whc.unesco.org/en/list/1005/",
+    "sustentacao": "A ficha da UNESCO trata das \"Major Town Houses of the Architect Victor Horta (Brussels)\" e o descreve como \"one of the earliest initiators of Art Nouveau\"."
+   },
+   {
+    "chave": "961df71db7d5",
+    "ancora": "Gaudí",
+    "href": "https://whc.unesco.org/en/list/320/",
+    "sustentacao": "A ficha da UNESCO \"Works of Antoni Gaudí\" lista as sete obras do arquiteto (1852-1926) em Barcelona e arredores, inscritas em 1984."
+   },
+   {
+    "chave": "d2248496b52f",
+    "ancora": "Arts and Crafts",
+    "href": "https://www.tate.org.uk/art/art-terms/a/arts-and-crafts",
+    "sustentacao": "A Tate define: \"Arts and Crafts was a design movement initiated by William Morris in 1861 which aimed to improve the quality of design and make it available to the widest possible audience.\""
+   },
+   {
+    "chave": "bb208b60a0e2",
+    "ancora": "William Morris",
+    "href": "https://www.wmgallery.org.uk/",
+    "sustentacao": "O William Morris Gallery, em Walthamstow, é o museu público dedicado a William Morris — a página inicial traz as seções \"About William Morris\", \"Explore the galleries\" e \"Collection\"."
+   },
+   {
+    "chave": "7c9cb09b0c40",
+    "ancora": "Red House",
+    "href": "https://www.nationaltrust.org.uk/visit/london/red-house",
+    "sustentacao": "O National Trust descreve a Red House como \"the only house commissioned, created and lived in by William Morris, founder of the Arts & Crafts movement\", projetada por Philip Webb e concluída em 1860."
+   }
+  ],
+  "emendas": [
+   {
+    "chave": "f94d2070f264",
+    "segmentos": [
+     {
+      "t": "O rótulo, porém, veio depois do estilo: \"Art Déco\" foi cunhado só nos anos 1960, e no seu próprio tempo o movimento circulava como \"Style Moderne\"."
+     }
+    ],
+    "sustentacao": "O V&A afirma: \"Art Deco – a term coined in the 1960s\" e, sobre a exposição de 1925, \"Art Deco (known then as 'Style Moderne')\". A fonte já fica linkada no bloco seguinte, 9984ddd023ff."
+   },
+   {
+    "chave": "9984ddd023ff",
+    "segmentos": [
+     {
+      "t": "A "
+     },
+     {
+      "t": "Enciclopédia Itaú Cultural",
+      "href": "https://enciclopedia.itaucultural.org.br/termos/79938-art-deco"
+     },
+     {
+      "t": " descreve essa difusão pelo centro da cidade em vitrais, escadarias, decoração de calçamento e letreiros, do interior da sorveteria Cavé ao Teatro Carlos Gomes, na praça Tiradentes, e à Central do Brasil."
+     }
+    ],
+    "sustentacao": "O verbete afirma: \"Um rápido passeio pela cidade do Rio de Janeiro pode ser tomado como exemplo da difusão do art déco, impresso em vitrais, escadarias, decoração de calçamentos e letreiros. O interior da sorveteria Cavé, no centro da cidade, o Teatro Carlos Gomes, na praça Tiradentes, a Central do Brasil...\""
+   },
+   {
+    "chave": "efe2b4d091b8",
+    "segmentos": [
+     {
+      "t": "Estilo internacional de arquitetura e design nascido na década de 1890, ganhou público amplo na Exposição Universal de 1900 e foi interrompido pela Primeira Guerra."
+     }
+    ],
+    "sustentacao": "A página da Tate afirma que o art nouveau \"emerged in the 1890s\", ganhou reconhecimento mais amplo na Exposition Universelle de 1900 e \"flourished in the first decades of the twentieth century but was killed off by the First World War\". A fonte já fica linkada neste mesmo bloco."
+   },
+   {
+    "chave": "961df71db7d5",
+    "segmentos": [
+     {
+      "t": "As quatro casas de Horta em Bruxelas — Hôtel Tassel, de 1893, Hôtel Solvay, de 1894, Hôtel van Eetvelde, de 1895, e a casa-ateliê do arquiteto — entraram na Lista do Patrimônio Mundial em 2000; as sete obras de Gaudí em Barcelona e arredores tinham sido inscritas em 1984."
+     }
+    ],
+    "sustentacao": "A ficha 1005 da UNESCO traz \"Hotel Tassel (1893), Hotel Solvay (1894), Hotel van Eetvelde (1895) and the House and Workshop of Victor Horta\" e \"Date of Inscription: 2000\". A ficha 320 traz as sete obras de Gaudí \"inscribed on the World Heritage List in 1984\". Ambas as fontes já ficam linkadas neste mesmo bloco."
+   },
+   {
+    "chave": "bb208b60a0e2",
+    "segmentos": [
+     {
+      "t": "A firma que deu forma comercial ao movimento, a Morris and Co., nasceu em 1861, saída do círculo pré-rafaelita."
+     }
+    ],
+    "sustentacao": "A Tate afirma: \"The Arts and Crafts Movement emerged from the Pre-Raphaelite circle with the founding of the design firm Morris and Co. in 1861 by William Morris.\" A fonte já fica linkada no bloco d2248496b52f."
+   },
+   {
+    "chave": "7c9cb09b0c40",
+    "segmentos": [
+     {
+      "t": "O projeto é de Philip Webb e ficou pronto em 1860 — foi a única casa que Morris encomendou, criou e habitou."
+     }
+    ],
+    "sustentacao": "O National Trust afirma: \"The only house commissioned, created and lived in by William Morris... Designed by Philip Webb and completed in 1860.\" A fonte já fica linkada neste mesmo bloco."
+   }
+  ],
+  "links_finais": 13,
+  "nao_alcancou": "",
+  "slug": "art-deco-nouveau-crafts-diferencas",
+  "urls_usadas": [
+   "https://www.vam.ac.uk/articles/an-introduction-to-art-deco",
+   "https://www.esbnyc.com/about/history",
+   "https://www.tate.org.uk/art/art-terms/c/cubism",
+   "https://www.unesco.org/en/memory-world/metropolis-sicherungsstuck-nr-1-negative-restored-and-reconstructed-version-2001",
+   "https://www.tate.org.uk/art/art-terms/a/art-nouveau",
+   "https://whc.unesco.org/en/list/1005/",
+   "https://whc.unesco.org/en/list/320/",
+   "https://www.tate.org.uk/art/art-terms/a/arts-and-crafts",
+   "https://www.wmgallery.org.uk/",
+   "https://www.nationaltrust.org.uk/visit/london/red-house",
+   "https://enciclopedia.itaucultural.org.br/termos/79938-art-deco",
+   "https://www.vam.ac.uk/articles/art-deco-around-the-world",
+   "https://www.vam.ac.uk/articles/william-morris-and-wallpaper-design"
+  ]
+ },
+ "veredito": null
+}

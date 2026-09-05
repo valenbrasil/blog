@@ -1,0 +1,252 @@
+{
+ "plano": {
+  "slug": "teorias-restauracao-patrimonio-arquitetonico",
+  "ancoras": [],
+  "emendas": [
+   {
+    "chave": "39f91b08c3d0",
+    "segmentos": [
+     {
+      "t": "A definição está no verbete Restauration do "
+     },
+     {
+      "t": "Dictionnaire raisonné de l'architecture française du XIe au XVIe siècle",
+      "href": "https://www.gutenberg.org/cache/epub/30788/pg30788-images.html"
+     },
+     {
+      "t": ": restaurar um edifício não é mantê-lo, repará-lo nem refazê-lo, é restabelecê-lo em um estado completo que pode nunca ter existido em um dado momento."
+     }
+    ],
+    "sustentacao": "O tomo VIII do Dictionnaire (Q-R-S), no Project Gutenberg, traz o verbete RESTAURATION com a frase \"Restaurer un édifice, ce n'est pas l'entretenir, le réparer ou le refaire, c'est le rétablir dans un état complet qui peut n'avoir jamais existé à un moment donné\" — verificada literalmente na página."
+   },
+   {
+    "chave": "9cec3c7bf93b",
+    "segmentos": [
+     {
+      "t": "A formulação mais dura está no capítulo VI de "
+     },
+     {
+      "t": "As Sete Lâmpadas da Arquitetura",
+      "href": "https://www.gutenberg.org/files/35898/35898-h/35898-h.htm"
+     },
+     {
+      "t": ", a Lâmpada da Memória: restauração, escreve Ruskin, significa a destruição mais completa que um edifício pode sofrer, uma destruição da qual nada se recolhe e que ainda vem acompanhada de uma descrição falsa daquilo que se destruiu."
+     }
+    ],
+    "sustentacao": "No texto do Project Gutenberg, capítulo VI \"The Lamp of Memory\": \"the true meaning of the word restoration... It means the most total destruction which a building can suffer: a destruction out of which no remnants can be gathered; a destruction accompanied with false description of the thing destroyed.\""
+   },
+   {
+    "chave": "4dd2d12e2f70",
+    "segmentos": [
+     {
+      "t": "O princípio de distinguir o novo do antigo, que Boito quis transformar em regra escrita, virou norma internacional em 1964, com a "
+     },
+     {
+      "t": "Carta de Veneza",
+      "href": "https://www.icomos.org/charters-and-doctrinal-texts/"
+     },
+     {
+      "t": ", carta internacional sobre a conservação e o restauro de monumentos e sítios adotada pelo ICOMOS."
+     }
+    ],
+    "sustentacao": "A página oficial de textos doutrinários do ICOMOS lista \"Venice Charter — International Charter for the Conservation and Restoration of Monuments and Sites (Venice Charter) - 1964, Available in 39 languages\"."
+   }
+  ],
+  "acrescimos": [
+   {
+    "depois_de": "addd7e075a10",
+    "sustentacao": "UNESCO/Vézelay (lista 84): \"In a state close to ruin, this was the first restoration site led by Eugène Viollet-le-Duc... who managed to save the edifice (1839-1848) by rebuilding part of its vaults\". Project Gutenberg 18920: \"Projet de restauration de Notre-Dame de Paris by Lassus and Viollet-le-Duc... a formal proposal directed to the Minister of Justice and Religious Affairs\", meados do século XIX. UNESCO/Carcassonne (lista 345): \"the long restoration campaign led from 1853 to 1879 by Eugène Viollet-le-Duc, one of the founders of modern conservation science\", Date of Inscription 1997.",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "segmentos": [
+       {
+        "t": "O método no canteiro: Vézelay, Notre-Dame e Carcassonne"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "A teoria saiu de obras concretas. A primeira delas foi a "
+       },
+       {
+        "t": "igreja abacial de Vézelay",
+        "href": "https://whc.unesco.org/en/list/84/"
+       },
+       {
+        "t": ", na Borgonha, próxima da ruína depois da Revolução Francesa e salva por Viollet-le-Duc entre 1839 e 1848 com a reconstrução de parte das abóbadas. Em seguida veio o "
+       },
+       {
+        "t": "Projet de restauration de Notre-Dame de Paris",
+        "href": "https://www.gutenberg.org/ebooks/18920"
+       },
+       {
+        "t": ", relatório que ele assinou com Jean-Baptiste Lassus e dirigiu ao Ministério da Justiça e dos Cultos em meados do século XIX, discutindo justamente as alterações acumuladas pela catedral ao longo dos séculos."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "A campanha na cidade fortificada de "
+       },
+       {
+        "t": "Carcassonne",
+        "href": "https://whc.unesco.org/en/list/345/"
+       },
+       {
+        "t": " durou de 1853 a 1879, o ano da morte do arquiteto. Ao inscrever a cidade na Lista do Patrimônio Mundial em 1997, a Unesco registra que ela deve sua importância excepcional a esse trabalho e chama Viollet-le-Duc de um dos fundadores da ciência moderna da conservação. É a mesma obra que rendeu a ele a acusação de falsificação histórica: a autenticidade medieval não se sustenta depois da intervenção do século XIX, e o que passou a ser reconhecido como valioso foi a integridade do próprio projeto de Viollet-le-Duc."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "depois_de": "1ca793ea84ad",
+    "sustentacao": "SPAB, página oficial do manifesto: \"The Manifesto of the SPAB was written by William Morris, Philip Webb and other founder members in 1877... the Manifesto extends protection to 'all times and styles' and remains the basis for the Society's work. Applicants for SPAB membership must indicate their support for the Manifesto's conservation principles.\"",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "segmentos": [
+       {
+        "t": "A Lâmpada da Memória vira instituição"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "A posição de Ruskin não ficou no ensaio. Em 1877, William Morris, Philip Webb e outros fundadores escreveram o "
+       },
+       {
+        "t": "manifesto da Society for the Protection of Ancient Buildings",
+        "href": "https://www.spab.org.uk/about-us/spab-manifesto"
+       },
+       {
+        "t": ", que trocou a restauração pelo reparo continuado e estendeu a proteção a edifícios de todos os tempos e estilos, e não só aos que pertenciam ao período estilístico eleito como o correto. O texto segue como base do trabalho da sociedade, e quem pede filiação precisa declarar que adere aos seus princípios."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "depois_de": "4dd2d12e2f70",
+    "sustentacao": "Convenção do Patrimônio Mundial (texto oficial, UNESCO), Artigo 1: define como patrimônio cultural monumentos, conjuntos de edifícios e sítios de valor universal excepcional. Documento de Nara sobre a Autenticidade (UNESCO, novembro de 1994), §10 e §11: a autenticidade é o fator qualificador essencial dos valores e \"it is thus not possible to base judgments of values and authenticity within fixed criteria... heritage properties must considered and judged within the cultural contexts to which they belong\". Decreto-Lei 25/1937 (Planalto), art. 1º, § 1º (quatro Livros do Tombo) e art. 17 (proibição de destruir, demolir ou mutilar; reparo, pintura ou restauro só com autorização prévia especial do SPHAN, multa de cinquenta por cento do dano). Iphan, página Patrimônio Material: \"O patrimônio material protegido pelo Iphan é composto por um conjunto de bens culturais classificados segundo sua natureza, conforme os quatro Livros do Tombo: arqueológico, paisagístico e etnográfico; histórico; belas artes; e das artes aplicadas\". Lei 12.378/2010 (Planalto), art. 2º, parágrafo único, IV: campo de atuação do Patrimônio Histórico Cultural e Artístico, com restauro. UNESCO/Ouro Preto (lista 124): Date of Inscription 1980, critérios (i)(iii), Property 167,8 ha, Buffer zone 2.036,9 ha, e \"The area's isolation for the better part of the 19th and 20th centuries generated economic stagnation, fostering preservation of the original colonial constructions and urban pattern\".",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "segmentos": [
+       {
+        "t": "Da doutrina ao tratado"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "A discussão dos três teóricos acabou codificada em direito internacional. A "
+       },
+       {
+        "t": "Convenção do Patrimônio Mundial, de 1972",
+        "href": "https://whc.unesco.org/en/conventiontext/"
+       },
+       {
+        "t": ", define como patrimônio cultural os monumentos, os conjuntos de edifícios e os sítios de valor universal excepcional, e é a base da lista que hoje qualifica bens como Carcassonne e Vézelay. Em 1994, o "
+       },
+       {
+        "t": "Documento de Nara sobre a Autenticidade",
+        "href": "https://whc.unesco.org/archive/nara94.htm"
+       },
+       {
+        "t": " voltou ao ponto que separa Ruskin de Viollet-le-Duc e concluiu que não há critério fixo de autenticidade: cada bem precisa ser julgado dentro do contexto cultural a que pertence, o que muda a resposta conforme se trate de pedra europeia ou de madeira japonesa periodicamente substituída."
+       }
+      ]
+     },
+     {
+      "estilo": "h3",
+      "segmentos": [
+       {
+        "t": "Como isso aparece na lei brasileira"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "No Brasil, a proteção do patrimônio construído está organizada pelo "
+       },
+       {
+        "t": "Decreto-Lei 25, de 30 de novembro de 1937",
+        "href": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del0025.htm"
+       },
+       {
+        "t": ". O art. 1º define o patrimônio histórico e artístico nacional como o conjunto de bens móveis e imóveis cuja conservação seja de interesse público, e o § 1º condiciona esse enquadramento à inscrição em um dos quatro Livros do Tombo. O "
+       },
+       {
+        "t": "Iphan",
+        "href": "https://www.gov.br/iphan/pt-br/patrimonio-cultural/patrimonio-material/"
+       },
+       {
+        "t": " classifica os bens materiais segundo esses quatro livros: arqueológico, paisagístico e etnográfico; histórico; belas artes; e artes aplicadas."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "O art. 17 do mesmo decreto-lei é a versão jurídica do problema que Boito enunciou. Coisa tombada não pode, em caso nenhum, ser destruída, demolida ou mutilada, e não pode ser reparada, pintada ou restaurada sem autorização prévia especial do Serviço do Patrimônio Histórico e Artístico Nacional, sob pena de multa de cinquenta por cento do dano causado. Do lado profissional, a "
+       },
+       {
+        "t": "Lei 12.378/2010",
+        "href": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12378.htm"
+       },
+       {
+        "t": " coloca o restauro entre os campos de atuação do arquiteto e urbanista, no art. 2º, parágrafo único, inciso IV, ao lado da reabilitação, da reconstrução, da preservação e da conservação de edificações, conjuntos e cidades."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "O "
+       },
+       {
+        "t": "centro histórico de Ouro Preto",
+        "href": "https://whc.unesco.org/en/list/124/"
+       },
+       {
+        "t": " está na Lista do Patrimônio Mundial desde 1980, pelos critérios (i) e (iii), com 167,8 hectares inscritos e zona de amortecimento de 2.036,9 hectares. A leitura da Unesco sobre o caso desloca o eixo do debate: foi o isolamento e a estagnação econômica de boa parte dos séculos XIX e XX que preservaram as construções coloniais e o traçado urbano, não uma campanha de restauro."
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "links_finais": 13,
+  "urls_usadas": [
+   "https://www.gutenberg.org/cache/epub/30788/pg30788-images.html",
+   "https://whc.unesco.org/en/list/84/",
+   "https://www.gutenberg.org/ebooks/18920",
+   "https://whc.unesco.org/en/list/345/",
+   "https://www.gutenberg.org/files/35898/35898-h/35898-h.htm",
+   "https://www.spab.org.uk/about-us/spab-manifesto",
+   "https://www.icomos.org/charters-and-doctrinal-texts/",
+   "https://whc.unesco.org/en/conventiontext/",
+   "https://whc.unesco.org/archive/nara94.htm",
+   "https://www.planalto.gov.br/ccivil_03/decreto-lei/del0025.htm",
+   "https://www.gov.br/iphan/pt-br/patrimonio-cultural/patrimonio-material/",
+   "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12378.htm",
+   "https://whc.unesco.org/en/list/124/"
+  ],
+  "nao_alcancou": ""
+ },
+ "veredito": null
+}

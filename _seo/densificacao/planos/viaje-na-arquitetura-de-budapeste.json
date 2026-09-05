@@ -1,0 +1,249 @@
+{
+ "plano": {
+  "slug": "viaje-na-arquitetura-de-budapeste",
+  "ancoras": [
+   {
+    "chave": "edddea5b4533",
+    "ancora": "Parlamento Húngaro",
+    "href": "https://visithungary.com/articles/parliament",
+    "sustentacao": "Página oficial da Agência de Turismo da Hungria sobre a Casa do Parlamento: \"Building this impressive edifice took 17 years, from 1885 to 1902, based on the design by the architect Imre Steindl\" e \"The tower of the cupola is 96 metres tall\"."
+   },
+   {
+    "chave": "73094a6a1433",
+    "ancora": "Biblioteca Nacional da Hungria",
+    "href": "https://oszk.hu/en",
+    "sustentacao": "Site oficial da Országos Széchényi Könyvtár (National Széchényi Library), a biblioteca nacional húngara, com seções About us, Collections e Digital Library."
+   },
+   {
+    "chave": "2d3f0cc602c2",
+    "ancora": "Termas Gellért",
+    "href": "https://www.budapestgyogyfurdoi.hu/",
+    "sustentacao": "Site oficial da Budapest Gyógyfürdői és Hévizei Zrt., que lista entre seus estabelecimentos \"Gellért Fürdő\", ao lado de Széchenyi, Rudas, Lukács e Király."
+   },
+   {
+    "chave": "39c7ea34a05d",
+    "ancora": "Mercado Central de Budapeste",
+    "href": "https://piaconline.hu/nagycsarnok/",
+    "sustentacao": "Página oficial do Nagycsarnok (Mercado Central) na Budapest Vásárcsarnokai: endereço \"1093 Budapest, Vámház körút 1-3\", horários e \"A belépés INGYENES!\" (entrada gratuita)."
+   },
+   {
+    "chave": "0b13e16ec9c3",
+    "ancora": "Projeto Liget Budapest",
+    "href": "https://ligetbudapest.hu/en/the-project",
+    "sustentacao": "Página oficial do projeto: \"The Liget Budapest Project is currently Europe's largest urban development project with a cultural content\"."
+   },
+   {
+    "chave": "0b13e16ec9c3",
+    "ancora": "Museu de Etnografia de Budapeste",
+    "href": "https://www.neprajz.hu/en",
+    "sustentacao": "Site oficial do Museum of Ethnography, com endereço \"H-1146, Budapest, Dózsa György út 35\", exposições e a seção Awards."
+   },
+   {
+    "chave": "b06b3ee0b320",
+    "ancora": "Casa da Música Húngara",
+    "href": "https://zenehaza.hu/en",
+    "sustentacao": "Site oficial da Magyar Zene Háza, com a seção \"Design by Sou Fujimoto\" dentro de About us / Architecture."
+   }
+  ],
+  "emendas": [
+   {
+    "chave": "8754cfb3ae19",
+    "segmentos": [
+     {
+      "t": " O assentamento romano se chamava Aquincum, e o que restou dele é hoje um parque arqueológico aberto à visitação, mantido pelo "
+     },
+     {
+      "t": "Museu Aquincum",
+      "href": "https://www.aquincum.hu/en/"
+     },
+     {
+      "t": ", na Szentendrei út, no norte da cidade."
+     }
+    ],
+    "sustentacao": "O site do museu se identifica como \"BHM AQUINCUM MUSEUM AND ARCHAEOLOGICAL PARK\", com endereço \"135 Szentendrei út, 1031 Budapest\"; a ficha da UNESCO situa \"the Roman city of Aquincum, situated to the north of the inscribed property\"."
+   },
+   {
+    "chave": "9bd8237c8eda",
+    "segmentos": [
+     {
+      "t": " O conjunto formado pelas margens do Danúbio e pelo bairro do Castelo de Buda entrou na "
+     },
+     {
+      "t": "Lista do Patrimônio Mundial da UNESCO",
+      "href": "https://whc.unesco.org/en/list/400/"
+     },
+     {
+      "t": " em 1987, e em 2002 os limites foram ampliados para abranger também a avenida Andrássy. Entre as igrejas góticas do alto de Buda está a "
+     },
+     {
+      "t": "Igreja de Matias",
+      "href": "https://matyas-templom.hu/en/"
+     },
+     {
+      "t": ", a Igreja de Nossa Senhora do Castelo de Buda, com quase 800 anos."
+     }
+    ],
+    "sustentacao": "Ficha 400 da UNESCO: \"Date of Inscription: 1987 / Significant modifications to the boundaries: 2002\" e \"the radial Andrássy Avenue, which was included in the property in 2002\". Site oficial: \"the nearly 800-year-old Matthias Church\" e \"The Church of Our Lady of Buda Castle (Matthias Church), 1014 Budapest, Szentháromság tér 2\"."
+   },
+   {
+    "chave": "73094a6a1433",
+    "segmentos": [
+     {
+      "t": " Outra ala do palácio abriga o "
+     },
+     {
+      "t": "Museu Histórico de Budapeste",
+      "href": "https://varmuzeum.hu/en/"
+     },
+     {
+      "t": ", com exposições permanentes sobre as esculturas góticas do palácio real e sobre mil anos de história da capital."
+     }
+    ],
+    "sustentacao": "Site do BTM Vármúzeum / BHM Castle Museum, exposições permanentes \"Gothic Sculptures from the Royal Palace of Buda\", \"Budapest – Light and shadow: 1000 Years of History of the Capital\" e \"The Royal Palace – The Castle of Culture\"."
+   },
+   {
+    "chave": "edddea5b4533",
+    "segmentos": [
+     {
+      "t": " O projeto é de Imre Steindl e a obra levou 17 anos, de 1885 a 1902; a torre da cúpula tem 96 metros de altura, e a ala paralela ao Danúbio, 268 metros de extensão."
+     }
+    ],
+    "sustentacao": "Página da Visit Hungary sobre o Parlamento: \"took 17 years, from 1885 to 1902, based on the design by the architect Imre Steindl\", \"The wing parallel to the Danube is 268 metres long\" e \"The tower of the cupola is 96 metres tall\"."
+   },
+   {
+    "chave": "440d233cba00",
+    "segmentos": [
+     {
+      "t": " O palácio neorrenascentista da "
+     },
+     {
+      "t": "Ópera Estatal Húngara",
+      "href": "https://www.opera.hu/en/about-us/"
+     },
+     {
+      "t": " é obra de Miklós Ybl e voltou a receber público em 12 de março de 2022, depois de quase cinco anos de restauro e modernização."
+     }
+    ],
+    "sustentacao": "Página oficial da Opera House: \"The Neo-Renaissance palace designed by Miklós Ybl\" e \"Following an extensive refurbishment and modernisation that lasted for nearly five years, the historic Opera House was reopened with a spectacular gala on 12 March 2022\"."
+   },
+   {
+    "chave": "be1590ddcc3b",
+    "segmentos": [
+     {
+      "t": " Na porta ao lado, na Dohány utca 2, funciona o "
+     },
+     {
+      "t": "Museu Judaico Húngaro e Arquivo",
+      "href": "https://www.milev.hu/"
+     },
+     {
+      "t": ", com coleções, exposições e serviço de pesquisa."
+     }
+    ],
+    "sustentacao": "Site do Magyar Zsidó Múzeum és Levéltár: endereço \"1075 Budapest, Dohány utca 2\" e menus Kiállítások/Exhibitions, Gyűjtemények/Collections e Kutatás/Research."
+   },
+   {
+    "chave": "39c7ea34a05d",
+    "segmentos": [
+     {
+      "t": " O mercado fica na Vámház körút, é administrado pela empresa municipal Budapest Vásárcsarnokai e a entrada é gratuita, de segunda a sábado a partir das seis da manhã."
+     }
+    ],
+    "sustentacao": "Página do Nagycsarnok: \"1093 Budapest, Vámház körút 1-3\", \"Nyitvatartás H – P 06.00 – 18.00, Sz 06.00 – 16.00\", \"A belépés INGYENES!\" e o rodapé \"A BUDAPEST VÁSÁRCSARNOKAI Kft.\"."
+   },
+   {
+    "chave": "7a57894c8ba5",
+    "segmentos": [
+     {
+      "t": " Na frente mais concreta desse calendário está o Városliget: a nova Galeria Nacional, apontada como peça central do plano de renovação do parque, tem conclusão prevista para 2028."
+     }
+    ],
+    "sustentacao": "Página do Liget Budapest Project: \"the New National Gallery, the key element of the project and the keystone of the whole project, is due to be completed by 2028\"."
+   }
+  ],
+  "acrescimos": [
+   {
+    "depois_de": "9f131d96ab43",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "A leitura húngara do Art Nouveau"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "O mesmo impulso construtivo da virada do século produziu uma variante local do estilo, com cerâmica vidrada, ferro trabalhado e motivos do artesanato rural. O "
+       },
+       {
+        "t": "Museu de Artes Aplicadas",
+        "href": "https://www.imm.hu/en/"
+       },
+       {
+        "t": " reúne esse acervo em coleções de mobiliário, cerâmica e vidro e mantém na Villa György Ráth a exposição permanente \"Art Nouveau – a Hungarian Perspective\". A instituição também integra projetos internacionais de conservação do patrimônio Art Nouveau na região do Danúbio."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "Site do Iparművészeti Múzeum (Museum of Applied Arts): \"Art Nouveau – a Hungarian Perspective — Permanent exhibition of the György Ráth Villa\", as coleções \"Furniture Collection\", \"Ceramics and Glass Collection\", e os projetos \"ARTNOUVEAU2 – Strengthening the cultural identity of the Danube region by building on common heritage of ART NOUVEAU\" e \"Sustainable protection and promotion of the Art Nouveau heritage in the Danube region\"."
+   },
+   {
+    "depois_de": "7a57894c8ba5",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Como a cidade protege o que já está de pé"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Boa parte do que se vê hoje depende menos de obra nova do que de regra. A prefeitura mantém um regime de proteção local para o "
+       },
+       {
+        "t": "patrimônio construído de Budapeste",
+        "href": "https://budapest.hu/kultura-es-orokseg/epiteszet"
+       },
+       {
+        "t": ", com mais de 340 edifícios incluídos na lista desde 2017 — do ecletismo da virada do século ao modernismo tardio e ao brutalismo do pós-guerra. O município publica ainda álbuns sobre as reformas apoiadas por seus editais, quase sempre de prédios ecléticos, secessionistas e do início do modernismo."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "Página \"Építészet Budapesten\" da Prefeitura de Budapeste: \"a 2017 óta védelem alá helyezett több mint 340 épületből\" (mais de 340 edifícios protegidos desde 2017), \"Eklektikától a brutalizmusig\", e \"Főként eklektikus, szecessziós és korai modern épületek... helyreállítását tartalmazza a Visszatérő kincseink kiadvány\"."
+   }
+  ],
+  "links_finais": 15,
+  "urls_usadas": [
+   "https://visithungary.com/articles/parliament",
+   "https://oszk.hu/en",
+   "https://www.budapestgyogyfurdoi.hu/",
+   "https://piaconline.hu/nagycsarnok/",
+   "https://ligetbudapest.hu/en/the-project",
+   "https://www.neprajz.hu/en",
+   "https://zenehaza.hu/en",
+   "https://www.aquincum.hu/en/",
+   "https://whc.unesco.org/en/list/400/",
+   "https://matyas-templom.hu/en/",
+   "https://varmuzeum.hu/en/",
+   "https://www.opera.hu/en/about-us/",
+   "https://www.milev.hu/",
+   "https://www.imm.hu/en/",
+   "https://budapest.hu/kultura-es-orokseg/epiteszet"
+  ],
+  "nao_alcancou": ""
+ },
+ "veredito": null
+}

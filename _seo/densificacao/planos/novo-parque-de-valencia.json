@@ -1,0 +1,218 @@
+{
+ "plano": {
+  "slug": "novo-parque-de-valencia",
+  "ancoras": [
+   {
+    "chave": "c77fe2622723",
+    "ancora": "Capital Verde Europeia",
+    "href": "https://environment.ec.europa.eu/news/valencia-kicks-2024-new-european-green-capital-2024-01-11_en",
+    "sustentacao": "Página da Comissão Europeia (DG Environment): \"Valencia kicks off 2024 as new European Green Capital\", que descreve o título de Capital Verde Europeia 2024 concedido a Valência e os compromissos ambientais da cidade."
+   },
+   {
+    "chave": "5ef9dbf558a3",
+    "ancora": "Parque de Desembocadura",
+    "href": "https://www.valencia.es/cas/actualidad/-/content/parc-desembocadura.-proyecto-ganador",
+    "sustentacao": "Nota do Ajuntament de València anunciando \"(Con)fluir\" como proposta vencedora do concurso do Parc de Desembocadura, escolhida por unanimidade de um júri de 12 membros, com 245.600 m² entre a ponte de L'Assut de l'Or e Natzaret."
+   },
+   {
+    "chave": "c5c13792a8db",
+    "ancora": "DANA (Depressão Isolada em Altos Níveis)",
+    "href": "https://www.aemet.es/es/conocermas/recursos_en_linea/publicaciones_y_estudios/estudios/detalles/episodio_dana_oct_nov24",
+    "sustentacao": "Página da AEMET com o estudo oficial sobre a situação de chuvas intensas e persistentes entre 28 de outubro e 4 de novembro de 2024, incluindo o informe do episódio de 29 de outubro de 2024 causado por uma DANA."
+   },
+   {
+    "chave": "e85780f1a355",
+    "ancora": "Embalse de Forata",
+    "href": "https://saih.chj.es/embalses/303",
+    "sustentacao": "Ficha do embalse de Forata no SAIH da Confederación Hidrográfica del Júcar, com os dados da barragem no rio Magro."
+   }
+  ],
+  "emendas": [
+   {
+    "chave": "0af6aa274a7f",
+    "segmentos": [
+     {
+      "t": " A "
+     },
+     {
+      "t": "Confederação Hidrográfica do Júcar",
+      "href": "https://www.chj.es/es-es/ciudadano/salaprensa/Paginas/CHJ-presenta-estudio-preliminar-conectividad-fluvial-Nuevo-Cauce-Turia.aspx"
+     },
+     {
+      "t": " estuda em paralelo a conectividade fluvial do novo leito, com um canal de águas baixas alimentado por 400 litros por segundo derivados do açude do Repartiment, vazão ecológica fixada no Plano Hidrológico 2022-2027."
+     }
+    ],
+    "sustentacao": "Nota de imprensa da CHJ sobre o estudo preliminar de conectividade fluvial no Nuevo Cauce del Turia: propõe um canal de águas baixas com derivação de 400 l/s desde o azud del Repartiment, conforme o Plan Hidrológico 2022-2027, para devolver ao leito as funções ecológicas perdidas com o desvio."
+   },
+   {
+    "chave": "09d9a784eb60",
+    "segmentos": [
+     {
+      "t": " A abertura do bairro em direção ao porto começou antes do parque: a "
+     },
+     {
+      "t": "Autoridade Portuária de Valência",
+      "href": "https://www.valenciaport.com/la-autoridad-portuaria-de-valencia-concluye-las-obras-que-ya-permiten-ver-la-dimension-del-parque-de-desembocadura/"
+     },
+     {
+      "t": " recuou a fronteira aduaneira em direção ao mar, liberou cerca de 87.000 metros quadrados de solo portuário e derrubou em 2019 o trecho do muro que separava Nazaret da zona de serviço."
+     }
+    ],
+    "sustentacao": "Nota da Valenciaport: a APV recuou a fronteira aduaneira para o mar liberando cerca de 87.000 m² de solo portuário, e em 14 de janeiro de 2019 fez o derrube simbólico do muro entre Nazaret e a zona de serviço do porto, dentro do Plan Especial Natzaret Est (230.000 m²)."
+   },
+   {
+    "chave": "1322479519d3",
+    "segmentos": [
+     {
+      "t": " A redação do projeto e a direção das obras dessa primeira fase foram "
+     },
+     {
+      "t": "adjudicadas pela Junta de Governo Local",
+      "href": "https://www.valencia.es/cas/actualidad/-/content/jgl-adjudicaci%C3%B3n-parc-desembocadura"
+     },
+     {
+      "t": " por 826.446,28 euros mais IVA, com oito meses de prazo para entregar o projeto."
+     }
+    ],
+    "sustentacao": "Nota do Ajuntament de València sobre a adjudicação em Junta de Govern Local da redação e direção da primeira fase do Parc de Desembocadura: contrato de 1 milhão de euros (826.446,28 euros mais 21% de IVA) e prazo de oito meses para a redação."
+   },
+   {
+    "chave": "8a4be93fb70b",
+    "segmentos": [
+     {
+      "t": " O acervo de mapas e planos antigos do território espanhol está catalogado na "
+     },
+     {
+      "t": "Cartoteca do Instituto Geográfico Nacional",
+      "href": "https://www.ign.es/web/catalogo-cartoteca"
+     },
+     {
+      "t": ", de consulta pública."
+     }
+    ],
+    "sustentacao": "Catálogo da Cartoteca do Instituto Geográfico Nacional da Espanha, buscador público de cartografia histórica (mapas e planos antigos)."
+   },
+   {
+    "chave": "7e4db7fbbd6e",
+    "segmentos": [
+     {
+      "t": " A sobretaxa vem da "
+     },
+     {
+      "t": "Ley 81/1961",
+      "href": "https://www.boe.es/buscar/doc.php?id=BOE-A-1961-23727"
+     },
+     {
+      "t": ", que aprovou o Plan Sur e autorizou Valência a cobrar vinte e cinco cêntimos por carta, cinquenta por telegrama e 3% sobre o serviço telefônico no âmbito da Gran Valencia; a mesma lei repartiu o custo das obras hidráulicas entre Estado (75%), Ayuntamiento (20%) e Diputación (5%)."
+     }
+    ],
+    "sustentacao": "Texto da Ley 81/1961, de 23 de diciembre, sobre el Plan Sur de Valencia, no BOE: artigo 7 autoriza o selo especial de vinte e cinco cêntimos sobre a correspondência, cinquenta cêntimos sobre telegramas e recarga de 3% no serviço telefônico na área da Gran Valencia; artigo 5 fixa a repartição 75%/20%/5% do custo das obras hidráulicas."
+   },
+   {
+    "chave": "793e2da4cd30",
+    "segmentos": [
+     {
+      "t": " O "
+     },
+     {
+      "t": "balanço do Governo espanhol",
+      "href": "https://www.lamoncloa.gob.es/info-dana/paginas/2024/191124-datos-seguimiento-actuaciones-gobierno.aspx"
+     },
+     {
+      "t": " em 19 de novembro de 2024 registrava 227 mortos — 219 na Comunidade Valenciana, 7 em Castela-Mancha e 1 na Andaluzia — e onze desaparecidos, em 78 municípios afetados."
+     }
+    ],
+    "sustentacao": "Atualização de dados do Gobierno de España (La Moncloa, 19/11/2024): 227 falecidos, sendo 219 na Comunitat Valenciana, 7 em Castilla-La Mancha e 1 na Andalucía, 11 desaparecidos e 78 municípios afetados."
+   }
+  ],
+  "acrescimos": [
+   {
+    "depois_de": "dd40921f47b0",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "A horta que faz fronteira com o parque"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "A horta da Punta que o projeto quer costurar ao parque não é solo comum. Desde a "
+       },
+       {
+        "t": "Ley 5/2018, de 6 de março, da Huerta de València",
+        "href": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-5394"
+       },
+       {
+        "t": ", o cinturão agrícola em volta da cidade tem regime próprio, com plano de ação territorial, classificação do solo agrário e limites à pressão urbanística sobre ele. Ao sul, o "
+       },
+       {
+        "t": "Parc Natural de l'Albufera",
+        "href": "https://parquesnaturales.gva.es/es/web/pn-l-albufera"
+       },
+       {
+        "t": " fecha o mesmo sistema de espaços protegidos, de modo que o novo tramo do Túria não termina num vazio: encosta em duas figuras de proteção já existentes."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "Texto consolidado da Ley 5/2018, de 6 de marzo, de la Huerta de València no BOE: objeto de preservar e revitalizar a Huerta, plano de ação territorial e zonificação/classificação do solo da Huerta frente à pressão urbanística. Ficha oficial do Parque Natural de la Albufera no portal de parques naturais da Generalitat Valenciana."
+   },
+   {
+    "depois_de": "8ad3ce233041",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Onde a água já tinha lugar marcado"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "O mapa de onde a água chega existe e é público. O "
+       },
+       {
+        "t": "Sistema Nacional de Cartografía de Zonas Inundables",
+        "href": "https://www.miteco.gob.es/es/agua/temas/gestion-de-los-riesgos-de-inundacion/snczi.html"
+       },
+       {
+        "t": " reúne a cartografia de zonas inundáveis e do domínio público hidráulico da Espanha, no âmbito da Diretiva 2007/60/CE e do Real Decreto 903/2010, e alimenta tanto as autorizações dos organismos de bacia quanto o trabalho da proteção civil. A cartografia é anterior a qualquer obra de defesa: ela define onde a inundação é esperada, não onde ela surpreende."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "Página do MITECO sobre o Sistema Nacional de Cartografía de Zonas Inundables: cartografia de zonas inundáveis e do domínio público hidráulico, regulada pela Directiva 2007/60/CE e pelo Real Decreto 903/2010, com visor público, apoio às autorizações dos organismos de bacia e à proteção civil."
+   }
+  ],
+  "links_finais": 13,
+  "urls_usadas": [
+   "https://environment.ec.europa.eu/news/valencia-kicks-2024-new-european-green-capital-2024-01-11_en",
+   "https://www.valencia.es/cas/actualidad/-/content/parc-desembocadura.-proyecto-ganador",
+   "https://www.aemet.es/es/conocermas/recursos_en_linea/publicaciones_y_estudios/estudios/detalles/episodio_dana_oct_nov24",
+   "https://saih.chj.es/embalses/303",
+   "https://www.chj.es/es-es/ciudadano/salaprensa/Paginas/CHJ-presenta-estudio-preliminar-conectividad-fluvial-Nuevo-Cauce-Turia.aspx",
+   "https://www.valenciaport.com/la-autoridad-portuaria-de-valencia-concluye-las-obras-que-ya-permiten-ver-la-dimension-del-parque-de-desembocadura/",
+   "https://www.valencia.es/cas/actualidad/-/content/jgl-adjudicaci%C3%B3n-parc-desembocadura",
+   "https://www.ign.es/web/catalogo-cartoteca",
+   "https://www.boe.es/buscar/doc.php?id=BOE-A-1961-23727",
+   "https://www.lamoncloa.gob.es/info-dana/paginas/2024/191124-datos-seguimiento-actuaciones-gobierno.aspx",
+   "https://www.boe.es/buscar/act.php?id=BOE-A-2018-5394",
+   "https://parquesnaturales.gva.es/es/web/pn-l-albufera",
+   "https://www.miteco.gob.es/es/agua/temas/gestion-de-los-riesgos-de-inundacion/snczi.html"
+  ],
+  "nao_alcancou": ""
+ },
+ "veredito": null
+}

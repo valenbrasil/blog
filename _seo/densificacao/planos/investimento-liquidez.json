@@ -1,0 +1,292 @@
+{
+ "plano": {
+  "slug": "investimento-liquidez",
+  "ancoras": [
+   {
+    "chave": "12499d0a38e9",
+    "ancora": "Tesouro Direto",
+    "href": "https://www.gov.br/tesouronacional/pt-br",
+    "sustentacao": "O portal do Tesouro Nacional (verificado, status 200) traz o Tesouro Direto entre os temas da Dívida Pública Federal, com as seções de títulos, leilões e relacionamento com o investidor. A âncora nomeia o programa e leva ao órgão que o administra."
+   }
+  ],
+  "emendas": [
+   {
+    "chave": "15ec924cfc5a",
+    "segmentos": [
+     {
+      "t": " A LCI foi criada pelo "
+     },
+     {
+      "t": "art. 12 da Lei 10.931/2004",
+      "href": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.931.htm"
+     },
+     {
+      "t": ", que a define como título lastreado em créditos imobiliários garantidos por hipoteca ou alienação fiduciária e exige que o papel traga valor nominal e data de vencimento. O mesmo artigo prevê a emissão sob forma nominativa, transferível mediante endosso em preto."
+     }
+    ],
+    "sustentacao": "Lei 10.931/2004, art. 12: bancos comerciais, múltiplos com carteira de crédito imobiliário, Caixa e demais instituições autorizadas pelo BC \"poderão emitir [...] Letra de Crédito Imobiliário - LCI, lastreada por créditos imobiliários garantidos por hipoteca ou por alienação fiduciária de coisa imóvel\". O § 1º: \"A LCI será emitida sob a forma nominativa, podendo ser transferível mediante endosso em preto\" e conterá \"IV - o valor nominal e a data de vencimento\"."
+   },
+   {
+    "chave": "5c3d18152e7c",
+    "segmentos": [
+     {
+      "t": " Na renda fixa, o imposto de renda cai conforme o tempo de aplicação: a "
+     },
+     {
+      "t": "Lei 11.033/2004",
+      "href": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm"
+     },
+     {
+      "t": " fixa 22,5% em aplicações de até 180 dias, 20% de 181 a 360 dias, 17,5% de 361 a 720 dias e 15% acima de 720 dias. Resgatar cedo custa alíquota mais alta."
+     }
+    ],
+    "sustentacao": "Lei 11.033/2004, art. 1º: \"I - 22,5% [...] em aplicações com prazo de até 180 (cento e oitenta) dias; II - 20% [...] de 181 [...] até 360 [...] dias; III - 17,5% [...] de 361 [...] até 720 [...] dias; IV - 15% [...] em aplicações com prazo acima de 720 (setecentos e vinte) dias.\""
+   },
+   {
+    "chave": "2c6bcd5fc785",
+    "segmentos": [
+     {
+      "t": " Conta corrente, poupança, CDB, RDB, LCI e LCA contam com a garantia do "
+     },
+     {
+      "t": "FGC",
+      "href": "https://www.fgc.org.br/"
+     },
+     {
+      "t": ", limitada a R$ 250 mil por CPF contra a mesma instituição associada ou contra todas as instituições do mesmo conglomerado financeiro."
+     }
+    ],
+    "sustentacao": "Página do FGC: \"Conheça os produtos garantidos pelo FGC em até R$ 250 mil — Conta corrente e poupança; CDB e RDB; LCI; LCD; LCA; LH\". E: \"O valor máximo de cada pessoa, física (CPF) ou jurídica [...] contra a mesma instituição associada, ou contra todas as instituições associadas do mesmo conglomerado financeiro será garantido até o valor de R$ 250.000,00\"."
+   },
+   {
+    "chave": "d92e0d89216f",
+    "segmentos": [
+     {
+      "t": " Parte da demora é jurídica. Pelo "
+     },
+     {
+      "t": "art. 1.227 do Código Civil",
+      "href": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm"
+     },
+     {
+      "t": ", direitos reais sobre imóveis constituídos ou transmitidos por atos entre vivos só se adquirem com o registro do título no Cartório de Registro de Imóveis: assinar a escritura não encerra a operação."
+     }
+    ],
+    "sustentacao": "Código Civil (Lei 10.406/2002), art. 1.227: \"Os direitos reais sobre imóveis constituídos, ou transmitidos por atos entre vivos, só se adquirem com o registro no Cartório de Registro de Imóveis dos referidos títulos (arts. 1.245 a 1.247), salvo os casos expressos neste Código.\""
+   },
+   {
+    "chave": "3364cfa385a2",
+    "segmentos": [
+     {
+      "t": " Esses métodos pertencem à engenharia de avaliações, campo representado no país pelo "
+     },
+     {
+      "t": "IBAPE",
+      "href": "https://www.ibape-nacional.com.br/"
+     },
+     {
+      "t": " — Instituto Brasileiro de Avaliações e Perícias de Engenharia."
+     }
+    ],
+    "sustentacao": "Site verificado (status 200), título da página: \"IBAPE Nacional - Instituto Brasileiro de Avaliações e Perícias de Engenharia\", com conteúdo sobre avaliações e perícias."
+   }
+  ],
+  "acrescimos": [
+   {
+    "depois_de": "5c3d18152e7c",
+    "sustentacao": "Decreto 6.306/2007, art. 32: \"O IOF será cobrado à alíquota de um por cento ao dia sobre o valor do resgate, cessão ou repactuação, limitado ao rendimento da operação, em função do prazo, conforme tabela constante do Anexo.\" O Anexo lista o limite do rendimento por dia: 01 dia — 96; 15 dias — 50; 30 dias — 00. Lei 8.177/1991, art. 12, II, com redação da Lei 12.703/2012: juros de \"a) 0,5% [...] ao mês, enquanto a meta da taxa Selic ao ano [...] for superior a 8,5%; ou b) 70% [...] da meta da taxa Selic ao ano [...] mensalizada [...] nos demais casos\", sendo que \"§ 1º A remuneração será calculada sobre o menor saldo apresentado em cada período de rendimento\".",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "segmentos": [
+       {
+        "t": "O custo de resgatar cedo"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "Resgate em menos de trinta dias esbarra no IOF. O "
+       },
+       {
+        "t": "Decreto 6.306/2007",
+        "href": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6306.htm"
+       },
+       {
+        "t": " cobra 1% ao dia sobre o valor resgatado, limitado ao rendimento da operação e decrescente segundo a tabela do Anexo: 96% do rendimento no primeiro dia, 50% no décimo quinto e zero a partir do trigésimo. Liquidez diária existe, mas nos primeiros trinta dias ela vem com pedágio."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "A poupança segue regra própria. A "
+       },
+       {
+        "t": "Lei 8.177/1991",
+        "href": "https://www.planalto.gov.br/ccivil_03/leis/l8177.htm"
+       },
+       {
+        "t": ", com a redação dada pela Lei 12.703/2012, remunera o depósito com a TR mais 0,5% ao mês enquanto a meta Selic estiver acima de 8,5% ao ano, e com 70% da meta Selic mensalizada nos demais casos. A remuneração incide sobre o menor saldo apresentado em cada período de rendimento, de modo que o saque antes do aniversário derruba o rendimento daquele mês."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "depois_de": "83fc6bcc3d70",
+    "sustentacao": "Lei 6.015/1973, art. 206: \"Cessarão automaticamente os efeitos da prenotação, se, decorridos trinta (30) dias do seu lançamento no protocolo, o título não tiver sido registrado.\" Lei 9.514/1997, art. 27, com redação da Lei 14.711/2023: \"Consolidada a propriedade em seu nome, o fiduciário promoverá leilão público para a alienação do imóvel, no prazo de 60 (sessenta) dias, contado da data do registro de que trata o § 7º do art. 26 desta Lei.\"",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "segmentos": [
+       {
+        "t": "Os prazos entre o acordo e o dinheiro na conta"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "Fechado o negócio, o título entra no protocolo do cartório e passa a correr contra o relógio. O "
+       },
+       {
+        "t": "art. 206 da Lei 6.015/1973",
+        "href": "https://www.planalto.gov.br/ccivil_03/leis/l6015consolidado.htm"
+       },
+       {
+        "t": " determina que os efeitos da prenotação cessam automaticamente se, decorridos trinta dias do lançamento no protocolo, o título não tiver sido registrado. Exigência não cumprida a tempo devolve a operação ao começo da fila, e a prioridade conquistada pelo número de ordem se perde."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "Imóvel financiado carrega uma etapa a mais. Na "
+       },
+       {
+        "t": "Lei 9.514/1997",
+        "href": "https://www.planalto.gov.br/ccivil_03/leis/l9514.htm"
+       },
+       {
+        "t": ", a propriedade permanece com o credor fiduciário até a quitação; consolidada a propriedade em nome dele por falta de pagamento, o art. 27 obriga a levar o imóvel a leilão público em sessenta dias contados do registro da consolidação. É uma venda com data marcada, e o preço tende a refletir isso."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "depois_de": "82707eedcf8a",
+    "sustentacao": "Site da ABECIP, destaque verificado em 05/09/2026: \"Financiamentos imobiliários do SBPE alcançam R$ 21 bilhões em julho\", com referência a julho de 2026. Lei 4.591/1964, art. 43-A, incluído pela Lei 13.786/2018: \"A entrega do imóvel em até 180 (cento e oitenta) dias corridos da data estipulada contratualmente como data prevista para conclusão do empreendimento, desde que expressamente pactuado [...] não dará causa à resolução do contrato por parte do adquirente nem ensejará o pagamento de qualquer penalidade pelo incorporador. § 1º Se a entrega do imóvel ultrapassar o prazo estabelecido no caput deste artigo, desde que o adquirente não tenha dado causa ao atraso, poderá ser promovida por este a resolução do contrato\".",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "segmentos": [
+       {
+        "t": "Crédito e prazo de obra também mexem na liquidez"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "A demanda por imóvel depende de financiamento. A "
+       },
+       {
+        "t": "ABECIP",
+        "href": "https://www.abecip.org.br/"
+       },
+       {
+        "t": " registrou R$ 21 bilhões em financiamentos imobiliários com recursos da poupança, o SBPE, em julho de 2026. O número dá a medida de quantos negócios só se fecham com crédito, e o comprador que depende de aprovação bancária alonga o prazo entre a proposta e a assinatura."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "Imóvel na planta tem calendário próprio. O art. 43-A da Lei 4.591/1964, incluído pela "
+       },
+       {
+        "t": "Lei 13.786/2018",
+        "href": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13786.htm"
+       },
+       {
+        "t": ", admite entrega com até 180 dias corridos de atraso sobre a data prevista em contrato, desde que a tolerância esteja pactuada de forma clara e destacada, sem que isso dê causa à resolução. Ultrapassado esse prazo, o adquirente que não deu causa ao atraso pode promover a resolução do contrato. Até a entrega e o registro, o que se tem para revender é um direito contratual, não a matrícula."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "depois_de": "a1aa89718abd",
+    "sustentacao": "Lei 13.259/2016, art. 21 da Lei 8.981/1995 na redação por ela dada: \"I - 15% [...] sobre a parcela dos ganhos que não ultrapassar R$ 5.000.000,00; II - 17,5% [...] que exceder R$ 5.000.000,00 e não ultrapassar R$ 10.000.000,00; III - 20% [...] que exceder R$ 10.000.000,00 e não ultrapassar R$ 30.000.000,00; e IV - 22,5% [...] sobre a parcela dos ganhos que ultrapassar R$ 30.000.000,00\". Lei 11.196/2005, art. 39: \"Fica isento do imposto de renda o ganho auferido por pessoa física residente no País na venda de imóveis residenciais, desde que o alienante, no prazo de 180 (cento e oitenta) dias contado da celebração do contrato, aplique o produto da venda na aquisição de imóveis residenciais localizados no País\"; § 2º: \"A aplicação parcial do produto da venda implicará tributação do ganho proporcionalmente ao valor da parcela não aplicada\".",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "segmentos": [
+       {
+        "t": "O imposto que entra na conta da venda"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "Vender rápido e vender líquido são coisas diferentes. Sobre o ganho de capital da alienação, a "
+       },
+       {
+        "t": "Lei 13.259/2016",
+        "href": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13259.htm"
+       },
+       {
+        "t": " aplica 15% na parcela do ganho até R$ 5 milhões, 17,5% entre R$ 5 milhões e R$ 10 milhões, 20% entre R$ 10 milhões e R$ 30 milhões e 22,5% no que exceder R$ 30 milhões."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "segmentos": [
+       {
+        "t": "Há uma saída prevista para quem vende para comprar outro imóvel. O "
+       },
+       {
+        "t": "art. 39 da Lei 11.196/2005",
+        "href": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11196.htm"
+       },
+       {
+        "t": " isenta o ganho da pessoa física residente no País que aplicar o produto da venda de imóveis residenciais na aquisição de outro imóvel residencial no País dentro de 180 dias contados da celebração do contrato. A aplicação parcial do produto tributa o ganho na proporção da parcela não reaplicada, o que amarra o prazo da venda ao prazo da compra seguinte."
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "links_finais": 14,
+  "urls_usadas": [
+   "https://www.gov.br/tesouronacional/pt-br",
+   "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.931.htm",
+   "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l11033.htm",
+   "https://www.fgc.org.br/",
+   "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+   "https://www.ibape-nacional.com.br/",
+   "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6306.htm",
+   "https://www.planalto.gov.br/ccivil_03/leis/l8177.htm",
+   "https://www.planalto.gov.br/ccivil_03/leis/l6015consolidado.htm",
+   "https://www.planalto.gov.br/ccivil_03/leis/l9514.htm",
+   "https://www.abecip.org.br/",
+   "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13786.htm",
+   "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13259.htm",
+   "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11196.htm"
+  ],
+  "nao_alcancou": ""
+ },
+ "veredito": null
+}

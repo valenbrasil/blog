@@ -1,0 +1,220 @@
+{
+ "plano": {
+  "acrescimos": [
+   {
+    "depois_de": "06bbd1c03ef6",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Público, gratuito e acessível"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "O que separa um parklet de uma extensão privada do bar da esquina é a obrigação de acesso livre. O decreto paulistano veda em qualquer hipótese o uso exclusivo pelo mantenedor e exige placa visível com a frase \"Este é um espaço público acessível a todos\". Como a plataforma passa a funcionar como passeio, valem sobre ela as exigências da "
+       },
+       {
+        "t": "Lei 10.098/2000",
+        "href": "https://www.planalto.gov.br/ccivil_03/leis/l10098.htm"
+       },
+       {
+        "t": ", que estabelece normas gerais de acessibilidade nas vias públicas e no mobiliário urbano."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "A página Parklets da São Paulo Urbanismo (prefeitura.sp.gov.br/web/sp_urbanismo/w/325267), lida na íntegra, afirma que é vedada em qualquer hipótese a utilização exclusiva do parklet e que o proponente deve afixar placa com os dizeres \"Este é um espaço público acessível a todos\". A Lei 10.098/2000 no Planalto (verificador: viva, título L10098, termos \"acessibilidade\", \"mobiliário urbano\" e \"vias públicas\" presentes, além da ementa \"Estabelece normas gerais e critérios...\")."
+   },
+   {
+    "depois_de": "a29ab450b4bb",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Do experimento à política permanente"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Em São Francisco esse caminho já se fechou. O programa de parklets deixou de existir como categoria própria e as autorizações foram absorvidas pelo "
+       },
+       {
+        "t": "Shared Spaces",
+        "href": "https://www.sf.gov/shared-spaces"
+       },
+       {
+        "t": ", que a cidade transformou em programa permanente. No Brasil, a redistribuição do espaço da via tem apoio normativo: a "
+       },
+       {
+        "t": "Lei 12.587/2012",
+        "href": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12587.htm"
+       },
+       {
+        "t": ", que institui a Política Nacional de Mobilidade Urbana, lista entre seus princípios a prioridade dos modos de transportes não motorizados sobre os motorizados."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Antes dela, o "
+       },
+       {
+        "t": "Estatuto da Cidade",
+        "href": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10257.htm"
+       },
+       {
+        "t": " já fixava, como diretrizes da política urbana, a ordenação do pleno desenvolvimento das funções sociais da cidade e a garantia do direito a cidades sustentáveis. Na escala internacional, a meta 11.7 dos "
+       },
+       {
+        "t": "Objetivos de Desenvolvimento Sustentável",
+        "href": "https://sdgs.un.org/goals/goal11"
+       },
+       {
+        "t": " pede acesso universal a espaços públicos e verdes seguros, inclusivos e acessíveis — que é exatamente a escala em que o parklet opera."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "Groundplay (groundplaysf.org/parklets), lido, informa que o Parklet Program está transitando para o Shared Spaces após aprovação da legislação permanente pelo Board of Supervisors; a página sf.gov/shared-spaces foi verificada viva, título \"Shared Spaces | SF.gov\". Lei 12.587/2012 no Planalto: verificador confirma \"tica Nacional de Mobilidade Urbana\", \"prioridade dos modos de transportes n\" e \"o motorizados sobre os motorizados\" no texto. Lei 10.257/2001: verificador confirma \"Estatuto da Cidade\", \"ordenar o pleno desenvolvimento das fun[ções sociais da cidade]\" e \"direito a cidades sustent[áveis]\". sdgs.un.org/goals/goal11: verificador confirma \"11.7\", \"universal access to safe, inclusive and accessible\" e \"green and public spaces\"."
+   }
+  ],
+  "ancoras": [
+   {
+    "chave": "7021d589cddc",
+    "ancora": "Decreto 55.045 da cidade de São Paulo",
+    "href": "https://prefeitura.sp.gov.br/web/sp_urbanismo/w/325267",
+    "sustentacao": "Página oficial \"Parklets — São Paulo Urbanismo\" (verificador: viva, status 200, título \"Parklets - São Paulo Urbanismo - Prefeitura\", termos \"parklet\" e \"passeio público\" presentes). O texto lido diz que o Decreto Municipal 55.045/2014, de abril de 2014, \"regulamenta a instalação e o uso de extensão temporária de passeio público, denominada parklet\"."
+   },
+   {
+    "chave": "7021d589cddc",
+    "ancora": "Programa de Parklets de San Francisco",
+    "href": "https://groundplaysf.org/parklets/",
+    "sustentacao": "Groundplay é o site do programa de parklets da cidade de São Francisco (verificador: viva, status 200, título \"Parklets – Groundplay\", termo \"parklet\" presente). O conteúdo lido descreve o Parklet Program e sua transição para o Shared Spaces."
+   }
+  ],
+  "emendas": [
+   {
+    "chave": "80c1fe0ab54f",
+    "segmentos": [
+     {
+      "t": " Em São Paulo a definição é normativa: a "
+     },
+     {
+      "t": "página de parklets da Gestão Urbana da Prefeitura de São Paulo",
+      "href": "https://gestaourbana.prefeitura.sp.gov.br/projetos-urbanos/parklets/"
+     },
+     {
+      "t": " trata o parklet como extensão temporária do espaço público sobre a área de estacionamento, e admite que a iniciativa parta de pessoa física, de pessoa jurídica ou do próprio poder público."
+     }
+    ],
+    "sustentacao": "Verificador: gestaourbana.prefeitura.sp.gov.br/projetos-urbanos/parklets/ viva, status 200, termo \"parklet\" presente. O conteúdo lido descreve parklets como \"extensões temporárias\" do espaço público em áreas de estacionamento e afirma que \"o parklet pode ser implantado por pessoa física, jurídica ou pelo poder público\"."
+   },
+   {
+    "chave": "083183a7bccc",
+    "segmentos": [
+     {
+      "t": " A data costuma ser fixada em 16 de novembro de 2005, quando o coletivo Rebar pagou um parquímetro no cruzamento da 1st com a Mission, em São Francisco, e ocupou a vaga com grama, um banco e uma árvore pelo tempo que o medidor durou. No ano seguinte a ideia virou evento anual, o "
+     },
+     {
+      "t": "Park(ing) Day",
+      "href": "https://www.myparkingday.org/about"
+     },
+     {
+      "t": "."
+     }
+    ],
+    "sustentacao": "Página About do Park(ing) Day (verificador: viva, status 200, título \"About — Park(ing) Day\", termos \"Rebar\", \"2005\" e \"parking space\" presentes). O texto lido informa que a primeira instalação Park(ing) ocorreu em 16 de novembro de 2005 na 1st com Mission, em São Francisco, pelo coletivo Rebar, e que no ano seguinte lançaram o Park(ing) Day como evento anual."
+   },
+   {
+    "chave": "7e7f01b5b289",
+    "segmentos": [
+     {
+      "t": " No Brasil cada cidade escreveu a sua regra: "
+     },
+     {
+      "t": "Porto Alegre chegou a doze parklets abertos ao público",
+      "href": "https://prefeitura.poa.br/smde/noticias/parklets-capital-tem-12-novos-espacos-de-convivio-nas-calcadas"
+     },
+     {
+      "t": ", e o Rio de Janeiro reuniu suas intervenções de rua no programa "
+     },
+     {
+      "t": "Paradas Cariocas",
+      "href": "https://itdpbrasil.org/paradascariocas/"
+     },
+     {
+      "t": "."
+     }
+    ],
+    "sustentacao": "Prefeitura de Porto Alegre (verificador: viva, status 200, título \"Parklets: Capital tem 12 novos espaços de convívio nas calçadas\", termo \"parklet\" presente); o conteúdo lido informa 12 parklets instalados e disponíveis ao público. ITDP Brasil (verificador: viva, status 200, título \"Conheça o programa Paradas Cariocas no Rio de Janeiro\", termos \"Paradas Cariocas\", \"Rio de Janeiro\", \"calçada\" e \"parklet\" todos presentes)."
+   },
+   {
+    "chave": "06bbd1c03ef6",
+    "segmentos": [
+     {
+      "t": " O manual paulistano fixa limites concretos: nada de parklet em via com velocidade regulamentada acima de 50 km/h, nem sobre faixa exclusiva de ônibus, ciclovia ou ciclofaixa; e "
+     },
+     {
+      "t": "instalação, manutenção e remoção ficam por conta do mantenedor",
+      "href": "https://gestaourbana.prefeitura.sp.gov.br/projetos-urbanos/parklets/como-implantar/"
+     },
+     {
+      "t": ", não da prefeitura."
+     }
+    ],
+    "sustentacao": "Página \"Como Implantar\" da Gestão Urbana SP (verificador: viva, status 200, termos \"parklet\" e \"passeio público\" presentes). O conteúdo lido diz que não é permitido em vias com limite acima de 50 km/h nem onde haja faixa exclusiva de ônibus, ciclovias ou ciclofaixas, e que \"instalação, manutenção e remoção do parklet são de responsabilidade exclusiva do mantenedor\"."
+   },
+   {
+    "chave": "6fab4374f5c9",
+    "segmentos": [
+     {
+      "t": " A vegetação não entra só como acabamento: a Organização Mundial da Saúde reuniu o que se sabe sobre o assunto em "
+     },
+     {
+      "t": "um documento dedicado às áreas verdes urbanas",
+      "href": "https://www.who.int/europe/publications/i/item/9789289052498"
+     },
+     {
+      "t": ", que trata de planejamento, desenho e uso desses espaços nas cidades."
+     }
+    ],
+    "sustentacao": "Verificador: who.int/europe/publications/i/item/9789289052498 viva, status 200, título \"Urban green spaces: a brief for action\", termo \"green space\" presente. O sumário lido descreve as seções sobre benefícios, planejamento e desenho, engajamento comunitário e promoção do uso desses espaços."
+   }
+  ],
+  "links_finais": 13,
+  "nao_alcancou": "",
+  "slug": "parklets",
+  "urls_usadas": [
+   "https://prefeitura.sp.gov.br/web/sp_urbanismo/w/325267",
+   "https://groundplaysf.org/parklets/",
+   "https://gestaourbana.prefeitura.sp.gov.br/projetos-urbanos/parklets/",
+   "https://www.myparkingday.org/about",
+   "https://prefeitura.poa.br/smde/noticias/parklets-capital-tem-12-novos-espacos-de-convivio-nas-calcadas",
+   "https://itdpbrasil.org/paradascariocas/",
+   "https://gestaourbana.prefeitura.sp.gov.br/projetos-urbanos/parklets/como-implantar/",
+   "https://www.who.int/europe/publications/i/item/9789289052498",
+   "https://www.planalto.gov.br/ccivil_03/leis/l10098.htm",
+   "https://www.sf.gov/shared-spaces",
+   "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12587.htm",
+   "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10257.htm",
+   "https://sdgs.un.org/goals/goal11"
+  ]
+ },
+ "veredito": null
+}

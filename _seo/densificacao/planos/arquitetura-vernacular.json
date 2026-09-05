@@ -1,0 +1,275 @@
+{
+ "plano": {
+  "slug": "arquitetura-vernacular",
+  "ancoras": [
+   {
+    "chave": "675b43d76174",
+    "ancora": "Yurtas",
+    "href": "https://ich.unesco.org/en/RL/traditional-knowledge-and-skills-in-making-kyrgyz-kazakh-and-karakalpak-yurts-turkic-nomadic-dwellings-02284",
+    "sustentacao": "A página da UNESCO afirma: \"The yurt is a nomadic dwelling with a collapsible wooden circular frame covered with felt and braided with ropes. It can be easily assembled and dismantled within a short period of time. Yurts are made from natural and renewable raw materials.\" — confere com o bloco, que descreve treliças de madeira, cobertura de lã e facilidade de desmontagem e transporte."
+   }
+  ],
+  "emendas": [
+   {
+    "chave": "ce734063af9b",
+    "segmentos": [
+     {
+      "t": " O ICOMOS ratificou uma "
+     },
+     {
+      "t": "Carta do Patrimônio Vernáculo Construído",
+      "href": "https://ciav.icomos.org/charter-on-the-built-vernacular-herigage-english/"
+     },
+     {
+      "t": " em sua 12ª Assembleia Geral, no México, em outubro de 1999, voltada à conservação desse conjunto de construções."
+     }
+    ],
+    "sustentacao": "A página do comitê CIAV do ICOMOS traz o documento sob o título \"CHARTER ON THE BUILT VERNACULAR HERITAGE\" com a linha \"Ratified by the ICOMOS 12th General Assembly, in Mexico, October 1999\", além dos índices Introduction, General Issues, Principles of Conservation e Guidelines in Practise."
+   },
+   {
+    "chave": "274b573a0507",
+    "segmentos": [
+     {
+      "t": " O peso do setor no balanço global é grande: segundo o "
+     },
+     {
+      "t": "Programa das Nações Unidas para o Meio Ambiente",
+      "href": "https://www.unep.org/topics/cities/buildings-and-construction"
+     },
+     {
+      "t": ", edificações e construção respondem por cerca de 37% das emissões de CO2 ligadas a energia e a processos e por mais de 34% da demanda mundial de energia."
+     }
+    ],
+    "sustentacao": "A página do UNEP afirma: \"Buildings are a heavyweight for climate action, responsible for around 37 per cent of energy and process-related CO2 emissions and over 34 per cent of energy demand.\""
+   },
+   {
+    "chave": "17fecd59dfe2",
+    "segmentos": [
+     {
+      "t": " A Turquia inscreveu Harran e Sanliurfa na "
+     },
+     {
+      "t": "lista indicativa do Patrimônio Mundial",
+      "href": "https://whc.unesco.org/en/tentativelists/1400"
+     },
+     {
+      "t": " em 25 de fevereiro de 2000, e o texto submetido descreve as casas de tijolo de barro com telhados cônicos como únicas. Harran fica a 48 km ao sul de Sanliurfa."
+     }
+    ],
+    "sustentacao": "A ficha da lista indicativa da UNESCO (ref. 1400, Türkiye) traz \"Date of Submission: 25/02/2000\", \"Harran lies 48 kms on the south of Sanliurfa\" e \"The traditional civil architecture, mudbrick houses with conic roofs, are unique.\""
+   },
+   {
+    "chave": "478ed9c4fb84",
+    "segmentos": [
+     {
+      "t": " As aldeias de "
+     },
+     {
+      "t": "Hahoe e Yangdong",
+      "href": "https://whc.unesco.org/en/list/1324/"
+     },
+     {
+      "t": ", fundadas entre os séculos 14 e 15 e inscritas na Lista do Patrimônio Mundial, reúnem residências das famílias principais, casas de estrutura de madeira dos demais membros do clã e conjuntos de casas térreas de paredes de barro e telhado de palha."
+     }
+    ],
+    "sustentacao": "A ficha da UNESCO diz: \"Founded in the 14th-15th centuries, Hahoe and Yangdong are seen as the two most representative historic clan villages in the Republic of Korea\" e \"They include residences of the head families, together with substantial timber framed houses of other clan members, also pavilions, study halls, Confucian academies for learning, and clusters of one story mud-walled, thatched-roofed houses, formerly for commoners.\""
+   },
+   {
+    "chave": "cdc41f341286",
+    "segmentos": [
+     {
+      "t": " A técnica é antiga: nos Alpes, um bem em série de "
+     },
+     {
+      "t": "111 sítios arqueológicos",
+      "href": "https://whc.unesco.org/en/list/1363/"
+     },
+     {
+      "t": " reúne vestígios de povoados palafíticos erguidos às margens de lagos, rios e áreas alagadas entre cerca de 5000 e 500 a.C., 56 deles na Suíça."
+     }
+    ],
+    "sustentacao": "A ficha da UNESCO afirma: \"This serial property of 111 small individual sites encompasses the remains of prehistoric pile-dwelling (or stilt house) settlements in and around the Alps built from around 5000 to 500 B.C. on the edges of lakes, rivers or wetlands\" e \"Fifty-six of the sites are located in Switzerland.\""
+   },
+   {
+    "chave": "2bfeaca2240d",
+    "segmentos": [
+     {
+      "t": " O material é neve endurecida, chamada pukaangajuq, e a palavra iglu significa casa em inuktitut; conforme o "
+     },
+     {
+      "t": "verbete Igloo da The Canadian Encyclopedia",
+      "href": "https://www.thecanadianencyclopedia.ca/en/article/igloo"
+     },
+     {
+      "t": ", as construções tinham em geral de 3 a 3,5 metros de altura e de 3,5 a 4,5 metros de diâmetro, e as maiores abrigavam cerca de 20 pessoas."
+     }
+    ],
+    "sustentacao": "O verbete afirma: \"Igloo (iglu in Inuktitut, meaning \"house\"), is a winter dwelling made of snow\"; \"An igloo is a dome-shaped dwelling made of hard snow known as pukaangajuq\"; \"Commonly, igloos were about 3 to 3.5 m high and 3.5 to 4.5 m in diameter. They often housed a family. Larger igloos could accommodate up to about 20 people.\""
+   },
+   {
+    "chave": "379dd7654c4c",
+    "segmentos": [
+     {
+      "t": " A mesma carpintaria de madeira do norte russo aparece no "
+     },
+     {
+      "t": "Pogost de Kizhi",
+      "href": "https://whc.unesco.org/en/list/544/"
+     },
+     {
+      "t": ", em uma ilha do lago Onega, na Carélia, com duas igrejas de madeira do século 18 e um campanário octogonal montado em 1862."
+     }
+    ],
+    "sustentacao": "A ficha da UNESCO diz: \"The pogost of Kizhi (i.e. the Kizhi enclosure) is located on one of the many islands in Lake Onega, in Karelia. Two 18th-century wooden churches, and an octagonal clock tower, also in wood and built in 1862, can be seen there.\""
+   },
+   {
+    "chave": "a43bf526c3c1",
+    "segmentos": [
+     {
+      "t": " As formas variam entre os povos: conforme a "
+     },
+     {
+      "t": "Enciclopédia Povos Indígenas no Brasil",
+      "href": "https://pib.socioambiental.org/pt/Povo:Yanomami"
+     },
+     {
+      "t": ", os grupos locais yanomami se organizam em uma casa plurifamiliar em forma de cone ou de cone truncado, chamada yano ou xapono, enquanto os grupos do norte e do nordeste vivem em aldeias compostas de casas retangulares."
+     }
+    ],
+    "sustentacao": "A enciclopédia afirma: \"Os grupos locais yanomami são geralmente constituídos por uma casa plurifamiliar em forma de cone ou de cone truncado chamado yano ou xapono (Yanomami orientais e ocidentais), ou por aldeias compostas de casas de tipos retangulares (Yanomami do norte e nordeste).\""
+   },
+   {
+    "chave": "c447bc7d67e8",
+    "segmentos": [
+     {
+      "t": " A execução tem parâmetros conhecidos: segundo a "
+     },
+     {
+      "t": "ficha do Portal Virtuhab, da UFSC",
+      "href": "https://portalvirtuhab.paginas.ufsc.br/en/pau-a-pique/"
+     },
+     {
+      "t": ", a terra de fechamento deve ficar perto de 40% de argila e 60% de areia, a fundação em pedra ou concreto precisa manter a parede a pelo menos 30 cm do solo e o telhado é montado antes das paredes, com beiral de mais de 50 cm para protegê-las do sol e da chuva."
+     }
+    ],
+    "sustentacao": "A ficha do Portal Virtuhab (UFSC) traz: \"Recomenda-se que a fundação fique, no mínimo, a 30 cm do solo\"; \"O telhado é instalado antes do início da construção das paredes... Portanto seu beiral deve possuir mais de 50 cm de comprimento\"; \"A escolha da terra utilizada para o fechamento das paredes deve obedecer a porcentagem aproximada de 40% de argila e 60%\" de areia."
+   },
+   {
+    "chave": "6ca97601f1cc",
+    "segmentos": [
+     {
+      "t": " Essa técnica é a "
+     },
+     {
+      "t": "taipa de pilão",
+      "href": "https://www.museudacidade.prefeitura.sp.gov.br/sobre-mcsp/sitio-morrinhos/taipa-de-pilao/"
+     },
+     {
+      "t": ", de origem árabe, que consiste no apiloamento de terra úmida entre dois pranchões de madeira removíveis, o taipal. Ela caracterizou as construções paulistas dos séculos 16, 17, 18 e da primeira metade do 19, persistência ligada ao isolamento imposto pela travessia da Serra do Mar."
+     }
+    ],
+    "sustentacao": "O Museu da Cidade de São Paulo descreve: \"Técnica construtiva de origem árabe utilizada na fatura de paredes e muros e que consiste no forte apiloamento de terra úmida entre dois pranchões de madeira removíveis que, no taipal, se mantém de pé...\" e \"A taipa de pilão caracterizou todas as construções paulistas dos séculos 16, 17, 18 e primeira metade do 19, numa persistência cultural decorrente, sobretudo, do isolamento causado pela dificuldade de transposição da Serra do Mar.\" \"Taipal: armação de madeira usada na feitura da taipa de pilão.\""
+   }
+  ],
+  "acrescimos": [
+   {
+    "depois_de": "5e6671e6692d",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "A terra crua no Patrimônio Mundial"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Construir com terra crua não é exceção no acervo protegido: em 2011, mais de 10% dos bens inscritos na Lista do Patrimônio Mundial incorporavam estruturas de terra, de mesquitas e palácios a celeiros, centros históricos e paisagens culturais. A durabilidade, porém, depende de manutenção contínua — cerca de um quarto dos sítios que estão na Lista do Patrimônio Mundial em Perigo são construções de terra."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "O "
+       },
+       {
+        "t": "Programa de Arquitetura de Terra da UNESCO",
+        "href": "https://whc.unesco.org/en/earthen-architecture/"
+       },
+       {
+        "t": " trabalha na conservação e na gestão desses sítios, ameaçados por enchentes e terremotos, pela industrialização e urbanização, por tecnologias construtivas modernas e pelo desaparecimento das práticas tradicionais de conservação."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "A página do WHEAP afirma: \"In 2011, over 10% of the World Heritage properties incorporate earthen structures\"; \"about ¼ of the sites inscribed on the World Heritage List in Danger are earthen sites\"; \"increasingly threatened by natural and human impacts (e.g. floods and earthquakes, industrialization, urbanization, modern building technologies, disappearance of traditional conservation practices...)\"; \"It includes a great variety of structures, ranging from mosques, palaces and granaries, to historic city centres, cultural landscapes and archaeological sites.\""
+   },
+   {
+    "depois_de": "fdbaa4795fa6",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "O vernáculo na arquitetura contemporânea"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Esse repertório já chegou ao topo da premiação da profissão. O arquiteto Francis Kéré, nascido em Gando, Burkina Faso, e radicado em Berlim, recebeu o "
+       },
+       {
+        "t": "Prêmio Pritzker de 2022",
+        "href": "https://www.pritzkerprize.com/laureates/diebedo-francis-kere"
+       },
+       {
+        "t": ", anunciado em 15 de março daquele ano. Sua primeira obra, a escola primária de Gando, de 2001, foi construída pela própria comunidade, que participou da concepção à execução com seu trabalho e seus recursos, quase tudo feito à mão."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "O júri destacou o uso inteligente de materiais locais para responder ao clima em contextos de escassez. A infância de Kéré em uma sala de aula de blocos de cimento sem ventilação nem luz adequada é o ponto de partida declarado dessa pesquisa."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "A página do Pritzker diz: \"Diébédo Francis Kéré Receives the 2022 Pritzker Architecture Prize. Chicago, IL (March 15, 2022)\"; \"Born in Gando, Burkina Faso and based in Berlin, Germany\"; \"Through his commitment to social justice and engagement, and intelligent use of local materials to connect and respond to the natural climate\"; \"His first building, Gando Primary School (2001, Gando, Burkina Faso), was built by and for the people of Gando. Locals offered their input, labor and resources from conception to completion... crafting nearly every part of the school by hand\"; \"His small childhood classroom in Tenkodogo was constructed of cement blocks and lacked ventilation and light.\""
+   }
+  ],
+  "links_finais": 13,
+  "urls_usadas": [
+   "https://ich.unesco.org/en/RL/traditional-knowledge-and-skills-in-making-kyrgyz-kazakh-and-karakalpak-yurts-turkic-nomadic-dwellings-02284",
+   "https://ciav.icomos.org/charter-on-the-built-vernacular-herigage-english/",
+   "https://www.unep.org/topics/cities/buildings-and-construction",
+   "https://whc.unesco.org/en/tentativelists/1400",
+   "https://whc.unesco.org/en/list/1324/",
+   "https://whc.unesco.org/en/list/1363/",
+   "https://www.thecanadianencyclopedia.ca/en/article/igloo",
+   "https://whc.unesco.org/en/list/544/",
+   "https://pib.socioambiental.org/pt/Povo:Yanomami",
+   "https://portalvirtuhab.paginas.ufsc.br/en/pau-a-pique/",
+   "https://www.museudacidade.prefeitura.sp.gov.br/sobre-mcsp/sitio-morrinhos/taipa-de-pilao/",
+   "https://whc.unesco.org/en/earthen-architecture/",
+   "https://www.pritzkerprize.com/laureates/diebedo-francis-kere"
+  ],
+  "nao_alcancou": "Alcancei 13 links, dentro da meta. Registro o que ficou de fora por falta de fonte que eu pudesse abrir: IBGE (agenciadenoticias, educa e ibge.gov.br responderam 403 pelo proxy), CAU/BR (403), IPHAN (portal.iphan.gov.br redireciona para a home do gov.br/iphan e o PDF dos Cadernos de Encargos não abre), repositório da UFBA e arqpop.arq.ufba.br (falha de certificado TLS). Por isso não incluí dado censitário sobre domicílios de taipa nem fonte oficial de patrimônio brasileira, e não linkei nada para as casas Musgum (Tolek) nem para as casas himba, que não têm registro em fonte primária verificável — os Musgum não constam da Lista nem da lista indicativa da UNESCO, e o sítio camaronês inscrito na região (Diy-Gid-Biy) é de arquitetura em pedra seca, assunto diferente do bloco."
+ },
+ "veredito": null
+}

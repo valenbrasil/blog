@@ -1,0 +1,253 @@
+{
+ "plano": {
+  "slug": "biografia-kengo-kuma",
+  "ancoras": [
+   {
+    "chave": "f13cd0e56eca",
+    "ancora": "Universidade de Tóquio",
+    "href": "https://www.u-tokyo.ac.jp/en/",
+    "sustentacao": "Site oficial da The University of Tokyo (título da página: \"The University of Tokyo\"), a instituição citada na frase; a página do escritório de Kuma registra que ele é \"University Professor and Professor Emeritus at the University of Tokyo\"."
+   },
+   {
+    "chave": "9008b2955458",
+    "ancora": "Centro Cultural Odunpazari",
+    "href": "https://www.omm.art/en",
+    "sustentacao": "Site oficial da instituição em Eskişehir, título da página \"Odunpazarı Modern Museum\" — é o destino que o leitor espera ao clicar no nome do complexo."
+   },
+   {
+    "chave": "9402929921f4",
+    "ancora": "V&A Dundee",
+    "href": "https://www.vam.ac.uk/dundee",
+    "sustentacao": "Site oficial do museu (título \"V&A Dundee | Home\"), no domínio do Victoria and Albert Museum."
+   },
+   {
+    "chave": "db91f1ea68b4",
+    "ancora": "Japan House São Paulo",
+    "href": "https://japanhousesp.com.br/",
+    "sustentacao": "Site oficial da instituição, título \"Japan House São Paulo | Descubra um Japão fascinante com a JHSP!\", com endereço Avenida Paulista, 52."
+   }
+  ],
+  "emendas": [
+   {
+    "chave": "e3bdb0d0ab7e",
+    "segmentos": [
+     {
+      "t": "O escritório que leva seu nome, o "
+     },
+     {
+      "t": "Kengo Kuma and Associates",
+      "href": "https://kkaa.co.jp/en/about/kengo-kuma/"
+     },
+     {
+      "t": ", foi fundado em 1990 e mantém projetos em mais de 50 países. Kuma integra a "
+     },
+     {
+      "t": "Japan Art Academy",
+      "href": "https://www.geijutuin.go.jp/en/"
+     },
+     {
+      "t": ", instituição criada em 1919 que reúne artistas nomeados pelo Ministério da Educação, Cultura, Esportes, Ciência e Tecnologia do Japão e limitada a 120 membros."
+     }
+    ],
+    "sustentacao": "Página biográfica do próprio escritório: \"He established Kengo Kuma & Associates in 1990\", \"a member of the Japan Art Academy\", \"KKAA projects are currently underway in more than 50 countries\". O site da Japan Art Academy informa a fundação em 1919 (como Imperial Academy of Fine Arts), o teto de 120 membros e a nomeação pelo Minister of Education, Culture, Sports, Science and Technology."
+   },
+   {
+    "chave": "f13cd0e56eca",
+    "segmentos": [
+     {
+      "t": "Ele é hoje professor emérito da Universidade de Tóquio, onde comandou o programa de pós-graduação em arquitetura entre 2009 e 2020, depois de anos como professor na Keio. Sua ligação com Nova York começou como pesquisador visitante entre 1985 e 1986 e voltou em 1994, quando lecionou na "
+     },
+     {
+      "t": "Graduate School of Architecture, Planning and Preservation da Columbia",
+      "href": "https://www.arch.columbia.edu/"
+     },
+     {
+      "t": "."
+     }
+    ],
+    "sustentacao": "A cronologia de docência publicada pelo escritório lista \"2009 – 2020 Professor at the Graduate School of Architecture, University of Tokyo\", \"2001 – 2009 Professor at the Faculty of Science and Technology, Keio University\", \"1994 Lecturer at the Graduate School of Architecture, Planning and Preservation, Columbia University\" e \"1985 – 1986 Visiting Scholar at Graduate School, Columbia University\"; arch.columbia.edu é o site dessa escola (título \"Home - Columbia GSAPP\")."
+   },
+   {
+    "chave": "5b3972dd1594",
+    "segmentos": [
+     {
+      "t": "Em "
+     },
+     {
+      "t": "SunnyHills, loja de 2013 em Minami-Aoyama",
+      "href": "https://kkaa.co.jp/en/project/sunnyhills-at-minami-aoyama/"
+     },
+     {
+      "t": ", ele aplicou o encaixe tradicional japonês jigoku gumi numa estrutura tridimensional que permitiu reduzir a seção de cada peça de madeira a 60 mm por 60 mm."
+     }
+    ],
+    "sustentacao": "Ficha do projeto no escritório: \"Japan 2013 SunnyHills at Minami-Aoyama\", \"We used a traditional joint system in wood structure construction in Japan called 'Jigoku Gumi'\", \"The adoption of a 3D structure system enabled the cross section of one member to be reduced to as thin as 60mm x 60mm\"."
+   },
+   {
+    "chave": "e26b8b960c4a",
+    "segmentos": [
+     {
+      "t": "No "
+     },
+     {
+      "t": "Museu Nezu, em Tóquio",
+      "href": "https://kkaa.co.jp/en/project/nezu-museum/"
+     },
+     {
+      "t": ", concluído em 2009, grandes panos de vidro e um acesso ladeado por bambu foram desenhados para costurar jardim, edifício e acervo num só espaço."
+     }
+    ],
+    "sustentacao": "Ficha do projeto: \"Japan 2009 Nezu Museum\", \"providing large glass openings in an attempt to merge the garden, building and artwork\", \"featuring a bamboo lined approach\"."
+   },
+   {
+    "chave": "8b9848949ef3",
+    "segmentos": [
+     {
+      "t": "No "
+     },
+     {
+      "t": "Museu da Ponte de Madeira de Yusuhara",
+      "href": "https://kkaa.co.jp/en/project/yusuhara-wooden-bridge-museum/"
+     },
+     {
+      "t": ", em Kochi, de 2010, ele retomou uma técnica japonesa de ponte em balanço quase esquecida no país: peças de madeira laminada de pequena seção avançam pouco a pouco a partir das duas margens, sobrepostas, e o peso dos dois lados se equilibra sobre um único pilar central."
+     }
+    ],
+    "sustentacao": "Ficha do projeto: \"Japan 2010 Yusuhara Wooden Bridge Museum\", \"Kochi\", \"a unique cantilever bridge design for this structure, a traditional technique that has been forgotten in Japan\", \"using laminated wood members with small sections, and gradually extending the bridge girder a little at a time from both ends\", \"a bridge pier is provided in the center to receive the vertical load, and the load on both sides was balanced\"."
+   },
+   {
+    "chave": "9008b2955458",
+    "segmentos": [
+     {
+      "t": "Concluído em 2019, o conjunto tem 3.582 m² e fica numa área de Eskisehir chamada Odunpazarı, que em turco quer dizer bazar de madeira e ainda conserva sobrados de dois e três pavimentos do período otomano. Pela "
+     },
+     {
+      "t": "ficha técnica do Odunpazarı Modern Museum",
+      "href": "https://kkaa.co.jp/en/project/odunpazari-modern-museum/"
+     },
+     {
+      "t": ", o programa foi fatiado em caixas de madeira empilhadas, feitas de peças de mesma dimensão deslocadas umas sobre as outras para acompanhar a escala das casas vizinhas."
+     }
+    ],
+    "sustentacao": "Ficha do projeto no escritório: \"Turkey 2019 Odunpazarı Modern Museum\", \"Eskisehir\", \"3,582 m²\", \"The site which is called Odunpazari (meaning wood bazaar) still has quite a few human-scale two- and three-story wooden buildings from the age of the Ottoman Turks\", \"stacking these respective wooden boxes that are made from pieces of lumber\", \"stacking lumber pieces with the same dimensions while shifting them slightly\"."
+   },
+   {
+    "chave": "4eefd7fa866f",
+    "segmentos": [
+     {
+      "t": "O escritório registra a casa como "
+     },
+     {
+      "t": "Great (Bamboo) Wall, de 2002",
+      "href": "https://kkaa.co.jp/en/project/great-bamboo-wall/"
+     },
+     {
+      "t": ", e explica o nome: a lição tirada da Grande Muralha foi a de um edifício que não se isola do entorno, e sim acompanha o relevo — daí a camada de bambu correndo ao longo da inclinação do terreno, e daí o projeto se chamar muro, não casa."
+     }
+    ],
+    "sustentacao": "Ficha do projeto: \"China 2002 Great (Bamboo) Wall\", \"Beijing\", \"the Great Wall has never been an isolated object\", \"running almost endlessly along the undulating ridgeline\", \"we decided to place a bamboo WALL, a layer of bamboo along the site's inclination\", \"This is what the house is titled 'WALL' for, instead of 'HOUSE'\"."
+   },
+   {
+    "chave": "9402929921f4",
+    "segmentos": [
+     {
+      "t": "Aberto em setembro de 2018 com 8.445 m², é o primeiro museu de design da Escócia. A "
+     },
+     {
+      "t": "descrição do projeto no Kengo Kuma and Associates",
+      "href": "https://kkaa.co.jp/en/project/va-dundee/"
+     },
+     {
+      "t": " explica a fachada como lajes longas de concreto pré-moldado empilhadas em ângulos variados, resolvidas com desenho paramétrico para reproduzir a irregularidade das falésias das ilhas Orkney, no norte escocês. Uma passagem em forma de caverna atravessa o edifício e religa o rio Tay à Union Street, eixo do centro de Dundee."
+     }
+    ],
+    "sustentacao": "Ficha do projeto: \"UK 2018 V&A Dundee\", \"2018.9\", \"8,445 m²\", \"It is the first design museum in Scotland\", \"stacking layers of long slabs of precast concrete with varying angles\", \"Today's advanced systems for parametric design enabled us to achieve our purpose here\", \"the beautiful cliffs of Orkney Island in the north of Scotland\", \"We opened a cave through the center of the building to connect the beautiful nature of River Tay with Union Street: the axis running through the town of Dundee\"."
+   },
+   {
+    "chave": "db91f1ea68b4",
+    "segmentos": [
+     {
+      "t": "O prédio da Avenida Paulista, 52 era uma agência bancária antes da reforma: Kuma desenhou uma "
+     },
+     {
+      "t": "fachada de hinoki",
+      "href": "https://japanhousesp.com.br/jhsponline/sobre-a-fachada-da-jhsp/"
+     },
+     {
+      "t": ", madeira vinda da região de Kiso e amarrada por fibra de carbono, e um interior revestido de washi, o papel japonês. Pela "
+     },
+     {
+      "t": "ficha do projeto no escritório",
+      "href": "https://kkaa.co.jp/en/project/japan-house-sao-paulo/"
+     },
+     {
+      "t": ", a casa integra o Japan House Project, do Ministério das Relações Exteriores do Japão, e recebeu o Prix Versailles 2018 na categoria de lojas."
+     }
+    ],
+    "sustentacao": "Ficha do projeto no escritório: \"The building was formerly a bank located at Paulista Avenue\", \"designing a wooden façade and the interior using washi (Japanese paper)\", \"The façade is made of wired Kiso hinoki cypress supported by carbon fiber\", \"part of the 'Japan House Project,' led by the Ministry of Foreign Affairs\", \"Award Prix Versailles 2018 (Continental Level – Shops & Stores) (Japan House São Paulo)\". A página da JHSP sobre a fachada trata da manutenção da \"fachada de hinoki\" e confirma o endereço Avenida Paulista, 52."
+   }
+  ],
+  "acrescimos": [
+   {
+    "depois_de": "5dee70690c49",
+    "sustentacao": "Ficha do Japan National Stadium no site do escritório: \"Japan 2019 Japan National Stadium\", \"Tokyo\", \"194,000 m²\", \"designed as a collection of small-diameter pieces of wood\", \"The facade consists of overlapping, multi-layered eaves\", \"Square cedar lumber measuring 105mm, the most common size in Japan, was split into three 50mm pieces, to create these louvers\", \"The frequency and density of the louvers was varied in order to give a human-scale to the eave\", \"The roof has a truss structure which combines steel beams and laminated lumber with a medium cross-section, utilizing the axial stiffness of wood to minimize deformation of the roof trusses due to wind or earthquakes\", e o prêmio \"2023 IOC IPC IAKS architecture prizes 'Major outdoor stadiums'\".",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Estádio Nacional do Japão, Tóquio"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "A maior obra assinada por Kuma segue a mesma lógica das pequenas. O "
+       },
+       {
+        "t": "Estádio Nacional do Japão",
+        "href": "https://kkaa.co.jp/en/project/japan-national-stadium/"
+       },
+       {
+        "t": ", concluído em 2019 com 194 mil m² em Tóquio, foi pensado como um ajuntamento de peças de madeira de pequeno diâmetro. A fachada se organiza em beirais sobrepostos, referência ao beiral da arquitetura japonesa tradicional, e as venezianas sob cada beiral saem de peças de cedro de 105 mm — a bitola mais comum no país — serradas em três lâminas de 50 mm, com densidade variável para dar escala humana ao conjunto."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "A cobertura combina vigas de aço e madeira laminada colada de seção média, aproveitando a rigidez axial da madeira para limitar a deformação das treliças sob vento e terremoto. Em 2023 o estádio recebeu o prêmio de arquitetura do COI, do Comitê Paralímpico Internacional e da IAKS na categoria de grandes estádios ao ar livre."
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "links_finais": 15,
+  "urls_usadas": [
+   "https://www.u-tokyo.ac.jp/en/",
+   "https://www.arch.columbia.edu/",
+   "https://kkaa.co.jp/en/about/kengo-kuma/",
+   "https://www.geijutuin.go.jp/en/",
+   "https://kkaa.co.jp/en/project/sunnyhills-at-minami-aoyama/",
+   "https://kkaa.co.jp/en/project/nezu-museum/",
+   "https://kkaa.co.jp/en/project/yusuhara-wooden-bridge-museum/",
+   "https://www.omm.art/en",
+   "https://kkaa.co.jp/en/project/odunpazari-modern-museum/",
+   "https://kkaa.co.jp/en/project/great-bamboo-wall/",
+   "https://www.vam.ac.uk/dundee",
+   "https://kkaa.co.jp/en/project/va-dundee/",
+   "https://japanhousesp.com.br/",
+   "https://japanhousesp.com.br/jhsponline/sobre-a-fachada-da-jhsp/",
+   "https://kkaa.co.jp/en/project/japan-national-stadium/"
+  ],
+  "nao_alcancou": ""
+ },
+ "veredito": null
+}

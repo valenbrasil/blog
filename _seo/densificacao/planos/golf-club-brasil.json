@@ -1,0 +1,266 @@
+{
+ "plano": {
+  "slug": "golf-club-brasil",
+  "ancoras": [
+   {
+    "chave": "5f3bc7b571b9",
+    "ancora": "São Paulo Golf Club",
+    "href": "https://www.spgc.com.br/",
+    "sustentacao": "Site oficial do clube, título da página \"SPGC | São Paulo Golf Club\" (verificador: status 200, viva true)."
+   },
+   {
+    "chave": "ddbcf148c1a8",
+    "ancora": "Aberto do Brasil",
+    "href": "https://cbgolfe.com.br/o-golfe/o-aberto-do-brasil/",
+    "sustentacao": "Página da CBG sobre o torneio: \"desde 1945\", \"Criado pelo Gavea Golf e São Paulo Golf Club\" (verificador: viva true, termo 1945 presente)."
+   },
+   {
+    "chave": "9a764d6b3ca4",
+    "ancora": "Open Championship",
+    "href": "https://www.theopen.com/latest/decades-of-the-open-1860s",
+    "sustentacao": "Página oficial do The Open sobre a década de 1860: \"His hole-in-one at the eighth hole was the first in the Championship's history\" (verificador: viva true, termo hole-in-one presente)."
+   },
+   {
+    "chave": "cba8948f5fb9",
+    "ancora": "Campeonato Brasileiro de Golfe",
+    "href": "https://cbgolfe.com.br/competicoes/calendario/",
+    "sustentacao": "Calendário oficial de competições da Confederação Brasileira de Golfe (verificador: viva true, termo \"Calend\" presente)."
+   }
+  ],
+  "emendas": [
+   {
+    "chave": "5f3bc7b571b9",
+    "segmentos": [
+     {
+      "t": "A "
+     },
+     {
+      "t": "cronologia da Confederação Brasileira de Golfe",
+      "href": "https://cbgolfe.com.br/o-golfe/historia/"
+     },
+     {
+      "t": " situa a chegada do esporte no fim do século XIX, trazido por executivos ingleses de empresas de serviços em São Paulo, e registra em 1915 o Santos São Vicente Golf Club e o Clube Campestre de Livramento."
+     }
+    ],
+    "sustentacao": "A página História da CBG lista: \"Final do século 19: executivos ingleses de empresas de serviços em São Paulo introduzem o golfe no Brasil\"; \"1901: São Paulo Golf Club, o primeiro clube de golfe brasileiro\"; \"1915: Santos São Vicente Golf Club e Clube Campestre de Livramento\"."
+   },
+   {
+    "chave": "ddbcf148c1a8",
+    "segmentos": [
+     {
+      "t": "O Gavea Golf é de 1921, mas o Aberto do Brasil só passou a ser disputado em 1945, criado pelos dois clubes mais antigos do país; desde 2012 o torneio integra o PGA Tour Latinoamérica. O "
+     },
+     {
+      "t": "panorama da CBG contabiliza 117 campos e cerca de 20 mil golfistas no Brasil",
+      "href": "https://cbgolfe.com.br/o-golfe/golfe-no-brasil/"
+     },
+     {
+      "t": ", metade deles federados."
+     }
+    ],
+    "sustentacao": "A página \"Golfe no Brasil\" da CBG informa 117 campos, cerca de 20 mil golfistas (metade federados) e cita São Paulo Golf Club (1901) e Gavea Golf (1921); a página do Aberto informa \"desde 1945\" e \"Desde 2012, o Aberto do Brasil faz parte do PGA Tour Latinoamérica\"."
+   },
+   {
+    "chave": "bec3cdd2dd0e",
+    "segmentos": [
+     {
+      "t": "A "
+     },
+     {
+      "t": "descrição de campo publicada pela CBG",
+      "href": "https://cbgolfe.com.br/o-golfe/o-campo/"
+     },
+     {
+      "t": " separa as áreas de jogo — tee, fairway, rough, bunkers e green — das áreas de prática, o putting green para o jogo curto e o driving range para as tacadas longas. A partida oficial é disputada em 18 buracos; em campo de nove, os jogadores dão duas voltas."
+     }
+    ],
+    "sustentacao": "A página \"O Campo\" da CBG descreve tee, fairway, rough, bunkers e green, cita putting green e driving range como áreas de treino e afirma: \"Uma partida de golfe oficial é disputada em 18 buracos\" e \"Se um campo possui 9 buracos, os jogadores jogam duas voltas\"."
+   },
+   {
+    "chave": "0f36da437d87",
+    "segmentos": [
+     {
+      "t": "Torneios oficiais correm sob as "
+     },
+     {
+      "t": "oito federações estaduais e regionais filiadas à CBG",
+      "href": "https://cbgolfe.com.br/a-cbg/federacoes-e-associacoes/"
+     },
+     {
+      "t": ", que reúnem ainda associações de golfe sênior e clubes de condomínio."
+     }
+    ],
+    "sustentacao": "A página \"Federações e Associações\" da CBG lista oito federações estaduais/regionais (Paulista, RJ, Paranaense e Catarinense, Riograndense, Baiana e Capixaba, Pernambucana, Cearense, Norte) e associações filiadas, entre elas a Associação Brasileira de Golfe Sênior e condomínios com golfe."
+   }
+  ],
+  "acrescimos": [
+   {
+    "depois_de": "8d9bdd502111",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Handicap: o que separa o jogo casual do torneio"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Entrar em competição exige handicap. O "
+       },
+       {
+        "t": "World Handicap System",
+        "href": "https://cbgolfe.com.br/world-handicap-system/"
+       },
+       {
+        "t": " foi implantado mundialmente em 2020 e unificou os seis sistemas de handicap que conviviam até então; o índice sai dos oito melhores diferenciais entre as últimas vinte voltas válidas do jogador, o que faz o número acompanhar a evolução de quem joga. As regras de jogo seguem o "
+       },
+       {
+        "t": "Guia Oficial às Regras do Golfe 2023",
+        "href": "https://cbgolfe.com.br/regulamentos/livro/"
+       },
+       {
+        "t": ", publicado em português pela CBG e também disponível em aplicativo."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "Página da CBG sobre o WHS: \"Implantado mundialmente em 2020\", \"unificar os seis diferentes sistemas de handicap que existiam\", \"considerando normalmente os oito melhores diferenciais entre as últimas vinte voltas válidas\". Página \"Livro de Regras\" da CBG oferece o \"Guia Oficial às Regras do Golfe 2023\" em pt-BR e os aplicativos iOS/Android."
+   },
+   {
+    "depois_de": "8f1e25f029e7",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Água e mata: o que a lei cobra do campo"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Manter 18 buracos verdes consome água, e a captação não é livre. A "
+       },
+       {
+        "t": "Lei 9.433/1997",
+        "href": "https://www.planalto.gov.br/ccivil_03/leis/l9433.htm"
+       },
+       {
+        "t": " sujeita a outorga do poder público, no art. 12, a derivação ou captação de parcela de água de um corpo hídrico e a extração de aquífero subterrâneo para uso produtivo. Quando o corpo d'água é de domínio federal, quem analisa e concede é a "
+       },
+       {
+        "t": "Agência Nacional de Águas e Saneamento Básico",
+        "href": "https://www.gov.br/ana/pt-br"
+       },
+       {
+        "t": "."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Os lagos que desenham o campo também têm faixa intocável. O "
+       },
+       {
+        "t": "Código Florestal",
+        "href": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12651.htm"
+       },
+       {
+        "t": " define como Área de Preservação Permanente, no art. 4º, a faixa de 100 metros no entorno de lagos e lagoas naturais em zona rural — 50 metros quando o espelho d'água tem até 20 hectares — e de 30 metros em zona urbana, além das faixas marginais dos cursos d'água, que partem de 30 metros."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "Texto do art. 12 da Lei 9.433/1997 no Planalto: \"Estão sujeitos a outorga pelo Poder Público os direitos dos seguintes usos: I - derivação ou captação... II - extração de água de aqüífero subterrâneo\". Site da ANA (gov.br/ana) trata da outorga de direito de uso de recursos hídricos de domínio da União. Art. 4º da Lei 12.651/2012 no Planalto: faixas marginais a partir de 30 m e \"II - as áreas no entorno dos lagos e lagoas naturais... a) 100 metros, em zonas rurais, exceto para o corpo d'água com até 20 hectares... 50 metros; b) 30 metros, em zonas urbanas\"."
+   },
+   {
+    "depois_de": "61736c89cb0f",
+    "blocos": [
+     {
+      "estilo": "h3",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "O campo dentro de um empreendimento imobiliário"
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "Boa parte dos campos brasileiros fica dentro de um empreendimento fechado, e isso muda o que o comprador leva. Depois da Lei 13.465/2017, a "
+       },
+       {
+        "t": "Lei 6.766/1979",
+        "href": "https://www.planalto.gov.br/ccivil_03/leis/l6766.htm"
+       },
+       {
+        "t": " passou a admitir, no art. 2º, § 7º, que o lote se constitua como imóvel autônomo ou como unidade integrante de condomínio de lotes, e definiu no § 8º o loteamento de acesso controlado, cujo controle de acesso é regulamentado por ato do município e não pode impedir a entrada de pedestres ou condutores não residentes devidamente identificados."
+       }
+      ]
+     },
+     {
+      "estilo": "normal",
+      "lista": false,
+      "segmentos": [
+       {
+        "t": "O condomínio de lotes está no "
+       },
+       {
+        "t": "art. 1.358-A do Código Civil",
+        "href": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm"
+       },
+       {
+        "t": ": no mesmo terreno convivem partes de propriedade exclusiva e partes comuns, com fração ideal proporcional à área do solo, ao potencial construtivo ou a outro critério fixado no ato de instituição. É a matrícula no "
+       },
+       {
+        "t": "registro de imóveis",
+        "href": "https://www.registrodeimoveis.org.br/"
+       },
+       {
+        "t": " que descreve o que pertence ao lote e o que é do condomínio — o campo, o clube, as vias —, e é ali que se lê quem paga a manutenção do green."
+       }
+      ]
+     }
+    ],
+    "sustentacao": "Texto do art. 2º da Lei 6.766/1979 no Planalto: \"§ 7º O lote poderá ser constituído sob a forma de imóvel autônomo ou de unidade imobiliária integrante de condomínio de lotes\" e \"§ 8º Constitui loteamento de acesso controlado a modalidade de loteamento... cujo controle de acesso será regulamentado por ato do poder público Municipal, sendo vedado o impedimento de acesso a pedestres ou a condutores de veículos, não residentes, devidamente identificados ou cadastrados\", ambos incluídos pela Lei 13.465/2017. Código Civil, art. 1.358-A: \"Pode haver, em terrenos, partes designadas de lotes que são propriedade exclusiva e partes que são propriedade comum dos condôminos\", com o § 1º sobre a fração ideal. Portal Registro de Imóveis do Brasil (ONR), verificado vivo, é a entidade oficial do registro imobiliário."
+   }
+  ],
+  "links_finais": 16,
+  "urls_usadas": [
+   "https://www.spgc.com.br/",
+   "https://cbgolfe.com.br/o-golfe/o-aberto-do-brasil/",
+   "https://www.theopen.com/latest/decades-of-the-open-1860s",
+   "https://cbgolfe.com.br/competicoes/calendario/",
+   "https://cbgolfe.com.br/o-golfe/historia/",
+   "https://cbgolfe.com.br/o-golfe/golfe-no-brasil/",
+   "https://cbgolfe.com.br/o-golfe/o-campo/",
+   "https://cbgolfe.com.br/a-cbg/federacoes-e-associacoes/",
+   "https://cbgolfe.com.br/world-handicap-system/",
+   "https://cbgolfe.com.br/regulamentos/livro/",
+   "https://www.planalto.gov.br/ccivil_03/leis/l9433.htm",
+   "https://www.gov.br/ana/pt-br",
+   "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12651.htm",
+   "https://www.planalto.gov.br/ccivil_03/leis/l6766.htm",
+   "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+   "https://www.registrodeimoveis.org.br/"
+  ],
+  "nao_alcancou": ""
+ },
+ "veredito": null
+}
