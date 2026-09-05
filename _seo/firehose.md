@@ -49,28 +49,33 @@ O tap só vê uma página quando o crawler chega nela, na agenda dele. Para vigi
 páginas **específicas** a ferramenta certa é o URL Watch, que recrawleia numa
 cadência fixa e guarda o diff.
 
-O plano Free dá 5 URLs, 1.000 checks/mês e cadência mínima de 3 h.
+O plano Free dá 5 URLs, 1.000 checks/mês e cadência mínima de 3 h. Usamos 2.
 
 | URL | cadência | por dia |
 |---|---|---|
-| `blog.valenbrasil.com/` | 180 min | 8 |
-| `blog.valenbrasil.com/laudo-de-avaliacao-do-imovel/` | 360 min | 4 |
-| `blog.valenbrasil.com/perito-imobiliario/` | 360 min | 4 |
-| `blog.valenbrasil.com/avaliacao-imobiliaria/` | 360 min | 4 |
-| `blog.valenbrasil.com/advocacia-imobiliaria/` | 360 min | 4 |
+| `valenbrasil.com/` | 1440 min | 1 |
+| `blog.valenbrasil.com/` | 1440 min | 1 |
 
-**720 checks/mês** dos 1.000 disponíveis. 5 dos 5 slots ocupados.
+**60 checks/mês** dos 1.000 disponíveis. 2 dos 5 slots.
 
-A home do blog ficou na cadência mais rápida que o plano permite de propósito:
-ela é o canário de deploy. Duas vezes nesta migração o build do Jekyll venceu a
-corrida com o GitHub Actions e substituiu o site inteiro pelo README da raiz.
-Um watch na home pega isso em até 3 h em vez de "quando alguém reparar".
+Só as duas home. A configuração passou por artigos individuais antes de chegar
+aqui, e eles saíram por decisão do autor: o site é export estático, então
+artigo só muda quando há deploy — e um deploy que dê errado aparece na home
+igual. Vigiar quatro artigos era redundante com vigiar a home.
 
-O quinto slot era de `valenbrasil.com/`, a 1 check por dia, e foi trocado por
-`advocacia-imobiliaria` a pedido. A troca custou o histórico do watch antigo —
-um único crawl, o inicial. O institucional muda pouco; o artigo é o que mudou
-de URL nesta auditoria (`direito-imobiliario-2` → `advocacia-imobiliaria`), e é
-nele que vale ter olho.
+A home do blog serve de canário de deploy. Duas vezes nesta migração o build do
+Jekyll venceu a corrida com o GitHub Actions e substituiu o site inteiro pelo
+README da raiz. A 1×/dia o watch pega isso em até 24 h.
+
+### Uma anomalia observada
+
+O watch de `advocacia-imobiliaria`, criado às 03:37 e confirmado numa listagem
+logo depois, sumiu sozinho da API em menos de dois minutos — sem ninguém
+apagar. Descobri porque o `POST` de recriação devolveu `201` em vez do `422 You
+are already watching this URL.` que devolveria se ainda existisse. Não é
+problema agora, já que a configuração final não o inclui, mas fica o registro:
+**conferir o `GET /v1/url-watch` depois de criar**, porque o `201` do POST
+sozinho não garantiu persistência.
 
 ## Custo
 
@@ -89,7 +94,7 @@ Criar regra não custa nada. O que consome crédito é deixar o stream aberto.
     GET  /v1/taps       200 · 1 tap                     (chave de gestão)
     GET  /v1/rules      200 · 5 regras                  (token do tap)
     POST /v1/validate   200 · valid=true nas 5          (token do tap)
-    GET  /v1/url-watch  200 · 5 watches ativos (5/5)    (chave de gestão)
+    GET  /v1/url-watch  200 · 2 watches ativos (2/5)    (chave de gestão)
     GET  /v1/stream     evento `connected` · 0 matches em 25 s · US$ 0,00
 
 ## Uma armadilha da API
