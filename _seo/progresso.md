@@ -296,3 +296,11 @@ os requisitos do laudo pericial no CPC (arts. 156 e 473).
 Cada norma foi lida no texto oficial do Planalto antes de entrar no artigo, não
 citada de memória. Os 89 blocos originais seguem idênticos; os 16 novos foram
 inseridos entre eles.
+
+### Varredura de defeitos de conteúdo
+
+Detalhada em `_seo/limpeza-de-residuos.md`. Corrigidos os itens 1 e 2: 10 blocos
+removidos em 5 artigos, −274 palavras, nenhuma informação perdida. Seguem em
+aberto 794 legendas de imagem publicadas como parágrafo (82 artigos) e 59
+fórmulas de escrita proibidas pelo plano (54 artigos).
+
