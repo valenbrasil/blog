@@ -1,6 +1,8 @@
 export interface SanityImage {
   asset: { _ref: string; _type: 'reference' }
   alt?: string
+  /* Texto do atributo `title` — o balão de hover, distinto do alt e da legenda. */
+  title?: string
   caption?: string
   hotspot?: { x: number; y: number; height: number; width: number }
 }

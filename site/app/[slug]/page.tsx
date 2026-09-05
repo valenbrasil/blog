@@ -171,6 +171,9 @@ export default async function PostPage({ params }: PageProps<'/[slug]'>) {
             <Image
               src={imageUrl}
               alt={post.mainImage?.alt || ''}
+              // Sem valor gravado o atributo não é emitido: title="" só entrega
+              // ao leitor um balão de hover vazio.
+              title={post.mainImage?.title || undefined}
               width={1600}
               height={900}
               priority

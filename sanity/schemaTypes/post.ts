@@ -13,8 +13,31 @@ export const post = defineType({
       type: 'image',
       options: { hotspot: true },
       fields: [
-        { name: 'alt', type: 'string' },
-        { name: 'caption', type: 'string' },
+        // Os três campos existem para leitores diferentes: o alt é lido em voz
+        // alta por leitor de tela e aparece quando a imagem não carrega; o title
+        // só surge no hover do mouse; a caption é texto visível para todo mundo.
+        // Repetir o mesmo texto nos três não ajuda ninguém.
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Texto alternativo (alt)',
+          description:
+            'Descreva o que a imagem mostra, para quem usa leitor de tela. Frase curta e objetiva, sem "imagem de".',
+        },
+        {
+          name: 'title',
+          type: 'string',
+          title: 'Título (hover)',
+          description:
+            'Complemento exibido quando o mouse para sobre a imagem. Acrescente algo que o alt não diz — crédito, local, data. Deixe vazio se for só repetir o alt.',
+        },
+        {
+          name: 'caption',
+          type: 'string',
+          title: 'Legenda',
+          description:
+            'Legenda visível abaixo da imagem, com o contexto que o leitor precisa para entender por que ela está no texto.',
+        },
       ],
     }),
     defineField({ name: 'publishedAt', type: 'datetime' }),
@@ -69,7 +92,37 @@ export const post = defineType({
             ],
           },
         }),
-        { type: 'image', fields: [{ name: 'caption', type: 'string' }] },
+        {
+          type: 'image',
+          // Aditivo de propósito: 288 das 304 imagens do acervo já têm `alt`
+          // gravado (veio da migração do Ghost), mas o campo nunca foi declarado
+          // — o Sanity guardava o valor sem exibi-lo no Studio. Declará-lo aqui
+          // devolve o dado ao editor; remover ou renomear qualquer campo apagaria
+          // o que já está gravado.
+          fields: [
+            {
+              name: 'alt',
+              type: 'string',
+              title: 'Texto alternativo (alt)',
+              description:
+                'Descreva o que a imagem mostra, para quem usa leitor de tela. Frase curta e objetiva, sem "imagem de".',
+            },
+            {
+              name: 'title',
+              type: 'string',
+              title: 'Título (hover)',
+              description:
+                'Complemento exibido quando o mouse para sobre a imagem. Acrescente algo que o alt não diz — crédito, local, data. Deixe vazio se for só repetir o alt.',
+            },
+            {
+              name: 'caption',
+              type: 'string',
+              title: 'Legenda',
+              description:
+                'Legenda visível abaixo da imagem, com o contexto que o leitor precisa para entender por que ela está no texto.',
+            },
+          ],
+        },
         { type: 'codeBlock' },
         { type: 'embed' },
       ],

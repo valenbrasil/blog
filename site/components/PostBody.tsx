@@ -58,6 +58,14 @@ const components: PortableTextComponents = {
           <Image
             src={url}
             alt={value.alt || ''}
+            /*
+              `|| undefined` para o React omitir o atributo quando o campo está
+              vazio: title="" no HTML é um balão de hover em branco, pior para o
+              leitor do que title nenhum. O alt não recebe o mesmo tratamento —
+              alt="" é a forma correta de marcar imagem decorativa, enquanto alt
+              ausente faz o leitor de tela ler a URL do arquivo.
+            */
+            title={value.title || undefined}
             width={1200}
             height={800}
             className="h-auto w-full rounded-card"
