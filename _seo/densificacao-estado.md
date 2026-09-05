@@ -1,6 +1,6 @@
 # Densificação de links externos — onde parou
 
-Retrato de 05/09/2026 21:54 UTC. Gerado por
+Retrato de 05/09/2026 22:26 UTC. Gerado por
 `/tmp/dens/estado.py`, que só lê arquivo — não chama a API nem gasta agente.
 
 | Estado | Artigos | O que fazer |
