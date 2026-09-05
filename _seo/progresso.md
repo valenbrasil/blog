@@ -229,3 +229,14 @@ metaTitle e metaDescription passaram a falar de advocacia imobiliária, e um lin
 âncora leva de volta a `direito-imobiliario`. Backup em
 `_seo/backups/pre-slug/`, com o `_rev` anterior registrado.
 
+### Fase 1 — links externos, artigo a artigo
+
+| Artigo | Externos | Estado |
+|---|---|---|
+| `direito-e-patrimonio-lei-do-inquilinato` | 0 → 11 | links externos aplicados · relatório em `_seo/relatorios/` |
+
+Restam **164 artigos com zero links externos**. Pela meta de 10 a 20 do plano,
+são por volta de 2.300 links a pesquisar, verificar e ancorar — o item mais caro
+da auditoria inteira, e o que menos se deixa acelerar: cada link precisa de uma
+afirmação no texto que o justifique e de uma fonte que de fato a sustente.
+
