@@ -360,9 +360,10 @@ links internos (corpo) .............. 634
   artigos com 5 ou mais .............  67
   quebrados .........................   0
 
-imagens no corpo .....................  98
-  com alt ...........................  98
-  com caption .......................   4
+imagens no corpo ..................... 635   (eram 98)
+  com alt ........................... 635
+  com caption ....................... 541
+capas com alt ........................ 206 de 206
 
 saltos de heading (h2 -> h4) .........   0
 artigos sem categoria ................   0
@@ -380,13 +381,11 @@ o que continua em aberto.
    texto hoje resume como "a lei prevê". O plano pede um artigo por vez, com
    relatório; foram 4.
 
-2. **794 legendas publicadas como parágrafo, em 82 artigos.** O número de
-   `caption` acima explica o tamanho: 94 das 98 imagens do corpo estão sem
-   legenda no campo próprio porque a legenda virou parágrafo solto na migração
-   do Ghost. É migração de dados com script dedicado, e em vários artigos a
-   imagem correspondente sequer existe como bloco. O defeito já atrapalha outro
-   trabalho: na linkagem interna, um revisor reprovou uma âncora porque o
-   "parágrafo" em que ela caía era uma dessas legendas.
+2. ~~794 legendas publicadas como parágrafo~~ — **resolvido**, e o diagnóstico
+   estava errado. Não eram legendas fora do lugar: eram o rastro de **556
+   imagens que a migração do Ghost perdeu**. O site antigo ainda tem as figuras,
+   e 537 delas foram restauradas com a legenda em `caption`. Detalhado em
+   `_seo/imagens-restauradas.md`.
 
 3. **59 fórmulas de escrita proibidas, em 54 artigos.** Reescrita frase a frase
    na voz do autor. Trocar uma muleta por outra não resolve o que o plano evita.

@@ -9,7 +9,7 @@ Rodada sobre os 206 artigos, procurando os dois padrões encontrados em
 |---|---|---|---|
 | 1 | Resíduo de edição publicado | 4 | **1** (falso positivo, ver abaixo) |
 | 2 | Duplicação literal no mesmo artigo | 7 pares | **0** |
-| 3 | Legenda de imagem como parágrafo | 794 em 82 artigos | 794 — não tratado |
+| 3 | Legenda de imagem como parágrafo | 794 em 82 artigos | **0** — ver abaixo |
 | 4 | Padrões de escrita proibidos pelo plano | 59 em 54 artigos | 59 — não tratado |
 | 5 | FAQ citando termo ausente do corpo | 0 | 0 |
 
@@ -65,11 +65,18 @@ verificação específica antes de gravar.
 
 ## O que ficou de fora, e por quê
 
-**Item 3 — 794 legendas em 82 artigos.** Convertê-las em `caption` da imagem
-vizinha é o certo, mas é migração de dados, não edição de texto: exige casar cada
-legenda com a imagem correspondente, e em vários artigos as imagens do corpo
-sequer existem como bloco. Precisa de decisão e provavelmente de um script
-dedicado.
+**Item 3 — resolvido, e o diagnóstico estava errado.** A correção prevista aqui
+— "converter a legenda em `caption` da imagem vizinha" — era impossível como
+escrita: não havia imagem vizinha em quase nenhum caso. O acervo tinha 98 blocos
+de imagem para 794 legendas.
+
+O site antigo do Ghost ainda responde, e a comparação explicou o descompasso:
+ele tem 654 figuras com imagem, das quais 552 com `<figcaption>`. A migração
+trouxe o texto da legenda como parágrafo e deixou a imagem para trás. As
+"legendas soltas" eram o rastro visível de 556 imagens perdidas.
+
+Corrigir a legenda de verdade era trazer a imagem de volta. Detalhado em
+`_seo/imagens-restauradas.md`.
 
 **Item 4 — 59 fórmulas proibidas em 54 artigos.** Cada uma exige reescrever a
 frase preservando a voz do autor. É trabalho de redação, artigo a artigo, não
