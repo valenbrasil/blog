@@ -68,144 +68,144 @@ A coluna `_rev anterior` é preenchida no momento do patch — é o que permite 
 | 60 | `post-68bad0c034162e000164ffc2` | fotografia-imobiliaria | pendente | — | — | — |
 | 61 | `post-686aef2a90342d000185eb47` | colagem-digital-na-arquitetura | pendente | — | — | — |
 | 62 | `post-686aef2a90342d000185eb6a` | livros-para-empreendedores | pendente | — | — | — |
-| 63 | `post-686aef2a90342d000185eb6c` | milan-design-week-fuorisalone | pendente | — | — | — |
-| 64 | `post-68bacd9634162e000164ff64` | avaliacao-imovel-comercial | pendente | — | — | — |
-| 65 | `post-68bae84b34162e000165010b` | regularizacao-imobiliaria | pendente | — | — | — |
-| 66 | `post-686aef2a90342d000185eb60` | formacao-em-arquitetura-diferencas-entre-brasil-portugal-e-espanha | pendente | — | — | — |
-| 67 | `post-686aef2a90342d000185eb55` | biografia-fran-silvestre | pendente | — | — | — |
-| 68 | `post-68bae4d834162e0001650094` | estudo-impacto-de-vizinhanca | pendente | — | — | — |
-| 69 | `post-68ba4db2788095000140e17f` | direito-das-sucessoes | pendente | — | — | — |
-| 70 | `post-68bacd5a34162e000164ff57` | credito-imobiliario | pendente | — | — | — |
-| 71 | `post-68bae4bb34162e0001650086` | registro-rural-regularizacao-de-propriedades | pendente | — | — | — |
-| 72 | `post-68bae49134162e0001650071` | avaliacao-de-imoveis-rurais-guia-para-proprietarios-e-investidores | pendente | — | — | — |
-| 73 | `post-68e6a244cf0351000131fa7f` | consorcio-financiamento | pendente | — | — | — |
-| 74 | `post-686aef2a90342d000185eb67` | premio-pritzker-de-arquitetura | pendente | — | — | — |
-| 75 | `post-686aef2a90342d000185eb4f` | art-deco-nouveau-crafts-diferencas | pendente | — | — | — |
-| 76 | `post-686aef2a90342d000185eb52` | explorando-glasgow | pendente | — | — | — |
-| 77 | `post-67e323f2a5ce00000103a808` | processo-de-desapropriacao-de-imoveis | pendente | — | — | — |
-| 78 | `post-6807f0ed99d0d30001611936` | ganhar-dinheiro-imovel | pendente | — | — | — |
-| 79 | `post-686aef2a90342d000185eb65` | novo-parque-de-valencia | pendente | — | — | — |
-| 80 | `post-67e32f07a5ce00000103a85f` | shopping-reajuste-de-aluguel | pendente | — | — | — |
-| 81 | `post-68ad98559738aa0001cc2e7a` | imoveis-na-pratica-avaliacao-de-terrenos | pendente | — | — | — |
-| 82 | `post-686aef2a90342d000185eb32` | arquitetura-modular | pendente | — | — | — |
-| 83 | `post-68e6b869cf0351000131fba4` | construtora-incorporadora | pendente | — | — | — |
-| 84 | `post-68b300e88e290d00011b8f30` | areas-de-protecao-ambiental | pendente | — | — | — |
-| 85 | `post-68c80fcd5efebc0001f63723` | cadastro-imobiliario-brasileiro-cib | pendente | — | — | — |
-| 86 | `post-68b1a74935652e0001f9a28f` | cna-cadastro-nacional-de-advogados | pendente | — | — | — |
-| 87 | `post-685beb551626610001b3aede` | hipoteca | pendente | — | — | — |
-| 88 | `post-68a760ced9d9130001252c38` | administradoras-bens | pendente | — | — | — |
-| 89 | `post-67db4af14677c40001af11bf` | itcmd | pendente | — | — | — |
-| 90 | `post-6807d58a99d0d30001611808` | reajuste-de-aluguel | pendente | — | — | — |
-| 91 | `post-68e6a2cacf0351000131faa1` | consultoria-imobiliaria | pendente | — | — | — |
-| 92 | `post-688e21398f78810001f45fc5` | golf-club-brasil | pendente | — | — | — |
-| 93 | `post-67e46e58007f59000142c306` | iptu | pendente | — | — | — |
-| 94 | `post-6807f2af99d0d30001611950` | adjudicacao-compulsoria | pendente | — | — | — |
-| 95 | `post-68e66ef4cf0351000131f9df` | direito-imobiliario-2 | pendente | — | — | — |
-| 96 | `post-68a77334de6f0800013af821` | vistorias-imoveis | pendente | — | — | — |
-| 97 | `post-6807f07799d0d30001611926` | usucapiao | pendente | — | — | — |
-| 98 | `post-68a72891d9d9130001252b7b` | investimento-liquidez | pendente | — | — | — |
-| 99 | `post-685bebd11626610001b3aee9` | home-equity | pendente | — | — | — |
-| 100 | `post-68ba4d58788095000140e171` | leiloes-de-imoveis | pendente | — | — | — |
-| 101 | `post-681672679d322f0001f94449` | cib-cadastro-imobiliario-brasileiro | pendente | — | — | — |
-| 102 | `post-685bf61e44c14400011e0f1d` | imposto-de-renda-sobre-venda-de-imovel | pendente | — | — | — |
-| 103 | `post-6807f27299d0d3000161194c` | terreno-brasil | pendente | — | — | — |
-| 104 | `post-685bf6b144c14400011e0f2a` | indices-reajuste-aluguel | pendente | — | — | — |
-| 105 | `post-68a77a64de6f0800013af83a` | terrenos-em-santa-catarina | pendente | — | — | — |
-| 106 | `post-68e6a2a2cf0351000131fa92` | potencial-construtivo-terreno | pendente | — | — | — |
-| 107 | `post-68ba4d8b788095000140e175` | direito-de-familia | pendente | — | — | — |
-| 108 | `post-6807f08799d0d3000161192a` | averbacao | pendente | — | — | — |
-| 109 | `post-68b048a04b61a00001cb7e9c` | comissao-valores-mobiliarios-cvm | pendente | — | — | — |
-| 110 | `post-686a8c68d5f0560001df843d` | o-impacto-da-arquitetura-imobiliaria-no-mercado-contemporaneo | pendente | — | — | — |
-| 111 | `post-68a77dadde6f0800013af866` | avaliacao-mercadologica-de-imoveis | pendente | — | — | — |
-| 112 | `post-6807f11c99d0d3000161193a` | propriedade-expropriada | pendente | — | — | — |
-| 113 | `post-688e29dd8f78810001f45fed` | brava-home-resort | pendente | — | — | — |
-| 114 | `post-685bf74744c14400011e0f38` | refinanciamento-imobiliario | pendente | — | — | — |
-| 115 | `post-67c43624b5f03500018a47c9` | especialistas-avaliacao-imobiliaria | pendente | — | — | — |
-| 116 | `post-6816728b9d322f0001f94451` | compra-e-venda-de-imovel | pendente | — | — | — |
-| 117 | `post-688e29998f78810001f45fe1` | balneario-camboriu | pendente | — | — | — |
-| 118 | `post-68e6a2b9cf0351000131fa9a` | perito-judicial | pendente | — | — | — |
-| 119 | `post-68b3023e8e290d00011b8f5d` | diferencas-entre-imovel-urbano-e-rural | pendente | — | — | — |
-| 120 | `post-68baebca34162e000165019d` | bravissima-private-residence | pendente | — | — | — |
-| 121 | `post-6807f0c199d0d30001611932` | cisao-empresarial | pendente | — | — | — |
-| 122 | `post-68e6a808cf0351000131faec` | incc-indice-nacional-custo-construcao | pendente | — | — | — |
-| 123 | `post-68a75f33d9d9130001252c25` | captador-imoveis | pendente | — | — | — |
-| 124 | `post-686aef2a90342d000185eb38` | casa-container | pendente | — | — | — |
-| 125 | `post-685bf5d744c14400011e0f12` | juros-de-financiamento-imobiliario | pendente | — | — | — |
-| 126 | `post-68b1a64935652e0001f9a27b` | cessao-direitos-hereditarios | pendente | — | — | — |
-| 127 | `post-68a77c8cde6f0800013af84f` | imposto-sobre-venda-imoveis | pendente | — | — | — |
-| 128 | `post-68b8a1face1c730001db7a6c` | vistoriador-de-imoveis | pendente | — | — | — |
-| 129 | `post-685bec1b1626610001b3aef5` | estrangeiro-imovel-brasil | pendente | — | — | — |
-| 130 | `post-686aef2a90342d000185eb6d` | construindo-com-steel-frame | pendente | — | — | — |
-| 131 | `post-68b1ac7d35652e0001f9a2e1` | oab-sc | pendente | — | — | — |
-| 132 | `post-685be96a1626610001b3aebd` | leasing | pendente | — | — | — |
-| 133 | `post-68bae4ac34162e000165007f` | georreferenciamento-guia-completo-para-proprietarios-rurais | pendente | — | — | — |
-| 134 | `post-68b3026b8e290d00011b8f66` | construcao-em-area-de-reserva-legal | pendente | — | — | — |
-| 135 | `post-68a71fa6d9d9130001252aa8` | especulacao-imobiliaria | pendente | — | — | — |
-| 136 | `post-68baeba934162e000165018d` | perito-judicial-arquiteto | pendente | — | — | — |
-| 137 | `post-68e699bbcf0351000131fa05` | direito-societario | pendente | — | — | — |
-| 138 | `post-680977502e276e0001cf9387` | heranca | pendente | — | — | — |
-| 139 | `post-67ca1cd6ad8c5c0001cd5266` | itbi | pendente | — | — | — |
-| 140 | `post-68bae29b34162e0001650012` | avaliacao-de-marcas | pendente | — | — | — |
-| 141 | `post-68b8a4d8ce1c730001db7ae4` | metodo-capitalizacao-renda | pendente | — | — | — |
-| 142 | `post-68238463627fff0001df1f15` | valor-venal | pendente | — | — | — |
-| 143 | `post-688e29708f78810001f45fdb` | itajai | pendente | — | — | — |
-| 144 | `post-68bae2ec34162e0001650030` | controle-patrimonial | pendente | — | — | — |
-| 145 | `post-68e6a368cf0351000131faba` | cotacao-de-hipoteca | pendente | — | — | — |
-| 146 | `post-68e69bc2cf0351000131fa33` | aprovacao-de-projetos-na-prefeitura | pendente | — | — | — |
-| 147 | `post-68b1a7b635652e0001f9a29c` | testamento | pendente | — | — | — |
-| 148 | `post-68096da52e276e0001cf9311` | holding-patrimonial | pendente | — | — | — |
-| 149 | `post-686aef2a90342d000185eb72` | cidade-das-artes-e-das-ciencias-cultura-e-inovacao | pendente | — | — | — |
-| 150 | `post-67c1cf984403ff0001dd2dfa` | laudo-de-avaliacao-do-imovel | pendente | — | — | — |
-| 151 | `post-68e6a7b6cf0351000131fad5` | compra-e-venda-de-terreno | pendente | — | — | — |
-| 152 | `post-68b301f38e290d00011b8f50` | imoveis-na-pratica-imovel-rural | pendente | — | — | — |
-| 153 | `post-68e6a7fbcf0351000131fadb` | cartas-de-creditos-no-consorcio | pendente | — | — | — |
-| 154 | `post-68b8a32fce1c730001db7aa2` | comodato | pendente | — | — | — |
-| 155 | `post-68b1aacb35652e0001f9a2c2` | direito-civil | pendente | — | — | — |
-| 156 | `post-68bae49f34162e0001650078` | como-calcular-valor-do-aluguel | pendente | — | — | — |
-| 157 | `post-6807f25f99d0d30001611948` | imovel-valoriza-ano | pendente | — | — | — |
-| 158 | `post-68e6a7fdcf0351000131fae3` | vender-imovel | pendente | — | — | — |
-| 159 | `post-68b04c1a4b61a00001cb7eb1` | valores-mobiliarios | pendente | — | — | — |
-| 160 | `post-68bae87934162e0001650120` | registro-de-responsabilidade-tecnica-rrt | pendente | — | — | — |
-| 161 | `post-6807d50599d0d30001611801` | imoveis-santa-catarina | pendente | — | — | — |
-| 162 | `post-68b8a3edce1c730001db7ac2` | ranking-metro-quadrado-mais-caro-do-brasil | pendente | — | — | — |
-| 163 | `post-68e6a275cf0351000131fa87` | terrenos | pendente | — | — | — |
-| 164 | `post-685bf53c44c14400011e0f04` | permuta-de-imovel | pendente | — | — | — |
-| 165 | `post-68e6a2e2cf0351000131faa9` | cub-santa-catarina-2025 | pendente | — | — | — |
-| 166 | `post-68baef2634162e00016501df` | igpm-como-calcular | pendente | — | — | — |
-| 167 | `post-68bae85a34162e0001650112` | hipoteca-reversa | pendente | — | — | — |
-| 168 | `post-68e6a345cf0351000131fab0` | recuperacao-judicial | pendente | — | — | — |
-| 169 | `post-68e6a387cf0351000131fac3` | cub | pendente | — | — | — |
-| 170 | `post-68e6a819cf0351000131faf4` | minha-casa-minha-vida | pendente | — | — | — |
-| 171 | `post-68ba4da8788095000140e17b` | direito-imobiliario | pendente | — | — | — |
-| 172 | `post-68bacdfe34162e000164ff72` | blumenau-e-mercado-imobiliario | pendente | — | — | — |
-| 173 | `post-68baeb9234162e0001650184` | metodo-involutivo | pendente | — | — | — |
-| 174 | `post-68e6a396cf0351000131fac9` | sinduscon | pendente | — | — | — |
-| 175 | `post-68b301398e290d00011b8f3c` | app-area-de-preservacao-permanente | pendente | — | — | — |
-| 176 | `post-68e6a7fbcf0351000131fadf` | direito-e-patrimonio-lei-do-inquilinato | pendente | — | — | — |
-| 177 | `post-686aef2a90342d000185eb4a` | biografia-alvaro-siza | pendente | — | — | — |
-| 178 | `post-686aef2a90342d000185eb69` | impactos-da-arquitetura-hostil | pendente | — | — | — |
-| 179 | `post-686aef2a90342d000185eb63` | a-estrutura-das-cidades-espanholas | pendente | — | — | — |
-| 180 | `post-686aef2a90342d000185eb74` | desafios-da-execucao-de-obra-para-arquitetos | pendente | — | — | — |
-| 181 | `post-686aef2a90342d000185eb45` | desenho-livre-com-tablet | pendente | — | — | — |
-| 182 | `post-686aef2a90342d000185eb50` | explorando-belfast | pendente | — | — | — |
-| 183 | `post-686aef2a90342d000185eb56` | viaje-na-arquitetura-de-budapeste | pendente | — | — | — |
-| 184 | `post-686aef2a90342d000185eb64` | parque-turia | pendente | — | — | — |
-| 185 | `post-686aef2a90342d000185eb5b` | 3-aplicativos-de-construcao | pendente | — | — | — |
-| 186 | `post-686aef2a90342d000185eb49` | co-living | pendente | — | — | — |
+| 63 | `post-68bacd9634162e000164ff64` | avaliacao-imovel-comercial | pendente | — | — | — |
+| 64 | `post-68bae84b34162e000165010b` | regularizacao-imobiliaria | pendente | — | — | — |
+| 65 | `post-686aef2a90342d000185eb60` | formacao-em-arquitetura-diferencas-entre-brasil-portugal-e-espanha | pendente | — | — | — |
+| 66 | `post-686aef2a90342d000185eb55` | biografia-fran-silvestre | pendente | — | — | — |
+| 67 | `post-68bae4d834162e0001650094` | estudo-impacto-de-vizinhanca | pendente | — | — | — |
+| 68 | `post-68ba4db2788095000140e17f` | direito-das-sucessoes | pendente | — | — | — |
+| 69 | `post-68bacd5a34162e000164ff57` | credito-imobiliario | pendente | — | — | — |
+| 70 | `post-68bae4bb34162e0001650086` | registro-rural-regularizacao-de-propriedades | pendente | — | — | — |
+| 71 | `post-68bae49134162e0001650071` | avaliacao-de-imoveis-rurais-guia-para-proprietarios-e-investidores | pendente | — | — | — |
+| 72 | `post-68e6a244cf0351000131fa7f` | consorcio-financiamento | pendente | — | — | — |
+| 73 | `post-686aef2a90342d000185eb67` | premio-pritzker-de-arquitetura | pendente | — | — | — |
+| 74 | `post-686aef2a90342d000185eb4f` | art-deco-nouveau-crafts-diferencas | pendente | — | — | — |
+| 75 | `post-686aef2a90342d000185eb52` | explorando-glasgow | pendente | — | — | — |
+| 76 | `post-67e323f2a5ce00000103a808` | processo-de-desapropriacao-de-imoveis | pendente | — | — | — |
+| 77 | `post-6807f0ed99d0d30001611936` | ganhar-dinheiro-imovel | pendente | — | — | — |
+| 78 | `post-686aef2a90342d000185eb65` | novo-parque-de-valencia | pendente | — | — | — |
+| 79 | `post-67e32f07a5ce00000103a85f` | shopping-reajuste-de-aluguel | pendente | — | — | — |
+| 80 | `post-68ad98559738aa0001cc2e7a` | imoveis-na-pratica-avaliacao-de-terrenos | pendente | — | — | — |
+| 81 | `post-686aef2a90342d000185eb32` | arquitetura-modular | pendente | — | — | — |
+| 82 | `post-68e6b869cf0351000131fba4` | construtora-incorporadora | pendente | — | — | — |
+| 83 | `post-68b300e88e290d00011b8f30` | areas-de-protecao-ambiental | pendente | — | — | — |
+| 84 | `post-68c80fcd5efebc0001f63723` | cadastro-imobiliario-brasileiro-cib | pendente | — | — | — |
+| 85 | `post-68b1a74935652e0001f9a28f` | cna-cadastro-nacional-de-advogados | pendente | — | — | — |
+| 86 | `post-685beb551626610001b3aede` | hipoteca | pendente | — | — | — |
+| 87 | `post-68a760ced9d9130001252c38` | administradoras-bens | pendente | — | — | — |
+| 88 | `post-67db4af14677c40001af11bf` | itcmd | pendente | — | — | — |
+| 89 | `post-6807d58a99d0d30001611808` | reajuste-de-aluguel | pendente | — | — | — |
+| 90 | `post-68e6a2cacf0351000131faa1` | consultoria-imobiliaria | pendente | — | — | — |
+| 91 | `post-688e21398f78810001f45fc5` | golf-club-brasil | pendente | — | — | — |
+| 92 | `post-67e46e58007f59000142c306` | iptu | pendente | — | — | — |
+| 93 | `post-6807f2af99d0d30001611950` | adjudicacao-compulsoria | pendente | — | — | — |
+| 94 | `post-68e66ef4cf0351000131f9df` | direito-imobiliario-2 | pendente | — | — | — |
+| 95 | `post-68a77334de6f0800013af821` | vistorias-imoveis | pendente | — | — | — |
+| 96 | `post-6807f07799d0d30001611926` | usucapiao | pendente | — | — | — |
+| 97 | `post-68a72891d9d9130001252b7b` | investimento-liquidez | pendente | — | — | — |
+| 98 | `post-685bebd11626610001b3aee9` | home-equity | pendente | — | — | — |
+| 99 | `post-68ba4d58788095000140e171` | leiloes-de-imoveis | pendente | — | — | — |
+| 100 | `post-681672679d322f0001f94449` | cib-cadastro-imobiliario-brasileiro | pendente | — | — | — |
+| 101 | `post-685bf61e44c14400011e0f1d` | imposto-de-renda-sobre-venda-de-imovel | pendente | — | — | — |
+| 102 | `post-6807f27299d0d3000161194c` | terreno-brasil | pendente | — | — | — |
+| 103 | `post-685bf6b144c14400011e0f2a` | indices-reajuste-aluguel | pendente | — | — | — |
+| 104 | `post-68a77a64de6f0800013af83a` | terrenos-em-santa-catarina | pendente | — | — | — |
+| 105 | `post-68e6a2a2cf0351000131fa92` | potencial-construtivo-terreno | pendente | — | — | — |
+| 106 | `post-68ba4d8b788095000140e175` | direito-de-familia | pendente | — | — | — |
+| 107 | `post-6807f08799d0d3000161192a` | averbacao | pendente | — | — | — |
+| 108 | `post-68b048a04b61a00001cb7e9c` | comissao-valores-mobiliarios-cvm | pendente | — | — | — |
+| 109 | `post-686a8c68d5f0560001df843d` | o-impacto-da-arquitetura-imobiliaria-no-mercado-contemporaneo | pendente | — | — | — |
+| 110 | `post-68a77dadde6f0800013af866` | avaliacao-mercadologica-de-imoveis | pendente | — | — | — |
+| 111 | `post-6807f11c99d0d3000161193a` | propriedade-expropriada | pendente | — | — | — |
+| 112 | `post-688e29dd8f78810001f45fed` | brava-home-resort | pendente | — | — | — |
+| 113 | `post-685bf74744c14400011e0f38` | refinanciamento-imobiliario | pendente | — | — | — |
+| 114 | `post-67c43624b5f03500018a47c9` | especialistas-avaliacao-imobiliaria | pendente | — | — | — |
+| 115 | `post-6816728b9d322f0001f94451` | compra-e-venda-de-imovel | pendente | — | — | — |
+| 116 | `post-688e29998f78810001f45fe1` | balneario-camboriu | pendente | — | — | — |
+| 117 | `post-68e6a2b9cf0351000131fa9a` | perito-judicial | pendente | — | — | — |
+| 118 | `post-68b3023e8e290d00011b8f5d` | diferencas-entre-imovel-urbano-e-rural | pendente | — | — | — |
+| 119 | `post-68baebca34162e000165019d` | bravissima-private-residence | pendente | — | — | — |
+| 120 | `post-6807f0c199d0d30001611932` | cisao-empresarial | pendente | — | — | — |
+| 121 | `post-68e6a808cf0351000131faec` | incc-indice-nacional-custo-construcao | pendente | — | — | — |
+| 122 | `post-68a75f33d9d9130001252c25` | captador-imoveis | pendente | — | — | — |
+| 123 | `post-686aef2a90342d000185eb38` | casa-container | pendente | — | — | — |
+| 124 | `post-685bf5d744c14400011e0f12` | juros-de-financiamento-imobiliario | pendente | — | — | — |
+| 125 | `post-68b1a64935652e0001f9a27b` | cessao-direitos-hereditarios | pendente | — | — | — |
+| 126 | `post-68a77c8cde6f0800013af84f` | imposto-sobre-venda-imoveis | pendente | — | — | — |
+| 127 | `post-68b8a1face1c730001db7a6c` | vistoriador-de-imoveis | pendente | — | — | — |
+| 128 | `post-685bec1b1626610001b3aef5` | estrangeiro-imovel-brasil | pendente | — | — | — |
+| 129 | `post-686aef2a90342d000185eb6d` | construindo-com-steel-frame | pendente | — | — | — |
+| 130 | `post-68b1ac7d35652e0001f9a2e1` | oab-sc | pendente | — | — | — |
+| 131 | `post-685be96a1626610001b3aebd` | leasing | pendente | — | — | — |
+| 132 | `post-68bae4ac34162e000165007f` | georreferenciamento-guia-completo-para-proprietarios-rurais | pendente | — | — | — |
+| 133 | `post-68b3026b8e290d00011b8f66` | construcao-em-area-de-reserva-legal | pendente | — | — | — |
+| 134 | `post-68a71fa6d9d9130001252aa8` | especulacao-imobiliaria | pendente | — | — | — |
+| 135 | `post-68baeba934162e000165018d` | perito-judicial-arquiteto | pendente | — | — | — |
+| 136 | `post-68e699bbcf0351000131fa05` | direito-societario | pendente | — | — | — |
+| 137 | `post-680977502e276e0001cf9387` | heranca | pendente | — | — | — |
+| 138 | `post-67ca1cd6ad8c5c0001cd5266` | itbi | pendente | — | — | — |
+| 139 | `post-68bae29b34162e0001650012` | avaliacao-de-marcas | pendente | — | — | — |
+| 140 | `post-68b8a4d8ce1c730001db7ae4` | metodo-capitalizacao-renda | pendente | — | — | — |
+| 141 | `post-68238463627fff0001df1f15` | valor-venal | pendente | — | — | — |
+| 142 | `post-688e29708f78810001f45fdb` | itajai | pendente | — | — | — |
+| 143 | `post-68bae2ec34162e0001650030` | controle-patrimonial | pendente | — | — | — |
+| 144 | `post-68e6a368cf0351000131faba` | cotacao-de-hipoteca | pendente | — | — | — |
+| 145 | `post-68e69bc2cf0351000131fa33` | aprovacao-de-projetos-na-prefeitura | pendente | — | — | — |
+| 146 | `post-68b1a7b635652e0001f9a29c` | testamento | pendente | — | — | — |
+| 147 | `post-68096da52e276e0001cf9311` | holding-patrimonial | pendente | — | — | — |
+| 148 | `post-686aef2a90342d000185eb72` | cidade-das-artes-e-das-ciencias-cultura-e-inovacao | pendente | — | — | — |
+| 149 | `post-67c1cf984403ff0001dd2dfa` | laudo-de-avaliacao-do-imovel | pendente | — | — | — |
+| 150 | `post-68e6a7b6cf0351000131fad5` | compra-e-venda-de-terreno | pendente | — | — | — |
+| 151 | `post-68b301f38e290d00011b8f50` | imoveis-na-pratica-imovel-rural | pendente | — | — | — |
+| 152 | `post-68e6a7fbcf0351000131fadb` | cartas-de-creditos-no-consorcio | pendente | — | — | — |
+| 153 | `post-68b8a32fce1c730001db7aa2` | comodato | pendente | — | — | — |
+| 154 | `post-68b1aacb35652e0001f9a2c2` | direito-civil | pendente | — | — | — |
+| 155 | `post-68bae49f34162e0001650078` | como-calcular-valor-do-aluguel | pendente | — | — | — |
+| 156 | `post-6807f25f99d0d30001611948` | imovel-valoriza-ano | pendente | — | — | — |
+| 157 | `post-68e6a7fdcf0351000131fae3` | vender-imovel | pendente | — | — | — |
+| 158 | `post-68b04c1a4b61a00001cb7eb1` | valores-mobiliarios | pendente | — | — | — |
+| 159 | `post-68bae87934162e0001650120` | registro-de-responsabilidade-tecnica-rrt | pendente | — | — | — |
+| 160 | `post-6807d50599d0d30001611801` | imoveis-santa-catarina | pendente | — | — | — |
+| 161 | `post-68b8a3edce1c730001db7ac2` | ranking-metro-quadrado-mais-caro-do-brasil | pendente | — | — | — |
+| 162 | `post-68e6a275cf0351000131fa87` | terrenos | pendente | — | — | — |
+| 163 | `post-685bf53c44c14400011e0f04` | permuta-de-imovel | pendente | — | — | — |
+| 164 | `post-68e6a2e2cf0351000131faa9` | cub-santa-catarina-2025 | pendente | — | — | — |
+| 165 | `post-68baef2634162e00016501df` | igpm-como-calcular | pendente | — | — | — |
+| 166 | `post-68bae85a34162e0001650112` | hipoteca-reversa | pendente | — | — | — |
+| 167 | `post-68e6a345cf0351000131fab0` | recuperacao-judicial | pendente | — | — | — |
+| 168 | `post-68e6a387cf0351000131fac3` | cub | pendente | — | — | — |
+| 169 | `post-68e6a819cf0351000131faf4` | minha-casa-minha-vida | pendente | — | — | — |
+| 170 | `post-68ba4da8788095000140e17b` | direito-imobiliario | pendente | — | — | — |
+| 171 | `post-68bacdfe34162e000164ff72` | blumenau-e-mercado-imobiliario | pendente | — | — | — |
+| 172 | `post-68baeb9234162e0001650184` | metodo-involutivo | pendente | — | — | — |
+| 173 | `post-68e6a396cf0351000131fac9` | sinduscon | pendente | — | — | — |
+| 174 | `post-68b301398e290d00011b8f3c` | app-area-de-preservacao-permanente | pendente | — | — | — |
+| 175 | `post-68e6a7fbcf0351000131fadf` | direito-e-patrimonio-lei-do-inquilinato | pendente | — | — | — |
+| 176 | `post-686aef2a90342d000185eb4a` | biografia-alvaro-siza | pendente | — | — | — |
+| 177 | `post-686aef2a90342d000185eb69` | impactos-da-arquitetura-hostil | pendente | — | — | — |
+| 178 | `post-686aef2a90342d000185eb63` | a-estrutura-das-cidades-espanholas | pendente | — | — | — |
+| 179 | `post-686aef2a90342d000185eb74` | desafios-da-execucao-de-obra-para-arquitetos | pendente | — | — | — |
+| 180 | `post-686aef2a90342d000185eb45` | desenho-livre-com-tablet | pendente | — | — | — |
+| 181 | `post-686aef2a90342d000185eb50` | explorando-belfast | pendente | — | — | — |
+| 182 | `post-686aef2a90342d000185eb56` | viaje-na-arquitetura-de-budapeste | pendente | — | — | — |
+| 183 | `post-686aef2a90342d000185eb64` | parque-turia | pendente | — | — | — |
+| 184 | `post-686aef2a90342d000185eb5b` | 3-aplicativos-de-construcao | pendente | — | — | — |
+| 185 | `post-686aef2a90342d000185eb49` | co-living | pendente | — | — | — |
+| 186 | `post-686aef2a90342d000185eb6c` | milan-design-week-fuorisalone | pendente | — | — | — |
 | 187 | `post-686aef2a90342d000185eb68` | architecture-hunter | pendente | — | — | — |
 | 188 | `post-68b8a0f0ce1c730001db7a44` | matricula-atualizada-do-imovel-guia-completo | pendente | — | — | — |
 | 189 | `post-686aef2a90342d000185eb54` | dupla-titulacao-em-arquitetura | pendente | — | — | — |
 | 190 | `post-686aef2a90342d000185eb5e` | identidade-da-arquitetura-portuguesa | pendente | — | — | — |
-| 191 | `post-686aef2a90342d000185eb6b` | milan-design-week | pendente | — | — | — |
-| 192 | `post-68b1aa7535652e0001f9a2ba` | herdeiros-necessarios | pendente | — | — | — |
-| 193 | `post-6807f04299d0d3000161191e` | imposto-explicado-laudemio | pendente | — | — | — |
-| 194 | `post-688e29c58f78810001f45fe7` | senna-tower | pendente | — | — | — |
-| 195 | `post-681672489d322f0001f94441` | certidao-de-matricula-de-imovel | pendente | — | — | — |
-| 196 | `post-68bae25c34162e0001650004` | ativo-imobilizado | pendente | — | — | — |
-| 197 | `post-686aef2a90342d000185eb70` | o-que-e-croqui | pendente | — | — | — |
-| 198 | `post-686aef2a90342d000185eb6f` | arquitetura-barroca-explorando-estilo-e-influencias-historicas | pendente | — | — | — |
-| 199 | `post-686aef2a90342d000185eb73` | o-minimalismo-na-arquitetura | pendente | — | — | — |
-| 200 | `post-686aef2a90342d000185eb36` | o-que-e-cau | pendente | — | — | — |
+| 191 | `post-68b1aa7535652e0001f9a2ba` | herdeiros-necessarios | pendente | — | — | — |
+| 192 | `post-6807f04299d0d3000161191e` | imposto-explicado-laudemio | pendente | — | — | — |
+| 193 | `post-688e29c58f78810001f45fe7` | senna-tower | pendente | — | — | — |
+| 194 | `post-681672489d322f0001f94441` | certidao-de-matricula-de-imovel | pendente | — | — | — |
+| 195 | `post-68bae25c34162e0001650004` | ativo-imobilizado | pendente | — | — | — |
+| 196 | `post-686aef2a90342d000185eb70` | o-que-e-croqui | pendente | — | — | — |
+| 197 | `post-686aef2a90342d000185eb6f` | arquitetura-barroca-explorando-estilo-e-influencias-historicas | pendente | — | — | — |
+| 198 | `post-686aef2a90342d000185eb73` | o-minimalismo-na-arquitetura | pendente | — | — | — |
+| 199 | `post-686aef2a90342d000185eb36` | o-que-e-cau | pendente | — | — | — |
+| 200 | `post-686aef2a90342d000185eb6b` | milan-design-week | pendente | — | — | — |
 | 201 | `post-686aef2a90342d000185eb34` | 7-cursos-online-para-arquitetos | pendente | — | — | — |
 | 202 | `post-67c60370c0a5c6000141b6ea` | credibilidade-avaliador-de-imoveis | pendente | — | — | — |
 | 203 | `post-686aef2a90342d000185eb6e` | wood-frame | pendente | — | — | — |
@@ -213,28 +213,24 @@ A coluna `_rev anterior` é preenchida no momento do patch — é o que permite 
 | 205 | `post-686aef2a90342d000185eb40` | metodo-valenbrasil-o-arquiteto-digital | pendente | — | — | — |
 | 206 | `post-686aef2a90342d000185eb37` | o-que-e-um-arquiteto | pendente | — | — | — |
 
----
+### Canibalização — pares críticos
 
-## Lotes concluídos
+Sete artigos diferenciados e ligados dois a dois, em 7 patches. A
+diferenciação mexe em `title`, `metaTitle` e `metaDescription`; o link cruzado
+entra como anotação nova em `markDefs`, com a âncora recortada de um span já
+existente — o texto do parágrafo não muda um caractere, e isso é conferido por
+asserção antes de gravar.
 
-Trabalho aplicado a vários artigos de uma vez, fora do ciclo A–H da Fase 1.
-Cada patch foi cirúrgico, com `ifRevisionID` e backup do JSON original.
-Os backups ficam em `_seo/backups/` (fora do git — são regeneráveis por query,
-e o `_rev` anterior, registrado nos JSON de registro, é o que permite reverter).
+| Par | Ação | Como ficaram distintos |
+|---|---|---|
+| `reajuste-de-aluguel` / `indices-reajuste-aluguel` | diferenciar + ligar | regras da Lei do Inquilinato e negociação · escolha do índice e cálculo |
+| `imposto-sobre-venda-imoveis` / `imposto-de-renda-sobre-venda-de-imovel` | hierarquizar + ligar | pilar com ITBI e IR · artigo específico de ganho de capital |
+| `milan-design-week` / `milan-design-week-fuorisalone` | diferenciar + ligar | o Salone del Mobile e sua história · o circuito off de 2024 |
+| `valores-mobiliarios` / `comissao-valores-mobiliarios-cvm` | diferenciar + ligar | o instrumento financeiro · o órgão regulador |
+| `direito-imobiliario` / `direito-imobiliario-2` | **pendente** | duplicata real — exige decisão sobre qual URL sobrevive |
 
-| Lote | Artigos | Campos | Backup |
-|---|---|---|---|
-| Remoção do rastreamento `?ref=` do Ghost | 46 | 52 links | `pre-ref/` |
-| Correção do prefixo `/blog` nos links internos | 78 | 194 links | `pre-links/` |
-| Remoção de link órfão (`/blog/authorvalenbrasil/`) | 1 | 1 link | `pre-links/` |
-| Preenchimento de `metaTitle` e `metaDescription` | 59 | 66 campos | `pre-meta/` |
+Uma direção de link ficou faltando: `imposto-de-renda-sobre-venda-de-imovel` não
+tem parágrafo que cite ITBI ou os demais tributos, então não há âncora natural
+de volta para o artigo pilar. Pelo próprio critério do plano, âncora ausente é
+sinal de lacuna de conteúdo — cabe uma frase nova, não um link forçado.
 
-Estado do acervo depois desses lotes:
-
-- `metaTitle` preenchido: 206/206, nenhum acima de 65 caracteres
-- `metaDescription` preenchida: 206/206, nenhuma acima de 155
-- links internos com prefixo `/blog`: 0
-- links com rastreamento `?ref=` do Ghost: 0
-
-O que continua pendente e é o gargalo da Fase 1: 165 artigos têm zero links
-externos, e a meta do plano é de 10 a 20 por artigo.

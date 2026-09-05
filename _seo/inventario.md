@@ -61,7 +61,7 @@ H2/H3/H4 = headings no corpo · mT/mD = metaTitle/metaDescription preenchidos.
 | 51 | [cna-cadastro-nacional-de-advogados](https://blog.valenbrasil.com/cna-cadastro-nacional-de-advogados/) | 1596 | 0 | 2 | 1 (0) | 9 | 5 | 0 | sim | sim | Direito Imobiliário | 2025-08-29 |
 | 52 | [co-living](https://blog.valenbrasil.com/co-living/) | 990 | 3 | 0 | 1 (0) | 7 | 0 | 0 | sim | sim | Arquitetura | 2023-12-15 |
 | 53 | [colagem-digital-na-arquitetura](https://blog.valenbrasil.com/colagem-digital-na-arquitetura/) | 609 | 2 | 0 | 1 (0) | 0 | 7 | 0 | sim | sim | Arquitetura | 2024-01-18 |
-| 54 | [comissao-valores-mobiliarios-cvm](https://blog.valenbrasil.com/comissao-valores-mobiliarios-cvm/) | 1865 | 0 | 1 | 1 (0) | 13 | 5 | 0 | sim | sim | Investimento Imobiliário | 2025-07-09 |
+| 54 | [comissao-valores-mobiliarios-cvm](https://blog.valenbrasil.com/comissao-valores-mobiliarios-cvm/) | 1865 | 0 | 2 | 1 (0) | 13 | 5 | 0 | sim | sim | Investimento Imobiliário | 2025-07-09 |
 | 55 | [como-calcular-valor-do-aluguel](https://blog.valenbrasil.com/como-calcular-valor-do-aluguel/) | 2551 | 0 | 5 | 1 (0) | 14 | 5 | 0 | sim | sim | Investimento Imobiliário | 2025-01-01 |
 | 56 | [comodato](https://blog.valenbrasil.com/comodato/) | 2545 | 0 | 2 | 1 (0) | 13 | 5 | 0 | sim | sim | Direito Imobiliário | 2023-04-01 |
 | 57 | [compra-e-venda-de-imovel](https://blog.valenbrasil.com/compra-e-venda-de-imovel/) | 1924 | 0 | 3 | 1 (0) | 12 | 8 | 0 | sim | sim | Direito Imobiliário | 2025-04-16 |
@@ -131,9 +131,9 @@ H2/H3/H4 = headings no corpo · mT/mD = metaTitle/metaDescription preenchidos.
 | 121 | [impactos-da-arquitetura-hostil](https://blog.valenbrasil.com/impactos-da-arquitetura-hostil/) | 1505 | 1 | 0 | 1 (0) | 7 | 0 | 0 | sim | sim | Arquitetura | 2023-10-20 |
 | 122 | [imposto-de-renda-sobre-venda-de-imovel](https://blog.valenbrasil.com/imposto-de-renda-sobre-venda-de-imovel/) | 1725 | 0 | 1 | 1 (0) | 10 | 7 | 0 | sim | sim | Imposto Imobiliário | 2025-06-26 |
 | 123 | [imposto-explicado-laudemio](https://blog.valenbrasil.com/imposto-explicado-laudemio/) | 1870 | 2 | 4 | 1 (0) | 12 | 5 | 0 | sim | sim | Imposto Imobiliário | 2025-04-29 |
-| 124 | [imposto-sobre-venda-imoveis](https://blog.valenbrasil.com/imposto-sobre-venda-imoveis/) | 2080 | 0 | 2 | 1 (0) | 9 | 13 | 0 | sim | sim | Imposto Imobiliário | 2025-02-07 |
+| 124 | [imposto-sobre-venda-imoveis](https://blog.valenbrasil.com/imposto-sobre-venda-imoveis/) | 2080 | 0 | 3 | 1 (0) | 9 | 13 | 0 | sim | sim | Imposto Imobiliário | 2025-02-07 |
 | 125 | [incc-indice-nacional-custo-construcao](https://blog.valenbrasil.com/incc-indice-nacional-custo-construcao/) | 2035 | 0 | 3 | 1 (0) | 12 | 7 | 0 | sim | sim | Investimento Imobiliário | 2025-10-08 |
-| 126 | [indices-reajuste-aluguel](https://blog.valenbrasil.com/indices-reajuste-aluguel/) | 1771 | 0 | 1 | 1 (0) | 11 | 8 | 0 | sim | sim | Avaliação Imobiliária | 2025-08-19 |
+| 126 | [indices-reajuste-aluguel](https://blog.valenbrasil.com/indices-reajuste-aluguel/) | 1771 | 0 | 2 | 1 (0) | 11 | 8 | 0 | sim | sim | Avaliação Imobiliária | 2025-08-19 |
 | 127 | [investimento-liquidez](https://blog.valenbrasil.com/investimento-liquidez/) | 1703 | 0 | 2 | 1 (0) | 11 | 5 | 0 | sim | sim | Investimento Imobiliário | 2025-01-07 |
 | 128 | [ipca](https://blog.valenbrasil.com/ipca/) | 3023 | 0 | 1 | 4 (1) | 9 | 2 | 0 | sim | sim | Investimento Imobiliário | 2025-01-01 |
 | 129 | [iptu](https://blog.valenbrasil.com/iptu/) | 1677 | 0 | 3 | 1 (0) | 12 | 5 | 0 | sim | sim | Imposto Imobiliário | 2025-04-22 |
@@ -156,8 +156,8 @@ H2/H3/H4 = headings no corpo · mT/mD = metaTitle/metaDescription preenchidos.
 | 146 | [metodo-evolutivo-na-avaliacao-de-imoveis](https://blog.valenbrasil.com/metodo-evolutivo-na-avaliacao-de-imoveis/) | 2171 | 0 | 4 | 1 (1) | 10 | 8 | 0 | sim | sim | Avaliação Imobiliária | 2025-01-01 |
 | 147 | [metodo-involutivo](https://blog.valenbrasil.com/metodo-involutivo/) | 3120 | 0 | 5 | 4 (0) | 6 | 9 | 0 | sim | sim | Avaliação Imobiliária | 2025-01-01 |
 | 148 | [metodo-valenbrasil-o-arquiteto-digital](https://blog.valenbrasil.com/metodo-valenbrasil-o-arquiteto-digital/) | 1382 | 30 | 3 | 1 (0) | 3 | 2 | 0 | sim | sim | Arquitetura | 2023-08-23 |
-| 149 | [milan-design-week](https://blog.valenbrasil.com/milan-design-week/) | 1647 | 7 | 0 | 1 (0) | 1 | 7 | 0 | sim | sim | Arquitetura | 2024-05-01 |
-| 150 | [milan-design-week-fuorisalone](https://blog.valenbrasil.com/milan-design-week-fuorisalone/) | 1229 | 1 | 0 | 1 (1) | 1 | 6 | 0 | sim | sim | Arquitetura | 2024-05-08 |
+| 149 | [milan-design-week](https://blog.valenbrasil.com/milan-design-week/) | 1647 | 7 | 1 | 1 (0) | 1 | 7 | 0 | sim | sim | Arquitetura | 2024-05-01 |
+| 150 | [milan-design-week-fuorisalone](https://blog.valenbrasil.com/milan-design-week-fuorisalone/) | 1229 | 1 | 1 | 1 (1) | 1 | 6 | 0 | sim | sim | Arquitetura | 2024-05-08 |
 | 151 | [minha-casa-minha-vida](https://blog.valenbrasil.com/minha-casa-minha-vida/) | 3085 | 0 | 2 | 1 (0) | 13 | 17 | 0 | sim | sim | Investimento Imobiliário | 2025-10-08 |
 | 152 | [nbr-14653](https://blog.valenbrasil.com/nbr-14653/) | 2026 | 0 | 2 | 2 (1) | 14 | 5 | 0 | sim | sim | Avaliação Imobiliária | 2025-01-01 |
 | 153 | [norman-foster-biografia](https://blog.valenbrasil.com/norman-foster-biografia/) | 4581 | 0 | 1 | 5 (1) | 10 | 5 | 0 | sim | sim | Arquitetura | 2024-01-01 |
@@ -183,7 +183,7 @@ H2/H3/H4 = headings no corpo · mT/mD = metaTitle/metaDescription preenchidos.
 | 173 | [processo-de-desapropriacao-de-imoveis](https://blog.valenbrasil.com/processo-de-desapropriacao-de-imoveis/) | 1086 | 0 | 4 | 1 (0) | 8 | 0 | 0 | sim | sim | Direito Imobiliário | 2025-03-20 |
 | 174 | [propriedade-expropriada](https://blog.valenbrasil.com/propriedade-expropriada/) | 1893 | 0 | 1 | 1 (0) | 8 | 16 | 0 | sim | sim | Direito Imobiliário | 2025-08-22 |
 | 175 | [ranking-metro-quadrado-mais-caro-do-brasil](https://blog.valenbrasil.com/ranking-metro-quadrado-mais-caro-do-brasil/) | 2850 | 0 | 3 | 1 (0) | 11 | 3 | 0 | sim | sim | Avaliação Imobiliária | 2025-01-01 |
-| 176 | [reajuste-de-aluguel](https://blog.valenbrasil.com/reajuste-de-aluguel/) | 1663 | 0 | 3 | 1 (0) | 9 | 10 | 0 | sim | sim | Investimento Imobiliário | 2025-04-22 |
+| 176 | [reajuste-de-aluguel](https://blog.valenbrasil.com/reajuste-de-aluguel/) | 1663 | 0 | 4 | 1 (0) | 9 | 10 | 0 | sim | sim | Investimento Imobiliário | 2025-04-22 |
 | 177 | [recuperacao-judicial](https://blog.valenbrasil.com/recuperacao-judicial/) | 3010 | 0 | 1 | 1 (0) | 18 | 5 | 0 | sim | sim | Direito Imobiliário | 2025-10-08 |
 | 178 | [refinanciamento-imobiliario](https://blog.valenbrasil.com/refinanciamento-imobiliario/) | 1908 | 0 | 1 | 1 (0) | 13 | 5 | 0 | sim | sim | Investimento Imobiliário | 2025-07-05 |
 | 179 | [registro-de-responsabilidade-tecnica-rrt](https://blog.valenbrasil.com/registro-de-responsabilidade-tecnica-rrt/) | 2717 | 0 | 1 | 1 (0) | 10 | 25 | 0 | sim | sim | Avaliação Imobiliária | 2025-01-01 |
@@ -206,7 +206,7 @@ H2/H3/H4 = headings no corpo · mT/mD = metaTitle/metaDescription preenchidos.
 | 196 | [testamento](https://blog.valenbrasil.com/testamento/) | 2376 | 0 | 2 | 1 (0) | 17 | 5 | 0 | sim | sim | Direito Imobiliário | 2025-08-29 |
 | 197 | [usucapiao](https://blog.valenbrasil.com/usucapiao/) | 1702 | 0 | 1 | 1 (0) | 11 | 13 | 0 | sim | sim | Direito Imobiliário | 2025-06-20 |
 | 198 | [valor-venal](https://blog.valenbrasil.com/valor-venal/) | 2313 | 0 | 5 | 1 (0) | 13 | 7 | 0 | sim | sim | Imposto Imobiliário | 2025-02-28 |
-| 199 | [valores-mobiliarios](https://blog.valenbrasil.com/valores-mobiliarios/) | 2682 | 0 | 1 | 1 (0) | 10 | 14 | 0 | sim | sim | Investimento Imobiliário | 2025-08-28 |
+| 199 | [valores-mobiliarios](https://blog.valenbrasil.com/valores-mobiliarios/) | 2682 | 0 | 2 | 1 (0) | 10 | 14 | 0 | sim | sim | Investimento Imobiliário | 2025-08-28 |
 | 200 | [vender-imovel](https://blog.valenbrasil.com/vender-imovel/) | 2584 | 0 | 3 | 1 (0) | 15 | 5 | 0 | sim | sim | Investimento Imobiliário | 2025-10-08 |
 | 201 | [viaje-na-arquitetura-de-budapeste](https://blog.valenbrasil.com/viaje-na-arquitetura-de-budapeste/) | 1268 | 2 | 0 | 1 (0) | 1 | 15 | 0 | sim | sim | Arquitetura | 2024-01-12 |
 | 202 | [viaje-na-arquitetura-de-edimburgo-na-escocia](https://blog.valenbrasil.com/viaje-na-arquitetura-de-edimburgo-na-escocia/) | 1555 | 1 | 0 | 1 (0) | 0 | 15 | 0 | sim | sim | Arquitetura | 2023-12-17 |
