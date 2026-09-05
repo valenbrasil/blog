@@ -1,13 +1,13 @@
 # Densificação de links externos — onde parou
 
-Retrato de 05/09/2026 18:14 UTC. Gerado por
+Retrato de 05/09/2026 18:19 UTC. Gerado por
 `/tmp/dens/estado.py`, que só lê arquivo — não chama a API nem gasta agente.
 
 | Estado | Artigos | O que fazer |
 |---|---:|---|
-| aplicado | 45 | nada, já está no ar |
-| aprovado | 6 | gravar com `aplica.py` |
-| sem_revisao | 3 | **não gravar** — falta o cético |
+| aplicado | 52 | nada, já está no ar |
+| aprovado | 2 | gravar com `aplica.py` |
+| sem_revisao | 0 | **não gravar** — falta o cético |
 | em_voo | 0 | reenfileirar: o lote rodou e não devolveu plano |
 | na_fila | 152 | nunca entrou em lote |
 
@@ -27,15 +27,8 @@ Workflow({scriptPath: ".../densificar-links-externos-wf_a0b9fc3c-37f.js",
 
 | Artigo | Estado | Links previstos | Operações | Reprovadas |
 |---|---|---:|---:|---:|
-| `art-deco-nouveau-crafts-diferencas` | aprovado | 13 | 18 | 1 |
-| `biografia-kengo-kuma` | aprovado | 15 | 14 | 2 |
-| `biografia-mackintosh` | aprovado | 14 | 15 | 1 |
 | `novo-parque-de-valencia` | aprovado | 13 | 12 | 3 |
 | `parklets` | aprovado | 13 | 9 | 4 |
-| `teorias-restauracao-patrimonio-arquitetonico` | aprovado | 13 | 6 | 1 |
-| `a-influencia-do-jardim-sensorial-na-experiencia-humana` | sem_revisao | 13 | 10 | 0 |
-| `arquitetura-vitoriana-e-eduardiana` | sem_revisao | 14 | 13 | 0 |
-| `biografia-lina-bo-bardi` | sem_revisao | 14 | 13 | 0 |
 
 ## Fila
 
