@@ -57,16 +57,20 @@ O plano Free dá 5 URLs, 1.000 checks/mês e cadência mínima de 3 h.
 | `blog.valenbrasil.com/laudo-de-avaliacao-do-imovel/` | 360 min | 4 |
 | `blog.valenbrasil.com/perito-imobiliario/` | 360 min | 4 |
 | `blog.valenbrasil.com/avaliacao-imobiliaria/` | 360 min | 4 |
-| `valenbrasil.com/` | 1440 min | 1 |
+| `blog.valenbrasil.com/advocacia-imobiliaria/` | 360 min | 4 |
 
-**630 checks/mês** dos 1.000 disponíveis.
+**720 checks/mês** dos 1.000 disponíveis. 5 dos 5 slots ocupados.
 
 A home do blog ficou na cadência mais rápida que o plano permite de propósito:
 ela é o canário de deploy. Duas vezes nesta migração o build do Jekyll venceu a
 corrida com o GitHub Actions e substituiu o site inteiro pelo README da raiz.
 Um watch na home pega isso em até 3 h em vez de "quando alguém reparar".
 
-`advocacia-imobiliaria` ficou de fora: o teto de 5 URLs já estava cheio.
+O quinto slot era de `valenbrasil.com/`, a 1 check por dia, e foi trocado por
+`advocacia-imobiliaria` a pedido. A troca custou o histórico do watch antigo —
+um único crawl, o inicial. O institucional muda pouco; o artigo é o que mudou
+de URL nesta auditoria (`direito-imobiliario-2` → `advocacia-imobiliaria`), e é
+nele que vale ter olho.
 
 ## Custo
 
@@ -85,7 +89,7 @@ Criar regra não custa nada. O que consome crédito é deixar o stream aberto.
     GET  /v1/taps       200 · 1 tap                     (chave de gestão)
     GET  /v1/rules      200 · 5 regras                  (token do tap)
     POST /v1/validate   200 · valid=true nas 5          (token do tap)
-    GET  /v1/url-watch  200 · 5 watches ativos          (chave de gestão)
+    GET  /v1/url-watch  200 · 5 watches ativos (5/5)    (chave de gestão)
     GET  /v1/stream     evento `connected` · 0 matches em 25 s · US$ 0,00
 
 ## Uma armadilha da API
