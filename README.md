@@ -1,6 +1,6 @@
 # Blog da Valen Brasil
 
-Blog publicado em <https://valenbrasil.github.io/blog/>. O conteúdo vive no
+Blog publicado em <https://blog.valenbrasil.com>. O conteúdo vive no
 Sanity e o site é estático.
 
 | Pasta | O que é |
@@ -23,6 +23,11 @@ A origem do Pages precisa estar em **GitHub Actions** (Settings → Pages → Bu
 and deployment → Source). Em "Deploy from a branch", o GitHub roda um build
 Jekyll da raiz do repositório a cada push, que publica este README por cima do
 blog — aconteceu uma vez e derrubou o site.
+
+O domínio `blog.valenbrasil.com` também vive nas configurações do Pages
+(Settings → Pages → Custom domain), não no código: o `site/public/CNAME`
+acompanha o artefato por garantia, mas não é ele que configura o domínio. Do
+lado do DNS, `blog` é um CNAME para `valenbrasil.github.io`.
 
 ## Migração Ghost → Sanity
 

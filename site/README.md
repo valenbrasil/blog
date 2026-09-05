@@ -7,7 +7,7 @@ depois de rodar o workflow de deploy.
 
 ```bash
 npm install
-npm run dev     # http://localhost:3000/blog
+npm run dev     # http://localhost:3000
 npm run build   # gera out/
 npm run lint
 ```
@@ -51,6 +51,9 @@ blog montadas com eles.
 ## Endereço público
 
 `NEXT_PUBLIC_BASE_PATH` e `NEXT_PUBLIC_SITE_URL`, lidos por `lib/site-config.ts`
-e definidos no workflow de deploy. Num GitHub Pages de projeto o site é servido
-sob o nome do repositório (`/blog`); com domínio próprio, basta
-`NEXT_PUBLIC_BASE_PATH=''` e a URL do domínio.
+e definidos no workflow de deploy. Hoje o site roda na raiz de
+`blog.valenbrasil.com`, então o base path é vazio. Num GitHub Pages de projeto
+ele seria servido sob o nome do repositório, e aí `NEXT_PUBLIC_BASE_PATH=/blog`.
+
+O domínio em si é configurado em Settings → Pages → Custom domain, não aqui.
+`public/CNAME` vai junto no artefato, mas não é ele que decide o endereço.

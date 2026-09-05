@@ -36,11 +36,15 @@ jobs:
       - name: Build
         working-directory: site
         env:
-          # Endereço público deste deploy. Num GitHub Pages de projeto o site é
-          # servido sob o nome do repositório. Com domínio próprio, trocar para
-          # NEXT_PUBLIC_BASE_PATH: '' e a URL do domínio.
-          NEXT_PUBLIC_BASE_PATH: /blog
-          NEXT_PUBLIC_SITE_URL: https://valenbrasil.github.io/blog
+          # Endereço público deste deploy. O site roda na raiz do domínio
+          # próprio, então não há prefixo de caminho. Voltando para o endereço
+          # do GitHub Pages, seria NEXT_PUBLIC_BASE_PATH: /blog e a URL de lá.
+          #
+          # O domínio em si não é configurado aqui nem pelo site/public/CNAME:
+          # quem manda é Settings -> Pages -> Custom domain. O CNAME acompanha o
+          # artefato por garantia e para deixar o endereço registrado no repo.
+          NEXT_PUBLIC_BASE_PATH: ''
+          NEXT_PUBLIC_SITE_URL: https://blog.valenbrasil.com
         run: npm run build
 
       - uses: actions/configure-pages@v5
