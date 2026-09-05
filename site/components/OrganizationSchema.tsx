@@ -1,5 +1,5 @@
-import { EMPRESA, INSTITUTIONAL_URL, SITE_URL } from "@/lib/site-config";
-import { StructuredData } from "./StructuredData";
+import { EMPRESA, INSTITUTIONAL_URL, SITE_URL } from '@/lib/site-config'
+import { StructuredData } from './StructuredData'
 
 /*
   Identidade da empresa em schema.org, uma vez por página.
@@ -16,27 +16,17 @@ import { StructuredData } from "./StructuredData";
   CAU e CRECI entram como `identifier`, que é onde schema.org acomoda registro
   emitido por terceiro; `taxID` recebe o CNPJ e `foundingDate` o ano.
 */
-export const ORGANIZATION_ID = `${INSTITUTIONAL_URL}/#organizacao`;
+export const ORGANIZATION_ID = `${INSTITUTIONAL_URL}/#organizacao`
 
 export function OrganizationSchema() {
-  const {
-    razaoSocial,
-    nome,
-    cnpj,
-    cau,
-    creci,
-    fundacao,
-    endereco,
-    telefone,
-    email,
-  } = EMPRESA;
+  const { razaoSocial, nome, cnpj, registros, fundacao, endereco, telefone, email } = EMPRESA
 
   return (
     <StructuredData
       data={{
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": ORGANIZATION_ID,
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        '@id': ORGANIZATION_ID,
         name: nome,
         legalName: razaoSocial,
         url: INSTITUTIONAL_URL,
@@ -45,35 +35,29 @@ export function OrganizationSchema() {
         email,
         telephone: telefone,
         address: {
-          "@type": "PostalAddress",
+          '@type': 'PostalAddress',
           streetAddress: endereco.logradouro,
           addressLocality: endereco.cidade,
           addressRegion: endereco.estado,
           addressCountry: endereco.pais,
         },
         identifier: [
-          { "@type": "PropertyValue", propertyID: "CNPJ", value: cnpj },
-          {
-            "@type": "PropertyValue",
-            propertyID: "CAU",
-            name: "Conselho de Arquitetura e Urbanismo",
-            value: cau,
-          },
-          {
-            "@type": "PropertyValue",
-            propertyID: "CRECI",
-            name: "Conselho Regional de Corretores de Imóveis",
-            value: creci,
-          },
+          { '@type': 'PropertyValue', propertyID: 'CNPJ', value: cnpj },
+          ...registros.map((r) => ({
+            '@type': 'PropertyValue',
+            propertyID: r.conselho,
+            name: r.rotulo,
+            value: r.numero,
+          })),
         ],
         subOrganization: {
-          "@type": "Blog",
-          "@id": `${SITE_URL}/#blog`,
-          name: "Valen Brasil — Blog",
+          '@type': 'Blog',
+          '@id': `${SITE_URL}/#blog`,
+          name: 'Valen Brasil — Blog',
           url: `${SITE_URL}/`,
-          inLanguage: "pt-BR",
+          inLanguage: 'pt-BR',
         },
       }}
     />
-  );
+  )
 }

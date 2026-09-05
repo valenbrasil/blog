@@ -57,9 +57,21 @@ export const EMPRESA = {
   razaoSocial: 'Valen Brasil Gestão Empresarial Ltda',
   nome: 'Valen Brasil',
   cnpj: '39.819.814/0001-98',
-  cau: 'PJ69468-1',
-  creci: '11689-J',
   fundacao: '2020',
+  /*
+    Os dois conselhos vêm identificados por UF, como constam no registro:
+    CAU-SC para arquitetura, CRECI-SC para a atividade imobiliária. Guardados
+    partidos em conselho e número porque o JSON-LD precisa dos dois separados
+    (`propertyID` e `value`) e a página legal precisa dos dois juntos.
+  */
+  registros: [
+    {
+      rotulo: 'Registro de arquitetura',
+      conselho: 'CAU-SC',
+      numero: 'PJ-69468-1',
+    },
+    { rotulo: 'Registro imobiliário', conselho: 'CRECI-SC', numero: '11689-J' },
+  ],
   endereco: {
     logradouro: 'Rua Samuel Heusi, 463',
     cidade: 'Itajaí',
@@ -68,6 +80,7 @@ export const EMPRESA = {
     pais: 'BR',
   },
   telefone: '+55 47 3170-1572',
+  telefoneURI: 'tel:+554731701572',
   email: 'contato@valenbrasil.com',
   emailPrivacidade: 'privacidade@valenbrasil.com',
 } as const
