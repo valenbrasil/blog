@@ -18,7 +18,7 @@ export default function PrivacidadePage() {
   return (
     <div className="mx-auto max-w-[760px] px-6 py-16">
       <div
-        className="prose prose-valen max-w-none"
+        className="prose prose-valen texto-justificado max-w-none"
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </div>

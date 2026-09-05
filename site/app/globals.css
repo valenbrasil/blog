@@ -119,17 +119,28 @@
   --tracking-widest: 0.18em;
 
   /* Papéis tipográficos — usados como shorthand `font: var(--type-h1)` */
-  --type-display: var(--weight-light) var(--text-6xl) / var(--leading-tight) var(--font-display);
-  --type-h1: var(--weight-light) var(--text-5xl) / var(--leading-tight) var(--font-display);
-  --type-h2: var(--weight-light) var(--text-4xl) / var(--leading-tight) var(--font-display);
-  --type-h3: var(--weight-regular) var(--text-2xl) / var(--leading-snug) var(--font-display);
-  --type-h4: var(--weight-medium) var(--text-xl) / var(--leading-snug) var(--font-sans);
-  --type-body-lg: var(--weight-regular) var(--text-lg) / var(--leading-relaxed) var(--font-sans);
-  --type-body: var(--weight-regular) var(--text-base) / var(--leading-relaxed) var(--font-sans);
-  --type-body-sm: var(--weight-regular) var(--text-sm) / var(--leading-normal) var(--font-sans);
-  --type-label: var(--weight-medium) var(--text-sm) / var(--leading-normal) var(--font-sans);
-  --type-eyebrow: var(--weight-medium) var(--text-xs) / var(--leading-normal) var(--font-sans);
-  --type-mono: var(--weight-regular) var(--text-sm) / var(--leading-normal) var(--font-mono);
+  --type-display: var(--weight-light) var(--text-6xl) / var(--leading-tight)
+    var(--font-display);
+  --type-h1: var(--weight-light) var(--text-5xl) / var(--leading-tight)
+    var(--font-display);
+  --type-h2: var(--weight-light) var(--text-4xl) / var(--leading-tight)
+    var(--font-display);
+  --type-h3: var(--weight-regular) var(--text-2xl) / var(--leading-snug)
+    var(--font-display);
+  --type-h4: var(--weight-medium) var(--text-xl) / var(--leading-snug)
+    var(--font-sans);
+  --type-body-lg: var(--weight-regular) var(--text-lg) / var(--leading-relaxed)
+    var(--font-sans);
+  --type-body: var(--weight-regular) var(--text-base) / var(--leading-relaxed)
+    var(--font-sans);
+  --type-body-sm: var(--weight-regular) var(--text-sm) / var(--leading-normal)
+    var(--font-sans);
+  --type-label: var(--weight-medium) var(--text-sm) / var(--leading-normal)
+    var(--font-sans);
+  --type-eyebrow: var(--weight-medium) var(--text-xs) / var(--leading-normal)
+    var(--font-sans);
+  --type-mono: var(--weight-regular) var(--text-sm) / var(--leading-normal)
+    var(--font-mono);
 
   /* --- Ritmo de página --- */
   --container-max: 1200px;
@@ -145,9 +156,12 @@
 
   /* --- Sombras --- */
   --shadow-xs: 0 1px 2px rgba(20, 22, 19, 0.05);
-  --shadow-sm: 0 1px 3px rgba(20, 22, 19, 0.07), 0 1px 2px rgba(20, 22, 19, 0.04);
-  --shadow-md: 0 4px 12px rgba(20, 22, 19, 0.07), 0 1px 3px rgba(20, 22, 19, 0.05);
-  --shadow-lg: 0 12px 32px rgba(20, 22, 19, 0.1), 0 2px 6px rgba(20, 22, 19, 0.05);
+  --shadow-sm:
+    0 1px 3px rgba(20, 22, 19, 0.07), 0 1px 2px rgba(20, 22, 19, 0.04);
+  --shadow-md:
+    0 4px 12px rgba(20, 22, 19, 0.07), 0 1px 3px rgba(20, 22, 19, 0.05);
+  --shadow-lg:
+    0 12px 32px rgba(20, 22, 19, 0.1), 0 2px 6px rgba(20, 22, 19, 0.05);
   --ring-focus: 0 0 0 3px color-mix(in srgb, var(--sage-500) 28%, transparent);
 
   /* --- Movimento: sem bounce, sem elástico, sem parallax --- */
@@ -366,4 +380,22 @@
 
 .prose-valen :is(img, figure) {
   border-radius: var(--radius-card);
+}
+
+/*
+  Texto justificado das duas páginas legais.
+
+  Só elas: num artigo o texto é interrompido o tempo todo por imagem, citação e
+  subtítulo, e a justificação abriria buracos entre as palavras. Um documento
+  legal é lido em bloco, com parágrafos longos e seguidos, que é o caso em que a
+  margem direita reta ajuda em vez de atrapalhar.
+
+  `hyphens: auto` vem junto por necessidade, não por enfeite: justificar sem
+  hifenizar espalha o espaço que sobra entre poucas palavras e produz os rios
+  brancos verticais que atravessam o parágrafo. A hifenização depende do
+  atributo `lang` da página, que é `pt-BR` no <html> do layout.
+*/
+.texto-justificado :is(p, li) {
+  text-align: justify;
+  hyphens: auto;
 }

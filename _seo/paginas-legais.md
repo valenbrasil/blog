@@ -111,3 +111,30 @@ deles fique para trás no dia em que mudar:
 
 `vatID` foi descartado de propósito: CNPJ é `taxID`; `vatID` é registro de IVA e
 não existe no Brasil.
+
+## Apresentação das duas páginas
+
+**Texto justificado.** Só as duas páginas legais, pela classe
+`.texto-justificado`. Num artigo o texto é interrompido o tempo todo por imagem,
+citação e subtítulo, e justificar abriria buracos; um documento legal é lido em
+bloco, com parágrafos longos e seguidos, que é o caso em que a margem direita
+reta ajuda. Vai com `hyphens: auto` por necessidade: justificar sem hifenizar
+espalha o espaço que sobra entre poucas palavras e produz rios brancos
+verticais. A hifenização depende do `lang` da página, que é `pt-BR`.
+
+**Bloco de contato idêntico nos dois documentos**, byte a byte — mesma ordem,
+mesmos rótulos, mesmos links:
+
+    Razão social · CNPJ · Registros profissionais · Em atividade desde ·
+    Endereço · E-mail · Dados pessoais e direitos do titular · WhatsApp
+
+Antes divergiam: a política não trazia o e-mail geral nem o link do WhatsApp, e
+os termos listavam os mesmos itens noutra ordem, com o canal de privacidade por
+último e com outro rótulo.
+
+Isso obrigou a afrouxar uma regra do portão de conferência, que reprovava
+qualquer aparição de `contato@valenbrasil.com` na política. A regra existia para
+impedir o defeito de 2025 — mandar o titular exercer direitos no e-mail geral —,
+e o jeito certo de exprimi-la não é banir o endereço, é exigir que ele nunca
+apareça no mesmo item que fala de direito, titular ou LGPD. O portão agora
+confere isso, e também que `privacidade@` esteja presente.
