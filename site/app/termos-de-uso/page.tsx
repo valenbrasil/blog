@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Termos de Uso',
   description:
-    'As condições de uso do blog da Valen Brasil: o que você pode fazer com o conteúdo publicado, os limites de responsabilidade e a lei aplicável.',
+    'As condições de uso dos sites da Valen Brasil, institucional e blog: o que você pode fazer com o conteúdo, os limites de responsabilidade e a lei aplicável.',
   alternates: { canonical: '/termos-de-uso/' },
 }
 

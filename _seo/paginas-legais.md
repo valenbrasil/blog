@@ -138,3 +138,66 @@ impedir o defeito de 2025 — mandar o titular exercer direitos no e-mail geral 
 e o jeito certo de exprimi-la não é banir o endereço, é exigir que ele nunca
 apareça no mesmo item que fala de direito, titular ou LGPD. O portão agora
 confere isso, e também que `privacidade@` esteja presente.
+
+## Conferência independente — 43 achados, 19 sobreviveram
+
+Quatro lentes independentes (exatidão factual, coerência entre os documentos,
+LGPD e escrita) leram os textos já publicados; cada achado passou por três
+céticos com instrução de refutar. Dos 43 brutos, 19 sobreviveram e todos foram
+corrigidos.
+
+### O bloqueante: o YouTube não estava na política
+
+A política dizia "**Quatro serviços de terceiros participam do funcionamento do
+blog**" e encerrava a seção apresentando o WhatsApp como o único terceiro a
+mais, contactado só no clique. São cinco.
+
+`components/PostBody.tsx` renderiza o bloco `embed` como `<iframe src={value.url}>`
+puro, e dois artigos publicados carregam o player — `/biografia-mackintosh/` e
+`/distrito-sanitario-al-daayan-doha/`, ambos com
+`src="https://www.youtube.com/embed/..."`. O `loading="lazy"` adia a requisição
+até a rolagem; não a condiciona a clique. Abrir o artigo e rolar já faz o
+navegador pedir o player ao **www.youtube.com** — domínio com cookie, não
+`youtube-nocookie.com` —, que recebe IP, dados do navegador e o endereço da
+página.
+
+O erro é do inventário que alimentou a redação: a varredura procurou `src` e
+`href` de script e de imagem, e não olhou `<iframe>`. Uma política que promete
+dizer exatamente quem recebe os dados do leitor, e erra o número para menos, é o
+defeito mais grave que os dois documentos podiam ter.
+
+Corrigido em quatro pontos: a contagem fechada da seção 5 abriu, entrou um
+parágrafo descrevendo o player, a seção 2 passou a citá-lo entre o que registra
+dado automaticamente, e a seção 8 o incluiu na transferência internacional.
+
+**Decisão pendente da empresa:** trocar os dois embeds por `youtube-nocookie.com`
+é mudança de uma palavra e reduz de verdade o que vai para o Google. Se for
+feita, a política precisa passar a descrever o que valer então.
+
+### Os outros dezoito
+
+- **Direitos do titular (art. 19).** O texto prometia entregar o acesso
+  "imediatamente" e sem condição, e o parágrafo seguinte, na mesma seção, dizia
+  que não há como ligar registro de audiência a pessoa identificada. Vale contra
+  o controlador o compromisso mais amplo que ele publicou. A ressalva entrou
+  para dentro do compromisso.
+- **Criança (art. 14).** "Não tratamos conscientemente dados de crianças" é
+  importação da fórmula norte-americana do COPPA; o art. 14 não é condicionado
+  ao conhecimento do controlador, e a frase anterior já admitia não haver como
+  saber a idade de quem lê. Passou a descrever o que acontece.
+- **Ahrefs sem cookie.** "Não confirmamos isso de forma independente, então não
+  garantimos que nada seja gravado no seu navegador" transferia ao visitante uma
+  incerteza que é de quem decidiu carregar o script. Agora o texto diz de quem é
+  o ônus.
+- **Identificador `_ga` por e-mail.** O documento se comprometia a buscar
+  registros a partir de um identificador que qualquer pessoa pode digitar, sem
+  etapa de verificação nem limite. Entrou o limite.
+- **"Que integra estes Termos".** A Política é cumprimento do dever de informação
+  do art. 9º, não cláusula de contrato aceito por navegação.
+- **Alcance dos Termos.** A `description` restringia ao blog um documento que
+  rege os dois sites.
+- Mais dez ajustes de escrita: repetição de "incidente", "aqui" solto, o
+  anglicismo "websites" onde o próprio parágrafo define "Sites", "CDN" e "plantas
+  de valores" sem explicação, siglas de conselho sem o nome por extenso, e a
+  forma de citar lei alinhada entre os dois documentos.
+
