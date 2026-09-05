@@ -76,11 +76,11 @@ npm run migrate:posts:dry
 npm run migrate:posts
 ```
 
-Gerar os redirects 301 (SEO) após a migração de posts:
-
-```bash
-npm run migrate:redirects
-```
+Não é preciso gerar redirects. O blog voltou para o endereço que tinha no Ghost
+e os slugs bateram 1:1 na migração, então cada URL antiga já resolve sozinha.
+`npm run migrate:redirects` continua existindo, mas escreve um mapa
+`/slug` → `/blog/slug` que só fazia sentido enquanto o site morava sob o prefixo
+do GitHub Pages — hoje ele mandaria as URLs antigas para lugar nenhum.
 
 ### Verificação
 
