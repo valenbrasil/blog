@@ -400,14 +400,19 @@ o que continua em aberto.
 
 5. **Pendências que dependem de decisão do autor.** Não foram tocadas porque
    exigem informação que não dá para verificar em fonte pública:
-   - Valores sem fonte: "a Caixa paga entre R$ 1.000 e R$ 3.000 por laudo"; e em
-     `perito-imobiliario`, mercado de R$ 200 bi, honorários de R$ 3.000 a 25.000
-     e formação de R$ 8.000 a 15.000.
+   - ~~Valores sem fonte~~ — **resolvido**. Os quatro foram atrás da fonte antes
+     de sair: o "mercado de R$ 200 bi" existia e estava subestimado (R$ 312,4 bi
+     de financiamento em 2024, balanço da Abecip) e virou número certo com
+     fonte; os outros três não têm fonte e saíram. No lugar das faixas de
+     honorários entrou o critério real de cálculo, que os regulamentos
+     referenciais dos institutos estaduais definem. Ver `_seo/valores-sem-fonte.md`.
    - ~~Data errada em `direito-e-patrimonio-lei-do-inquilinato`~~ — **corrigida**.
      O texto atribuía a 2023 uma reforma que é da Lei 12.112/2009, e dava como
      exemplo o art. 17, que é de 1991. Ver o relatório do artigo.
-   - NBR 14653, graus de fundamentação e de precisão — a maior expansão ainda
-     disponível, em três artigos, mas exige o texto da norma, que é pago.
+   - ~~NBR 14653, graus de fundamentação e de precisão~~ — **decidido: não vai
+     ser publicado.** O texto da norma é conteúdo pago da ABNT, protegido por
+     direito autoral, e reproduzir as tabelas de grau seria pirataria. Continua
+     valendo citar a norma pelo número e linkar a página onde ela é vendida.
    - Estrutura: um H2 genérico "Resumo"; em `perito-imobiliario` um H2
      "Introdução à Profissão" como penúltima seção; vários artigos abrindo com
      "Neste guia completo".

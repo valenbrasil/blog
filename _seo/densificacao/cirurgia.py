@@ -59,7 +59,36 @@ def op_remove(body, op):
     body.pop(i)
 
 
-OPS = {'destroca': op_destroca, 'troca_href': op_troca_href, 'remove': op_remove}
+def op_troca_texto(body, op):
+    """Substitui o conteudo de um bloco. So com o texto atual conferido.
+
+    E a operacao mais perigosa do arquivo: reescreve palavra do autor. Por isso
+    exige o texto atual no plano e recusa se ele nao bater caractere a caractere
+    -- se alguem editou o artigo no Sanity desde que o plano foi feito, a troca
+    nao acontece.
+    """
+    b = next((x for x in body if x.get('_key') == op['chave']), None)
+    assert b is not None, f"bloco {op['chave']} nao existe"
+    atual = sanity.texto_do_bloco(b)
+    assert atual.strip() == op['de'].strip(), (
+        f'texto mudou desde o plano:\n  no Sanity: {atual!r}\n  no plano : {op["de"]!r}')
+    mds = []
+    filhos = []
+    for seg in op['para']:
+        marcas = []
+        if seg.get('href'):
+            k = 'L' + str(abs(hash((op['chave'], seg['href']))))[:10]
+            mds.append({'_type': 'link', '_key': k, 'href': seg['href']})
+            marcas.append(k)
+        filhos.append({'_type': 'span', '_key': 's' + str(len(filhos)) + op['chave'][:6],
+                       'text': seg['t'], 'marks': marcas})
+    assert filhos, 'troca_texto sem texto novo'
+    b['children'] = filhos
+    b['markDefs'] = mds
+
+
+OPS = {'destroca': op_destroca, 'troca_href': op_troca_href, 'remove': op_remove,
+       'troca_texto': op_troca_texto}
 
 
 def aplicar(plano, seco=False):
@@ -73,6 +102,7 @@ def aplicar(plano, seco=False):
     depois = texto_puro(body)
     removidas = [l for l in antes.split('\n') if l not in depois.split('\n')]
     esperadas = [op['texto'].strip() for op in plano['operacoes'] if op['op'] == 'remove']
+    esperadas += [op['de'].strip() for op in plano['operacoes'] if op['op'] == 'troca_texto']
     assert sorted(x.strip() for x in removidas) == sorted(esperadas), (
         f'{slug}: sumiu texto que nao estava no plano -> {removidas}')
     if seco:
