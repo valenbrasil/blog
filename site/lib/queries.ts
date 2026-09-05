@@ -61,3 +61,28 @@ export async function getPostsByCategory(slug: string): Promise<PostSummary[]> {
     { slug },
   )
 }
+
+/**
+ * Sugestões de fim de artigo: os mais recentes da mesma categoria, completados
+ * com os mais recentes do blog quando a categoria não tem três outros posts.
+ */
+export async function getRelatedPosts(
+  slug: string,
+  categorySlug?: string,
+): Promise<PostSummary[]> {
+  const sameCategory = categorySlug
+    ? await client.fetch<PostSummary[]>(
+        `*[_type == "post" && defined(slug.current) && slug.current != "" && slug.current != $slug && $categorySlug in categories[]->slug.current] | order(publishedAt desc) [0...3] ${postSummaryProjection}`,
+        { slug, categorySlug },
+      )
+    : []
+
+  if (sameCategory.length >= 3) return sameCategory
+
+  const filler = await client.fetch<PostSummary[]>(
+    `*[_type == "post" && defined(slug.current) && slug.current != "" && !(slug.current in $exclude)] | order(publishedAt desc) [0...3] ${postSummaryProjection}`,
+    { exclude: [slug, ...sameCategory.map((post) => post.slug)] },
+  )
+
+  return [...sameCategory, ...filler].slice(0, 3)
+}

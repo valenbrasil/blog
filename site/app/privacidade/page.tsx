@@ -10,8 +10,8 @@ const html = fs.readFileSync(path.join(process.cwd(), 'content', 'privacidade.ht
 
 export default function PrivacidadePage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-12">
-      <div className="prose prose-stone max-w-none" dangerouslySetInnerHTML={{ __html: html }} />
+    <div className="mx-auto max-w-[760px] px-6 py-16">
+      <div className="prose prose-valen max-w-none" dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   )
 }

@@ -1,2 +1,359 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+/*
+  Design System da Valen Brasil — https://valenbrasil.github.io/design/
+  Os tokens abaixo são cópia literal de design/tokens/*.css (cores, tipografia,
+  espaçamento, raios, sombras, movimento). Não edite valores aqui: altere o
+  guia primeiro, que é a fonte da verdade, e traga a mudança para cá.
+
+  As famílias tipográficas vêm de next/font (app/layout.tsx) em vez do @import
+  do Google Fonts do guia: `output: 'export'` gera um site estático servido pelo
+  GitHub Pages, e a auto-hospedagem do next/font evita uma requisição a terceiro
+  no carregamento de cada página.
+
+  Regra número 1 do guia: o sistema é exclusivamente claro. Não existe bloco
+  `.dark` nem `prefers-color-scheme: dark` — de propósito.
+*/
+:root {
+  color-scheme: light;
+
+  /* --- Marca: verde sage extraído do logo (#73945F) --- */
+  --sage-50: #f4f7f1;
+  --sage-100: #e7ede2;
+  --sage-200: #cfdcc6;
+  --sage-300: #b2c6a4;
+  --sage-400: #93ae81;
+  --sage-500: #73945f;
+  --sage-600: #5e7c4c;
+  --sage-700: #4a633c;
+  --sage-800: #3a4e30;
+  --sage-900: #2c3a25;
+
+  /* --- Neutros: cinza levemente esverdeado (#C8CBC6 do logo = 300) --- */
+  --neutral-0: #ffffff;
+  --neutral-50: #fafaf9;
+  --neutral-100: #f3f4f2;
+  --neutral-200: #e6e8e4;
+  --neutral-300: #c8cbc6;
+  --neutral-400: #a6aaa4;
+  --neutral-500: #82867f;
+  --neutral-600: #61645e;
+  --neutral-700: #464843;
+  --neutral-800: #2b2d29;
+  --neutral-900: #141613;
+  --neutral-950: #0a0b09;
+
+  /* --- Semânticas --- */
+  --success-50: #eef7f0;
+  --success-500: #3f8b57;
+  --success-700: #2c6640;
+  --warning-50: #fbf4e8;
+  --warning-500: #b5822b;
+  --warning-700: #8a611c;
+  --danger-50: #fbeeed;
+  --danger-500: #b3453c;
+  --danger-700: #8a332c;
+  --info-50: #eef2f7;
+  --info-500: #4a6b8a;
+  --info-700: #35506b;
+
+  /* --- Aliases de leitura --- */
+  --text-strong: var(--neutral-900);
+  --text-body: var(--neutral-700);
+  --text-muted: var(--neutral-500);
+  --text-on-brand: #ffffff;
+  --text-brand: var(--sage-600);
+  --surface-page: var(--neutral-0);
+  --surface-subtle: var(--neutral-50);
+  --surface-card: var(--neutral-0);
+  --surface-contrast: var(--sage-50);
+  --surface-brand: var(--sage-500);
+  --surface-brand-subtle: var(--sage-50);
+  --border-subtle: var(--neutral-200);
+  --border-strong: var(--neutral-300);
+  --border-brand: var(--sage-500);
+  --overlay: rgba(20, 22, 19, 0.55);
+  --ring: var(--sage-500);
+
+  /* --- Tipografia: Jost (display) + Manrope (corpo) + JetBrains Mono --- */
+  --font-display: var(--font-jost), "Helvetica Neue", Arial, sans-serif;
+  --font-sans: var(--font-manrope), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  /*
+    Escala Tailwind. Repetida aqui porque os papéis --type-* abaixo a consomem
+    e o Tailwind v4 só emite as variáveis de tema das utilitárias que o projeto
+    de fato usa — sem isso, um `font: var(--type-h1)` quebraria no dia em que
+    ninguém escrevesse `text-5xl` no markup.
+  */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+
+  --leading-none: 1;
+  --leading-tight: 1.15;
+  --leading-snug: 1.3;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  --weight-extralight: 200;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --tracking-tighter: -0.03em;
+  --tracking-tight: -0.015em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.06em;
+  --tracking-widest: 0.18em;
+
+  /* Papéis tipográficos — usados como shorthand `font: var(--type-h1)` */
+  --type-display: var(--weight-light) var(--text-6xl) / var(--leading-tight) var(--font-display);
+  --type-h1: var(--weight-light) var(--text-5xl) / var(--leading-tight) var(--font-display);
+  --type-h2: var(--weight-light) var(--text-4xl) / var(--leading-tight) var(--font-display);
+  --type-h3: var(--weight-regular) var(--text-2xl) / var(--leading-snug) var(--font-display);
+  --type-h4: var(--weight-medium) var(--text-xl) / var(--leading-snug) var(--font-sans);
+  --type-body-lg: var(--weight-regular) var(--text-lg) / var(--leading-relaxed) var(--font-sans);
+  --type-body: var(--weight-regular) var(--text-base) / var(--leading-relaxed) var(--font-sans);
+  --type-body-sm: var(--weight-regular) var(--text-sm) / var(--leading-normal) var(--font-sans);
+  --type-label: var(--weight-medium) var(--text-sm) / var(--leading-normal) var(--font-sans);
+  --type-eyebrow: var(--weight-medium) var(--text-xs) / var(--leading-normal) var(--font-sans);
+  --type-mono: var(--weight-regular) var(--text-sm) / var(--leading-normal) var(--font-mono);
+
+  /* --- Ritmo de página --- */
+  --container-max: 1200px;
+  --container-blog: 1080px;
+  --container-narrow: 720px;
+  --container-article: 760px;
+
+  /* --- Raios --- */
+  --radius: 0.5rem;
+  --radius-card: 0.75rem;
+  --radius-control: 0.5rem;
+  --radius-pill: 9999px;
+
+  /* --- Sombras --- */
+  --shadow-xs: 0 1px 2px rgba(20, 22, 19, 0.05);
+  --shadow-sm: 0 1px 3px rgba(20, 22, 19, 0.07), 0 1px 2px rgba(20, 22, 19, 0.04);
+  --shadow-md: 0 4px 12px rgba(20, 22, 19, 0.07), 0 1px 3px rgba(20, 22, 19, 0.05);
+  --shadow-lg: 0 12px 32px rgba(20, 22, 19, 0.1), 0 2px 6px rgba(20, 22, 19, 0.05);
+  --ring-focus: 0 0 0 3px color-mix(in srgb, var(--sage-500) 28%, transparent);
+
+  /* --- Movimento: sem bounce, sem elástico, sem parallax --- */
+  --ease-standard: cubic-bezier(0.2, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 320ms;
+}
+
+/*
+  Ponte para o Tailwind. `inline` faz as utilitárias referenciarem as variáveis
+  acima em vez de copiarem seus valores, então o bloco `:root` continua sendo a
+  única definição de cada token.
+
+  Fora daqui ficam de propósito os aliases de leitura (--text-strong,
+  --text-body, --text-muted…): no Tailwind v4 o prefixo `--text-*` é o namespace
+  de tamanho de fonte, e registrá-los geraria utilitárias `text-strong` que
+  mudariam o tamanho do texto, não a cor.
+*/
+@theme inline {
+  --color-sage-50: var(--sage-50);
+  --color-sage-100: var(--sage-100);
+  --color-sage-200: var(--sage-200);
+  --color-sage-300: var(--sage-300);
+  --color-sage-400: var(--sage-400);
+  --color-sage-500: var(--sage-500);
+  --color-sage-600: var(--sage-600);
+  --color-sage-700: var(--sage-700);
+  --color-sage-800: var(--sage-800);
+  --color-sage-900: var(--sage-900);
+
+  --color-neutral-0: var(--neutral-0);
+  --color-neutral-50: var(--neutral-50);
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-300: var(--neutral-300);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-800: var(--neutral-800);
+  --color-neutral-900: var(--neutral-900);
+  --color-neutral-950: var(--neutral-950);
+
+  --color-success-50: var(--success-50);
+  --color-success-500: var(--success-500);
+  --color-success-700: var(--success-700);
+  --color-warning-50: var(--warning-50);
+  --color-warning-500: var(--warning-500);
+  --color-warning-700: var(--warning-700);
+  --color-danger-50: var(--danger-50);
+  --color-danger-500: var(--danger-500);
+  --color-danger-700: var(--danger-700);
+  --color-info-50: var(--info-50);
+  --color-info-500: var(--info-500);
+  --color-info-700: var(--info-700);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --radius-card: var(--radius-card);
+  --radius-control: var(--radius-control);
+  --radius-pill: var(--radius-pill);
+
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+
+  --ease-standard: var(--ease-standard);
+  --ease-out: var(--ease-out);
+  --ease-in-out: var(--ease-in-out);
+}
+
+@layer base {
+  body {
+    background: var(--surface-page);
+    color: var(--text-body);
+    font: var(--type-body);
+    -webkit-font-smoothing: antialiased;
+    text-wrap: pretty;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--text-strong);
+    font-family: var(--font-display);
+    font-weight: var(--weight-light);
+    letter-spacing: var(--tracking-tight);
+  }
+
+  a {
+    color: var(--text-brand);
+    text-decoration: none;
+    transition: color var(--duration-fast) var(--ease-in-out);
+  }
+
+  a:hover {
+    color: var(--sage-700);
+  }
+
+  ::selection {
+    background: var(--sage-200);
+    color: var(--neutral-900);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+}
+
+/*
+  Corpo do artigo. O @tailwindcss/typography é configurável por variáveis
+  --tw-prose-*, então dá para mapear a paleta da marca sem reescrever o plugin.
+  O que ele não expõe por variável — famílias e pesos, o blockquote verde do
+  kit — vem nas regras abaixo.
+
+  Sem @layer, de propósito: o plugin registra `.prose` na camada `utilities`,
+  que vence qualquer camada anterior por ordenação, não por especificidade.
+  CSS fora de camada vence todas elas, e é o único jeito de estas regras
+  pegarem. Por isso `.prose-valen` só aparece nos contêineres de artigo — sobre
+  ele, utilitárias do Tailwind não teriam efeito.
+*/
+.prose-valen {
+  --tw-prose-body: var(--text-body);
+  --tw-prose-headings: var(--text-strong);
+  --tw-prose-lead: var(--text-muted);
+  --tw-prose-links: var(--sage-700);
+  --tw-prose-bold: var(--text-strong);
+  --tw-prose-counters: var(--text-muted);
+  --tw-prose-bullets: var(--sage-300);
+  --tw-prose-hr: var(--border-subtle);
+  --tw-prose-quotes: var(--sage-700);
+  --tw-prose-quote-borders: var(--sage-200);
+  --tw-prose-captions: var(--text-muted);
+  --tw-prose-code: var(--text-strong);
+  --tw-prose-pre-code: var(--neutral-100);
+  --tw-prose-pre-bg: var(--neutral-900);
+  --tw-prose-th-borders: var(--border-strong);
+  --tw-prose-td-borders: var(--border-subtle);
+
+  font-family: var(--font-sans);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.prose-valen :is(h2, h3, h4) {
+  font-family: var(--font-display);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--tracking-tight);
+}
+
+.prose-valen h2 {
+  font-size: var(--text-2xl);
+  line-height: var(--leading-snug);
+}
+
+.prose-valen h3 {
+  font-size: var(--text-xl);
+  line-height: var(--leading-snug);
+}
+
+.prose-valen strong {
+  font-weight: var(--weight-semibold);
+}
+
+/* Citação do kit: fundo tonal verde, sem barra colorida à esquerda. */
+.prose-valen blockquote {
+  border-left: 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface-brand-subtle);
+  border-radius: var(--radius-card);
+  font-style: normal;
+  font-weight: var(--weight-regular);
+}
+
+.prose-valen blockquote p:first-of-type::before,
+.prose-valen blockquote p:last-of-type::after {
+  content: none;
+}
+
+.prose-valen :is(code, pre) {
+  font-family: var(--font-mono);
+}
+
+.prose-valen code::before,
+.prose-valen code::after {
+  content: none;
+}
+
+.prose-valen :not(pre) > code {
+  background: var(--surface-subtle);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-weight: var(--weight-regular);
+  font-size: var(--text-sm);
+}
+
+.prose-valen :is(img, figure) {
+  border-radius: var(--radius-card);
+}

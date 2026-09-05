@@ -14,3 +14,14 @@ export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? '/blog'
 export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://valenbrasil.github.io/blog'
 ).replace(/\/$/, '')
+
+/**
+ * Endereços da marca fora do blog. Ambos vêm do design system
+ * (valenbrasil.github.io/design): o kit de blog liga o item "Home" ao site
+ * institucional e o botão "Fale conosco" a este número de WhatsApp.
+ */
+export const INSTITUTIONAL_URL = 'https://valenbrasil.com'
+export const WHATSAPP_URL = 'https://wa.me/554731701572'
+
+/** Quantos cards o feed mostra por página. */
+export const POSTS_PER_PAGE = 12
