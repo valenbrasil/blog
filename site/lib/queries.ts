@@ -28,6 +28,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
   return client.fetch(
     `*[_type == "post" && slug.current == $slug][0]{
       _id,
+      _updatedAt,
       title,
       "slug": slug.current,
       excerpt,

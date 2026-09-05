@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Termos de Uso',
+  alternates: { canonical: '/termos-de-uso/' },
 }
 
 const html = fs.readFileSync(path.join(process.cwd(), 'content', 'termos.html'), 'utf8')

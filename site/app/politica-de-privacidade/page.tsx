@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Política de Privacidade',
+  alternates: { canonical: '/politica-de-privacidade/' },
 }
 
 const html = fs.readFileSync(path.join(process.cwd(), 'content', 'privacidade.html'), 'utf8')

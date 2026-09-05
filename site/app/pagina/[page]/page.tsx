@@ -20,6 +20,9 @@ export async function generateMetadata({
   const { page } = await params
   return {
     title: `Blog — página ${page}`,
+    // Canonical aponta para a própria página: cada página do feed lista posts
+    // diferentes, então nenhuma é cópia da home.
+    alternates: { canonical: `/pagina/${page}/` },
     // Páginas de listagem não são conteúdo próprio: deixamos os artigos
     // competirem sozinhos na busca.
     robots: { index: false, follow: true },

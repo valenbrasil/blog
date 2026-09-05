@@ -56,4 +56,11 @@ export interface PostSummary {
 export interface Post extends PostSummary {
   body: BodyBlock[]
   seo?: { metaTitle?: string; metaDescription?: string }
+  /*
+    Carimbo de última edição mantido pelo próprio Sanity. Serve ao dateModified
+    do JSON-LD: sem ele o Google só conhece a data de publicação e não percebe
+    revisão de artigo antigo. Opcional porque só a query do artigo o projeta —
+    as listagens não precisam dele.
+  */
+  _updatedAt?: string
 }

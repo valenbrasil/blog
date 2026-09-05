@@ -18,7 +18,11 @@ export async function generateMetadata({
   const { slug } = await params
   const category = await getCategoryBySlug(slug)
   if (!category) return {}
-  return { title: category.title, description: category.description }
+  return {
+    title: category.title,
+    description: category.description,
+    alternates: { canonical: `/categoria/${slug}/` },
+  }
 }
 
 export default async function CategoryPage({ params }: PageProps<'/categoria/[slug]'>) {
