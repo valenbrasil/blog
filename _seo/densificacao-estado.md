@@ -1,15 +1,15 @@
 # Densificação de links externos — onde parou
 
-Retrato de 05/09/2026 22:26 UTC. Gerado por
+Retrato de 05/09/2026 23:31 UTC. Gerado por
 `/tmp/dens/estado.py`, que só lê arquivo — não chama a API nem gasta agente.
 
 | Estado | Artigos | O que fazer |
 |---|---:|---|
-| aplicado | 62 | nada, já está no ar |
-| aprovado | 0 | gravar com `aplica.py` |
-| sem_revisao | 0 | **não gravar** — falta o cético |
+| aplicado | 69 | nada, já está no ar |
+| aprovado | 4 | gravar com `aplica.py` |
+| sem_revisao | 4 | **não gravar** — falta o cético |
 | em_voo | 0 | reenfileirar: o lote rodou e não devolveu plano |
-| na_fila | 144 | nunca entrou em lote |
+| na_fila | 129 | nunca entrou em lote |
 
 ## Como retomar
 
@@ -27,9 +27,17 @@ Workflow({scriptPath: ".../densificar-links-externos-wf_a0b9fc3c-37f.js",
 
 | Artigo | Estado | Links previstos | Operações | Reprovadas |
 |---|---|---:|---:|---:|
+| `app-area-de-preservacao-permanente` | aprovado | 16 | 11 | 2 |
+| `isencao-itbi` | aprovado | 16 | 15 | 1 |
+| `parque-turia` | aprovado | 13 | 13 | 0 |
+| `sinduscon` | aprovado | 19 | 16 | 0 |
+| `comodato` | sem_revisao | 13 | 10 | 0 |
+| `direito-civil` | sem_revisao | 18 | 12 | 0 |
+| `ranking-metro-quadrado-mais-caro-do-brasil` | sem_revisao | 18 | 13 | 0 |
+| `valores-mobiliarios` | sem_revisao | 15 | 12 | 0 |
 
 ## Fila
 
 Ordem: menos links primeiro, artigo maior primeiro dentro de cada faixa.
 
-144 artigos. Slugs em `/tmp/dens/estado.json`.
+129 artigos. Slugs em `/tmp/dens/estado.json`.
