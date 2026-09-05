@@ -355,10 +355,22 @@ links externos ...................... 518
   artigos com 1 a 9 ................. 161
   artigos na meta 10 a 20 ...........   5
 
+links internos (corpo) .............. 634
+  artigos com 0 .....................   0
+  artigos com 5 ou mais .............  67
+  quebrados .........................   0
+
 imagens no corpo .....................  98
-  com alt ...........................  96
+  com alt ...........................  98
   com caption .......................   4
+
+saltos de heading (h2 -> h4) .........   0
+artigos sem categoria ................   0
 ```
+
+A linkagem interna está detalhada em `_seo/linkagem-interna.md`, incluindo o que
+o Google de fato recomenda, seis links errados que eu mesmo introduzi e removi, e
+o que continua em aberto.
 
 ## O que falta, em ordem de custo
 
@@ -372,7 +384,9 @@ imagens no corpo .....................  98
    `caption` acima explica o tamanho: 94 das 98 imagens do corpo estão sem
    legenda no campo próprio porque a legenda virou parágrafo solto na migração
    do Ghost. É migração de dados com script dedicado, e em vários artigos a
-   imagem correspondente sequer existe como bloco.
+   imagem correspondente sequer existe como bloco. O defeito já atrapalha outro
+   trabalho: na linkagem interna, um revisor reprovou uma âncora porque o
+   "parágrafo" em que ela caía era uma dessas legendas.
 
 3. **59 fórmulas de escrita proibidas, em 54 artigos.** Reescrita frase a frase
    na voz do autor. Trocar uma muleta por outra não resolve o que o plano evita.
