@@ -1,28 +1,25 @@
 import Image from 'next/image'
-import icone from '@/public/valen-icone.png'
 import lettering from '@/public/valen-logo.png'
 
 /**
- * A marca são dois arquivos e nunca é redesenhada: o guia proíbe recriar o
- * lettering em SVG/CSS ou aproximá-lo com outra fonte, então isto é sempre
- * <Image>, nunca texto.
+ * A marca é o arquivo, nunca redesenhada: o guia proíbe recriar o lettering em
+ * SVG/CSS ou aproximá-lo com outra fonte.
  *
- * Em telas estreitas fica só o selo, que o guia prevê até 16px. Encolher o
- * lettering junto o levaria abaixo do legível, e mantê-lo no tamanho cheio
- * empurraria a navegação para fora da tela.
+ * 285px é a largura que o lettering ocupa no cabeçalho de valenbrasil.com — lá
+ * o contêiner é 285x31 com object-fit: cover, que só recorta a margem
+ * transparente do PNG. Aqui o arquivo aparece inteiro na proporção natural
+ * (285x40), então o lettering visível fica do mesmo tamanho do site oficial,
+ * com a margem do arquivo virando respiro dentro do cabeçalho de 76px.
+ *
+ * Em telas estreitas ele encolhe, senão não sobraria espaço para a navegação.
  */
-export function Logo({ height = 18 }: { height?: number }) {
+export function Logo() {
   return (
-    <span className="flex items-center gap-3">
-      <Image src={icone} alt="Valen Brasil" height={height + 10} width={height + 10} priority />
-      <Image
-        src={lettering}
-        alt=""
-        height={height}
-        width={Math.round((height * 1500) / 210)}
-        priority
-        className="hidden sm:block"
-      />
-    </span>
+    <Image
+      src={lettering}
+      alt="Valen Brasil"
+      priority
+      className="h-auto w-[180px] sm:w-[285px]"
+    />
   )
 }
