@@ -14,7 +14,7 @@ T=/tmp/claude-0/-home-user-blog/ac83eda4-b0e1-54af-8989-1bf15598f7d8/tasks
 W=/root/.claude/projects/-home-user-blog/ac83eda4-b0e1-54af-8989-1bf15598f7d8/subagents/workflows
 MARCO=/tmp/dens/.marco-vigia
 touch "$MARCO"
-LOTES="wf_d6e7fbaf-92e wf_8d304b83-4de"
+LOTES="wf_f05a0929-ba9"
 
 while true; do
   # so saida escrita DEPOIS que o vigia subiu. Sem isso ele le as falhas da
