@@ -1,12 +1,12 @@
 # Densificação de links externos — onde parou
 
-Retrato de 05/09/2026 16:26 UTC. Gerado por
+Retrato de 05/09/2026 16:27 UTC. Gerado por
 `/tmp/dens/estado.py`, que só lê arquivo — não chama a API nem gasta agente.
 
 | Estado | Artigos | O que fazer |
 |---|---:|---|
-| aplicado | 30 | nada, já está no ar |
-| aprovado | 8 | gravar com `aplica.py` |
+| aplicado | 38 | nada, já está no ar |
+| aprovado | 0 | gravar com `aplica.py` |
 | sem_revisao | 11 | **não gravar** — falta o cético |
 | em_voo | 0 | reenfileirar: o lote rodou e não devolveu plano |
 | na_fila | 157 | nunca entrou em lote |
@@ -27,14 +27,6 @@ Workflow({scriptPath: ".../densificar-links-externos-wf_a0b9fc3c-37f.js",
 
 | Artigo | Estado | Links previstos | Operações | Reprovadas |
 |---|---|---:|---:|---:|
-| `avaliacao-de-marcas` | aprovado | 13 | 12 | 1 |
-| `balneario-camboriu` | aprovado | 13 | 13 | 1 |
-| `bravissima-private-residence` | aprovado | 14 | 9 | 2 |
-| `construindo-com-steel-frame` | aprovado | 14 | 14 | 0 |
-| `divorcio-com-partilha-de-bens` | aprovado | 12 | 11 | 0 |
-| `especulacao-imobiliaria` | aprovado | 11 | 10 | 0 |
-| `itajai` | aprovado | 14 | 13 | 1 |
-| `leasing` | aprovado | 12 | 11 | 2 |
 | `arquitetura-vernacular` | sem_revisao | 13 | 13 | 0 |
 | `art-deco-nouveau-crafts-diferencas` | sem_revisao | 13 | 18 | 0 |
 | `biografia-kengo-kuma` | sem_revisao | 15 | 14 | 0 |
