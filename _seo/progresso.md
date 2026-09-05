@@ -231,12 +231,24 @@ metaTitle e metaDescription passaram a falar de advocacia imobiliária, e um lin
 
 ### Fase 1 — links externos, artigo a artigo
 
-| Artigo | Externos | Estado |
-|---|---|---|
-| `direito-e-patrimonio-lei-do-inquilinato` | 0 → 11 | links externos aplicados · relatório em `_seo/relatorios/` |
+| Lote | Artigos | Externos | Estado |
+|---|---|---|---|
+| `direito-e-patrimonio-lei-do-inquilinato` | 1 | 0 → 11 | na meta · relatório em `_seo/relatorios/` |
+| Categoria Direito Imobiliário | 36 | 17 → 88 | abaixo da meta — ver `lacuna-de-fontes.md` |
 
 Restam **164 artigos com zero links externos**. Pela meta de 10 a 20 do plano,
 são por volta de 2.300 links a pesquisar, verificar e ancorar — o item mais caro
 da auditoria inteira, e o que menos se deixa acelerar: cada link precisa de uma
 afirmação no texto que o justifique e de uma fonte que de fato a sustente.
+
+### Achado que reclassifica o item mais caro
+
+A meta de 10 a 20 links externos por artigo não se resolve inserindo links: 25
+dos 41 artigos de Direito Imobiliário não citam nenhuma norma por número, e a
+mediana de âncoras legítimas por artigo é 2. Não há onde ancorar fonte porque o
+texto não afirma nada específico o bastante para precisar de uma.
+
+O plano prevê exatamente este caso e manda expandir o conteúdo primeiro. Ou
+seja: não são ~2.300 links a inserir, são ~200 artigos a densificar, com o link
+saindo como subproduto. Detalhado em `_seo/lacuna-de-fontes.md`.
 
