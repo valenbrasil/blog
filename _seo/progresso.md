@@ -280,3 +280,18 @@ Fontes bloqueadas para verificação automática, deixadas de fora de propósito
 STJ, B3, CAU/BR, UNESCO, IBGE e Caixa respondem 403 a qualquer cliente que não
 seja navegador. São candidatas legítimas para conferência manual.
 
+### Densificação — artigos de maior intenção comercial
+
+| Artigo | Palavras | Externos | Estado |
+|---|---|---|---|
+| `laudo-de-avaliacao-do-imovel` | 2.435 → 2.984 | 4 → 11 | **na meta** · relatório em `_seo/relatorios/` |
+
+Primeiro artigo a atingir a faixa de 10 a 20 links externos por densificação, e
+não por inserção. Os links vieram como consequência do conteúdo novo: base legal
+de quem assina (Leis 5.194/66, 12.378/10 e 6.530/78), ART e RRT (Lei 6.496/77) e
+os requisitos do laudo pericial no CPC (arts. 156 e 473).
+
+Cada norma foi lida no texto oficial do Planalto antes de entrar no artigo, não
+citada de memória. Os 89 blocos originais seguem idênticos; os 16 novos foram
+inseridos entre eles.
+
