@@ -1,11 +1,34 @@
-# valen-blog
+# Blog da Valen Brasil
 
-Valen Blog
+Blog publicado em <https://valenbrasil.github.io/blog/>. O conteúdo vive no
+Sanity e o site é estático.
+
+| Pasta | O que é |
+|---|---|
+| `site/` | O blog: Next.js estático, lê do Sanity em tempo de build. Ver `site/README.md`. |
+| `studio/` | O Sanity Studio, onde o conteúdo é editado. Publicado em <https://valenbrasil.sanity.studio>. |
+| `sanity/` | Schemas do conteúdo, compartilhados pelo Studio e pelos scripts. |
+| `scripts/` | Migração do Ghost, já concluída. Só é preciso rodar de novo se a migração for refeita. |
+
+O visual segue o design system da marca: <https://valenbrasil.github.io/design/>.
+
+## Publicação
+
+`.github/workflows/deploy.yml` constrói `site/` e publica no GitHub Pages, a cada
+push em `main` que toque em `site/**` e sob demanda por `workflow_dispatch`.
+Como o conteúdo é lido em tempo de build, **uma publicação nova no Studio só
+aparece no ar depois de rodar o workflow** — o Sanity não avisa o GitHub.
+
+A origem do Pages precisa estar em **GitHub Actions** (Settings → Pages → Build
+and deployment → Source). Em "Deploy from a branch", o GitHub roda um build
+Jekyll da raiz do repositório a cada push, que publica este README por cima do
+blog — aconteceu uma vez e derrubou o site.
 
 ## Migração Ghost → Sanity
 
-Este projeto contém os scripts de migração de conteúdo do Ghost CMS para o Sanity.io,
-conforme documentado em `MIGRACAOGHOSTSANITY.md`.
+Os scripts em `scripts/` migraram o conteúdo do Ghost CMS para o Sanity.io,
+conforme documentado em `MIGRACAOGHOSTSANITY.md`. A migração já rodou; o que
+segue serve para refazê-la.
 
 ### Configuração
 
