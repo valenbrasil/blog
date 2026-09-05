@@ -7,3 +7,6 @@ dist/
 .sanity/
 out/
 .next/
+
+# dumps de trabalho da auditoria de SEO — regeneráveis a partir do Sanity
+_seo/backups/
