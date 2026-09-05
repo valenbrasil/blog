@@ -32,3 +32,10 @@ export const POSTS_PER_PAGE = 12
  * só criaria mais uma peça de configuração para o deploy carregar.
  */
 export const GA_MEASUREMENT_ID = 'G-DP9C1G5246'
+
+/**
+ * Ahrefs Web Analytics. A chave é pública — sai no HTML de toda página, como a
+ * do GA — então fica junto do resto da configuração, não em variável de
+ * ambiente.
+ */
+export const AHREFS_ANALYTICS_KEY = 'X2AoK5UaoY8tPMNmCRaBhA'

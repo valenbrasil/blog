@@ -3,7 +3,7 @@ import { Jost, Manrope, JetBrains_Mono } from 'next/font/google'
 import Script from 'next/script'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
-import { GA_MEASUREMENT_ID } from '@/lib/site-config'
+import { AHREFS_ANALYTICS_KEY, GA_MEASUREMENT_ID } from '@/lib/site-config'
 import { SITE_URL } from '@/lib/site-config'
 import './globals.css'
 
@@ -73,8 +73,32 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
         <main className="flex-1">{children}</main>
         <Footer />
         <Analytics />
+        <AhrefsAnalytics />
       </body>
     </html>
+  )
+}
+
+/**
+ * Ahrefs Web Analytics.
+ *
+ * Mede as mesmas visitas que o GA, por outro ângulo: o Ahrefs cruza o tráfego
+ * com os dados de backlink e de posição na busca que já mantém. Rodar os dois
+ * em paralelo é deliberado, não duplicação por descuido.
+ *
+ * Mesmas duas regras do GA: `afterInteractive`, para não competir com a
+ * renderização do artigo, e só em produção, para que `next dev` não entre no
+ * relatório como visita real.
+ */
+function AhrefsAnalytics() {
+  if (process.env.NODE_ENV !== 'production') return null
+
+  return (
+    <Script
+      src="https://analytics.ahrefs.com/analytics.js"
+      data-key={AHREFS_ANALYTICS_KEY}
+      strategy="afterInteractive"
+    />
   )
 }
 
