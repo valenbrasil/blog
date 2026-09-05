@@ -43,33 +43,33 @@ export default async function CategoryPage({ params }: PageProps<'/categoria/[sl
     <div className="mx-auto max-w-[1080px] px-6 pt-8">
       <Breadcrumb items={[{ label: 'Blog', href: '/' }, { label: category.title }]} />
 
-      {/*
-        Duas colunas a partir de md, como no FeaturedPost.
-
-        A descrição da categoria cresceu para 30 a 50 palavras. Numa coluna só,
-        presa a `max-w-[64ch]` dentro de um container de 1080px, ela ocupava
-        pouco mais de 60% da largura e deixava um vazio grande à direita.
-        Alargar a linha resolveria o vazio e estragaria a leitura: a 1080px o
-        texto passaria de 100 caracteres por linha.
-
-        Ao lado, a descrição fica com uma medida confortável e o espaço passa a
-        ter uso. `items-end` alinha a base dos dois blocos.
-      */}
-      <header className="mt-10 grid gap-4 md:grid-cols-[0.85fr_1.15fr] md:items-end md:gap-12">
-        <div>
-          <span className="text-xs font-medium tracking-[0.18em] text-neutral-500 uppercase">
-            Categoria
-          </span>
-          <h1 className="mt-3 font-display text-4xl leading-tight font-light tracking-tight text-neutral-900">
-            {category.title}
-          </h1>
-          <p className="mt-4 text-sm text-neutral-500">
-            {posts.length} {posts.length === 1 ? 'artigo' : 'artigos'}
-          </p>
-        </div>
+      <header className="mt-10">
+        <span className="text-xs font-medium tracking-[0.18em] text-neutral-500 uppercase">
+          Categoria
+        </span>
+        <h1 className="mt-3 font-display text-4xl leading-tight font-light tracking-tight text-neutral-900">
+          {category.title}
+        </h1>
         {category.description ? (
-          <p className="text-lg leading-relaxed text-neutral-500">{category.description}</p>
+          /*
+            Abaixo do título, e não ao lado — a descrição pertence ao bloco de
+            identificação da categoria e lê-se na sequência dele.
+
+            A medida cresce pelo corpo da fonte, não pelo número de `ch`: a
+            unidade `ch` mede o glifo "0", mais estreito que a média das letras
+            desta fonte, então 76ch renderizavam cerca de 90 caracteres por
+            linha — largo demais para o olho achar o começo da linha seguinte.
+            Com `text-xl` e 66ch a linha fica em 68 caracteres, dentro da faixa
+            legível, e o parágrafo ocupa 805 de 1032 px (78% do container,
+            contra 68% da versão anterior).
+          */
+          <p className="mt-4 max-w-[66ch] text-xl leading-relaxed text-neutral-500">
+            {category.description}
+          </p>
         ) : null}
+        <p className="mt-4 text-sm text-neutral-500">
+          {posts.length} {posts.length === 1 ? 'artigo' : 'artigos'}
+        </p>
       </header>
 
       <div className="mt-8 mb-8">
