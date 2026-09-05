@@ -252,3 +252,31 @@ O plano prevê exatamente este caso e manda expandir o conteúdo primeiro. Ou
 seja: não são ~2.300 links a inserir, são ~200 artigos a densificar, com o link
 saindo como subproduto. Detalhado em `_seo/lacuna-de-fontes.md`.
 
+### Links externos — acervo completo
+
+Segunda passada, agora sobre todos os artigos com zero links, de qualquer
+categoria, com o catálogo ampliado para 42 fontes (somaram-se Lei 4.591/64,
+6.766/79, 8.036/90, 6.385/76, 11.977/09, CDC, CVM, ANBIMA, FGTS, ABECIP,
+Ministério das Cidades, ABNT, IPHAN, Pritzker e MoMA).
+
+```
+acervo, 206 artigos
+  links externos ............. 199 → 502
+  hosts distintos ............ 165
+  artigos com zero ........... 165 → 38
+  artigos na meta 10–20 ...... 2
+  texto do corpo alterado .... 0 artigos
+  chaves duplicadas / órfãos . 0 / 0
+  duplicatas introduzidas .... 0   (as 13 existentes são anteriores a esta auditoria)
+```
+
+Os 38 que continuam em zero não têm âncora natural alguma: são sobretudo peças
+locais e de mercado — `itajai`, `balneario-camboriu`, `brava-home-resort`,
+`fotografia-imobiliaria`, `especulacao-imobiliaria` — que não citam norma, órgão
+nem índice em ponto nenhum. Vale o mesmo diagnóstico de `lacuna-de-fontes.md`:
+é conteúdo a densificar, não link a inserir.
+
+Fontes bloqueadas para verificação automática, deixadas de fora de propósito:
+STJ, B3, CAU/BR, UNESCO, IBGE e Caixa respondem 403 a qualquer cliente que não
+seja navegador. São candidatas legítimas para conferência manual.
+
