@@ -10,7 +10,7 @@ const postSummaryProjection = `{
   mainImage,
   publishedAt,
   "author": author->{ name, "slug": slug.current },
-  "categories": categories[]->{ _id, title, "slug": slug.current, description }
+  "categories": categories[]->{ _id, title, "slug": slug.current, description, seoDescription }
 }`
 
 export async function getAllPosts(): Promise<PostSummary[]> {
@@ -36,7 +36,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
       mainImage,
       publishedAt,
       "author": author->{ name, "slug": slug.current },
-      "categories": categories[]->{ _id, title, "slug": slug.current, description },
+      "categories": categories[]->{ _id, title, "slug": slug.current, description, seoDescription },
       body,
       seo
     }`,
@@ -46,13 +46,13 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
 
 export async function getAllCategories(): Promise<Category[]> {
   return client.fetch(
-    `*[_type == "category" && defined(slug.current) && slug.current != ""] | order(title asc) { _id, title, "slug": slug.current, description }`,
+    `*[_type == "category" && defined(slug.current) && slug.current != ""] | order(title asc) { _id, title, "slug": slug.current, description, seoDescription }`,
   )
 }
 
 export async function getCategoryBySlug(slug: string): Promise<Category | null> {
   return client.fetch(
-    `*[_type == "category" && slug.current == $slug][0]{ _id, title, "slug": slug.current, description }`,
+    `*[_type == "category" && slug.current == $slug][0]{ _id, title, "slug": slug.current, description, seoDescription }`,
     { slug },
   )
 }

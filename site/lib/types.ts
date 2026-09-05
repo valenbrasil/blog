@@ -21,6 +21,8 @@ export interface Category {
   title: string
   slug: string
   description?: string
+  /* Versão curta para a meta description; a `description` é o texto visível. */
+  seoDescription?: string
 }
 
 export interface CodeBlock {

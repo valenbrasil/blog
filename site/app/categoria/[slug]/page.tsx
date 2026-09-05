@@ -18,9 +18,16 @@ export async function generateMetadata({
   const { slug } = await params
   const category = await getCategoryBySlug(slug)
   if (!category) return {}
+  /*
+    A `description` da categoria é o texto visível no topo da página, de 30 a 50
+    palavras. O Google exibe a meta description até cerca de 155 caracteres, e
+    usar a descrição inteira aqui a fazia aparecer cortada no meio de uma frase
+    no resultado de busca. Daí o campo curto próprio, com a `description` como
+    reserva para categoria que ainda não o tenha preenchido.
+  */
   return {
     title: category.title,
-    description: category.description,
+    description: category.seoDescription || category.description,
     alternates: { canonical: `/categoria/${slug}/` },
   }
 }
