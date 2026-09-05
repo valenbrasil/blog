@@ -78,3 +78,36 @@ genérica do site.
 - Decidir se haverá encarregado nomeado publicamente.
 - Confirmar que `contato@valenbrasil.com` e `privacidade@valenbrasil.com` estão
   ativos e monitorados.
+
+## Identificação da empresa (5 de setembro de 2026)
+
+Faltava no blog o que o site institucional já publica no rodapé: registro
+profissional, CNPJ e ano de fundação. Conferido em `https://valenbrasil.com`
+no mesmo dia, palavra por palavra:
+
+    Valen Brasil Gestão Empresarial Ltda
+    CNPJ 39.819.814/0001-98 · Desde 2020
+    CAU PJ69468-1 · CRECI 11689-J
+    Rua Samuel Heusi, 463 · Itajaí · Santa Catarina
+
+Os dados entraram em `lib/site-config.ts`, numa constante só, e dali alimentam
+três lugares — repetir número de registro em três arquivos é garantir que um
+deles fique para trás no dia em que mudar:
+
+- **Rodapé de todas as 237 páginas.** Antes tinha só o aviso de copyright.
+  Registro profissional num blog de avaliação de imóveis não é enfeite: as
+  diretrizes de avaliação de qualidade do Google mandam procurar quem responde
+  pelo site e com que autoridade, e CAU e CRECI são o que diz quem pode assinar
+  um laudo.
+- **JSON-LD de `Organization`**, novo, em toda página. Antes existia apenas
+  `publisher: { "@type": "Organization", name: "Valen Brasil" }` dentro do
+  `BlogPosting` de cada artigo — um nome solto, sem endereço nem registro. Agora
+  há um `@id` (`https://valenbrasil.com/#organizacao`) com `legalName`,
+  `foundingDate`, `taxID`, `address`, `telephone` e os registros como
+  `identifier` (CNPJ, CAU, CRECI), que é onde o schema.org acomoda registro
+  emitido por terceiro. O `publisher` dos 206 artigos passou a apontar para esse
+  `@id`: em vez de 206 organizações homônimas, uma só, identificada.
+- **As duas páginas legais**, na seção do controlador e na de contato.
+
+`vatID` foi descartado de propósito: CNPJ é `taxID`; `vatID` é registro de IVA e
+não existe no Brasil.

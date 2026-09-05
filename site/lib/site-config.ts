@@ -39,3 +39,35 @@ export const GA_MEASUREMENT_ID = 'G-DP9C1G5246'
  * ambiente.
  */
 export const AHREFS_ANALYTICS_KEY = 'X2AoK5UaoY8tPMNmCRaBhA'
+
+/**
+ * Dados de registro da empresa, conferidos no rodapé do site institucional
+ * (https://valenbrasil.com) em 5 de setembro de 2026 — a mesma fonte que o
+ * blog cita como institucional, não uma transcrição de segunda mão.
+ *
+ * Servem a três lugares de uma vez: o rodapé de toda página, o JSON-LD de
+ * Organization e as duas páginas legais. Ficam aqui porque um número de
+ * registro repetido em três arquivos diverge no dia em que um deles mudar.
+ *
+ * CAU é o Conselho de Arquitetura e Urbanismo; CRECI, o Conselho Regional de
+ * Corretores de Imóveis. Num blog que fala de avaliação de imóveis, o registro
+ * profissional é o que separa quem pode assinar um laudo de quem não pode.
+ */
+export const EMPRESA = {
+  razaoSocial: 'Valen Brasil Gestão Empresarial Ltda',
+  nome: 'Valen Brasil',
+  cnpj: '39.819.814/0001-98',
+  cau: 'PJ69468-1',
+  creci: '11689-J',
+  fundacao: '2020',
+  endereco: {
+    logradouro: 'Rua Samuel Heusi, 463',
+    cidade: 'Itajaí',
+    estado: 'SC',
+    estadoNome: 'Santa Catarina',
+    pais: 'BR',
+  },
+  telefone: '+55 47 3170-1572',
+  email: 'contato@valenbrasil.com',
+  emailPrivacidade: 'privacidade@valenbrasil.com',
+} as const

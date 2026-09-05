@@ -3,6 +3,7 @@ import { Jost, Manrope, JetBrains_Mono } from 'next/font/google'
 import Script from 'next/script'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { OrganizationSchema } from '@/components/OrganizationSchema'
 import { AHREFS_ANALYTICS_KEY, GA_MEASUREMENT_ID } from '@/lib/site-config'
 import { SITE_URL } from '@/lib/site-config'
 import './globals.css'
@@ -80,6 +81,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <OrganizationSchema />
         <AhrefsAnalytics />
       </body>
     </html>

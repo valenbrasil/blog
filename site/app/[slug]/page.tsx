@@ -6,6 +6,7 @@ import { urlFor } from '@/lib/image'
 import { formatDateShort } from '@/lib/date'
 import { PostBody } from '@/components/PostBody'
 import { StructuredData } from '@/components/StructuredData'
+import { ORGANIZATION_ID } from '@/components/OrganizationSchema'
 import { PostGrid } from '@/components/PostGrid'
 import { CtaCard } from '@/components/CtaCard'
 import { Badge } from '@/components/ui/Badge'
@@ -142,7 +143,12 @@ export default async function PostPage({ params }: PageProps<'/[slug]'>) {
     */
     dateModified: post._updatedAt ?? post.publishedAt,
     author: { '@type': 'Person', name: authorName },
-    publisher: { '@type': 'Organization', name: 'Valen Brasil' },
+    /*
+      Aponta para o Organization publicado no layout, que carrega CNPJ, CAU,
+      CRECI, fundacao e endereco. Sem o @id, cada artigo declararia uma
+      organizacao homonima e solta.
+    */
+    publisher: { '@id': ORGANIZATION_ID },
     ...(schemaImage ? { image: schemaImage } : {}),
     mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
     ...(category ? { articleSection: category.title } : {}),
