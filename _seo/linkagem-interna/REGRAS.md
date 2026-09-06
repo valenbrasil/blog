@@ -118,23 +118,83 @@ Quando houver frase nova, ela obedece às mesmas regras da densificação extern
 
 ---
 
-## 7. Distribuição
+## 7. Distribuição: quantos links, e para onde
 
-**Piso de dois. Teto nenhum.**
+Duas regras que trabalham juntas. Uma define **quanto cada artigo gasta**, a
+outra define **onde esse gasto vai parar**. Nenhuma das duas funciona sozinha.
+
+### 7.1 Orçamento de saída, pelo tamanho do artigo
+
+| Artigo | Palavras | Links internos que dá |
+|---|---|---|
+| curto | até 1.500 | 2 a 4 |
+| médio | 1.500 a 3.000 | 4 a 8 |
+| longo | 3.000 ou mais | 8 a 12 |
+
+Texto mais longo comporta mais referência sem ficar carregado: a densidade é
+que importa, não o número absoluto. Doze links num artigo de 4.000 palavras dá
+um a cada 330 palavras; doze num de 800 seria um a cada 66.
+
+Medido no acervo (206 artigos, antes dos últimos lotes de densificação):
+
+```
+curto   37 artigos  ->   74 a  148 links
+médio  119 artigos  ->  476 a  952
+longo   50 artigos  ->  400 a  600
+                        ───────────────
+                        950 a 1.700 no total
+```
+
+Hoje há 629 links internos. Para levar todos ao **piso** da sua faixa faltam
+**369 links**, distribuídos por 137 artigos — 69 já estão no piso.
+
+A contagem de palavras muda conforme a densificação externa avança: vários
+artigos cruzaram de médio para longo ao ganhar 600 ou 800 palavras. A faixa de
+cada artigo se recalcula na hora de rodar, não agora.
+
+### 7.2 Piso de entrada: dois, sempre
+
+O orçamento de saída diz quanto gastar. Ele **não** diz para onde, e aí mora o
+risco: 369 links novos podem cair todos em cima das páginas que já são fortes,
+e os 68 órfãos continuarem órfãos. O artigo cumpre a cota e o problema não se
+resolve.
+
+Por isso a segunda regra: **nenhum artigo pode receber menos de dois links de
+artigos diferentes.** Ela tem prioridade sobre a primeira na hora de escolher o
+destino.
+
+A ordem de gasto é:
+
+1. **Primeiro os órfãos.** 68 artigos × 2 links = 136.
+2. **Depois os de um só.** 44 artigos × 1 link = 44.
+3. **O resto da cota, livre**, seguindo o que o texto pedir.
+
+Sobra folga: são 369 links a criar contra 180 estritamente necessários na
+entrada. Os 189 restantes se distribuem por relevância, sem meta.
+
+### 7.3 Teto de entrada: nenhum
 
 A forma saudável é pirâmide: poucas páginas muito citadas, muitas citadas o
-suficiente. Hoje `avaliacao-imobiliaria` recebe 36, `laudo-de-avaliacao-do-imovel`
+suficiente. `avaliacao-imobiliaria` recebe 36 hoje, `laudo-de-avaliacao-do-imovel`
 32, `heranca` 28 — e está certo, são o assunto do blog.
 
 **Nivelar é o erro.** Levar as 206 páginas ao mesmo número apaga a hierarquia
 que diz ao Google qual página é a principal sobre cada tema. O ganho está em
 tirar 112 páginas do isolamento, não em igualar as 206.
 
-**Saída também tem limite.** Cada artigo dá hoje 3,1 links internos em média,
-somados a 11,5 externos. A meta de dois leva a saída para cerca de 4. Acima de
-15 links no corpo de um artigo, ele começa a parecer diretório.
+Efeito esperado do modelo sobre a entrada: média de 3,1 para 4,8 links
+recebidos por artigo, com o piso de zero subindo para dois e o topo intacto.
 
----
+### 7.4 O limite que não se cruza
+
+Somando aos links externos, um artigo médio ficaria com 4 a 8 internos mais os
+11,5 externos de hoje: 16 a 20 links no corpo. Um artigo longo, 8 a 12 mais 15
+a 20 externos: até 32.
+
+**Acima de 30 links no corpo, o texto começa a ler como diretório.** Nos
+artigos longos, portanto, fica-se na metade baixa da faixa — 8 ou 9, não 12 —
+sempre que o artigo já for denso em links externos. O modelo é faixa, não cota
+a cumprir.
 
 ## 8. O processo
 
