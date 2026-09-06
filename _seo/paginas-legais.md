@@ -25,8 +25,8 @@ para `https://valenbrasil.com/` com o texto `https://blog.valenbrasil.com`.
 
 Nada foi afirmado sem estar conferido no código ou no HTML publicado. O
 inventário registra o que o navegador do visitante contacta — `cdn.sanity.io`,
-`www.googletagmanager.com` (medição G-DP9C1G5246), `analytics.ahrefs.com`
-(chave X2AoK5UaoY8tPMNmCRaBhA) e `wa.me` apenas se o visitante clicar —, que as
+`www.googletagmanager.com`, `analytics.ahrefs.com` e `wa.me` apenas se o
+visitante clicar —, que as
 fontes são servidas pelo próprio domínio, que o Sanity é lido só no build e que
 a hospedagem é GitHub Pages.
 
@@ -71,8 +71,8 @@ genérica do site.
 
 ## Pendências da empresa
 
-- Abrir o painel do GA4 (G-DP9C1G5246) e o do Ahrefs, anotar o prazo de
-  retenção configurado e substituir a frase genérica da seção 9.
+- Abrir o painel do GA4 e o do Ahrefs, anotar o prazo de retenção
+  configurado e substituir a frase genérica da seção 9.
 - Conferir contrato a contrato a base do art. 33 para a transferência
   internacional (Google, GitHub, Ahrefs, Sanity).
 - Decidir se haverá encarregado nomeado publicamente.
@@ -201,3 +201,18 @@ feita, a política precisa passar a descrever o que valer então.
   de valores" sem explicação, siglas de conselho sem o nome por extenso, e a
   forma de citar lei alinhada entre os dois documentos.
 
+## Nota de 6 de setembro de 2026
+
+Este documento descreve o estado em que as páginas legais foram reescritas,
+quando o blog carregava Google Analytics e Ahrefs em toda visita. Não é mais o
+estado atual: os identificadores de medição foram retirados a pedido da
+empresa, que vai adotar outra forma de rastreio, e as páginas legais passaram a
+dizer que o blog não mede audiência e não grava cookie — o que é verdade
+enquanto as constantes de `site/lib/site-config.ts` estiverem vazias.
+
+Os identificadores que apareciam aqui foram removidos junto: um relatório não é
+lugar de guardar código que a empresa pediu para tirar do projeto.
+
+Quando a nova medição entrar, as páginas legais voltam a descrevê-la, e é este
+documento que registra o método — inventário conferido no HTML publicado, nada
+afirmado sem verificação — a ser repetido.
