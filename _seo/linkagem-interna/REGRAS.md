@@ -152,38 +152,75 @@ A contagem de palavras muda conforme a densificação externa avança: vários
 artigos cruzaram de médio para longo ao ganhar 600 ou 800 palavras. A faixa de
 cada artigo se recalcula na hora de rodar, não agora.
 
-### 7.2 Piso de entrada: dois, sempre
+### 7.2 Patamares de entrada
 
-O orçamento de saída diz quanto gastar. Ele **não** diz para onde, e aí mora o
-risco: 369 links novos podem cair todos em cima das páginas que já são fortes,
-e os 68 órfãos continuarem órfãos. O artigo cumpre a cota e o problema não se
-resolve.
+| Patamar | Links recebidos | Quem |
+|---|---|---|
+| **piso** | 2 a 3 | toda página, sem exceção |
+| **faixa sã** | 3 a 6 | conteúdo de apoio |
+| **pilares** | 15 a 40, sem teto | as páginas que são o assunto do blog |
 
-Por isso a segunda regra: **nenhum artigo pode receber menos de dois links de
-artigos diferentes.** Ela tem prioridade sobre a primeira na hora de escolher o
-destino.
+O orçamento de saída diz **quanto** cada artigo gasta. Ele não diz **para
+onde**, e aí mora o risco: 369 links novos podem cair todos em cima das páginas
+que já são fortes, cada artigo cumprir sua cota e os 68 órfãos continuarem
+órfãos. Por isso os patamares de entrada têm prioridade na escolha do destino.
 
-A ordem de gasto é:
+Ordem de gasto:
 
-1. **Primeiro os órfãos.** 68 artigos × 2 links = 136.
-2. **Depois os de um só.** 44 artigos × 1 link = 44.
-3. **O resto da cota, livre**, seguindo o que o texto pedir.
+1. **Tirar todo mundo do isolamento.** 68 órfãos × 2 e 44 de um só × 1 = 180.
+2. **Levar o apoio ao alvo de 3.** Mais 137 links.
+3. **O resto, livre**, seguindo o que o texto pedir.
 
-Sobra folga: são 369 links a criar contra 180 estritamente necessários na
-entrada. Os 189 restantes se distribuem por relevância, sem meta.
+### 7.3 As duas regras fecham no mesmo número
 
-### 7.3 Teto de entrada: nenhum
+Isso não estava combinado e vale registrar:
 
-A forma saudável é pirâmide: poucas páginas muito citadas, muitas citadas o
-suficiente. `avaliacao-imobiliaria` recebe 36 hoje, `laudo-de-avaliacao-do-imovel`
-32, `heranca` 28 — e está certo, são o assunto do blog.
+```
+orçamento de saída, piso das faixas ......  950 links
+todo o apoio no alvo de 3 ................  946 links
+```
 
-**Nivelar é o erro.** Levar as 206 páginas ao mesmo número apaga a hierarquia
-que diz ao Google qual página é a principal sobre cada tema. O ganho está em
-tirar 112 páginas do isolamento, não em igualar as 206.
+Quatro links de diferença em 206 artigos. Os dois modelos foram construídos por
+caminhos independentes — um pela densidade que um texto suporta, outro pelo que
+uma página precisa receber para não ficar isolada — e chegam ao mesmo lugar. É
+o melhor indício de que o número está certo.
 
-Efeito esperado do modelo sobre a entrada: média de 3,1 para 4,8 links
-recebidos por artigo, com o piso de zero subindo para dois e o topo intacto.
+Sai de 629 para cerca de 946 links internos: média de 4,6 por artigo, contra
+3,1 hoje.
+
+### 7.3.1 Quais são os pilares
+
+Seis páginas já recebem 15 ou mais:
+
+```
+36  avaliacao-imobiliaria
+32  laudo-de-avaliacao-do-imovel
+28  heranca
+24  o-que-e-um-arquiteto
+19  itbi
+17  compra-e-venda-de-imovel
+```
+
+**Ser pilar é decisão editorial, não medição.** Essas seis chegaram lá
+sozinhas, o que confirma que são mesmo o centro do blog — mas a lista pode
+crescer. Se a Valen Brasil quiser que `metodo-comparativo-direto` ou
+`avaliacao-de-imovel-para-inventario` sejam a página canônica do seu tema, elas
+entram no grupo e passam a receber links de propósito.
+
+O que não se faz é o contrário: **cortar link de pilar para "distribuir
+melhor".** Pilar recebe muito porque é citado com naturalidade; podar isso
+destrói o sinal que diz ao Google qual página responde por cada tema.
+
+Como o acervo se parte hoje:
+
+```
+pilares (15+)         6 artigos
+apoio               200 artigos
+  abaixo do piso    112   ← o trabalho
+  no piso (2-3)      41
+  na faixa sã (3-6)  41
+  acima de 6         22
+```
 
 ### 7.4 O limite que não se cruza
 
