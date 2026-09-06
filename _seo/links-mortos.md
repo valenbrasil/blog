@@ -44,3 +44,35 @@ jardindelturia.com, ricardobofill  parque-turia            0 links
 ```
 
 Acervo: 1.148 → 1.143 links externos. **Nenhum link morto conhecido resta.**
+
+---
+
+## Onde a densificação parou — limite mensal, 6 de setembro
+
+O lote J foi o primeiro a rodar com **um agente por vez**, e foi interrompido
+pelo teto mensal de gasto da conta (a mensagem do runtime aponta o reset da
+sessão para 9h10 UTC, mas o teto mensal é outro e não reseta com ela).
+
+```
+6 artigos  plano + veredito do cético  → aplicados
+1 artigo   casa-container: plano pronto, cético NÃO rodou → não aplicado
+1 artigo   matricula-atualizada-do-imovel: nem plano
+```
+
+`casa-container` fica guardado em `/tmp/dens/planos/` e no cache do workflow.
+**Não pode ser gravado como está**: nos lotes anteriores o cético reprovou 96 de
+790 operações, e as capturas foram coisas como norma revogada citada como
+vigente e âncora apontando para o regime tributário oposto ao do texto.
+
+Para retomar o J de onde parou, com os 6 já feitos voltando de graça do cache:
+
+```
+Workflow({scriptPath: "/home/user/blog/_seo/densificacao/serial.js",
+          resumeFromRunId: "wf_6eb9f09f-a2c",
+          args: ["metodo-evolutivo-na-avaliacao-de-imoveis","desafios-da-execucao-de-obra-para-arquitetos",
+                 "vistoriador-de-imoveis","incc-indice-nacional-custo-construcao","captador-imoveis",
+                 "biografia-oscar-niemeyer","casa-container","matricula-atualizada-do-imovel-guia-completo"]})
+```
+
+A fila dos lotes seguintes (K a Z) está em `/tmp/dens/fila_serial.json` e, para
+sobreviver ao container, também no próprio `_seo/densificacao/`.
