@@ -90,7 +90,19 @@ def op_emendar(body, op):
     assert bloco is not None, f"bloco {op['chave']} nao existe"
     antes = sanity.texto_do_bloco(bloco)
     mds = bloco.setdefault('markDefs', [])
-    bloco['children'] = (bloco.get('children') or []) + _spans_de(op['segmentos'], mds)
+
+    # Os spans do Portable Text sao concatenados crus na renderizacao. Se o
+    # bloco termina em "periodo." e a emenda comeca em "A base legal", sai
+    # "periodo.A base legal" -- colado. Aconteceu 286 vezes antes de alguem
+    # notar. O espaco entra no PRIMEIRO SPAN NOVO, que e nosso; o texto do
+    # autor continua intocado, como a assercao abaixo confere.
+    segs = [dict(x) for x in op['segmentos']]
+    if segs and antes and not antes[-1].isspace():
+        t0 = segs[0].get('t', '')
+        if t0 and not t0[0].isspace():
+            segs[0]['t'] = ' ' + t0
+
+    bloco['children'] = (bloco.get('children') or []) + _spans_de(segs, mds)
     depois = sanity.texto_do_bloco(bloco)
     assert depois.startswith(antes), 'emendar alterou o inicio do bloco'
     assert len(depois) > len(antes), 'emendar nao acrescentou nada'
