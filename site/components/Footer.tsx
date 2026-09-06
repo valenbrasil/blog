@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { PreferenciasCookies } from '@/components/PreferenciasCookies'
 import { EMPRESA, INSTITUTIONAL_URL } from '@/lib/site-config'
 
 /*
@@ -38,6 +39,12 @@ export function Footer() {
             <Link href="/termos-de-uso" className="text-neutral-500 hover:text-sage-700">
               Termos de Uso
             </Link>
+            {/*
+              Ao lado dos dois documentos legais, e não escondido: é por aqui
+              que se revoga o consentimento de medição, e a LGPD quer isso tão
+              simples quanto foi concedê-lo.
+            */}
+            <PreferenciasCookies className="cursor-pointer text-neutral-500 hover:text-sage-700" />
           </nav>
           <span>{ano} @ valenbrasil.com | Todos os Direitos Reservados.</span>
         </div>

@@ -3,13 +3,7 @@ import { Jost, Manrope, JetBrains_Mono } from 'next/font/google'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { OrganizationSchema } from '@/components/OrganizationSchema'
-import {
-  AHREFS_ANALYTICS_KEY,
-  CLOUDFLARE_ANALYTICS_TOKEN,
-  GA_MEASUREMENT_ID,
-  GOOGLE_SITE_VERIFICATION,
-} from '@/lib/site-config'
-import { SITE_URL } from '@/lib/site-config'
+import { BASE_PATH, GOOGLE_SITE_VERIFICATION, SITE_URL } from '@/lib/site-config'
 import './globals.css'
 
 /*
@@ -81,16 +75,8 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       lang="pt-BR"
       className={`${jost.variable} ${manrope.variable} ${jetbrainsMono.variable}`}
     >
-      {/*
-        Os dois medidores ficam num <head> explícito porque quem verifica a
-        instalação — o Search Console no caso do GA, o painel do Ahrefs no
-        caso do outro — lê o HTML CRU da página: nenhum dos dois executa
-        JavaScript. Ver o comentário de Analytics() para o que isso quebrava.
-      */}
       <head>
-        <Analytics />
-        <AhrefsAnalytics />
-        <CloudflareAnalytics />
+        <AvisoDeCookies />
       </head>
       <body className="flex min-h-screen flex-col">
         <Header />
@@ -103,109 +89,36 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 }
 
 /**
- * Ahrefs Web Analytics.
+ * Aviso de cookies, e o unico portao de medicao da pagina.
  *
- * Mede as mesmas visitas que o GA, por outro ângulo: o Ahrefs cruza o tráfego
- * com os dados de backlink e de posição na busca que já mantém. Rodar os dois
- * em paralelo é deliberado, não duplicação por descuido.
+ * Ate aqui o blog carregava GA, Ahrefs e Cloudflare direto no <head>, em toda
+ * visita. Os tres sairam: enquanto eles estivessem ali, o aviso nao serviria
+ * para nada -- a medicao ja teria comecado antes de a pessoa responder, que e
+ * exatamente o que a LGPD nao permite. Quem os carrega agora e
+ * `public/consentimento-valen.js`, com os mesmos identificadores, depois do
+ * "Aceitar".
  *
- * Só em produção, para que `next dev` não entre no relatório como visita real.
+ * O arquivo e mantido IDENTICO ao da homepage de proposito: a decisao vai num
+ * cookie no dominio de topo (.valenbrasil.com), entao quem responde aqui nao
+ * ve o aviso de novo la, e vice-versa. Ha um teste na homepage que compara os
+ * dois e falha se o nome do cookie, a validade ou a versao da politica
+ * divergirem -- por isso ele entra byte a byte como veio, e qualquer mudanca
+ * comeca la, nao aqui.
  *
- * Tag <script> literal no <head>, e não `next/script`, pelo mesmo motivo que
- * levou o GA a mudar — ver o comentário de Analytics(). Com
- * `strategy="afterInteractive"` o Next não emite a tag no HTML: sai só um
- * <link rel="preload"> no <head> e o <script> de verdade é injetado na
- * hidratação. Medido no HTML servido antes da troca:
+ * `defer` e nao script sincrono: o arquivo pede para vir "antes de qualquer
+ * outro script", e vem -- com os tres medidores fora do HTML, nao existe mais
+ * script de terceiro para correr na frente dele, e nenhum pode existir, ja que
+ * agora todos nascem de dentro dele. `defer` mantem essa ordem sem bloquear a
+ * renderizacao do artigo, que num projeto de SEO custa Core Web Vitals.
  *
- *     <head>   preload=1   <script src=ahrefs>=0
- *     <body>   src e data-key só dentro do payload de hidratação
+ * Roda tambem em desenvolvimento, ao contrario dos medidores que substituiu:
+ * um aviso de consentimento que so aparece em producao e um aviso que ninguem
+ * testa. Ele nao mede nada por si.
  *
- * Para o navegador dá no mesmo: o script sobe e mede. Mas o verificador de
- * instalação do Ahrefs lê o HTML cru à procura do snippet no <head>, e é esse
- * o snippet que o painel manda colar. `async` preserva o que o
- * `afterInteractive` garantia: a tag está no <head> e não bloqueia a
- * renderização do artigo.
+ * BASE_PATH porque `public/` e servido a partir da raiz do site: em producao a
+ * raiz e o dominio e o prefixo e vazio; sob subdiretorio, sem ele o arquivo
+ * daria 404 e a pagina ficaria sem aviso e sem medicao.
  */
-function AhrefsAnalytics() {
-  if (process.env.NODE_ENV !== 'production') return null
-
-  return (
-    <script src="https://analytics.ahrefs.com/analytics.js" data-key={AHREFS_ANALYTICS_KEY} async />
-  )
-}
-
-/**
- * Cloudflare Web Analytics.
- *
- * O terceiro medidor da página, e não é redundância: mede sem cookie e sem
- * identificar o visitante, então continua contando quem recusa o GA no banner
- * ou navega com bloqueador — justamente a fatia que os outros dois perdem.
- *
- * Instalado por snippet, e não pelo proxy da Cloudflare, porque o blog é
- * servido pelo GitHub Pages: não há proxy na frente para injetar o beacon.
- *
- * `type="module"` vem do snippet do painel e traz o adiamento de graça —
- * módulo é sempre diferido, então a tag pode ficar no <head> sem atrasar o
- * artigo. `data-cf-beacon` quer uma string JSON; montá-la com JSON.stringify
- * evita o aspeamento manual que o JSX faria pela metade.
- *
- * Só em produção, pela mesma razão dos outros dois: `next dev` não pode entrar
- * no relatório como visita real.
- */
-function CloudflareAnalytics() {
-  if (process.env.NODE_ENV !== 'production') return null
-
-  return (
-    <script
-      type="module"
-      src="https://static.cloudflareinsights.com/beacon.min.js"
-      data-cf-beacon={JSON.stringify({ token: CLOUDFLARE_ANALYTICS_TOKEN })}
-    />
-  )
-}
-
-/**
- * Google Analytics 4.
- *
- * `afterInteractive` porque medir audiência não pode competir com a renderização
- * do artigo: o script sobe depois que a página está utilizável.
- *
- * Só em produção. O valor é decidido no build, então `next dev` sai sem o
- * script — sem isso, cada sessão de desenvolvimento entraria no relatório como
- * visita real e sujaria justamente a métrica que o GA existe para dar.
- */
-function Analytics() {
-  if (process.env.NODE_ENV !== 'production') return null
-
-  /*
-    Tag <script> literal, e não `next/script`, de propósito.
-
-    Com `strategy="afterInteractive"` o Next não emite a tag no HTML: ele emite
-    apenas um <link rel="preload"> e injeta o <script> de verdade na hidratação.
-    Medido no HTML servido antes da troca:
-
-        <head>   preload=1  <script src=gtag>=0  gtag()=0
-        <body>   preload=0  <script src=gtag>=0  gtag()=3
-
-    Para o navegador dá no mesmo — o GA carrega e mede. Mas o Search Console
-    verifica a propriedade lendo o HTML cru da home, sem executar JavaScript, e
-    por isso recusava com "o código de acompanhamento está no local incorreto da
-    página; verifique com o snippet na seção <head>".
-
-    `async` preserva o motivo pelo qual `afterInteractive` estava ali: a tag
-    está no <head>, mas não bloqueia a renderização do artigo.
-  */
-  return (
-    <>
-      <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '${GA_MEASUREMENT_ID}');`,
-        }}
-      />
-    </>
-  )
+function AvisoDeCookies() {
+  return <script src={`${BASE_PATH}/consentimento-valen.js`} defer />
 }
