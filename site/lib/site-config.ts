@@ -27,6 +27,67 @@ export const WHATSAPP_URL = 'https://wa.me/554731701572'
 export const POSTS_PER_PAGE = 12
 
 /**
+ * Medição do Google Analytics 4. O ID é público — vai no HTML de toda página —,
+ * então fica aqui e não em variável de ambiente: esconder não protegeria nada e
+ * só criaria mais uma peça de configuração para o deploy carregar.
+
+ *
+ * VAZIO DE PROPOSITO. O token sai daqui e o codigo fica: preencha esta
+ * constante e a medicao volta sozinha, sem tocar em mais nada. Enquanto
+ * estiver vazia, nada e carregado -- ver o componente correspondente em
+ * app/layout.tsx, que devolve null quando nao ha o que carregar.
+ */
+export const GA_MEASUREMENT_ID = ''
+
+/**
+ * Ahrefs Web Analytics. A chave é pública — sai no HTML de toda página, como a
+ * do GA — então fica junto do resto da configuração, não em variável de
+ * ambiente.
+
+ *
+ * VAZIO DE PROPOSITO. O token sai daqui e o codigo fica: preencha esta
+ * constante e a medicao volta sozinha, sem tocar em mais nada. Enquanto
+ * estiver vazia, nada e carregado -- ver o componente correspondente em
+ * app/layout.tsx, que devolve null quando nao ha o que carregar.
+ */
+export const AHREFS_ANALYTICS_KEY = ''
+
+/**
+ * Cloudflare Web Analytics. Token próprio deste host: o painel emite um por
+ * site, e o do institucional (valenbrasil.com) é outro — trocar os dois
+ * misturaria a audiência dos dois domínios num relatório só.
+ *
+ * Instalação manual, por snippet, e não pelo proxy da Cloudflare: o blog é
+ * servido pelo GitHub Pages, então não há proxy da Cloudflare na frente para
+ * injetar o beacon sozinho.
+ *
+ * Público, como o ID do GA e a chave do Ahrefs ao lado.
+
+ *
+ * VAZIO DE PROPOSITO. O token sai daqui e o codigo fica: preencha esta
+ * constante e a medicao volta sozinha, sem tocar em mais nada. Enquanto
+ * estiver vazia, nada e carregado -- ver o componente correspondente em
+ * app/layout.tsx, que devolve null quando nao ha o que carregar.
+ */
+export const CLOUDFLARE_ANALYTICS_TOKEN = ''
+
+/**
+ * Verificação de propriedade do Google Search Console.
+ *
+ * O Search Console já aceita esta propriedade pela tag do GA, mas o código de
+ * verificação é o que sobrevive a uma troca de medidor: se um dia o GA sair do
+ * <head>, a propriedade continua verificada por esta meta. Público por
+ * natureza — ele existe para ser lido no HTML.
+
+ *
+ * VAZIO DE PROPOSITO. O token sai daqui e o codigo fica: preencha esta
+ * constante e a medicao volta sozinha, sem tocar em mais nada. Enquanto
+ * estiver vazia, nada e carregado -- ver o componente correspondente em
+ * app/layout.tsx, que devolve null quando nao ha o que carregar.
+ */
+export const GOOGLE_SITE_VERIFICATION = ''
+
+/**
  * Dados de registro da empresa, conferidos no rodapé do site institucional
  * (https://valenbrasil.com) em 5 de setembro de 2026 — a mesma fonte que o
  * blog cita como institucional, não uma transcrição de segunda mão.
