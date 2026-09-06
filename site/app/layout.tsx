@@ -3,7 +3,12 @@ import { Jost, Manrope, JetBrains_Mono } from 'next/font/google'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { OrganizationSchema } from '@/components/OrganizationSchema'
-import { AHREFS_ANALYTICS_KEY, GA_MEASUREMENT_ID } from '@/lib/site-config'
+import {
+  AHREFS_ANALYTICS_KEY,
+  CLOUDFLARE_ANALYTICS_TOKEN,
+  GA_MEASUREMENT_ID,
+  GOOGLE_SITE_VERIFICATION,
+} from '@/lib/site-config'
 import { SITE_URL } from '@/lib/site-config'
 import './globals.css'
 
@@ -60,6 +65,14 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
   },
+  /*
+    Sai como <meta name="google-site-verification" ...> no <head>. Pela API de
+    metadata e nao como tag solta: assim o Next garante a tag unica na pagina,
+    sem risco de duplicar se um dia outra rota declarar a sua.
+  */
+  verification: {
+    google: GOOGLE_SITE_VERIFICATION,
+  },
 }
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
@@ -77,6 +90,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       <head>
         <Analytics />
         <AhrefsAnalytics />
+        <CloudflareAnalytics />
       </head>
       <body className="flex min-h-screen flex-col">
         <Header />
@@ -117,6 +131,36 @@ function AhrefsAnalytics() {
 
   return (
     <script src="https://analytics.ahrefs.com/analytics.js" data-key={AHREFS_ANALYTICS_KEY} async />
+  )
+}
+
+/**
+ * Cloudflare Web Analytics.
+ *
+ * O terceiro medidor da página, e não é redundância: mede sem cookie e sem
+ * identificar o visitante, então continua contando quem recusa o GA no banner
+ * ou navega com bloqueador — justamente a fatia que os outros dois perdem.
+ *
+ * Instalado por snippet, e não pelo proxy da Cloudflare, porque o blog é
+ * servido pelo GitHub Pages: não há proxy na frente para injetar o beacon.
+ *
+ * `type="module"` vem do snippet do painel e traz o adiamento de graça —
+ * módulo é sempre diferido, então a tag pode ficar no <head> sem atrasar o
+ * artigo. `data-cf-beacon` quer uma string JSON; montá-la com JSON.stringify
+ * evita o aspeamento manual que o JSX faria pela metade.
+ *
+ * Só em produção, pela mesma razão dos outros dois: `next dev` não pode entrar
+ * no relatório como visita real.
+ */
+function CloudflareAnalytics() {
+  if (process.env.NODE_ENV !== 'production') return null
+
+  return (
+    <script
+      type="module"
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon={JSON.stringify({ token: CLOUDFLARE_ANALYTICS_TOKEN })}
+    />
   )
 }
 
