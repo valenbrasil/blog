@@ -31,26 +31,16 @@ export const POSTS_PER_PAGE = 12
  * então fica aqui e não em variável de ambiente: esconder não protegeria nada e
  * só criaria mais uma peça de configuração para o deploy carregar.
 
- *
- * VAZIO DE PROPOSITO. O token sai daqui e o codigo fica: preencha esta
- * constante e a medicao volta sozinha, sem tocar em mais nada. Enquanto
- * estiver vazia, nada e carregado -- ver o componente correspondente em
- * app/layout.tsx, que devolve null quando nao ha o que carregar.
  */
-export const GA_MEASUREMENT_ID = ''
+export const GA_MEASUREMENT_ID = 'G-DP9C1G5246'
 
 /**
  * Ahrefs Web Analytics. A chave é pública — sai no HTML de toda página, como a
  * do GA — então fica junto do resto da configuração, não em variável de
  * ambiente.
 
- *
- * VAZIO DE PROPOSITO. O token sai daqui e o codigo fica: preencha esta
- * constante e a medicao volta sozinha, sem tocar em mais nada. Enquanto
- * estiver vazia, nada e carregado -- ver o componente correspondente em
- * app/layout.tsx, que devolve null quando nao ha o que carregar.
  */
-export const AHREFS_ANALYTICS_KEY = ''
+export const AHREFS_ANALYTICS_KEY = 'X2AoK5UaoY8tPMNmCRaBhA'
 
 /**
  * Cloudflare Web Analytics. Token próprio deste host: o painel emite um por
@@ -63,13 +53,8 @@ export const AHREFS_ANALYTICS_KEY = ''
  *
  * Público, como o ID do GA e a chave do Ahrefs ao lado.
 
- *
- * VAZIO DE PROPOSITO. O token sai daqui e o codigo fica: preencha esta
- * constante e a medicao volta sozinha, sem tocar em mais nada. Enquanto
- * estiver vazia, nada e carregado -- ver o componente correspondente em
- * app/layout.tsx, que devolve null quando nao ha o que carregar.
  */
-export const CLOUDFLARE_ANALYTICS_TOKEN = ''
+export const CLOUDFLARE_ANALYTICS_TOKEN = '48a089b94e6d42b8a5ce2f0856257c25'
 
 /**
  * Verificação de propriedade do Google Search Console.
