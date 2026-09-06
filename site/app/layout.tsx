@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Jost, Manrope, JetBrains_Mono } from 'next/font/google'
-import Script from 'next/script'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { OrganizationSchema } from '@/components/OrganizationSchema'
@@ -70,19 +69,20 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       className={`${jost.variable} ${manrope.variable} ${jetbrainsMono.variable}`}
     >
       {/*
-        O GA fica num <head> explícito porque o Search Console verifica a
-        propriedade lendo o HTML CRU da página inicial: ele não executa
+        Os dois medidores ficam num <head> explícito porque quem verifica a
+        instalação — o Search Console no caso do GA, o painel do Ahrefs no
+        caso do outro — lê o HTML CRU da página: nenhum dos dois executa
         JavaScript. Ver o comentário de Analytics() para o que isso quebrava.
       */}
       <head>
         <Analytics />
+        <AhrefsAnalytics />
       </head>
       <body className="flex min-h-screen flex-col">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
         <OrganizationSchema />
-        <AhrefsAnalytics />
       </body>
     </html>
   )
@@ -95,19 +95,28 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
  * com os dados de backlink e de posição na busca que já mantém. Rodar os dois
  * em paralelo é deliberado, não duplicação por descuido.
  *
- * Mesmas duas regras do GA: `afterInteractive`, para não competir com a
- * renderização do artigo, e só em produção, para que `next dev` não entre no
- * relatório como visita real.
+ * Só em produção, para que `next dev` não entre no relatório como visita real.
+ *
+ * Tag <script> literal no <head>, e não `next/script`, pelo mesmo motivo que
+ * levou o GA a mudar — ver o comentário de Analytics(). Com
+ * `strategy="afterInteractive"` o Next não emite a tag no HTML: sai só um
+ * <link rel="preload"> no <head> e o <script> de verdade é injetado na
+ * hidratação. Medido no HTML servido antes da troca:
+ *
+ *     <head>   preload=1   <script src=ahrefs>=0
+ *     <body>   src e data-key só dentro do payload de hidratação
+ *
+ * Para o navegador dá no mesmo: o script sobe e mede. Mas o verificador de
+ * instalação do Ahrefs lê o HTML cru à procura do snippet no <head>, e é esse
+ * o snippet que o painel manda colar. `async` preserva o que o
+ * `afterInteractive` garantia: a tag está no <head> e não bloqueia a
+ * renderização do artigo.
  */
 function AhrefsAnalytics() {
   if (process.env.NODE_ENV !== 'production') return null
 
   return (
-    <Script
-      src="https://analytics.ahrefs.com/analytics.js"
-      data-key={AHREFS_ANALYTICS_KEY}
-      strategy="afterInteractive"
-    />
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key={AHREFS_ANALYTICS_KEY} async />
   )
 }
 
