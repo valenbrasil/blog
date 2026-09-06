@@ -118,12 +118,31 @@ Quando houver frase nova, ela obedece às mesmas regras da densificação extern
 
 ---
 
-## 7. Distribuição: quantos links, e para onde
+## 7. Distribuição
 
-Duas regras que trabalham juntas. Uma define **quanto cada artigo gasta**, a
-outra define **onde esse gasto vai parar**. Nenhuma das duas funciona sozinha.
+### 7.1 A meta
 
-### 7.1 Orçamento de saída, pelo tamanho do artigo
+**Todo artigo recebe pelo menos 2 links internos, vindos de artigos diferentes.**
+
+É uma frase só, e é o que manda. Recebidos, não dados: a página é apontada por
+duas outras. Sem exceção e sem teto.
+
+Custo medido no acervo de 206 artigos:
+
+```
+68 órfãos     × 2 links  =  136
+44 com um só  × 1 link   =   44
+                            ───
+                            180 links a criar
+```
+
+Sai de 629 para 809 links internos. A saída média por artigo vai de 3,1 para
+3,9 — bem dentro do que um texto suporta.
+
+### 7.2 Referências de saída, para não sobrecarregar nenhum artigo
+
+Não é meta, é limite superior. Ao escolher de onde sai cada um dos 180 links,
+evita-se carregar demais um mesmo artigo:
 
 | Artigo | Palavras | Links internos que dá |
 |---|---|---|
@@ -131,107 +150,32 @@ outra define **onde esse gasto vai parar**. Nenhuma das duas funciona sozinha.
 | médio | 1.500 a 3.000 | 4 a 8 |
 | longo | 3.000 ou mais | 8 a 12 |
 
-Texto mais longo comporta mais referência sem ficar carregado: a densidade é
-que importa, não o número absoluto. Doze links num artigo de 4.000 palavras dá
+Texto mais longo comporta mais referência sem ficar carregado — o que importa é
+a densidade, não o número absoluto. Doze links num artigo de 4.000 palavras dá
 um a cada 330 palavras; doze num de 800 seria um a cada 66.
 
-Medido no acervo (206 artigos, antes dos últimos lotes de densificação):
+Somando aos links externos que a densificação criou, **acima de 30 links no
+corpo o texto lê como diretório**. Em artigo já denso de links externos,
+fica-se na metade baixa da faixa.
 
-```
-curto   37 artigos  ->   74 a  148 links
-médio  119 artigos  ->  476 a  952
-longo   50 artigos  ->  400 a  600
-                        ───────────────
-                        950 a 1.700 no total
-```
+### 7.3 Ordem de escolha do destino
 
-Hoje há 629 links internos. Para levar todos ao **piso** da sua faixa faltam
-**369 links**, distribuídos por 137 artigos — 69 já estão no piso.
+1. **Órfãos primeiro.** 68 artigos, 2 links cada.
+2. **Depois os de um só.** 44 artigos, 1 link cada.
+3. Nada além disso é obrigatório.
 
-A contagem de palavras muda conforme a densificação externa avança: vários
-artigos cruzaram de médio para longo ao ganhar 600 ou 800 palavras. A faixa de
-cada artigo se recalcula na hora de rodar, não agora.
+### 7.4 Teto: nenhum
 
-### 7.2 Patamares de entrada
+A forma saudável é pirâmide. `avaliacao-imobiliaria` recebe 36 hoje,
+`laudo-de-avaliacao-do-imovel` 32, `heranca` 28 — e está certo, são o assunto
+do blog.
 
-| Patamar | Links recebidos | Quem |
-|---|---|---|
-| **piso** | 2 a 3 | toda página, sem exceção |
-| **faixa sã** | 3 a 6 | conteúdo de apoio |
-| **pilares** | 15 a 40, sem teto | as páginas que são o assunto do blog |
+**Nivelar é o erro.** Levar as 206 páginas ao mesmo número apagaria a
+hierarquia que diz ao Google qual página é a principal sobre cada tema. E não
+se corta link de pilar para "distribuir melhor": pilar recebe muito porque é
+citado com naturalidade.
 
-O orçamento de saída diz **quanto** cada artigo gasta. Ele não diz **para
-onde**, e aí mora o risco: 369 links novos podem cair todos em cima das páginas
-que já são fortes, cada artigo cumprir sua cota e os 68 órfãos continuarem
-órfãos. Por isso os patamares de entrada têm prioridade na escolha do destino.
-
-Ordem de gasto:
-
-1. **Tirar todo mundo do isolamento.** 68 órfãos × 2 e 44 de um só × 1 = 180.
-2. **Levar o apoio ao alvo de 3.** Mais 137 links.
-3. **O resto, livre**, seguindo o que o texto pedir.
-
-### 7.3 As duas regras fecham no mesmo número
-
-Isso não estava combinado e vale registrar:
-
-```
-orçamento de saída, piso das faixas ......  950 links
-todo o apoio no alvo de 3 ................  946 links
-```
-
-Quatro links de diferença em 206 artigos. Os dois modelos foram construídos por
-caminhos independentes — um pela densidade que um texto suporta, outro pelo que
-uma página precisa receber para não ficar isolada — e chegam ao mesmo lugar. É
-o melhor indício de que o número está certo.
-
-Sai de 629 para cerca de 946 links internos: média de 4,6 por artigo, contra
-3,1 hoje.
-
-### 7.3.1 Quais são os pilares
-
-Seis páginas já recebem 15 ou mais:
-
-```
-36  avaliacao-imobiliaria
-32  laudo-de-avaliacao-do-imovel
-28  heranca
-24  o-que-e-um-arquiteto
-19  itbi
-17  compra-e-venda-de-imovel
-```
-
-**Ser pilar é decisão editorial, não medição.** Essas seis chegaram lá
-sozinhas, o que confirma que são mesmo o centro do blog — mas a lista pode
-crescer. Se a Valen Brasil quiser que `metodo-comparativo-direto` ou
-`avaliacao-de-imovel-para-inventario` sejam a página canônica do seu tema, elas
-entram no grupo e passam a receber links de propósito.
-
-O que não se faz é o contrário: **cortar link de pilar para "distribuir
-melhor".** Pilar recebe muito porque é citado com naturalidade; podar isso
-destrói o sinal que diz ao Google qual página responde por cada tema.
-
-Como o acervo se parte hoje:
-
-```
-pilares (15+)         6 artigos
-apoio               200 artigos
-  abaixo do piso    112   ← o trabalho
-  no piso (2-3)      41
-  na faixa sã (3-6)  41
-  acima de 6         22
-```
-
-### 7.4 O limite que não se cruza
-
-Somando aos links externos, um artigo médio ficaria com 4 a 8 internos mais os
-11,5 externos de hoje: 16 a 20 links no corpo. Um artigo longo, 8 a 12 mais 15
-a 20 externos: até 32.
-
-**Acima de 30 links no corpo, o texto começa a ler como diretório.** Nos
-artigos longos, portanto, fica-se na metade baixa da faixa — 8 ou 9, não 12 —
-sempre que o artigo já for denso em links externos. O modelo é faixa, não cota
-a cumprir.
+O ganho está em tirar 112 páginas do isolamento, não em igualar as 206.
 
 ## 8. O processo
 
