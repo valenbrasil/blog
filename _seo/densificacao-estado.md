@@ -1,15 +1,15 @@
 # Densificação de links externos — onde parou
 
-Retrato de 06/09/2026 19:51 UTC. Gerado por
+Retrato de 06/09/2026 20:12 UTC. Gerado por
 `/tmp/dens/estado.py`, que só lê arquivo — não chama a API nem gasta agente.
 
 | Estado | Artigos | O que fazer |
 |---|---:|---|
-| aplicado | 109 | nada, já está no ar |
+| aplicado | 117 | nada, já está no ar |
 | aprovado | 0 | gravar com `aplica.py` |
 | sem_revisao | 0 | **não gravar** — falta o cético |
 | em_voo | 0 | reenfileirar: o lote rodou e não devolveu plano |
-| na_fila | 97 | nunca entrou em lote |
+| na_fila | 89 | nunca entrou em lote |
 
 ## Como retomar
 
@@ -32,4 +32,4 @@ Workflow({scriptPath: ".../densificar-links-externos-wf_a0b9fc3c-37f.js",
 
 Ordem: menos links primeiro, artigo maior primeiro dentro de cada faixa.
 
-97 artigos. Slugs em `/tmp/dens/estado.json`.
+89 artigos. Slugs em `/tmp/dens/estado.json`.
