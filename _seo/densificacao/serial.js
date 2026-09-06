@@ -1,6 +1,6 @@
 export const meta = {
-  name: 'densificar-serial',
-  description: 'Densifica links externos, UM AGENTE POR VEZ: pesquisa, redige, verifica cada URL viva e refuta antes de aceitar',
+  name: 'densificar-lote',
+  description: 'Densifica links externos: pesquisa, redige, verifica cada URL viva e refuta antes de aceitar',
   phases: [
     { title: 'Densificar', detail: 'um agente por artigo: pesquisa, redige e verifica cada URL' },
     { title: 'Refutar', detail: 'um cético por artigo tenta derrubar cada operação proposta' },
@@ -167,45 +167,56 @@ STJ e portalibre.fgv.br respondem 403/vazio pelo proxy — não use.
 phase('Densificar')
 
 /*
-  Um agente por vez, por exigencia explicita do autor.
+  Os artigos do lote correm em paralelo; dentro de cada artigo, o cetico so
+  comeca quando o redator termina.
 
-  A versao anterior usava pipeline(), que despacha os artigos em paralelo ate o
-  teto de concorrencia. Aqui o laco e sequencial de proposito: cada artigo passa
-  pelo redator, espera, passa pelo cetico, espera, e so entao comeca o proximo.
-  Mais lento e o objetivo -- gasto previsivel, um agente vivo de cada vez.
+  A versao anterior usava um laco `for`, estritamente um agente por vez, por
+  exigencia do autor. Ele liberou oito agentes, mantida a regra de um lote por
+  vez -- entao o paralelismo entra aqui dentro, e nao em lotes simultaneos.
+
+  pipeline() e nao parallel(): nao ha barreira entre as duas etapas, entao o
+  cetico do primeiro artigo comeca assim que o redator dele acaba, sem esperar
+  os outros redatores. Com barreira, o lote inteiro andaria no ritmo do artigo
+  mais lento de cada etapa, duas vezes.
+
+  ATENCAO ao teto: o workflow limita a min(16, CPUs - 2) agentes simultaneos
+  POR CHAMADA, e esta maquina tem 4 CPUs -- ou seja, 2 por chamada. Os oito
+  agentes so acontecem com quatro chamadas em paralelo, cada uma com 2 artigos.
+  Passar 8 slugs para uma chamada so nao acelera: seis ficam na fila.
 */
-const resultados = []
-for (const slug of SLUGS) {
-  const plano = await agent(
-    `${REGRAS}\n\nARTIGO: ${slug}\nLeia /tmp/dens/artigos/${slug}.json e produza o plano de densificação.\n` +
-      `Em "urls_usadas" liste toda URL que você propôs, e confirme que cada uma passou pelo verificador.`,
-    { label: `densificar:${slug}`, phase: 'Densificar', schema: PLANO },
-  )
-  if (!plano) {
-    log(`${slug}: sem plano, pulando`)
-    continue
-  }
-  const veredito = await agent(
-    `${REGRAS}\n\nARTIGO: ${slug}\n\nUm redator propôs o plano abaixo. Sua tarefa é REFUTAR o que não se sustenta.\n\n` +
-      `PLANO:\n${JSON.stringify(plano, null, 1)}\n\n` +
-      `Confira, uma por uma:\n` +
-      `- Toda URL: rode o verificador de novo. Se não estiver viva, reprove.\n` +
-      `- Todo fato acrescentado: a página de destino sustenta MESMO aquela frase? Rode o verificador com um termo do fato. Número, artigo de lei, prazo e data inventados são o alvo principal desta revisão.\n` +
-      `- Toda âncora de "ancoras": o trecho existe literalmente naquele bloco do JSON do artigo? Confira em /tmp/dens/artigos/${slug}.json.\n` +
-      `- O texto novo está na voz do artigo, sem fórmula proibida, sem promessa em nome da empresa?\n` +
-      `- Há URL repetida?\n` +
-      `Na dúvida, reprove. Liste em "reprovadas" o tipo (ancora/emenda/acrescimo) e o índice base 0 dentro do array correspondente.`,
-    { label: `refutar:${slug}`, phase: 'Refutar', schema: VEREDITO },
-  )
-  resultados.push({ plano, veredito })
-  log(`${slug}: ${resultados.length}/${SLUGS.length}`)
-}
+const resultados = await pipeline(
+  SLUGS,
+  (slug) =>
+    agent(
+      `${REGRAS}\n\nARTIGO: ${slug}\nLeia /tmp/dens/artigos/${slug}.json e produza o plano de densificação.\n` +
+        `Em "urls_usadas" liste toda URL que você propôs, e confirme que cada uma passou pelo verificador.`,
+      { label: `densificar:${slug}`, phase: 'Densificar', schema: PLANO },
+    ),
+  (plano, slug) => {
+    if (!plano) {
+      log(`${slug}: sem plano, pulando`)
+      return null
+    }
+    return agent(
+      `${REGRAS}\n\nARTIGO: ${slug}\n\nUm redator propôs o plano abaixo. Sua tarefa é REFUTAR o que não se sustenta.\n\n` +
+        `PLANO:\n${JSON.stringify(plano, null, 1)}\n\n` +
+        `Confira, uma por uma:\n` +
+        `- Toda URL: rode o verificador de novo. Se não estiver viva, reprove.\n` +
+        `- Todo fato acrescentado: a página de destino sustenta MESMO aquela frase? Rode o verificador com um termo do fato. Número, artigo de lei, prazo e data inventados são o alvo principal desta revisão.\n` +
+        `- Toda âncora de "ancoras": o trecho existe literalmente naquele bloco do JSON do artigo? Confira em /tmp/dens/artigos/${slug}.json.\n` +
+        `- O texto novo está na voz do artigo, sem fórmula proibida, sem promessa em nome da empresa?\n` +
+        `- Há URL repetida?\n` +
+        `Na dúvida, reprove. Liste em "reprovadas" o tipo (ancora/emenda/acrescimo) e o índice base 0 dentro do array correspondente.`,
+      { label: `refutar:${slug}`, phase: 'Refutar', schema: VEREDITO },
+    ).then((veredito) => ({ plano, veredito }))
+  },
+)
 
-const bons = resultados.filter(Boolean)
+const bons = resultados.filter(Boolean).filter((r) => r && r.plano)
 log(`${bons.length} artigos processados`)
 
 return bons.map(({ plano, veredito }) => {
-  const rep = (veredito?.reprovadas ?? [])
+  const rep = veredito?.reprovadas ?? []
   const fora = (tipo) => new Set(rep.filter((r) => r.tipo === tipo).map((r) => r.indice))
   const a = fora('ancora'), e = fora('emenda'), c = fora('acrescimo')
   return {
