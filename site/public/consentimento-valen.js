@@ -14,8 +14,6 @@
  *        <script src="/js/consentimento-valen.js"></script>
  *   3. REMOVA do <head> as tags soltas de Google Analytics, Ahrefs e Cloudflare: este arquivo
  *      carrega as três apenas depois do "Aceitar".
- *   3b. Os identificadores vêm nos data- da tag <script> (data-ga, data-ahrefs, data-cf),
- *      não em constantes daqui. Cada um vazio desliga o medidor correspondente.
  *   4. No rodapé, para a pessoa poder mudar de ideia, adicione:
  *        <button type="button" onclick="ValenConsent.abrirPreferencias()">Preferências de cookies</button>
  */
@@ -28,17 +26,17 @@
   var POLITICA_URL = "https://valenbrasil.com/politica-de-privacidade";
 
   /*
-   * Os identificadores NÃO ficam neste arquivo. Chegam pelos data- da própria
-   * tag <script>, escritos pelo layout a partir de lib/site-config.ts.
+   * ÚNICA ALTERAÇÃO DE COMPORTAMENTO EM RELAÇÃO AO ARQUIVO RECEBIDO: os
+   * identificadores não ficam escritos aqui. Chegam pelos data- da própria tag
+   * <script>, que o layout escreve a partir de lib/site-config.ts.
    *
-   * O motivo é prático: com o token repetido aqui e lá, colar um código novo
-   * em um só dos dois lugares deixa o site num estado meio ligado, sem erro
-   * nenhum para denunciar. Agora há um lugar só. Este arquivo é estático e
-   * não passa pelo build do Next, então não pode importar de site-config —
-   * daí o data-atributo, que é como um estático lê configuração.
+   * Motivo: com o token repetido aqui e lá, colar um código novo em um só dos
+   * dois lugares deixa o site meio ligado, sem erro nenhum para denunciar —
+   * aconteceu de verdade nesta migração. Agora há um lugar só. Este arquivo é
+   * estático e não passa pelo build do Next, então não pode importar de
+   * site-config; daí o data-atributo.
    *
-   * Vazio é o estado válido de qualquer um deles: o medidor correspondente
-   * simplesmente não carrega.
+   * Vazio é estado válido: o medidor correspondente não carrega.
    */
   var TAG = document.currentScript;
   var GA_ID = (TAG && TAG.getAttribute("data-ga")) || "";
@@ -50,10 +48,9 @@
     eyebrow: "Privacidade",
     titulo: "Cookies neste site",
     corpo:
-      "Usamos apenas um cookie necessário para lembrar sua escolha, que vale também no nosso site. " +
-      "Se você autorizar, também usamos o Google Analytics, o Ahrefs Web Analytics e o Cloudflare Web Analytics " +
-      "para medir, de forma agregada, como o site é utilizado. Sem sua autorização, nenhum cookie de análise é criado. " +
-      'Você pode mudar sua decisão a qualquer momento em "Preferências de cookies", no rodapé. Saiba mais na ',
+      "Usamos um cookie para lembrar sua escolha, para Home e blog. " +
+      "Se autorizar, medimos de forma agregada como o site é utilizado. " +
+      "Sem autorização, nenhum cookie de análise é criado. Você pode mudar depois. Saiba mais na ",
     linkRotulo: "Política de Privacidade",
     rejeitar: "Rejeitar",
     aceitar: "Aceitar",
@@ -128,8 +125,8 @@
     gtag("consent", "update", { analytics_storage: "granted" });
 
     // Cada medidor só entra se tiver identificador. Sem o guarda, um token
-    // vazio viraria uma requisição a gtag/js?id= — erro no console do
-    // visitante e um pedido inútil ao Google, em nome de nada.
+    // vazio viraria uma requisição a gtag/js?id= — erro no console do visitante
+    // e um pedido inútil ao Google, em nome de nada.
     if (GA_ID) {
       var ga = document.createElement("script");
       ga.async = true;
@@ -139,7 +136,6 @@
       gtag("config", GA_ID, {
         cookie_expires: GA_COOKIE_EXPIRES,
         cookie_flags: "SameSite=Lax;Secure",
-        allow_google_signals: false,
         allow_ad_personalization_signals: false,
       });
     }
