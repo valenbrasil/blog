@@ -27,43 +27,6 @@ export const WHATSAPP_URL = 'https://wa.me/554731701572'
 export const POSTS_PER_PAGE = 12
 
 /**
- * Medição do Google Analytics 4. O ID é público — vai no HTML de toda página —,
- * então fica aqui e não em variável de ambiente: esconder não protegeria nada e
- * só criaria mais uma peça de configuração para o deploy carregar.
- */
-export const GA_MEASUREMENT_ID = 'G-DP9C1G5246'
-
-/**
- * Ahrefs Web Analytics. A chave é pública — sai no HTML de toda página, como a
- * do GA — então fica junto do resto da configuração, não em variável de
- * ambiente.
- */
-export const AHREFS_ANALYTICS_KEY = 'X2AoK5UaoY8tPMNmCRaBhA'
-
-/**
- * Cloudflare Web Analytics. Token próprio deste host: o painel emite um por
- * site, e o do institucional (valenbrasil.com) é outro — trocar os dois
- * misturaria a audiência dos dois domínios num relatório só.
- *
- * Instalação manual, por snippet, e não pelo proxy da Cloudflare: o blog é
- * servido pelo GitHub Pages, então não há proxy da Cloudflare na frente para
- * injetar o beacon sozinho.
- *
- * Público, como o ID do GA e a chave do Ahrefs ao lado.
- */
-export const CLOUDFLARE_ANALYTICS_TOKEN = '48a089b94e6d42b8a5ce2f0856257c25'
-
-/**
- * Verificação de propriedade do Google Search Console.
- *
- * O Search Console já aceita esta propriedade pela tag do GA, mas o código de
- * verificação é o que sobrevive a uma troca de medidor: se um dia o GA sair do
- * <head>, a propriedade continua verificada por esta meta. Público por
- * natureza — ele existe para ser lido no HTML.
- */
-export const GOOGLE_SITE_VERIFICATION = '7C1ml-aokBI4a4BQgRYaYuwvcH6j8CYAZ44uDXroORA'
-
-/**
  * Dados de registro da empresa, conferidos no rodapé do site institucional
  * (https://valenbrasil.com) em 5 de setembro de 2026 — a mesma fonte que o
  * blog cita como institucional, não uma transcrição de segunda mão.
