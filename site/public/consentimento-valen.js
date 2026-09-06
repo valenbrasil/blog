@@ -202,7 +202,16 @@
     titulo.style.cssText = "margin:8px 0 0;font-size:20px;font-weight:500;color:#141613";
 
     var corpo = document.createElement("p");
-    corpo.style.cssText = "margin:8px 0 0;max-width:70ch";
+    /*
+     * Sem max-width: o parágrafo ocupa a largura inteira do cartão.
+     *
+     * O arquivo vinha com "max-width:70ch", que num cartão de 1200px prende o
+     * texto em pouco mais de metade e deixa o resto vazio. O aviso da homepage
+     * não tem essa trava -- lá o texto vai de ponta a ponta --, então isto
+     * aproxima os dois, além de ser a decisão do autor, a mesma que ele já
+     * tomou para a descrição das categorias: ocupar o espaço.
+     */
+    corpo.style.cssText = "margin:8px 0 0";
     corpo.appendChild(document.createTextNode(TEXTO.corpo));
     var link = document.createElement("a");
     link.href = POLITICA_URL + "#cookies";
