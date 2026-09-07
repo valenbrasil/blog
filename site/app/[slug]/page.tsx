@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: PageProps<'/[slug]'>): Promis
   if (destino) {
     const post = await getPostBySlug(destino)
     return {
-      title: post?.seo?.metaTitle || post?.title,
+      title: { absolute: post?.seo?.metaTitle || post?.title || '' },
       description: post?.seo?.metaDescription || post?.excerpt,
       alternates: { canonical: `/${destino}/` },
     }
@@ -65,7 +65,13 @@ export async function generateMetadata({ params }: PageProps<'/[slug]'>): Promis
   const path = `/${slug}/`
 
   return {
-    title,
+    // `absolute` desliga o template "%s — Valen Brasil" do layout só aqui. O
+    // sufixo tem 15 caracteres e levava 107 dos 206 títulos além dos 60 que o
+    // Google exibe — que já cortava o sufixo por conta própria. Sem ele, um
+    // único título passa do limite. A home, as categorias e as páginas legais
+    // continuam com a marca no título; o artigo já a carrega no rodapé, no
+    // JSON-LD e no og:site_name.
+    title: { absolute: title },
     description,
     alternates: { canonical: path },
     openGraph: {
