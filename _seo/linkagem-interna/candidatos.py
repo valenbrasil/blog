@@ -199,10 +199,22 @@ def main():
         zona = zona_alvo(a, seq)
         # Links que precedem o primeiro interno. Separados por tipo porque so
         # os 'ext' entram no orcamento da Regra 3.
-        antes = seq[:next((i for i, y in enumerate(seq) if y[0] == 'int'),
-                          len(seq))]
+        idx_1o_int = next((i for i, y in enumerate(seq) if y[0] == 'int'), None)
+        antes = seq[:idx_1o_int if idx_1o_int is not None else len(seq)]
         n_ext_antes = sum(1 for x in antes if x[0] == 'ext')
         n_home_antes = sum(1 for x in antes if x[0] == 'home')
+        # A identidade do link que sobra, nao so a contagem. Um cetico pegou
+        # um agente que escolheu um link interno DIFERENTE do que a exclusao
+        # de fato promove -- ele leu "custo 2" e foi procurar por conta
+        # propria um link interno em outro lugar do artigo, ignorando que
+        # dentro do MESMO bloco podia haver um externo entre o inicio da
+        # zona e esse interno. Contagem sem identidade convida a adivinhar.
+        interno_promovido = (
+            {'chave': seq[idx_1o_int][2], 'ancora': seq[idx_1o_int][5],
+             'bloco': seq[idx_1o_int][3]}
+            if idx_1o_int is not None else None)
+        links_a_excluir = [{'chave': x[2], 'href': x[1], 'ancora': x[5],
+                            'tipo': x[0]} for x in antes if x[0] != 'int']
         cand = []
         if not ja_cumpre:
             for chave, i, texto, _seguro_emendar in zona:
@@ -253,6 +265,10 @@ def main():
             'exclusao_custa': (n_ext_antes + n_home_antes
                                if any(x[0] == 'int' for x in seq) else None),
             'externos_depois_da_exclusao': (a.get('links_externos') or 0) - n_ext_antes,
+            # A resposta pronta, nao so o numero: qual link fica em primeiro
+            # e exatamente o que precisa sair. Sem isso o agente adivinha.
+            'interno_promovido_pela_exclusao': interno_promovido,
+            'links_a_excluir': links_a_excluir,
             'primeiro_link': ({'tipo': seq[0][0], 'href': seq[0][1],
                                'chave': seq[0][2], 'ancora': seq[0][5]}
                               if seq else None),
@@ -343,9 +359,15 @@ def dossie(slug):
     if v['exclusao_custa'] is None:
         print('CAMINHO EXCLUSAO: indisponivel -- o artigo nao tem link interno nenhum.')
     else:
-        print('CAMINHO EXCLUSAO: apagar %d link(s) antes do primeiro interno; '
-              'sobrariam %d links externos.'
-              % (v['exclusao_custa'], v['externos_depois_da_exclusao']))
+        ip = v['interno_promovido_pela_exclusao']
+        print('CAMINHO EXCLUSAO: apagar estes %d link(s), NESTA ORDEM, e nenhum outro:'
+              % v['exclusao_custa'])
+        for l in v['links_a_excluir']:
+            print('    [%s] %r -> %s  (chave %s)' % (l['tipo'], l['ancora'], l['href'], l['chave']))
+        print('  Depois disso o PRIMEIRO link do artigo passa a ser: %r -> chave %s'
+              % (ip['ancora'], ip['chave']))
+        print('  NAO escolha outro link interno para "virar o primeiro" -- e este, e so este.')
+        print('  Sobrariam %d links externos.' % v['externos_depois_da_exclusao'])
         if v['exclusao_custa'] > 5:
             print('  ACIMA do teto de 5 -- indisponivel.')
         if v['externos_depois_da_exclusao'] < 10:

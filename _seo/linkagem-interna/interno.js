@@ -185,13 +185,24 @@ OS TRÊS CAMINHOS, nesta ordem de preferência:
               duas regras de uma vez.
 
   "excluir" — NÃO achou âncora honesta na zona, o artigo já tem link interno mais
-              abaixo, e o dossiê diz que a exclusão está disponível. Então liste
-              os links a apagar. Só vale se o dossiê NÃO disser "indisponível".
-              Para cada link, diga em "motivo" por que ele pode sair: link
-              decorativo, fonte de segunda mão, domínio já linkado em outro
-              ponto. **Nunca proponha apagar a fonte que sustenta a afirmação de
-              abertura do artigo** — se o primeiro link é a lei que dá nome ao
-              assunto, ele fica.
+              abaixo, e o dossiê diz que a exclusão está disponível. O dossiê
+              já te dá a resposta pronta em "CAMINHO EXCLUSAO": a lista exata
+              dos links a apagar, NESTA ORDEM, e qual link interno vira o
+              primeiro depois disso. **Use exatamente essa lista — não saia
+              procurando outro link interno em outro lugar do artigo.** Já
+              aconteceu: um agente viu "custo 2" e foi caçar por conta própria
+              um link interno em outro bloco, ignorando que DENTRO do mesmo
+              bloco onde esse link estava havia um terceiro link externo entre
+              o início do texto e ele — a exclusão de 2 não bastava, precisava
+              de 3, e o link "promovido" nunca vira de fato o primeiro. O
+              dossiê já fez essa conta considerando a ordem real de leitura
+              dentro de cada bloco, não a ordem em que os links aparecem no
+              JSON. Para cada link da lista, diga em "motivo" por que ele pode
+              sair: link decorativo, fonte de segunda mão, domínio já linkado
+              em outro ponto. **Nunca proponha apagar a fonte que sustenta a
+              afirmação de abertura do artigo** — se o primeiro link é a lei
+              que dá nome ao assunto, ele fica, e nesse caso o caminho vira
+              "nenhum", não "excluir" parcial.
 
   "nenhum"  — nem uma coisa nem outra. Diga em "nao_alcancou" o que você tentou
               e por que não fecha. Link forçado é pior que artigo sem link: o
@@ -242,7 +253,7 @@ const resultados = await pipeline(
         `- Se houver "emendar": os segmentos trazem SÓ texto novo? O aplicador ANEXA ao fim do bloco — se os segmentos repetirem qualquer frase que já está lá, o parágrafo sai publicado duas vezes. REPROVE. Já aconteceu: o agente devolveu o bloco inteiro com a frase nova no meio, e o cético anterior elogiou dizendo que "reproduz o bloco original palavra por palavra". Compare os segmentos com o texto do bloco no JSON antes de aprovar.\n` +
         `- Se houver "emendar" no bloco marcado "[SÓ ANCORAR]" no dossiê (o bloco que contém o primeiro link não interno): REPROVE sempre. Emendar ali cai depois desse link e não cumpre a Regra 2, mesmo que o resto da operação esteja perfeito. Já aconteceu: um bloco tinha dois links externos depois do ponto que a prévia mostrava, e a emenda nasceria depois dos dois.\n` +
         `- Ainda em "emendar": a frase nova se sustenta como informação, ou é pretexto para o link? Contradiz o autor? Começa com anáfora sem antecedente ("esse prazo", "essa regra") no bloco?\n` +
-        `- Se o caminho for "excluir": o dossiê autoriza (custo <= 5 e sem derrubar abaixo de 10 externos)? E o link que sai não é a fonte que sustenta a abertura do artigo?\n` +
+        `- Se o caminho for "excluir": a lista de exclusões do plano é IDÊNTICA à lista "CAMINHO EXCLUSAO" do dossiê (mesmas chaves, mesma ordem)? Se o agente excluiu um subconjunto diferente ou "achou" um link interno por conta própria, REPROVE — o dossiê já calculou a ordem real de leitura dentro de cada bloco, e um link interno escolhido por fora dessa lista pode não ser de fato o primeiro depois da exclusão (já aconteceu: sobrava um externo escondido no MESMO bloco do link interno "promovido"). O dossiê autoriza (custo <= 5 e sem derrubar abaixo de 10 externos)? O link que sai não é a fonte que sustenta a abertura do artigo?\n` +
         `- Ainda em "excluir": o link interno que VAI SOBRAR como primeiro — leia o artigo de destino dele — trata mesmo do assunto da frase de origem, ou é casamento de palavra? Já aconteceu: um artigo linkava "heranças arquitetônicas e culturais" para /heranca/, artigo sobre sucessão patrimonial jurídica — mesma palavra, assunto completamente diferente. Excluir os externos só para revelar um link que não cumpre honestamente a Regra 1 não resolve nada; REPROVE e registre em "nao_alcancou" que a Regra 1 continua em aberto.\n` +
         `Na dúvida, REPROVE. Ficar sem link é resultado aceitável; link forçado não é.\n` +
         `Liste em "reprovadas" o tipo ("operacao" ou "exclusao") e o índice base 0 no array correspondente.`,
