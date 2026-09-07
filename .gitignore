@@ -13,6 +13,7 @@ out/
 # dumps de trabalho da auditoria de SEO — regeneráveis a partir do Sanity
 _seo/backups/
 
-# dossiê da linkagem interna — derivado, regenerável com candidatos.py em segundos
+# dossiê da linkagem interna — derivado, regenerável com candidatos.py/orfaos.py em segundos
 _seo/linkagem-interna/candidatos.json
+_seo/linkagem-interna/orfaos.json
 __pycache__/
