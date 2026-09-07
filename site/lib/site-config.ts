@@ -65,12 +65,14 @@ export const CLOUDFLARE_ANALYTICS_TOKEN = '48a089b94e6d42b8a5ce2f0856257c25'
  * natureza — ele existe para ser lido no HTML.
 
  *
- * VAZIO DE PROPOSITO. O token sai daqui e o codigo fica: preencha esta
- * constante e a medicao volta sozinha, sem tocar em mais nada. Enquanto
- * estiver vazia, nada e carregado -- ver o componente correspondente em
- * app/layout.tsx, que devolve null quando nao ha o que carregar.
+ * Propriedade do tipo "Prefixo do URL" para https://blog.valenbrasil.com,
+ * verificada por esta meta tag. Se um dia a propriedade for removida e
+ * recriada, o código muda: basta trocar aqui — `app/layout.tsx` devolve null
+ * quando a constante está vazia, então esvaziá-la desliga a meta sem quebrar
+ * nada.
  */
-export const GOOGLE_SITE_VERIFICATION = ''
+export const GOOGLE_SITE_VERIFICATION =
+  '7C1ml-aokBI4a4BQgRYaYuwvcH6j8CYAZ44uDXroORA'
 
 /**
  * Dados de registro da empresa, conferidos no rodapé do site institucional
