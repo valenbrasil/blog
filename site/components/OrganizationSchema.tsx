@@ -50,13 +50,35 @@ export function OrganizationSchema() {
             value: r.numero,
           })),
         ],
-        subOrganization: {
-          '@type': 'Blog',
-          '@id': `${SITE_URL}/#blog`,
-          name: 'Valen Brasil — Blog',
-          url: `${SITE_URL}/`,
-          inLanguage: 'pt-BR',
-        },
+      }}
+    />
+  )
+}
+
+/*
+  O blog, como obra publicada pela organização acima.
+
+  Antes ele saía como `subOrganization` dentro da Organization, o que é inválido:
+  `subOrganization` espera outra Organization, e `Blog` é um CreativeWork. A
+  auditoria da Ahrefs acusou erro de validação de schema.org em 231 páginas por
+  causa disso.
+
+  A relação correta entre uma obra e quem a edita é `publisher`, apontando para o
+  `@id` da organização — a mesma costura que o BlogPosting de cada artigo já faz.
+*/
+export const BLOG_ID = `${SITE_URL}/#blog`
+
+export function BlogSchema() {
+  return (
+    <StructuredData
+      data={{
+        '@context': 'https://schema.org',
+        '@type': 'Blog',
+        '@id': BLOG_ID,
+        name: 'Valen Brasil — Blog',
+        url: `${SITE_URL}/`,
+        inLanguage: 'pt-BR',
+        publisher: { '@id': ORGANIZATION_ID },
       }}
     />
   )

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Jost, Manrope, JetBrains_Mono } from 'next/font/google'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
-import { OrganizationSchema } from '@/components/OrganizationSchema'
+import { BlogSchema, OrganizationSchema } from '@/components/OrganizationSchema'
 import {
   AHREFS_ANALYTICS_KEY,
   BASE_PATH,
@@ -92,6 +92,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
         <main className="flex-1">{children}</main>
         <Footer />
         <OrganizationSchema />
+        <BlogSchema />
       </body>
     </html>
   )
