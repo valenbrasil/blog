@@ -18,6 +18,15 @@ const SEGMENTO = {
   required: ['t'],
 }
 
+const BLOCO_NOVO = {
+  type: 'object',
+  properties: {
+    estilo: { type: 'string', description: 'normal, na quase totalidade dos casos' },
+    segmentos: { type: 'array', items: SEGMENTO, description: 'o parágrafo inteiro, do zero — não é anexo a nada existente' },
+  },
+  required: ['segmentos'],
+}
+
 const PLANO = {
   type: 'object',
   properties: {
@@ -28,8 +37,8 @@ const PLANO = {
       type: 'object',
       description: 'só quando resolvido',
       properties: {
-        op: { type: 'string', enum: ['ancorar', 'emendar'] },
-        chave: { type: 'string', description: 'chave do bloco, copiada do JSON do artigo fonte' },
+        op: { type: 'string', enum: ['ancorar', 'emendar', 'acrescentar'] },
+        chave: { type: 'string', description: 'chave do bloco, copiada do JSON do artigo fonte (ancorar/emendar)' },
         ancora: { type: 'string', description: 'só para ancorar: trecho literal e único no bloco' },
         href: { type: 'string', description: 'só para ancorar: caminho relativo /slug-do-orfao/' },
         segmentos: {
@@ -37,8 +46,10 @@ const PLANO = {
           items: SEGMENTO,
           description: 'só para emendar: SOMENTE o texto novo, ANEXADO ao fim do bloco. Não repita nada do que já está lá.',
         },
+        depois_de: { type: 'string', description: 'só para acrescentar: chave do bloco existente depois do qual o parágrafo novo entra' },
+        blocos: { type: 'array', items: BLOCO_NOVO, description: 'só para acrescentar: um ou mais parágrafos novos, inseridos como blocos próprios' },
       },
-      required: ['op', 'chave'],
+      required: ['op'],
     },
     sustentacao: { type: 'string', description: 'frase do artigo ÓRFÃO (o destino) que mostra que ele trata mesmo deste assunto' },
     justificativa: { type: 'string' },
@@ -102,12 +113,31 @@ REGRAS QUE NÃO SE NEGOCIAM:
    de apontar para ele. Cite em "sustentacao" a frase do órfão que mostra que
    ele trata do assunto que a âncora promete.
 5. A ÂNCORA NÃO CAI SOBRE LINK EXISTENTE.
-6. PREFIRA "ancorar". Uma frase nova é suspeita: se o artigo fonte não falava
-   do assunto, provavelmente não é origem legítima. Use "emendar" só quando a
-   frase nova se sustentar sozinha, como informação que o leitor ganha — nunca
-   como pretexto para o link.
+6. ORDEM DE PREFERÊNCIA: "ancorar" > "acrescentar" > "emendar".
 
-   COMO "emendar" FUNCIONA, e isto já deu erro em outra rodada: o aplicador
+   "ancorar" — a frase já existe, só recebe o link. É o caminho mais seguro,
+   use sempre que houver âncora literal honesta.
+
+   "acrescentar" — insere um PARÁGRAFO NOVO, inteiro, em qualquer ponto do
+   artigo (depois de qualquer bloco existente, à sua escolha — "em qualquer
+   posição do artigo"). Diferente de "emendar", não precisa encaixar no fim
+   de uma frase alheia nem depender de anáfora: é um parágrafo autônomo, com
+   começo, meio e fim próprios. Isso resolve o defeito mais comum desta
+   ferramenta até aqui — frase emendada que discorda do que vem logo antes
+   dela no mesmo bloco, ou que depende de um "esse"/"essa" sem antecedente.
+   Ainda assim tem de ser informação VERDADEIRA e RELEVANTE onde entra — um
+   parágrafo novo encostado num lugar aleatório do artigo só para caber o
+   link continua sendo pretexto, e pretexto se reprova. O lugar certo é
+   aquele em que, se o autor tivesse escrito sobre o assunto do órfão, teria
+   escrito ali — geralmente como continuação natural do raciocínio do bloco
+   anterior, ou como parágrafo novo numa seção cujo tema comporta o assunto.
+   "depois_de" é a chave do bloco que vem ANTES do parágrafo novo (pode ser
+   qualquer bloco do artigo, não só o último). "blocos" é a lista de
+   parágrafos a inserir — quase sempre um só.
+
+   "emendar" — só quando não houver âncora literal E o parágrafo novo de
+   "acrescentar" não tiver lugar natural, mas existir um bloco cujo FIM real
+   comporta uma frase adicional que continua o raciocínio dele. O aplicador
    **ANEXA** seus segmentos ao FIM do bloco. Ele não substitui o bloco. Então
    "segmentos" tem de trazer **só o texto novo**. Se você devolver o parágrafo
    inteiro com a frase nova no meio, o resultado publicado é o parágrafo DUAS
@@ -124,6 +154,11 @@ REGRAS QUE NÃO SE NEGOCIAM:
    inteira, começando com maiúscula, sem anáfora cujo antecedente esteja em
    outro bloco. E como o texto do autor fica intocado, ela não pode
    contradizê-lo nem inventar fato que não é verdade sobre o assunto do órfão.
+
+   Em qualquer um dos três, a informação nova (se houver) tem de ser
+   VERIFICÁVEL a partir do que o órfão já diz sobre si mesmo — nunca um fato
+   plausível mas não conferido (já aconteceu: "o vistoriador assina o
+   documento" — plausível, mas nenhuma fonte dizia isso).
 7. UM SÓ LINK, para o órfão desta tarefa, num só artigo fonte.
 8. Se nenhuma origem honesta existir — nem âncora literal, nem lugar natural
    para frase nova verdadeira — "resolvido: false" e diga o motivo. Ficar sem
@@ -181,6 +216,7 @@ const resultados = await pipeline(
         `- A âncora cai sobre trecho que já é link?\n` +
         `- Se houver "emendar": os segmentos trazem SÓ texto novo? O aplicador ANEXA ao fim do bloco — se repetirem qualquer frase que já está lá, o parágrafo sai publicado duas vezes. REPROVE se houver repetição.\n` +
         `- Ainda em "emendar": a frase nova se sustenta como informação verdadeira, ou é pretexto puro para o link? Contradiz o autor? Começa com anáfora sem antecedente no bloco?\n` +
+        `- Se houver "acrescentar": a chave em "depois_de" existe de fato no JSON do artigo fonte? O parágrafo novo faz sentido como continuação do raciocínio do bloco anterior (ou da seção em que entra) — ou foi encostado num lugar aleatório só para caber o link? Ele tem começo/meio/fim próprios, sem depender de anáfora de outro bloco? A informação nele é verificável a partir do que o próprio órfão diz sobre si mesmo (confira "sustentacao" contra o JSON do órfão), não um fato plausível mas não conferido?\n` +
         `Na dúvida, REPROVE (reprovado: true). Ficar sem link é resultado aceitável; link forçado não é.`,
       { label: `refutar:${orfao}`, phase: 'Refutar', schema: VEREDITO },
     ).then((veredito) => ({ plano, veredito }))
