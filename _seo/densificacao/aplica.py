@@ -159,8 +159,10 @@ def aplicar(plano, seco=False):
             assert md['_key'] in usados, f'{slug}: markDef orfao {md["_key"]}'
 
     novos_links = _conta_externos(body) - _conta_externos(doc['body'])
+    novos_internos = _conta_internos(body) - _conta_internos(doc['body'])
     if seco:
         return {'slug': slug, 'seco': True, 'novos_links': novos_links,
+                'novos_internos': novos_internos,
                 'palavras_antes': len(antes.split()), 'palavras_depois': len(depois.split())}
 
     sanity.mutate([{'patch': {'id': doc['_id'], 'ifRevisionID': doc['_rev'],
@@ -175,7 +177,22 @@ def aplicar(plano, seco=False):
     feitos.add(slug)
     json.dump(sorted(feitos), open(reg, 'w', encoding='utf-8'), ensure_ascii=False)
     return {'slug': slug, 'novos_links': novos_links,
+            'novos_internos': novos_internos,
             'palavras_antes': len(antes.split()), 'palavras_depois': len(depois.split())}
+
+
+def _conta_internos(body):
+    """Links para outro artigo do blog: href relativo, comecando com '/'.
+
+    Sem este contador a linkagem interna gravava e o relatorio dizia
+    "novos_links: 0" -- a operacao acontecia e o sinal de verificacao sumia.
+    """
+    n = 0
+    for b in body:
+        for md in b.get('markDefs') or []:
+            if (md.get('href') or '').startswith('/'):
+                n += 1
+    return n
 
 
 def _conta_externos(body):
