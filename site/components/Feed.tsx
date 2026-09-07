@@ -33,6 +33,10 @@ export function Feed({
   const start = (page - 1) * POSTS_PER_PAGE
   const pagePosts = rest.slice(start, start + POSTS_PER_PAGE)
 
+  // Na home o destaque já traz o <h1>; nas outras páginas este cabeçalho é o
+  // título principal e precisa ser <h1> para a página não ficar sem nenhum.
+  const Titulo = page === 1 && featured ? 'h2' : 'h1'
+
   return (
     <div className="mx-auto max-w-[1080px] px-6">
       {page === 1 && featured ? (
@@ -43,9 +47,15 @@ export function Feed({
       ) : null}
 
       <div className="mt-10 mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <h2 className="font-display text-2xl leading-snug tracking-tight text-neutral-900">
+        {/*
+          Na home o <h1> é o título do post em destaque, então este cabeçalho
+          entra como <h2>. Da página 2 em diante não há destaque, e a página
+          ficava sem <h1> nenhum -- a auditoria acusou isso em 17 páginas.
+          O nível acompanha o contexto em vez de ser fixo.
+        */}
+        <Titulo className="font-display text-2xl leading-snug tracking-tight text-neutral-900">
           {page === 1 ? 'Últimos artigos' : `Artigos — página ${page}`}
-        </h2>
+        </Titulo>
         <CategoryNav categories={categories} />
       </div>
 

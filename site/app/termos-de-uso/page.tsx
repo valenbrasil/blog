@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   description:
     'As condições de uso dos sites da Valen Brasil, institucional e blog: o que você pode fazer com o conteúdo, os limites de responsabilidade e a lei aplicável.',
   alternates: { canonical: '/termos-de-uso/' },
+  // og:url é obrigatório no Open Graph e faltava. Declarar openGraph aqui
+  // substitui o bloco do layout, daí type, siteName e locale repetidos.
+  openGraph: {
+    type: 'website',
+    siteName: 'Valen Brasil',
+    locale: 'pt_BR',
+    url: '/termos-de-uso/',
+  },
 }
 
 const html = fs.readFileSync(path.join(process.cwd(), 'content', 'termos.html'), 'utf8')

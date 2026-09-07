@@ -25,10 +25,21 @@ export async function generateMetadata({
     no resultado de busca. Daí o campo curto próprio, com a `description` como
     reserva para categoria que ainda não o tenha preenchido.
   */
+  const descricao = category.seoDescription || category.description
   return {
     title: category.title,
-    description: category.seoDescription || category.description,
+    description: descricao,
     alternates: { canonical: `/categoria/${slug}/` },
+    // og:url é obrigatório no Open Graph e faltava. Declarar openGraph aqui
+    // substitui o bloco do layout, daí type, siteName e locale repetidos.
+    openGraph: {
+      type: 'website',
+      siteName: 'Valen Brasil',
+      locale: 'pt_BR',
+      title: category.title,
+      description: descricao,
+      url: `/categoria/${slug}/`,
+    },
   }
 }
 
