@@ -122,7 +122,18 @@ def zona_alvo(art, seq):
     texto seja para outro artigo do blog, e a home institucional nao e isso.
     Ancora colocada depois dela nao cumpriria a regra.
 
-    Devolve lista de (chave, i, texto_disponivel, offset_no_bloco).
+    Devolve lista de (chave, i, texto_disponivel, seguro_emendar).
+
+    seguro_emendar distingue dois casos que PARECEM iguais na prévia de texto
+    mas nao sao. op_emendar ANEXA ao fim REAL do bloco -- nao ao ponto onde a
+    previa foi cortada. Um cetico pegou isso ao vivo: o bloco que contem o
+    primeiro link nao-interno tem, depois desse link, mais texto e ate outros
+    links (no caso, dois). "ancorar" ali e seguro, porque so poe link sobre um
+    trecho que ja existe, sem mover nada. "emendar" ali NAO E seguro: o texto
+    novo cairia depois de tudo que vem depois do corte, inclusive do link
+    externo que a operacao deveria preceder. Por isso so os blocos ESTRITAMENTE
+    antes do bloco de corte sao seguros para emendar; o proprio bloco de corte
+    so serve para ancorar.
     """
     primeiro_ext = next((x for x in seq if x[0] != 'int'), None)
     zona = []
@@ -131,14 +142,14 @@ def zona_alvo(art, seq):
         if not texto:
             continue
         if primeiro_ext is None:
-            zona.append((b['chave'], b['i'], texto, 0))
+            zona.append((b['chave'], b['i'], texto, True))
             continue
         if b['i'] < primeiro_ext[3]:
-            zona.append((b['chave'], b['i'], texto, 0))
+            zona.append((b['chave'], b['i'], texto, True))
         elif b['i'] == primeiro_ext[3]:
             corte = primeiro_ext[4]
             if corte > 0:
-                zona.append((b['chave'], b['i'], texto[:corte], 0))
+                zona.append((b['chave'], b['i'], texto[:corte], False))
             break
         else:
             break
@@ -194,7 +205,7 @@ def main():
         n_home_antes = sum(1 for x in antes if x[0] == 'home')
         cand = []
         if not ja_cumpre:
-            for chave, i, texto, _ in zona:
+            for chave, i, texto, _seguro_emendar in zona:
                 base = sem_acento(texto)
                 for d, ts in termos.items():
                     if d == s:
@@ -234,8 +245,8 @@ def main():
             'tem_interno_no_texto': any(x[0] == 'int' for x in seq),
             # A zona vai INTEIRA, com chave de bloco, porque e nela que o
             # agente procura ancora. Mediana de 94 palavras -- cabe.
-            'zona': [{'chave': c, 'bloco': i, 'texto': t}
-                     for c, i, t, _ in zona],
+            'zona': [{'chave': c, 'bloco': i, 'texto': t, 'seguro_emendar': se}
+                     for c, i, t, se in zona],
             # Custo da Regra 3 neste artigo: quantos externos apagar para o
             # interno que ja existe passar a ser o primeiro.
             'home_antes_do_1o_interno': n_home_antes,
@@ -325,7 +336,8 @@ def dossie(slug):
     if not v['zona']:
         print('  (vazia: o primeiro link esta no primeiro bloco de texto)')
     for z in v['zona']:
-        print('  [bloco %s chave %s]' % (z['bloco'], z['chave']))
+        aviso = '' if z['seguro_emendar'] else '  [SO ANCORAR -- emendar aqui cairia depois do link nao interno]'
+        print('  [bloco %s chave %s]%s' % (z['bloco'], z['chave'], aviso))
         print('    %s' % z['texto'])
     print()
     if v['exclusao_custa'] is None:

@@ -156,6 +156,21 @@ REGRAS QUE NÃO SE NEGOCIAM:
    Como a emenda entra no fim do bloco, ela tem de fazer sentido ali: frase
    inteira, começando com maiúscula, sem anáfora cujo antecedente esteja em
    outro bloco. E como o texto do autor fica intocado, ela não pode contradizê-lo.
+
+   SEGUNDO ERRO JÁ ACONTECIDO, e este é sobre POSIÇÃO: "emendar" cai sempre no
+   fim REAL do bloco — não no ponto do dossiê onde a prévia foi cortada. Se o
+   bloco que você quer emendar É o bloco que contém o primeiro link não
+   interno, o texto novo nasce DEPOIS desse link (e de qualquer coisa que
+   venha depois dele no mesmo bloco), e a Regra 2 não se cumpre mesmo a
+   operação sendo tecnicamente correta. Um cético pegou isso ao vivo: o bloco
+   tinha DOIS links externos depois do ponto mostrado na prévia, e a emenda
+   proposta nasceria depois dos dois.
+
+   Por isso o dossiê marca cada bloco da zona com "seguro_emendar". Blocos
+   estritamente ANTES do bloco de corte: seguro para ancorar E para emendar.
+   O PRÓPRIO bloco de corte (marcado "[SÓ ANCORAR]" no dossiê): sirva só para
+   ancorar — a posição da âncora, dentro do texto, continua sendo antes do
+   link; a emenda, não, porque vai para o fim do bloco inteiro.
 8. PREFIRA DESTINO ÓRFÃO. O dossiê marca quem recebe zero. Apontar para um órfão
    resolve a Regra 1 dele de graça. Mas relevância vem primeiro: órfão forçado é
    pior que não-órfão honesto.
@@ -225,6 +240,7 @@ const resultados = await pipeline(
         `- O artigo de destino TRATA mesmo do assunto? Leia /tmp/dens/artigos/<destino>.json. Mencionar de passagem não basta.\n` +
         `- A âncora cai sobre trecho que já é link?\n` +
         `- Se houver "emendar": os segmentos trazem SÓ texto novo? O aplicador ANEXA ao fim do bloco — se os segmentos repetirem qualquer frase que já está lá, o parágrafo sai publicado duas vezes. REPROVE. Já aconteceu: o agente devolveu o bloco inteiro com a frase nova no meio, e o cético anterior elogiou dizendo que "reproduz o bloco original palavra por palavra". Compare os segmentos com o texto do bloco no JSON antes de aprovar.\n` +
+        `- Se houver "emendar" no bloco marcado "[SÓ ANCORAR]" no dossiê (o bloco que contém o primeiro link não interno): REPROVE sempre. Emendar ali cai depois desse link e não cumpre a Regra 2, mesmo que o resto da operação esteja perfeito. Já aconteceu: um bloco tinha dois links externos depois do ponto que a prévia mostrava, e a emenda nasceria depois dos dois.\n` +
         `- Ainda em "emendar": a frase nova se sustenta como informação, ou é pretexto para o link? Contradiz o autor? Começa com anáfora sem antecedente ("esse prazo", "essa regra") no bloco?\n` +
         `- Se o caminho for "excluir": o dossiê autoriza (custo <= 5 e sem derrubar abaixo de 10 externos)? E o link que sai não é a fonte que sustenta a abertura do artigo?\n` +
         `Na dúvida, REPROVE. Ficar sem link é resultado aceitável; link forçado não é.\n` +
