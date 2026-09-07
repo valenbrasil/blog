@@ -102,6 +102,21 @@ def op_emendar(body, op):
         if t0 and not t0[0].isspace():
             segs[0]['t'] = ' ' + t0
 
+    # ANEXA, nao substitui. Um agente que entende "emendar" como "reescrever o
+    # bloco" devolve nos segmentos o texto inteiro com a frase nova no meio --
+    # e o resultado e o paragrafo publicado DUAS vezes. O cetico que leu esses
+    # segmentos chegou a elogiar: "reproduz o bloco original palavra por
+    # palavra". A trava tem de estar aqui, e nao no prompt.
+    novo_txt = ''.join(x.get('t', '') for x in segs)
+    JANELA = 60
+    limpo = ' '.join(antes.split())
+    cand = ' '.join(novo_txt.split())
+    for i in range(0, max(0, len(cand) - JANELA) + 1):
+        pedaco = cand[i:i + JANELA]
+        assert pedaco not in limpo, (
+            'emenda repete texto que ja esta no bloco (%r) -- op_emendar anexa, '
+            'os segmentos devem trazer SO o texto novo' % pedaco[:70])
+
     bloco['children'] = (bloco.get('children') or []) + _spans_de(segs, mds)
     depois = sanity.texto_do_bloco(bloco)
     assert depois.startswith(antes), 'emendar alterou o inicio do bloco'

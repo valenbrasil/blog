@@ -37,7 +37,11 @@ const PLANO = {
           chave: { type: 'string', description: 'chave do bloco, copiada do dossiê' },
           ancora: { type: 'string', description: 'só para ancorar: trecho literal e único no bloco' },
           href: { type: 'string', description: 'só para ancorar: caminho relativo /slug-do-destino/' },
-          segmentos: { type: 'array', items: SEGMENTO, description: 'só para emendar' },
+          segmentos: {
+            type: 'array',
+            items: SEGMENTO,
+            description: 'só para emendar: SOMENTE o texto novo, que será ANEXADO ao fim do bloco. Não repita nada do que já está no bloco.',
+          },
           destino: { type: 'string', description: 'slug do artigo de destino' },
           sustentacao: { type: 'string', description: 'que frase do artigo de destino mostra que ele trata deste assunto' },
         },
@@ -136,6 +140,22 @@ REGRAS QUE NÃO SE NEGOCIAM:
    artigo não falava do assunto, provavelmente não é origem legítima. Use
    "emendar" só quando a frase nova se sustentar sozinha, como informação que o
    leitor ganha — nunca como pretexto para o link.
+
+   COMO "emendar" FUNCIONA, e isto já deu erro: o aplicador **ANEXA** seus
+   segmentos ao FIM do bloco. Ele não substitui o bloco. Então "segmentos" tem
+   de trazer **só o texto novo**. Se você devolver o parágrafo inteiro com a
+   frase nova no meio, o resultado publicado é o parágrafo DUAS vezes.
+
+     bloco atual:  "...o proprietário pode buscar indenização."
+     ERRADO:       [{t:"...o proprietário pode buscar indenização, valor
+                      apurado a partir do "}, {t:"laudo", href:"/laudo/"} ...]
+     CERTO:        [{t:"O valor é apurado em juízo a partir do "},
+                    {t:"laudo de avaliação do imóvel", href:"/laudo-de-avaliacao-do-imovel/"},
+                    {t:", documento técnico que fixa o valor de mercado."}]
+
+   Como a emenda entra no fim do bloco, ela tem de fazer sentido ali: frase
+   inteira, começando com maiúscula, sem anáfora cujo antecedente esteja em
+   outro bloco. E como o texto do autor fica intocado, ela não pode contradizê-lo.
 8. PREFIRA DESTINO ÓRFÃO. O dossiê marca quem recebe zero. Apontar para um órfão
    resolve a Regra 1 dele de graça. Mas relevância vem primeiro: órfão forçado é
    pior que não-órfão honesto.
@@ -204,7 +224,8 @@ const resultados = await pipeline(
         `- A âncora nomeia o destino, ou é genérica a ponto de poder levar a qualquer coisa?\n` +
         `- O artigo de destino TRATA mesmo do assunto? Leia /tmp/dens/artigos/<destino>.json. Mencionar de passagem não basta.\n` +
         `- A âncora cai sobre trecho que já é link?\n` +
-        `- Se houver "emendar": a frase nova se sustenta como informação, ou é pretexto para o link? Contradiz o autor? Começa com anáfora sem antecedente ("esse prazo", "essa regra") no bloco?\n` +
+        `- Se houver "emendar": os segmentos trazem SÓ texto novo? O aplicador ANEXA ao fim do bloco — se os segmentos repetirem qualquer frase que já está lá, o parágrafo sai publicado duas vezes. REPROVE. Já aconteceu: o agente devolveu o bloco inteiro com a frase nova no meio, e o cético anterior elogiou dizendo que "reproduz o bloco original palavra por palavra". Compare os segmentos com o texto do bloco no JSON antes de aprovar.\n` +
+        `- Ainda em "emendar": a frase nova se sustenta como informação, ou é pretexto para o link? Contradiz o autor? Começa com anáfora sem antecedente ("esse prazo", "essa regra") no bloco?\n` +
         `- Se o caminho for "excluir": o dossiê autoriza (custo <= 5 e sem derrubar abaixo de 10 externos)? E o link que sai não é a fonte que sustenta a abertura do artigo?\n` +
         `Na dúvida, REPROVE. Ficar sem link é resultado aceitável; link forçado não é.\n` +
         `Liste em "reprovadas" o tipo ("operacao" ou "exclusao") e o índice base 0 no array correspondente.`,
