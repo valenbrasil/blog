@@ -24,7 +24,7 @@ export function Header() {
               utilitárias de display: qual vence depende da ordem na folha
               gerada, não da ordem no atributo class. */}
           <span className="hidden sm:block">
-            <Button href={WHATSAPP_URL} size="sm" variant="outline" iconRight="message-circle">
+            <Button href={WHATSAPP_URL} size="sm" variant="solid" iconRight="message-circle">
               Fale conosco
             </Button>
           </span>
