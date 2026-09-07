@@ -31,11 +31,19 @@ def emendas_aplicadas():
     except Exception:
         pass
     vistos, saida = set(), []
-    for f in sorted(glob.glob('/tmp/dens/*.plano.json')):
+    # Os planos ficam em dois lugares: os lotes antigos gravaram na raiz, em
+    # lista; os novos gravam um dicionario por artigo em planos/. Varrer so a
+    # raiz cobria 73 dos 203 artigos e devolvia "0 colagens" como se fosse o
+    # acervo inteiro.
+    arquivos = sorted(glob.glob('/tmp/dens/*.plano.json')
+                      + glob.glob('/tmp/dens/planos/*.plano.json'))
+    for f in arquivos:
         try:
             d = json.load(open(f, encoding='utf-8'))
         except Exception:
             continue
+        if isinstance(d, dict):
+            d = [d]
         if not isinstance(d, list):
             continue
         for art in d:
