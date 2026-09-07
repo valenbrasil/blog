@@ -14,20 +14,35 @@ O visual segue o design system da marca: <https://valenbrasil.github.io/design/>
 
 ## Publicação
 
-`.github/workflows/deploy.yml` constrói `site/` e publica no GitHub Pages, a cada
-push em `main` que toque em `site/**` e sob demanda por `workflow_dispatch`.
-Como o conteúdo é lido em tempo de build, **uma publicação nova no Studio só
-aparece no ar depois de rodar o workflow** — o Sanity não avisa o GitHub.
+O blog é publicado pela **Vercel**, no projeto `valenbrasil-blog` (time
+ValenBrasil), a partir do repositório no **GitLab**:
+<https://gitlab.com/valenbrasil/blog>. Cada push no `main` do GitLab que toque
+`site/**` dispara um deploy. Como o conteúdo é lido em tempo de build, **uma
+publicação nova no Studio só aparece no ar depois de um novo deploy** — o Sanity
+não avisa a Vercel.
 
-A origem do Pages precisa estar em **GitHub Actions** (Settings → Pages → Build
-and deployment → Source). Em "Deploy from a branch", o GitHub roda um build
-Jekyll da raiz do repositório a cada push, que publica este README por cima do
-blog — aconteceu uma vez e derrubou o site.
+O projeto na Vercel usa Root Directory `site` e depende de duas variáveis de
+ambiente, `NEXT_PUBLIC_BASE_PATH` (string **vazia**) e `NEXT_PUBLIC_SITE_URL`
+(`https://blog.valenbrasil.com`). Ver `site/README.md` para por que a primeira
+não pode simplesmente faltar.
 
-O domínio `blog.valenbrasil.com` também vive nas configurações do Pages
-(Settings → Pages → Custom domain), não no código: o `site/public/CNAME`
-acompanha o artefato por garantia, mas não é ele que configura o domínio. Do
-lado do DNS, `blog` é um CNAME para `valenbrasil.github.io`.
+O domínio `blog.valenbrasil.com` é configurado no painel da Vercel (Project →
+Settings → Domains); no DNS, `blog` aponta para a Vercel.
+
+### GitLab é a fonte da verdade
+
+O GitHub (<https://github.com/valenbrasil/blog>) é **apenas cópia de backup**,
+mantida por push mirror do GitLab. Duas consequências que valem para qualquer
+pessoa — ou agente — que mexa neste repositório:
+
+- **Commitar direto no GitHub é perda de trabalho.** O espelho sobrescreve o
+  GitHub à força (`keep divergent refs` desligado); commits que existam só lá
+  são apagados na sincronização seguinte, sem erro e sem aviso.
+- **Commit que não chega no GitLab não vai para o ar.** Quem publica é a
+  Vercel, lendo do GitLab.
+
+`.github/workflows/deploy.yml` ainda existe e publica no GitHub Pages, mas o
+Pages não serve mais o domínio — é rota de retorno, não a publicação real.
 
 ## Migração Ghost → Sanity
 

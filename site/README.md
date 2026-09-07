@@ -3,7 +3,10 @@
 Next.js App Router com `output: 'export'` — o build gera HTML estático, sem
 servidor. O conteúdo vem do Sanity (projeto `jk3z4mls`, dataset `production`,
 público) em tempo de build, então uma publicação nova no Studio só aparece
-depois de rodar o workflow de deploy.
+depois de um novo deploy.
+
+O deploy é feito pela Vercel, a partir do **GitLab** — ver "Publicação" no
+README da raiz. O GitLab é a fonte da verdade; o GitHub é só cópia de backup.
 
 ```bash
 npm install
@@ -51,9 +54,12 @@ blog montadas com eles.
 ## Endereço público
 
 `NEXT_PUBLIC_BASE_PATH` e `NEXT_PUBLIC_SITE_URL`, lidos por `lib/site-config.ts`
-e definidos no workflow de deploy. Hoje o site roda na raiz de
-`blog.valenbrasil.com`, então o base path é vazio. Num GitHub Pages de projeto
-ele seria servido sob o nome do repositório, e aí `NEXT_PUBLIC_BASE_PATH=/blog`.
+e definidos nas variáveis de ambiente do projeto na Vercel. Hoje o site roda na
+raiz de `blog.valenbrasil.com`, então o base path é vazio — e é preciso que ele
+seja **string vazia**, não ausente: o default no código é `/blog`, herdado da
+época do GitHub Pages, e uma variável faltando faz o site subir com todos os
+assets sob `/blog/` sem gerar erro nenhum.
 
-O domínio em si é configurado em Settings → Pages → Custom domain, não aqui.
-`public/CNAME` vai junto no artefato, mas não é ele que decide o endereço.
+O domínio em si é configurado no painel da Vercel (Project → Settings →
+Domains), não aqui. `public/CNAME` é resquício do GitHub Pages e não decide
+nada hoje.
