@@ -54,7 +54,10 @@ export const metadata: Metadata = {
     default: 'Valen Brasil — Blog',
     template: '%s — Valen Brasil',
   },
-  description: 'Avaliação de imóveis, direito e investimento imobiliário.',
+  // 57 caracteres eram curtos demais: o Google trunca em ~155 e a auditoria
+  // acusou descrição curta na home. Esta diz o assunto e quem assina.
+  description:
+    'Artigos sobre avaliação de imóveis, direito imobiliário e investimento, por arquitetos e avaliadores registrados no CAU-SC e no CRECI-SC.',
   // Padrão herdado por toda página que não declarar o seu próprio openGraph /
   // twitter — atenção: quem declara SUBSTITUI o bloco inteiro, não mescla campo
   // a campo, então siteName e locale precisam ser repetidos lá.
